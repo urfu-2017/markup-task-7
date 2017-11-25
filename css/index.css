@@ -129,8 +129,8 @@ img[src*='main2']
     position: absolute;
     z-index: -1;
     width: 23%;
-    margin-top: -55px;
-    margin-left: -44px;
+    margin-top: -54px;
+    margin-left: -45px;
 }
 
 img[title*='1'],
@@ -275,7 +275,7 @@ img[title='ya']
     color: #000;
 }
 
-.icon
+.social-media-icon
 {
     width: 37px;
     height: 30px;
