@@ -1,1 +1,305 @@
+body
+{
+    font-family: Arial;
+}
 
+input
+{
+    display: none;
+}
+
+.main
+{
+    margin-left: 15%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 993px;
+    height: 4634px;
+}
+
+.background
+{
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: -6px;
+}
+
+.page
+{
+    position: relative;
+    width: 954px;
+    border: 2px solid black;
+}
+
+.first-line
+{
+    margin-top: 18px;
+    height: 551px;
+}
+
+.logo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 25px;
+    left: 426px;
+    font-size: 30px;
+    opacity: .6;
+}
+
+.logo::first-letter
+{
+    color: red;
+}
+
+.first-line-caption
+{
+    position: relative;
+    z-index: 2;
+    top: 345px;
+    left: 130px;
+    width: 679px;
+    height: 86px;
+    font-size: 37px;
+    text-align: center;
+}
+
+.second-line
+{
+    border-top: none;
+    height: 250px;
+}
+
+.second-line > .text
+{
+    font-family: Arial;
+    padding-left: 8%;
+    padding-top: 8%;
+    width: 450px;
+    height: 236px;
+    position: absolute;
+    z-index: 2;
+}
+
+.video
+{
+    position: absolute;
+    top: 42px;
+    right: 153px;
+}
+
+.img
+{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.img-0
+{
+    position: absolute;
+    top: 18px;
+    left: 75px;
+    stroke-width: 2;
+}
+
+.img
+{
+    margin-bottom: 70px;
+    margin: 70px 0 100px 5px;
+    height: 70px;
+    width: 180px;
+    border: 2px solid black;
+}
+
+.text-video
+{
+    margin-top: 80px;
+}
+
+.three-line
+{
+    height: 500px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.person
+{
+    margin-top: 100px;
+}
+
+.person > div
+{
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    margin-left: 80px;
+    top: 100px;
+}
+
+.person-two
+{
+    left: 300px;
+}
+
+.person-three
+{
+    left: 600px;
+}
+
+.person-name
+{
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.info
+{
+    display: none;
+}
+
+.second-line > div
+.foure-line > div,
+.five-line > div,
+.six-line > div,
+.nine-line > div
+{
+    display: inline-block;
+}
+
+.text-info
+{
+    font-family: Arial;
+    width: 370px;
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.img-1
+{
+    margin-top: -100px;
+    margin-left: -10px;
+}
+
+.foure-line,
+.five-line,
+.six-line,
+.eight-line
+{
+    border-top: none;
+    border-bottom: none;
+}
+
+.text-info-right
+{
+    font-family: Arial;
+    width: 35%;
+    text-align: center;
+    margin: 50px 0 0 550px;
+}
+
+.img-2
+{
+    margin-top: -150px;
+    margin-left: 50px;
+}
+
+.img-3
+{
+    margin: -130px 0 0 100px;
+}
+
+.seven-line,
+.nine-line
+{
+    border-top: none;
+}
+
+.logo-y,
+.logo-yandex
+{
+    width: 150px;
+}
+
+.logo-y
+{
+    margin: -130px 0 0 700px;
+}
+
+.logo-yandex text
+{
+    font-size: 80px;
+}
+
+.href
+{
+    margin-left: 50px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.href
+{
+    margin-top: 50px;
+}
+
+.nine-line > div
+{
+    margin: 50px 0 20px 30px;
+}
+
+.person-1:checked ~ .page
+{
+    background-color: rgb(255,225,92);
+}
+
+.person-2:checked ~ .page
+{
+    background-color: rgb(114,198,246);
+}
+
+.person-3:checked ~ .page
+{
+    background-color: rgb(255,131,132);
+}
+
+.person-1:checked ~ .three-line .maxim-info
+{
+    display: block;
+}
+
+.person-2:checked ~ .three-line .alex-info
+{
+    display: block;
+}
+
+.person-3:checked ~ .three-line .georg-info
+{
+    display: block;
+}
+
+.person-1:checked ~ .eight-line .logo-y text
+{
+    fill: rgb(255,225,92);
+}
+
+.person-2:checked ~ .eight-line .logo-yandex text
+{
+    fill: rgb(114,198,246);
+}
+
+.person-3:checked ~ .eight-line .logo-yandex text
+{
+    fill: rgb(255,131,132);
+}
