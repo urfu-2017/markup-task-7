@@ -57,6 +57,14 @@ input
     color: red;
 }
 
+.logo-svg
+{
+    position: absolute;
+    left: 406px;
+    opacity: .6;
+    stroke-width: 2;
+}
+
 .first-line-caption
 {
     position: relative;
@@ -110,7 +118,6 @@ input
 
 .img
 {
-    margin-bottom: 70px;
     margin: 70px 0 100px 5px;
     height: 70px;
     width: 180px;
@@ -164,7 +171,7 @@ input
     display: none;
 }
 
-.second-line > div
+.second-line > div,
 .foure-line > div,
 .five-line > div,
 .six-line > div,
