@@ -1,0 +1,11 @@
+@import 'fonts.css';
+@import 'defaults.css';
+@import 'settings.css';
+
+main
+{
+    width: 1200px;
+    height: 200px;
+    background: red;
+    margin: 0 auto;
+}

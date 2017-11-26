@@ -3,8 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!--
+        Необходимо для того чтобы избавиться от мерцания кнопок
+        в header'е после загрузки страницы из-за применения transition'а.
+    -->
+    <script>
+        console.log("https://bugs.chromium.org/p/chromium/issues/detail?id=332189");
+    </script>
 </head>
 <body>
+
+<input type="radio" name="theme" class="theme-toggler-blue" id="theme-blue" checked hidden>
+<input type="radio" name="theme" class="theme-toggler-red" id="theme-red" hidden>
+<input type="radio" name="theme" class="theme-toggler-yellow" id="theme-yellow" hidden>
+
+<header>
+    <label for="theme-blue" class="theme-toggler-label theme-toggler-label-blue">Maya Blue</label>
+    <label for="theme-red" class="theme-toggler-label theme-toggler-label-red">Watermelon</label>
+    <label for="theme-yellow" class="theme-toggler-label theme-toggler-label-yellow">Mustard</label>
+</header>
+
+<main>
+</main>
+
 </body>
 </html>
-
