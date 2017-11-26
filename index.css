@@ -1,1 +1,132 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font: 16px Arial;
+    line-height: 1.5;
+}
 
+main
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.person-selector
+{
+    display: none;
+}
+
+.block
+{
+    position: relative;
+    background-color: #ffe05e;
+    width: 954px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+.block-header
+{
+    margin-top: 20px;
+    height: 553px;
+}
+
+.logo-bg
+{
+    position: absolute;
+    left: 408px;
+    opacity: .6;
+}
+
+.logo-text
+{
+    position: absolute;
+    font-size: 2em;
+    left: 423px;
+    top: 20px;
+}
+
+.logo-text:first-letter
+{
+    color: #f00;
+}
+
+.h1
+{
+    position: absolute;
+    width: 679px;
+    height: 86px;
+    font-size: 40px;
+    line-height: 1.09;
+    text-align: center;
+    top: 373px;
+    left: 110px;
+    z-index: 2;
+    font-weight: normal;
+    margin: 0;
+}
+
+.block-header img
+{
+    position: absolute;
+    left: -435px;
+    top: 70px;
+    z-index: 1;
+}
+
+.block-description
+{
+    height: 394px;
+}
+
+.description
+{
+    width: 450px;
+    height: 236px;
+    position: absolute;
+    z-index: 2;
+    top: 71px;
+    left: 92px;
+}
+
+.video-button-border
+{
+    position: absolute;
+    left: 638px;
+    top: 73px;
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.video-button-triangle
+{
+    position: absolute;
+    left: 697px;
+    top: 96px;
+}
+
+.video-button-description
+{
+    position: absolute;
+    left: 638px;
+    top: 167px;
+    width: 187px;
+    height: 15px;
+}
+
+.block-path
+{
+    height: 3210px;
+}
+
+.block-footer
+{
+    height: 437px;
+    border-bottom: 2px solid;
+}
