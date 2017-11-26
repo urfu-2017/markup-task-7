@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
     <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=cyrillic" 
+    rel="stylesheet">
 </head>
 <body>
     <input type="radio" id="top-human-1" name="people" checked>
@@ -15,7 +17,10 @@
 
     <main>
         <section class="page-header">
-            <div class="page-header__logo"></div>
+            <svg class="header-logo" width="138" height="93">
+                <polygon class="header-logo__polygon" points="0,-1 0,56 68,92 138,56 138,-1"></polygon>
+                <image href="images/logo.png" x="30" y="18" width="78" height="31"></image>
+            </svg>
             <div class="page-header__image"></div>
             <h1 class="page-header__text">
                 &mdash; А что если интернет подстроится под&nbsp;меня?
@@ -44,7 +49,10 @@
             </article>
 
             <article class="video-content">
-                <div class="video-content__video"></div>
+                <svg class="video-icon" width="138px" height="80px">
+                    <rect class="video-icon__rect" x="0" y="0" width="138" height="80" rx="8"></rect>
+                    <polygon class="video-icon__play" points="59,22 86,40 59,59"></polygon>
+                </svg>
                 <p class="video-content__paragraph">
                     Весь сайт в одном видео
                 </p>
@@ -199,7 +207,10 @@
                 </div>
             </article>
 
-            <div class="page-footer__logo"></div>
+            <svg class="footer-logo" width="102px" height="102px">
+                <circle class="footer-logo__circle" cx="51" cy="51" r="51"></circle>
+                <text class="footer-logo__ya" x="32" y="80">Я</text>
+            </svg>
 
             <div class="additional">
                 <a class="additional__help" href="#">Помощь</a>

@@ -30,14 +30,19 @@ main
     text-align: center;
 }
 
-.page-header__logo
+.header-logo
 {
     position: absolute;
     top: 0;
     left: calc(50% - 4.37rem);
-    width: 8.75rem;
-    margin: 0 auto;
-    background: url(images/logo.png) 0 0 no-repeat;
+}
+
+.header-logo__polygon
+{
+    fill: #fff;
+    fill-opacity: .6;
+    stroke: #000;
+    stroke-width: 2px;
 }
 
 .page-header__image
@@ -88,10 +93,18 @@ main
     margin-bottom: 0;
 }
 
-.video-content__video
+.video-icon__rect
 {
-    height: 5rem;
-    background: url(images/video-logo.png) 0 0 no-repeat;
+    fill: none;
+    stroke: #000;
+    stroke-width: 4px;
+}
+
+.video-icon__play
+{
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 2px;
 }
 
 .video-content__paragraph
@@ -253,6 +266,24 @@ input[id='bottom-human-3']:checked ~ main .top-people .human-2
 {
     margin-left: 4.5rem;
     margin-right: 4.5rem;
+}
+
+input[id='top-human-1']:checked ~ main .page-footer .footer-logo__ya,
+input[id='bottom-human-1']:checked ~ main .page-footer .footer-logo__ya
+{
+    fill: #73c5f6;
+}
+
+input[id='top-human-2']:checked ~ main .page-footer .footer-logo__ya,
+input[id='bottom-human-2']:checked ~ main .page-footer .footer-logo__ya
+{
+    fill: #ff8384;
+}
+
+input[id='top-human-3']:checked ~ main .page-footer .footer-logo__ya,
+input[id='bottom-human-3']:checked ~ main .page-footer .footer-logo__ya
+{
+    fill: #ffe15d;
 }
 
 .info-project-1
@@ -421,10 +452,15 @@ input[id='bottom-human-3']:checked ~ main .top-people .human-2
     background-position: -7.5rem 100%;
 }
 
-.page-footer__logo
+.footer-logo__circle
 {
-    width: 6.37rem;
-    background: url(images/logo-atom.png) 0 0 no-repeat;
+    fill: #fff;
+}
+
+.footer-logo__ya
+{
+    font: 80px 'Open Sans Condensed', sanf-serif;
+    fill: red;
 }
 
 .additional
