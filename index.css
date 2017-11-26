@@ -408,7 +408,7 @@ input[id='george']:checked ~ section div .george .person-description
 
 .ya-letter text
 {
-    fill: #ffe05e;
+    font-size: 70px;
 }
 
 .sn-sprites
@@ -495,4 +495,16 @@ input[id='george']:checked ~ section div .george .person-description
 .link-os
 {
     margin-right: 80px;
+}
+
+.logo-bg polyline
+{
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.video-button-triangle
+{
+    stroke: black;
+    stroke-width: 2;
 }
