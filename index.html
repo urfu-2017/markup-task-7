@@ -1,10 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
+    <input class="person-1" id="person-1" name="bg-color" type="radio" checked>
+    <input class="person-2" id="person-2" name="bg-color" type="radio">
+    <input class="person-3" id="person-3" name="bg-color" type="radio">
+    <main>
+        <section class="yandex-logo">
+            <svg class="pentagon" height="92" width="138">
+                <polygon points="0,0 138,0 138,58 69,92 0,58" fill="#fff" stroke="#000"></polygon>
+            </svg>
+            <div class="yandex-logo-text">Яндекс</div>
+        </section>
+        <section class="header">
+            <img class="bg" alt="background" src="assets/bg.png"
+                 srcset="assets/bg.png 1x, assets/bg@2x.png 2x, assets/bg@3x.png 3x">
+            <h1>- А что если интернет подстроится под меня?</h1>
+        </section>
+        <section class="intro">
+            <div class="intro-text">
+                <p>
+                    Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко
+                    ин&shy;фор&shy;ма&shy;ция и тех&shy;но&shy;ло&shy;гии,
+                    это лю&shy;ди: их же&shy;ла&shy;ния, пред&shy;по&shy;чте&shy;ния,
+                    за&shy;да&shy;чи. Лю&shy;ди — вот ато&shy;мы,
+                    из ко&shy;то&shy;рых на са&shy;мом де&shy;ле
+                    со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия;
+                    и эти лю&shy;ди очень, очень раз&shy;ные. Се&shy;го&shy;дня
+                    по&shy;иск уме&shy;ет под&shy;стра&shy;и&shy;вать&shy;ся,
+                    по&shy;мо&shy;гая лю&shy;дям быст&shy;рее при&shy;хо&shy;дить
+                    к тем ре&shy;ше&shy;ни&shy;ям, ко&shy;то&shy;рые
+                    им нуж&shy;ны.
+                </p>
+                <p>
+                    Мы пред&shy;став&shy;ля&shy;ем Атом: со&shy;во&shy;куп&shy;ность
+                    ин&shy;стру&shy;мен&shy;тов, при&shy;зван&shy;ных
+                    на&shy;учить ин&shy;тер&shy;нет под&shy;стра&shy;и&shy;вать&shy;ся
+                    под раз&shy;ных лю&shy;дей, ко&shy;то&shy;рые
+                    им нуж&shy;ны.
+                </p>
+            </div>
+            <div class="video">
+                <svg class="video-play-btn" height="36" width="25">
+                    <polygon points="0,36 0,0 25,18" fill="#fff" stroke="#000"></polygon>
+                </svg>
+                <p class="video-description">Весь сайт в одном видео</p>
+            </div>
+        </section>
+        <section class="people">
+            <article class="person">
+                <label class="person-icon person-sprite person-sprite-1" for="person-1">
+                    <svg class="person-icon-hover">
+                        <circle cx="69" cy="69" r="65" stroke="#eccd52"></circle>
+                    </svg>
+                </label>
+                <p class="person-name">Максим</p>
+                <p class="person-info">
+                    Очень до&shy;ро&shy;жит ред&shy;ки&shy;ми от&shy;пус&shy;ка&shy;ми
+                    и пре&shy;вы&shy;ше все&shy;го це&shy;нит
+                    ком&shy;форт и ка&shy;че&shy;ство об&shy;слу&shy;жи&shy;ва&shy;ния.
+                </p>
+            </article>
+            <article>
+                <label class="person-icon person-sprite person-sprite-2" for="person-2">
+                    <svg class="person-icon-hover">
+                        <circle cx="69" cy="69" r="65" stroke="#5caedd"></circle>
+                    </svg>
+                </label>
+                <p class="person-name">Алексей Быков</p>
+                <p class="person-info">
+                    Очень до&shy;ро&shy;жит ред&shy;ки&shy;ми от&shy;пус&shy;ка&shy;ми
+                    и пре&shy;вы&shy;ше все&shy;го це&shy;нит
+                    ком&shy;форт и ка&shy;че&shy;ство об&shy;слу&shy;жи&shy;ва&shy;ния.
+                </p>
+            </article>
+            <article>
+                <label class="person-icon person-sprite person-sprite-3" for="person-3">
+                    <svg class="person-icon-hover">
+                        <circle cx="69" cy="69" r="65" stroke="#f17476"></circle>
+                    </svg>
+                </label>
+                <p class="person-name">Георгий И. Дауге</p>
+                <p class="person-info">
+                    Очень до&shy;ро&shy;жит ред&shy;ки&shy;ми от&shy;пус&shy;ка&shy;ми
+                    и пре&shy;вы&shy;ше все&shy;го це&shy;нит
+                    ком&shy;форт и ка&shy;че&shy;ство об&shy;слу&shy;жи&shy;ва&shy;ния.
+                </p>
+            </article>
+        </section>
+        <section class="path">
+            <img class="path-image" alt="path" src="assets/path.png"
+                 srcset="assets/path.png 1x, assets/path@2x.png 2x, assets/path@3x.png 3x">
+            <article class="path-begin">
+                <div class="path-begin-text">
+                    <p>
+                        Юра сра&shy;зу по&shy;ку&shy;па&shy;ет тур:
+                        в его си&shy;ту&shy;а&shy;ции так оче&shy;вид&shy;но
+                        про&shy;ще. Ос&shy;нов&shy;ные ввод&shy;ные
+                        - при&shy;ем&shy;ле&shy;мо&shy;го ка&shy;че&shy;ства.
+                    </p>
+                    <p>
+                        Отель цен&shy;тре тай&shy;ской жиз&shy;ни:
+                        что&shy;бы и еда, и ка&shy;че&shy;ствен&shy;ный
+                        пляж, до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти,
+                        и ре&shy;сто&shy;ра&shy;ны.
+                    </p>
+                </div>
+                <img class="notebook" alt="notebook" src="assets/notebook.png"
+                    srcset="assets/notebook.png 1x, assets/notebook@2x.png 2x, assets/notebook@3x.png 3x">
+                <img class="phone" alt="phone" src="assets/phone.png"
+                     srcset="assets/phone.png 1x, assets/phone@2x.png 2x, assets/phone@3x.png 3x">
+                <img class="pen" alt="pen" src="assets/pen.png"
+                     srcset="assets/pen.png 1x, assets/pen@2x.png 2x, assets/pen@3x.png 3x">
+                <img class="ticket" alt="ticket" src="assets/ticket.png"
+                     srcset="assets/ticket.png 1x, assets/ticket@2x.png 2x, assets/ticket@3x.png 3x">
+                <img class="watch" alt="watch" src="assets/watch.png"
+                     srcset="assets/watch.png 1x, assets/watch@2x.png 2x, assets/watch@3x.png 3x">
+                <img class="photo" alt="photo" src="assets/photo.png"
+                     srcset="assets/photo.png 1x, assets/photo@2x.png 2x, assets/photo@3x.png 3x">
+            </article>
+            <article class="path-middle">
+                <div class="path-middle-text">
+                    <p>Юра но&shy;сит лин&shy;зы, и у не&shy;го
+                        как раз за&shy;кан&shy;чи&shy;ва&shy;ет&shy;ся
+                        за&shy;пас - нуж&shy;но ку&shy;пить но&shy;вые.</p>
+                    <p>Отель цен&shy;тре тай&shy;ской жиз&shy;ни:
+                        что&shy;бы и еда, и ка&shy;че&shy;ствен&shy;ный
+                        пляж, до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти,
+                        и ре&shy;сто&shy;ра&shy;ны.</p>
+                </div>
+                <img class="iphone" alt="iphone" src="assets/iphone.png"
+                     srcset="assets/iphone.png 1x, assets/iphone@2x.png 2x, assets/iphone@3x.png 3x">
+                <img class="ipad" alt="ipad" src="assets/ipad.png"
+                     srcset="assets/ipad.png 1x, assets/ipad@2x.png 2x, assets/ipad@3x.png 3x">
+                <img class="cup" alt="cup" src="assets/cup.png"
+                     srcset="assets/cup.png 1x, assets/cup@2x.png 2x, assets/cup@3x.png 3x">
+                <img class="mask" alt="mask" src="assets/mask.png"
+                     srcset="assets/mask.png 1x, assets/mask@2x.png 2x, assets/mask@3x.png 3x">
+                <img class="palka" alt="palka" src="assets/palka.png"
+                     srcset="assets/palka.png 1x, assets/palka@2x.png 2x, assets/palka@3x.png 3x">
+            </article>
+            <article class="path-end">
+                <div class="path-end-text">
+                    <p>Что Юра точ&shy;но не хо&shy;чет упу&shy;стить,
+                        так это воз&shy;мож&shy;ность по&shy;про&shy;бо&shy;вать
+                        мест&shy;ную еду.
+                    </p>
+                    <p>Каж&shy;дый ве&shy;чер они с же&shy;ной -
+                        ино&shy;гда с детьми, ино&shy;гда вдво&shy;ем
+                        - от&shy;прав&shy;ля&shy;ют в но&shy;вый
+                        мест&shy;ный ре&shy;сто&shy;ран.
+                    </p>
+                </div>
+                <img class="bag" alt="bag" src="assets/bag.png"
+                srcset="assets/bag.png 1x, assets/bag@2x.png 2x, assets/bag@3x.png 3x">
+                <img class="newspaper" alt="newspaper" src="assets/newspaper.png"
+                     srcset="assets/newspaper.png 1x, assets/newspaper@2x.png 2x, assets/newspaper@3x.png 3x">
+                <img class="magazine" alt="magazine" src="assets/magazine.png"
+                     srcset="assets/magazine.png 1x, assets/magazine@2x.png 2x, assets/magazine@3x.png 3x">
+            </article>
+            <footer class="people people-bottom">
+                <article class="person">
+                    <label class="person-icon person-sprite person-sprite-1" for="person-1">
+                        <svg class="person-icon-hover">
+                            <circle cx="69" cy="69" r="65" stroke="#eccd52"></circle>
+                        </svg>
+                    </label>
+                    <p class="person-name">Максим</p>
+                </article>
+                <article class="person">
+                    <label class="person-icon person-sprite person-sprite-2" for="person-2">
+                        <svg class="person-icon-hover">
+                            <circle cx="69" cy="69" r="65" stroke="#5caedd"></circle>
+                        </svg>
+                    </label>
+                    <p class="person-name">Алексей Быков</p>
+                </article>
+                <article class="person">
+                    <label class="person-icon person-sprite person-sprite-3" for="person-3">
+                        <svg class="person-icon-hover">
+                            <circle cx="69" cy="69" r="65" stroke="#f17476"></circle>
+                        </svg>
+                    </label>
+                    <p class="person-name">Георгий И. Дауге</p>
+                </article>
+            </footer>
+        </section>
+        <footer>
+            <div class="footer-text">
+                <p>
+                    Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не
+                    толь&shy;ко ин&shy;фор&shy;ма&shy;ция и тех&shy;но&shy;ло&shy;гии,
+                    это лю&shy;ди: их же&shy;ла&shy;ния, пред&shy;по&shy;чте&shy;ния,
+                    за&shy;да&shy;чи. Лю&shy;ди — вот ато&shy;мы,
+                    из ко&shy;то&shy;рых на са&shy;мом де&shy;ле
+                    со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия;
+                    и эти лю&shy;ди очень, очень раз&shy;ные.
+                </p>
+                <p>
+                    Те&shy;перь по&shy;смот&shy;ри&shy;те, как
+                    пла&shy;ни&shy;ро&shy;ва&shy;ли пу&shy;те&shy;ше&shy;ствие
+                    в Та&shy;и&shy;ланд Алек&shy;сей Бы&shy;ков
+                    и Ге&shy;ор&shy;гий И. Да&shy;у&shy;ге.
+                </p>
+            </div>
+            <div class="yandex-circle-logo">
+                <svg>
+                    <circle cx="50" cy="50" r="50" fill="#fff"></circle>
+                    <text x="15" y="80">Я</text>
+                </svg>
+            </div>
+            <article class="social-networks">
+                <a class="facebook-logo social-network-sprite" href="https://facebook.com"></a>
+                <a class="vkontakte-logo social-network-sprite" href="https://vk.com"></a>
+                <a class="twitter-logo social-network-sprite" href="https://twitter.com"></a>
+                <a class="youtube-logo social-network-sprite" href="https://youtube.com"></a>
+                <a class="habra-logo social-network-sprite" href="https://habrahabr.ru"></a>
+                <a class="instagram-logo social-network-sprite" href="https://instagram.com"></a>
+            </article>
+            <nav class="navigation">
+                <span>Помощь</span>
+                <span>Обратная связь</span>
+                <span class="yandex-copyright">&#169; 2017 ООО «Яндекс»</span>
+            </nav>
+        </footer>
+    </main>
 </body>
 </html>
-
