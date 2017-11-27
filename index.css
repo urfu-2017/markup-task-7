@@ -1,1 +1,390 @@
+input
+{
+    display: none;
+}
 
+main
+{
+    width: 953px;
+    height: 4634px;
+    margin: auto;
+    border: 2px solid #000;
+    background-color: #72c5f6;
+    font-family: Arial, sans-serif;
+    transition: background-color .75s ease-out;
+}
+
+input[id='Max']:checked ~ main
+{
+    background-color: #ff8384;
+}
+
+input[id='Georgy']:checked ~ main
+{
+    background-color: #ffe15a;
+}
+
+.yaLogo
+{
+    position: absolute;
+    top: 8px;
+    left: 610px;
+}
+
+.bg
+{
+    height: 570px;
+    border-bottom: 2px solid #000;
+}
+
+.bgImg
+{
+    display: block;
+    position: absolute;
+    width: 1416px;
+    height: 788px;
+    left: -240px;
+    top: 80px;
+}
+
+h1
+{
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    width: 740px;
+    margin: auto;
+    font-size: 44px;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.section2
+{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 75px;
+    border-bottom: 2px solid #000;
+}
+
+.introText
+{
+    width: 450px;
+    line-height: 1.5;
+}
+
+.introVideo
+{
+    width: 200px;
+    cursor: pointer;
+}
+
+.introText p
+{
+    margin-top: 0;
+}
+
+.personSelector
+{
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.person
+{
+    width: 33%;
+    text-align: center;
+}
+
+.personBorder
+{
+    width: 156px;
+    height: 156px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    transition: border .1s ease-out;
+}
+
+.personBorder:hover
+{
+    border: 3px solid #fff;
+}
+
+input[id='Alex']:checked ~ main .Alex .personBorder,
+input[id='Max']:checked ~ main .Max .personBorder,
+input[id='Georgy']:checked ~ main .Georgy .personBorder
+{
+    border: 3px solid #fff;
+}
+
+.personPhoto
+{
+    display: block;
+    width: 138px;
+    height: 138px;
+    background-image: url(images/people.png);
+    margin: 9px auto;
+    cursor: pointer;
+}
+
+.AlexPhoto
+{
+    background-position: -155px 0;
+}
+
+.GeorgyPhoto
+{
+    background-position: 137px -2px;
+}
+
+.person figcaption
+{
+    display: none;
+}
+
+input[id='Alex']:checked ~ main .Alex figcaption,
+input[id='Max']:checked ~ main .Max figcaption,
+input[id='Georgy']:checked ~ main .Georgy figcaption
+{
+    display: block;
+}
+
+.section3
+{
+    position: relative;
+}
+
+.pathPart
+{
+    position: relative;
+}
+
+.path
+{
+    display: block;
+    margin: auto;
+}
+
+.pathText
+{
+    width: 292px;
+    text-align: center;
+    position: absolute;
+}
+
+.pathText p
+{
+    margin: 36px 0;
+}
+
+.pathText1
+{
+    top: 60px;
+    left: 80px;
+}
+
+.pathText2
+{
+    top: 860px;
+    right: 100px;
+}
+
+.pathText3
+{
+    bottom: 575px;
+    left: 90px;
+}
+
+.pathImage
+{
+    display: block;
+    position: absolute;
+}
+
+.notebook
+{
+    top: 90px;
+    left: 500px;
+    z-index: 2;
+}
+
+.phone
+{
+    top: 330px;
+    left: -20px;
+}
+
+.pen
+{
+    top: 330px;
+    left: 330px;
+}
+
+.ticket
+{
+    top: 445px;
+    left: 425px;
+}
+
+.watch
+{
+    top: 605px;
+    left: 502px;
+}
+
+.photo
+{
+    top: 558px;
+    left: 812px;
+}
+
+.ipad
+{
+    top: 896px;
+    left: 210px;
+}
+
+.palka
+{
+    top: 896px;
+    right: 5px;
+}
+
+.iphone
+{
+    top: 1220px;
+    left: 50px;
+}
+
+.mask
+{
+    top: 1125px;
+    left: 564px;
+}
+
+.cup
+{
+    top: 1264px;
+    left: 337px;
+}
+
+.bag
+{
+    top: 1620px;
+    left: 445px;
+}
+
+.newspaper
+{
+    top: 1950px;
+    left: 95px;
+}
+
+.magazine
+{
+    top: 2062px;
+    right: -35px;
+}
+
+h2
+{
+    font-size: 16px;
+}
+
+.section3
+{
+    border-bottom: 2px solid #000;
+}
+
+.summaryBlock
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 66px 0 0 50px;
+}
+
+.summaryText
+{
+    width: 45%;
+    line-height: 1.5;
+}
+
+.summaryText p
+{
+    margin-top: 0;
+}
+
+.summaryLogo
+{
+    width: 40%;
+    text-align: center;
+}
+
+.socialLogos
+{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    padding-left: 80px;
+}
+
+.socialLink
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(data:image/png;base64,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);
+    cursor: pointer;
+}
+
+.vk
+{
+    background-position-x: -30px;
+}
+
+.tw
+{
+    background-position-x: -60px;
+}
+
+.yt
+{
+    background-position-x: -90px;
+}
+
+.hb
+{
+    background-position-x: -120px;
+}
+
+.ig
+{
+    background-position-x: -150px;
+}
+
+footer
+{
+    padding: 20px 0 0 82px;
+}
+
+footer a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.feedback
+{
+    margin-left: 20px;
+}
+
+.copyright
+{
+    margin-left: 80px;
+}
