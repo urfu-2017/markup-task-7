@@ -2,7 +2,7 @@ main
 {
     position: relative;
     width: 954px;
-    height: 4650px;
+    height: 4610px;
     margin: auto;
     border: 2px solid #000;
 }
@@ -23,6 +23,21 @@ main
 input
 {
     display: none;
+}
+
+input[id='pink']:checked ~ main .pink-desc
+{
+    display: block;
+}
+
+input[id='blue']:checked ~ main .blue-desc
+{
+    display: block;
+}
+
+input[id='yellow']:checked ~ main .yellow-desc
+{
+    display: block;
 }
 
 input[id='pink']:checked ~ main
@@ -133,7 +148,7 @@ input[id='blue']:checked ~ main
     fill-opacity: 0;
 }
 
-.label:hover ~ .character-element
+.label:hover ~ .circle
 {
     display: inline;
 }
@@ -356,7 +371,7 @@ input[id='blue']:checked ~ main
 .top-footer-text
 {
     position: absolute;
-    top: 55px;
+    top: 40px;
     left: 90px;
     width: 439px;
     height: 164px;
@@ -366,7 +381,7 @@ input[id='blue']:checked ~ main
 {
     position: absolute;
     left: 90px;
-    top: 355px;
+    top: 325px;
     width: 439px;
     height: 164px;
 }
@@ -374,7 +389,7 @@ input[id='blue']:checked ~ main
 .center-footer-text
 {
     position: relative;
-    top: 356px;
+    top: 326px;
 }
 
 .image-holder
@@ -448,7 +463,7 @@ input[id='blue']:checked ~ main
     display: flex;
     justify-content: space-between;
     left: 90px;
-    top: 260px;
+    top: 240px;
 }
 
 .social-container
