@@ -7,9 +7,9 @@
 </head>
 <body>
     <main>
-        <input type="radio" name="person" class="person-button" person="Maxim" id="Maxim">
-        <input type="radio" name="person" class="person-button" person="Alexey" id="Alexey" checked>
-        <input type="radio" name="person" class="person-button" person="Georgiy" id="Georgiy">
+        <input type="radio" name="person" class="person-button" id="Maxim">
+        <input type="radio" name="person" class="person-button" id="Alexey" checked>
+        <input type="radio" name="person" class="person-button" id="Georgiy">
         <header class="main__section main__header">
             <svg class="logo">
                 <polyline points="0 0, 138 0, 138 56, 69 92, 0 56, 0 0" class="logo__arrow"></polyline>
@@ -22,15 +22,18 @@
                  class="main__header__atom">
             <h1 class="main__header__title">— А что если интернет подстроится под меня?</h1>
         </header>
-        <section class="main__section main__description">
-            <span class="text main__description__text">
+        <div class="main__section main__description">
+            <span class="main__description__text">
+                <p class="text">
                 Интернет сегодня — это не только информация и технологии, это люди: их желания,
                 предпочтения, задачи. Люди — вот атомы, из которых на самом деле состоит цифровая материя;
                 и эти люди очень, очень разные. Сегодня поиск умеет подстраиваться,
                 помогая людям быстрее приходить к тем решениям, которые им нужны.
-                <br><br>
+                </p>
+                <p class="text">
                 Мы представляем Атом: совокупность инструментов, призванных научить интернет
                 подстраиваться под разных людей, которые им нужны.
+                </p>
             </span>
             <div class="video-button">
                 <div class="video-button__border"></div>
@@ -39,8 +42,8 @@
                 </svg>
                 <div class="text video-button__description">Весь сайт в одном видео</div>
             </div>
-        </section>
-        <section class="main__section main__path">
+        </div>
+        <div class="main__section main__path">
             <div class="main__path__persons-selector">
                 <div class="person person--maxim">
                     <label for="Maxim" class="person__sprite person__sprite--maxim">
@@ -188,7 +191,7 @@
                     <div class="text person__name">Георгий И. Дауге</div>
                 </div>
             </div>
-        </section>
+        </div>
         <footer class="main__section main__footer">
             <div class="main__footer__text">
                 <p class="text">

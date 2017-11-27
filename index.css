@@ -41,27 +41,27 @@ main {
     display: none;
 }
 
-.person-button[person='Maxim']:checked ~ .main__section {
+.person-button#Maxim:checked ~ .main__section {
     background-color: #fedf68;
 }
 
-.person-button[person='Maxim']:checked ~ .main__section .main__footer__atom-logo text {
+.person-button#Maxim:checked ~ .main__section .main__footer__atom-logo text {
     fill: #fedf68;
 }
 
-.person-button[person='Alexey']:checked ~ .main__section {
+.person-button#Alexey:checked ~ .main__section {
     background-color: #76c6f4;
 }
 
-.person-button[person='Alexey']:checked ~ .main__section .main__footer__atom-logo text {
+.person-button#Alexey:checked ~ .main__section .main__footer__atom-logo text {
     fill: #76c6f4;
 }
 
-.person-button[person='Georgiy']:checked ~ .main__section {
+.person-button#Georgiy:checked ~ .main__section {
     background-color: #fd8486;
 }
 
-.person-button[person='Georgiy']:checked ~ .main__section .main__footer__atom-logo text {
+.person-button#Georgiy:checked ~ .main__section .main__footer__atom-logo text {
     fill: #fd8486;
 }
 
@@ -103,6 +103,7 @@ main {
 }
 
 .main__description__text {
+    margin: -10px 0;
     width: 450px;
     height: 236px;
     position: absolute;
@@ -197,9 +198,9 @@ main {
 }
 
 .person:hover .person__border,
-.person-button[person='Maxim']:checked ~ .main__path .person--maxim .person__description,
-.person-button[person='Alexey']:checked ~ .main__path .person--alexey .person__description,
-.person-button[person='Georgiy']:checked ~ .main__path .person--george .person__description {
+.person-button#Maxim:checked ~ .main__path .person--maxim .person__description,
+.person-button#Alexey:checked ~ .main__path .person--alexey .person__description,
+.person-button#Georgiy:checked ~ .main__path .person--george .person__description {
     display: block;
 }
 
