@@ -1,1 +1,379 @@
+.Yandex_letter
+{
+    height: 4700px;
+    width: 1000px;
+    margin: auto;
+    border-top: solid 3px;
+}
 
+.logo
+{
+    text-align: center;
+    opacity: .5;
+}
+
+h1
+{
+    position: absolute;
+    left: 967px;
+    font-size: 1.7rem;
+}
+
+.main_header::first-letter
+{
+    color: red;
+}
+
+article
+{
+    border: solid 3px;
+    border-top: none;
+}
+
+.header
+{
+    height: 600px;
+}
+
+.bg 
+{
+    top: 20px;
+    right: 415px;
+    position: relative;
+}
+
+header
+{
+    z-index: 2;
+    left: 150px;
+    top: -390px;
+    position: relative;
+    width: 710px;
+    height: 86px;
+    font-family: Arial;
+    font-size: 44px;
+    text-align: center;
+    line-height: 1.09;
+}
+
+.description
+{
+    height: 400px;
+    display: grid;
+    grid-template-areas: 'a b';
+}
+
+.text
+{
+    margin-top: 60px;
+    margin-left: 93px;
+    grid-area: a;
+    width: 450px;
+    height: 236px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+    z-index: 1;
+}
+
+.area_b
+{
+    grid-area: b;
+}
+
+.video
+{
+    margin-top: 60px;
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px #000;
+}
+
+.triangle
+{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.video_desc
+{
+    height: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+    margin-top: 5px;
+}
+
+.heroes
+{
+    display: grid;
+    grid-template-columns: 333px 333px 333px;
+    grid-template-areas: 'd f g';
+    height: 430px;
+    border-bottom: none;
+}
+
+.young
+{
+    grid-area: d;
+}
+
+.adult
+{
+    grid-area: f;
+}
+
+.senior
+{
+    grid-area: g;
+}
+
+.caption
+{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #000;
+    text-align: center;
+}
+
+.young > .caption
+{
+    margin-left: 40px;
+}
+
+.hero_on_hover
+{
+    fill: none;
+    stroke-width: 3px;
+}
+
+.hero_on_hover,
+.info
+{
+
+    display: none;
+}
+
+.info
+{
+    margin-top: -60px;
+    margin-left: 20px;
+    width: 290px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.heroes > label 
+{
+    height: 138px;
+    width: 138px;
+    margin: 80px auto;
+}
+
+.heroes > label:hover > svg
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-left: -6px;
+    margin-top: -5px;
+}
+
+input[name='color']
+{
+    display: none;
+}
+
+input[id='blue']:checked ~ .Yandex_letter
+{
+    background-color: #73c4f6;
+}
+
+input[id='blue']:checked ~ .Yandex_letter > .heroes > .young > .info
+{
+    display: block;
+}
+
+input[id='red']:checked ~ .Yandex_letter
+{
+    background-color: #ff8283;
+}
+
+input[id='red']:checked ~ .Yandex_letter > .heroes > .adult > .info
+{
+    display: block;
+}
+
+input[id='yellow']:checked ~ .Yandex_letter
+{
+    background-color: #ffe05d;
+}
+
+input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
+{
+    display: block;
+}
+
+.path
+{
+    text-align: center;
+}
+
+.path > section > img,
+.path > section > div
+{
+    position: relative;
+}
+
+.step_one_text
+{
+    left: 120px;
+    width: 300px;
+    top: -2390px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.notebook
+{
+    top: -2575px;
+    left: 350px;
+    z-index: 1;
+}
+
+.phone
+{
+    top: -2370px;
+    left: -490px;
+}
+
+.pen
+{
+    top: -2520px;
+    left: -460px;
+}
+
+.ticket
+{
+    top: -2770px;
+    left: 343px;
+}
+
+.watch
+{
+    top: -2540px;
+    left: -40px;
+}
+
+.photo
+{
+    top: -2540px;
+    left: 140px;
+}
+
+.step_two_text
+{
+    left: 600px;
+    width: 280px;
+    top: -2530px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.smartphone
+{
+    left: -100px;
+    top: -2530px;
+}
+
+.planchet
+{
+    left: -100px;
+    top: -2680px;
+}
+
+.cup
+{
+    left: -280px;
+    top: -2460px;
+}
+
+.mask
+{
+    left: 420px;
+    top: -3310px;
+}
+
+.palka
+{
+    left: 160px;
+    top: -3130px;
+}
+
+.step_three_text
+{
+    left: 100px;
+    width: 320px;
+    top: -2980px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.bag
+{
+    top: -3200px;
+    left: 370px;
+}
+
+.newspaper
+{
+    top: -2850px;
+    left: -465px;
+}
+
+.magazine
+{
+    top: -3160px;
+    left: 370px;
+}
+
+.path + .heroes
+{
+    height: 350px;
+    margin-top: -3200px;
+    border-bottom: solid 3px;
+}
+
+footer
+{
+    border-bottom: solid 3px;
+}
+
+.foot
+{
+    margin-top: 84px;
+    margin-left: 95px;
+    width: 439px;
+    height: 164px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
