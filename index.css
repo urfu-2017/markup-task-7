@@ -1,1 +1,499 @@
+.container
+{
+    width: 950px;
+    height: 4634px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #000;
+}
 
+body
+{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+header
+{
+    height: 550px;
+    border-bottom: 2px solid #000;
+}
+
+header .bg
+{
+    position: absolute;
+    left: -440px;
+    top: 70px;
+}
+
+main > .description
+{
+    height: 400px;
+    border-bottom: 2px solid #000;
+    z-index: 10;
+    position: relative;
+}
+
+.text
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+    position: absolute;
+}
+
+p.text
+{
+    width: 190px;
+    margin-top: 0;
+}
+
+.description-text
+{
+    width: 450px;
+    top: 75px;
+    left: 90px;
+    position: absolute;
+}
+
+.text p:first-child
+{
+    margin-top: 0;
+}
+
+.text p:last-child
+{
+    margin-top: 30px;
+}
+
+.video
+{
+    position: absolute;
+    top: 75px;
+    left: 630px;
+}
+
+.persons
+{
+    height: 400px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.persons:last-child
+{
+    border-bottom: 2px solid #000;
+    height: 320px;
+}
+
+.person-1,
+.person-2,
+.person-3
+{
+    width: 300px;
+    position: absolute;
+    top: 73px;
+}
+
+.persons .description,
+.name
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+}
+
+body > input
+{
+    display: none;
+}
+
+input[id='maxim']:checked ~ .container
+{
+    background-color: #ff6d99;
+}
+
+input[id='alexey']:checked ~ .container
+{
+    background-color: #59c5fa;
+}
+
+input[id='georg']:checked ~ .container
+{
+    background-color: #ffd84c;
+}
+
+input[id='maxim']:checked ~ .container footer text
+{
+    fill: #ff6d99;
+}
+
+input[id='alexey']:checked ~ .container footer text
+{
+    fill: #59c5fa;
+}
+
+input[id='georg']:checked ~ .container footer text
+{
+    fill: #ffd84c;
+}
+
+input[id='maxim']:checked ~ .container footer text,
+input[id='alexey']:checked ~ .container footer text,
+input[id='georg']:checked ~ .container footer text
+{
+    font-family: sans-serif;
+    transform: scale(.6, 1.3);
+    font-size: 80px;
+}
+
+input[id='maxim']:checked ~ .container .person-1 .description,
+input[id='alexey']:checked ~ .container .person-2 .description,
+input[id='georg']:checked ~ .container .person-3 .description
+{
+    display: block;
+}
+
+.person-sprite
+{
+    background: url('images/persons-sprite.png') 6px 1px no-repeat;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.person-1
+{
+    left: 84px;
+}
+
+.person-2
+{
+    left: 330px;
+}
+
+.person-3
+{
+    left: 576px;
+}
+
+.persons .description
+{
+    display: none;
+}
+
+.persons .name
+{
+    font-weight: bold;
+    line-height: 1.38;
+}
+
+.photo-alexey
+{
+    background-position: -142px 1px;
+}
+
+.photo-georg
+{
+    background-position: -289px 1px;
+}
+
+.path
+{
+    height: 2453px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.phone,
+.cup,
+.bag,
+.photo,
+.ipad,
+.iphone,
+.magazine,
+.mask,
+.notebook,
+.newspaper,
+.palka,
+.pen,
+.watch,
+.ticket
+{
+    position: absolute;
+}
+
+.phone
+{
+    top: 329px;
+    left: -70px;
+}
+
+.pen
+{
+    left: 267px;
+    top: 329px;
+}
+
+.notebook
+{
+    right: 135px;
+    top: 77px;
+    z-index: 2;
+}
+
+.ticket
+{
+    right: 87px;
+    top: 435px;
+}
+
+.photo
+{
+    right: -75px;
+    top: 549px;
+    z-index: 2;
+}
+
+.watch
+{
+    right: 333px;
+    top: 594px;
+    z-index: 2;
+}
+
+.magazine
+{
+    bottom: -15px;
+    right: -40px;
+}
+
+.newspaper
+{
+    left: 50px;
+    bottom: 106px;
+}
+
+.bag
+{
+    right: 40px;
+    bottom: 433px;
+}
+
+.iphone
+{
+    left: 0;
+    bottom: 970px;
+}
+
+.ipad
+{
+    left: 160px;
+    bottom: 1120px;
+}
+
+.cup
+{
+    left: 290px;
+    bottom: 895px;
+}
+
+.palka
+{
+    right: 5px;
+    bottom: 940px;
+    z-index: 1;
+}
+
+.mask
+{
+    right: 5px;
+    top: 1120px;
+}
+
+.path .text:first-child
+{
+    width: 280px;
+    text-align: center;
+    left: 46px;
+    top: 80px;
+}
+
+.path .text:nth-child(2)
+{
+    text-align: center;
+    left: 540px;
+    width: 280px;
+    top: 889px;
+}
+
+.path .text:nth-child(3)
+{
+    width: 292px;
+    left: 40px;
+    text-align: center;
+    bottom: 585px;
+}
+
+.person-1 .hover
+{
+    position: absolute;
+    left: 73px;
+    top: -8px;
+    display: none;
+}
+
+.person-2 .hover,
+.person-3 .hover
+{
+    position: absolute;
+    left: 69px;
+    top: -7px;
+    display: none;
+}
+
+.photo-maxim:hover .hover,
+.photo-alexey:hover .hover,
+.photo-georg:hover .hover
+{
+    display: block;
+}
+
+header h1
+{
+    width: 800px;
+    position: absolute;
+    font-family: Arial;
+    font-size: 44px;
+    line-height: 1.09;
+    text-align: center;
+    color: #000000;
+    bottom: 80px;
+    left: 85px;
+    font-weight: normal;
+}
+
+header
+{
+    position: relative;
+}
+
+header .yandex
+{
+    opacity: .6;
+    position: absolute;
+    left: 390px;
+    top: -2px;
+}
+
+header .img-ya
+{
+    position: absolute;
+    top: 18px;
+    left: 420px;
+}
+
+footer
+{
+    margin-top: 80px;
+    margin-left: 80px;
+    position: relative;
+}
+
+.footer-text
+{
+    width: 450px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+}
+
+.circle-yandex
+{
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+
+footer > a
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+footer > a
+{
+    background: url('data:image/png;base64,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') 0 0;
+    opacity: .5;
+}
+
+.vk:hover,
+.twitter:hover,
+.youtube:hover,
+.habra:hover,
+.instagram:hover,
+.facebook:hover
+{
+    opacity: 1;
+}
+
+.vk
+{
+    background-position: -24px 0;
+}
+
+.twitter
+{
+    background-position: -46px 0;
+}
+
+.youtube
+{
+    background-position: -70px 0;
+}
+
+.habra
+{
+    background-position: -94px 0;
+}
+
+.instagram
+{
+    background-position: -117px 0;
+}
+
+.contacts
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    position: absolute;
+    bottom: -120px;
+}
+
+.contacts a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.contacts .help
+{
+    margin-right: 20px;
+}
+
+.contacts .feedback
+{
+    margin-right: 70px;
+}
