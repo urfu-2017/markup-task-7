@@ -1,1 +1,53 @@
+body {
+    background-color: rgb(246, 245, 243);
+}
 
+.wrapper {
+    width: 993px;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+.logo {
+    background-color: rgb(115,197,246);
+    height: 531px;
+    position: relative;
+    border: 2px solid black;
+    margin: 0 21px 0 18px;
+}
+
+.logo span {
+    display: block;
+    /* margin-top: 345px;  */
+    position: relative;
+    font-size: 44px;
+    line-height: 48px;
+    margin-left: 43px;
+    text-align: center;
+    font-family: Arial;
+    margin: 345px 115px 158px;
+}
+
+.logo span:before{
+    display: block;
+    content: '';
+    width: 43px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    top: 20px;
+    left: 60px;
+}
+
+.bg {
+    position: absolute;
+    top: 45px;
+    right: -27px;
+    width: 1416px;
+    height: 513px;
+    background-image: url(img/bg_2017-11-27/bg.png);
+}
+
+.container {
+    z-index: 100;
+}
