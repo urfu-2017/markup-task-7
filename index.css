@@ -265,7 +265,7 @@ input[id='input-georgy']:checked ~ .page-three .img-georgy svg
     visibility: visible;
 }
 
-.input-maxim:checked ~ article
+.input-maxim:checked ~ div
 {
     background-color: #ff8384;
 }
@@ -275,7 +275,7 @@ input[id='input-georgy']:checked ~ .page-three .img-georgy svg
     display: block;
 }
 
-.input-alexey:checked ~ article
+.input-alexey:checked ~ div
 {
     background-color: #ffe05e;
 }
@@ -285,7 +285,7 @@ input[id='input-georgy']:checked ~ .page-three .img-georgy svg
     display: block;
 }
 
-.input-georgy:checked ~ article
+.input-georgy:checked ~ div
 {
     background-color: #60bff5;
 }
