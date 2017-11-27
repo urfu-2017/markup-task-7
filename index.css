@@ -167,10 +167,28 @@ input[id='blue']:checked ~ main
 .path
 {
     position: relative;
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
     border-bottom: 2px solid #000;
     height: 2800px;
+}
+
+.top-path-block
+{
+    position: relative;
+    height: 790px;
+}
+
+.middle-path-block
+{
+    position: relative;
+    height: 800px;
+}
+
+.bottom-path-block
+{
+    position: relative;
+    height: 800px;
 }
 
 .path-img
@@ -205,25 +223,25 @@ input[id='blue']:checked ~ main
 
 .third-text
 {
-    top: 870px;
+    top: 80px;
     right: 100px;
 }
 
 .fourth-text
 {
-    top: 970px;
+    top: 180px;
     right: 100px;
 }
 
 .fifth-text
 {
-    top: 1665px;
+    top: 75px;
     left: 80px;
 }
 
 .sixth-text
 {
-    top: 1765px;
+    top: 175px;
     left: 80px;
 }
 
@@ -271,49 +289,49 @@ input[id='blue']:checked ~ main
 
 .ipad
 {
-    top: 895px;
+    top: 105px;
     left: 200px;
 }
 
 .iphone
 {
-    top: 1215px;
+    top: 425px;
     left: 42px;
 }
 
 .cup
 {
-    top: 1260px;
+    top: 470px;
     left: 325px;
 }
 
 .mask
 {
-    top: 1125px;
+    top: 335px;
     right: 0;
 }
 
 .palka
 {
-    top: 890px;
+    top: 100px;
     right: 17px;
 }
 
 .bag
 {
-    top: 1620px;
+    top: 30px;
     right: 55px;
 }
 
 .newspaper
 {
-    top: 1950px;
+    top: 360px;
     left: 85px;
 }
 
 .magazine
 {
-    top: 2060px;
+    top: 470px;
     right: -22px;
 }
 
@@ -435,7 +453,7 @@ input[id='blue']:checked ~ main
     position: relative;
     width: 654px;
     height: 200px;
-    top: 2530px;
+    top: 140px;
 }
 
 .top-pentagon
@@ -452,7 +470,6 @@ input[id='blue']:checked ~ main
     fill-opacity: 1;
     stroke: #000;
     stroke-width: 2;
-
 }
 
 .sprite-holder
