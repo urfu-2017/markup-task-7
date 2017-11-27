@@ -546,6 +546,16 @@ input
     border-color: #fff;
 }
 
+.person1-checkbox:checked ~ .main > .text-box-2
+{
+    margin-left: 100px;
+}
+
+.person2-checkbox:checked ~ .main > .text-box-2
+{
+    margin-left: 350px;
+}
+
 .clear
 {
     clear: both;
