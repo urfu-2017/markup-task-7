@@ -1,1 +1,565 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 149px 0 847px;
+    font-family: Arial;
+}
+
+input[id^='maxim-']:checked ~ main
+{
+    background: #72c3f5;
+}
+
+input[id^='alexey-']:checked ~ main
+{
+    background: #ff8384;
+}
+
+input[id^='georgy-']:checked ~ main
+{
+    background: #ffe15c;
+}
+
+input[id^='maxim-']:checked ~ main .whistleblowers__maxim-top,
+input[id^='alexey-']:checked ~ main .whistleblowers__alexey-top,
+input[id^='georgy-']:checked ~ main .whistleblowers__georgy-top
+{
+    display: block;
+}
+
+input[id^='maxim-']:checked ~ main .maxim-people,
+input[id^='alexey-']:checked ~ main .alexey-people,
+input[id^='georgy-']:checked ~ main .georgy-people
+{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+input[name='background-color']
+{
+    display: none;
+}
+
+main
+{
+    width: 957px;
+    height: 4598px;
+    margin: 18px;
+    background: #72c3f5;
+}
+
+header
+{
+    border: 2px solid black;
+    height: 553px;
+}
+
+.intro
+{
+    border: 2px solid black;
+    border-top: none;
+    height: 392px;
+}
+
+.whistleblowers
+{
+    border: 2px solid black;
+    border-top: none;
+    height: 3208px;
+}
+
+footer
+{
+    border: 2px solid black;
+    border-top: none;
+    height: 435px;
+}
+
+/*------------------------------header------------------------------*/
+
+.ya-label
+{
+    opacity: .6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: -138px;
+}
+
+.ya-label_custom
+{
+    background-color: #fff;
+    border: solid 2px #010202;
+    border-top: none;
+    box-sizing: border-box;
+    position: absolute;
+    width: 51px;
+    height: 83px;
+    margin-top: 6px;
+}
+
+.ya-label__base-sqr
+{
+    width: 138px;
+    height: 46px;
+    margin-top: 0;
+}
+
+.ya-label__left-sqr
+{
+    transform: rotate(124deg);
+    margin-left: 23px;
+    border-bottom: none;
+    border-left: none;
+}
+
+.ya-label__right-sqr
+{
+    margin-left: 64px;
+    transform: rotate(56deg);
+    border-left: none;
+    border-bottom: none;
+}
+
+.ya-logo
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.ya-logo > img
+{
+    width: 78px;
+    height: 30px;
+}
+
+.ya-bubble
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ya-bubble > img
+{
+    position: absolute;
+    top: 239px;
+    margin-left: 18px;
+}
+
+.header-question
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: calc(377px - 48px);
+    z-index: 5;
+}
+
+.what-if
+{
+    text-align: center;
+    font-size: 44px;
+}
+
+/*------------------------------intro------------------------------*/
+
+.intro__text
+{
+    position: absolute;
+    width: 450px;
+    height: 236px;
+    margin-top: 80px;
+    margin-left: 93px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.intro__text > p:first-child
+{
+    margin-top: 0;
+}
+
+.intro__video-icon
+{
+    position: absolute;
+    width: 138px;
+    height: 80px;
+    margin-top: 80px;
+    margin-left: 640px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.intro__play-icon
+{
+    position: relative;
+    top: 22px;
+    left: 59px;
+    width: 27px;
+    height: 37px;
+    fill: white;
+    stroke: black;
+    stroke-width: 2;
+    /* stroke-linecap: square; */
+    stroke-linejoin: round;
+}
+
+.intro__video-icon_sub
+{
+    display: block;
+    width: 200%;
+    margin-top: 55.5px;
+}
+
+/*------------------------------whistleblowers------------------------------*/
+
+.whistleblowers__icon-top
+{
+    position: absolute;
+    width: 607px;
+    display: flex;
+    justify-content: space-between;
+    margin: 71px 177px 0 171px;
+}
+
+.sprite-people
+{
+    background-image: url(peoples.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    margin: 9px 0;
+    padding: 9px;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.sprite-people:hover
+{
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.maxim-people
+{
+    width: 138px;
+    height: 139px;
+    background-position: -15px -15px;
+}
+
+.alexey-people
+{
+    width: 138px;
+    height: 139px;
+    background-position: -183px -15px;
+}
+
+.georgy-people
+{
+    width: 138px;
+    height: 139px;
+    background-position: -15px -184px;
+}
+
+.whistleblowers__people-top
+{
+    position: absolute;
+    width: 607px;
+    display: flex;
+    justify-content: space-between;
+    margin: 251px 177px 0 171px;
+}
+
+.whistleblowers__people_name
+{
+    width: 155px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.people-top-description
+{
+    position: absolute;
+    width: 285px;
+    height: 64px;
+    text-align: center;
+    display: none;
+}
+
+.whistleblowers__maxim-top
+{
+    margin: 281px 0 0 98px;
+}
+
+.whistleblowers__alexey-top
+{
+    margin: 281px 0 0 333px;
+}
+
+.whistleblowers__georgy-top
+{
+    margin: 281px 0 0 569px;
+}
+
+.whistleblowers__path
+{
+    position: absolute;
+    margin-top: 432px;
+    margin-left: 94px;
+}
+
+.paragraph
+{
+    position: absolute;
+    height: 64px;
+    width: 280px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.whistleblowers__paragraph-1
+{
+    width: 273px;
+    margin-top: 518px;
+    margin-left: 96px;
+}
+
+.whistleblowers__paragraph-2
+{
+    margin-top: 618px;
+    margin-left: 92px;
+}
+
+.whistleblowers__paragraph-3
+{
+    height: 61px;
+    margin-top: 1321px;
+    margin-left: 569px;
+}
+
+.whistleblowers__paragraph-4
+{
+    margin-top: 1420px;
+    margin-left: 569px;
+}
+
+.whistleblowers__paragraph-5
+{
+    width: 292px;
+    margin-top: 2117px;
+    margin-left: 80px;
+}
+
+.whistleblowers__paragraph-6
+{
+    width: 287px;
+    margin-top: 2216px;
+    margin-left: 82px;
+}
+
+.picture
+{
+    position: absolute;
+}
+
+.notebook
+{
+    margin-top: 509px;
+    margin-left: 484px;
+    z-index: 4;
+}
+
+.phone
+{
+    margin-top: 761px;
+    margin-left: -20px;
+}
+
+.pen
+{
+    margin-top: 761px;
+    margin-left: 328px;
+}
+
+.ticket
+{
+    margin-top: 867px;
+    margin-left: 406px;
+}
+
+.watch
+{
+    margin-top: 1026px;
+    margin-left: 484px;
+}
+
+.photo
+{
+    margin-top: 981px;
+    margin-left: 796px;
+}
+
+.ipad
+{
+    margin-top: 1322px;
+    margin-left: 202px;
+}
+
+.palka
+{
+    margin-top: 1322px;
+    margin-left: 718px;
+    z-index: 4;
+}
+
+.iphone
+{
+    margin-top: 1646px;
+    margin-left: 44px;
+}
+
+.mask
+{
+    margin-top: 1559px;
+    margin-left: 562px;
+}
+
+.cup
+{
+    margin-top: 1691px;
+    margin-left: 328px;
+}
+
+.bag
+{
+    margin-top: 2048px;
+    margin-left: 440px;
+}
+
+.newspaper
+{
+    margin-top: 2383px;
+    margin-left: 91px;
+}
+
+.magazine
+{
+    margin-top: 2494px;
+    margin-left: 679px;
+}
+
+.whistleblowers__icon-bottom
+{
+    position: absolute;
+    width: 607px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2956px 177px 0 171px;
+}
+
+.whistleblowers__people-bottom
+{
+    position: absolute;
+    width: 607px;
+    display: flex;
+    justify-content: space-between;
+    margin: 3138px 177px 0 171px;
+}
+
+.foot-content
+{
+    position: absolute;
+    margin-top: 84px;
+}
+
+.footer-description
+{
+
+    margin-left: 95px;
+    width: 439px;
+    height: 164px;
+    line-height: 1.5;
+}
+
+.logo-atom
+{
+    margin-left: 656px;
+}
+
+.footer
+{
+    position: absolute;
+    margin-top: 388px;
+}
+
+.feedback
+{
+    margin-left: 96px;
+}
+
+.yandex2017
+{
+    margin-left: 372px;
+}
+
+.socialshare
+{
+    position: absolute;
+    margin-top: 272px;
+    margin-left: 96px;
+    width: 188px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialshare > div
+{
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.socialshare > div:hover
+{
+    cursor: pointer;
+}
+
+.fb
+{
+    background-position: 0 0;
+}
+
+.vk
+{
+    background-position: -48px 0;
+}
+
+.tw
+{
+    background-position: -24px -24px;
+}
+
+.yt
+{
+    background-position: -48px -24px;
+}
+
+.hb
+{
+    background-position: -24px 0;
+}
+
+.inst
+{
+    background-position: 0 -24px;
+}
 
