@@ -1,6 +1,7 @@
 {
     "extends": "stylelint-config-hrundel",
     "rules": {
-        "block-opening-brace-newline-before": null
+        "block-opening-brace-newline-before": null,
+        "max-line-length": null
     }
 }
