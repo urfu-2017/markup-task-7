@@ -1,1 +1,451 @@
+.Layer-0
+{
+    width: 957px;
+    height: 4614px;
+    background-color: #73c5f6;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
 
+.Layer-171
+{
+    width: 938px;
+    height: 364px;
+}
+
+.Layer-171 img
+{
+    width: 100%;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg
+{
+    width: 1416px;
+    height: 788px;
+    object-fit: contain;
+}
+
+.Rectangle-2
+{
+    width: 138px;
+    height: 92px;
+    opacity: .6;
+    background-color: #fff;
+    border: solid 2px #010202;
+}
+
+.logo
+{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+
+.Layer-171
+{
+    z-index: 10;
+    position: relative;
+    margin-top: -40px;
+    margin-left: -432px;
+    width: 1416px;
+    height: 788px;
+}
+
+.Layer-171 img
+{
+    width: 1416px;
+}
+
+.header1
+{
+    margin-left: 158px;
+    position: absolute;
+    z-index: 120;
+    width: 690px;
+    height: 86px;
+    font-family: Arial;
+    font-size: 44px;
+    line-height: 1.09;
+    text-align: center;
+    color: #000;
+    top: 0;
+    margin-top: 377px;
+}
+
+.personsCards
+{
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personsCards .personCard:first-child
+{
+    margin-right: 88px;
+}
+
+.personsCards .personCard:last-child
+{
+    margin-left: 88px;
+}
+
+.personCard
+{
+    width: 138px;
+    text-align: center;
+}
+
+.personCard img
+{
+    width: 138px;
+    height: 138px;
+}
+
+.personCard .personName
+{
+    width: 132px;
+    height: 16px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.personDescription p
+{
+    width: 285px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.textBox1
+{
+    margin-right: 97px;
+    position: relative;
+    z-index: 1000;
+    margin-left: 93px;
+    line-height: 1.75;
+    width: 450px;
+    height: 236px;
+    font-family: Arial;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+
+.textBox1 p:first-child
+{
+    margin-top: 0;
+}
+
+.ExampleVideo p
+{
+    margin-top: 16px;
+}
+
+.firstPage
+{
+    padding-top: 80px;
+    display: flex;
+    margin-top: -290px;
+    width: 100%;
+    height: 392px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.lastPage
+{
+    margin-top: 73px;
+    border-top: 2px solid black;
+}
+
+.pathImage
+{
+    position: absolute;
+    top: 0;
+    width: 757px;
+    height: 2453px;
+}
+
+.pathRegion
+{
+    background-image: url('img/path.png');
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 96px;
+    margin-top: 87px;
+    width: 100%;
+    height: 2453px;
+    display: flex;
+}
+
+.text1
+{
+    width: 280px;
+    margin-right: 115px;
+}
+
+.text3
+{
+    margin-left: 63px;
+    width: 280px;
+}
+
+.block1
+{
+    width: 390px;
+    padding-top: 86px;
+}
+
+.textInblock
+{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.textInblock p:first-child
+{
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+.notebookImage
+{
+    position: relative;
+    z-index: 200;
+    width: 294px;
+    height: 422px;
+}
+
+.phoneImage
+{
+    margin-left: -116px;
+    display: inline-block;
+    width: 294px;
+    height: 360px;
+}
+
+.block2
+{
+    position: relative;
+    padding-top: 77px;
+}
+
+.penImage
+{
+    position: relative;
+    margin-left: 32px;
+    width: 42px;
+    height: 227px;
+}
+
+.subblock
+{
+    padding-top: 86px;
+    display: flex;
+}
+
+.ticketImage
+{
+    margin-left: -78px;
+    z-index: 100;
+    margin-top: -70px;
+    width: 450px;
+    height: 175px;
+}
+
+.watchImage
+{
+    margin-right: 192px;
+    width: 120px;
+    height: 236px;
+    display: block;
+}
+
+.subblock2
+{
+    display: flex;
+    position: relative;
+    z-index: 200;
+    margin-top: -25px;
+}
+
+.photoImage
+{
+    margin-top: -43px;
+    width: 216px;
+    height: 281px;
+}
+
+.ipadImage
+{
+    margin-top: 177px;
+    margin-left: 108px;
+    width: 294px;
+    height: 442px;
+}
+
+.maskImage
+{
+    margin-top: 75px;
+    width: 372px;
+    height: 205px;
+}
+
+.palkaImage
+{
+    margin-left: -128px;
+    margin-top: 25px;
+    width: 216px;
+    height: 610px;
+}
+
+.sublock3
+{
+    margin-top: 48px;
+    display: flex;
+}
+
+.iphoneImage
+{
+    margin-top: -118px;
+    margin-left: -52px;
+    width: 138px;
+    height: 268px;
+}
+
+.cupImage
+{
+    margin-left: 234px;
+    margin-top: -240px;
+    width: 216px;
+    height: 291px;
+}
+
+.text2
+{
+    width: 292px;
+    margin-top: 123px;
+}
+
+.newspaperImage
+{
+    margin-top: 103px;
+    width: 294px;
+    height: 396px;
+}
+
+.bagImage
+{
+    margin-left: -20px;
+    margin-top: 134px;
+    width: 450px;
+    height: 384px;
+}
+
+.magazineImage
+{
+    margin-left: 200px;
+    margin-top: 37px;
+    width: 294px;
+    height: 399px;
+}
+
+.lastTextBlock
+{
+    width: 439px;
+    height: 164px;
+}
+
+.logoAtomImage
+{
+    width: 102px;
+    height: 102px;
+    margin-left: 122px;
+}
+
+.lastPageSubblock
+{
+    margin-left: 95px;
+    margin-top: 84px;
+    display: flex;
+}
+
+.smIcons
+{
+    margin-left: 96px;
+    display: flex;
+    margin-top: 8px;
+}
+
+.smIcon
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.BoldDash
+{
+    margin-left: 102px;
+    top: 370px;
+    z-index: 120;
+    position: absolute;
+    width: 43px;
+    height: 5px;
+    font-family: TextbookNew;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    color: #000;
+}
+
+footer
+{
+    margin-top: 92px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.footerBtns
+{
+    margin-left: 96px;
+    margin-right: 80px;
+    width: 196px;
+    height: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #000;
+}
