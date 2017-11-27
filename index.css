@@ -157,7 +157,6 @@ input[id='blue']:checked ~ main
 {
     position: relative;
     width: 150px;
-
 }
 
 .character-element
@@ -435,6 +434,7 @@ input[id='blue']:checked ~ main
     justify-content: space-between;
     position: relative;
     width: 654px;
+    height: 200px;
     top: 2530px;
 }
 
