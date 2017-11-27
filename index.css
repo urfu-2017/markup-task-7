@@ -53,24 +53,18 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
     display: block;
 }
 
+.rectangle
+{
+    width: 954px;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
+}
+
 .first-rectangle
 {
     border: 2px solid #000;
     height: 551px;
-    width: 954px;
-}
-
-.Rectangle-2
-{
-    width: 138px;
-    height: 92px;
-    opacity: .6;
-    background-color: #fff;
-    border: solid 2px #010202;
-    position: absolute;
-    top: 167px;
-    left: 843px;
-    box-sizing: border-box;
 }
 
 .bg
@@ -84,15 +78,19 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
     z-index: 1;
 }
 
+.text
+{
+    font-family: Arial;
+    color: #000;
+    text-align: center;
+}
+
 .text1
 {
     width: 770px;
     height: 86px;
-    font-family: Arial;
     font-size: 44px;
     line-height: 1.09;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 546px;
     left: 526px;
@@ -102,22 +100,15 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 .second-rectangle
 {
     height: 392px;
-    width: 954px;
-    border-left: solid 2px #000;
-    border-right: solid 2px #000;
-    border-bottom: solid 2px #000;
 }
 
 .text2
 {
-
     width: 450px;
     height: 236px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: #000;
     position: relative;
     z-index: 2;
     padding-top: 80px;
@@ -151,11 +142,9 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 190px;
     height: 15px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: #000;
     position: absolute;
     top: 898px;
     left: 1077px;
@@ -164,11 +153,8 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 .third-rectangle
 {
     height: 3208px;
-    width: 954px;
-    border-left: solid 2px #000;
-    border-right: solid 2px #000;
-    border-bottom: solid 2px #000;
 }
+
 
 .maksim
 {
@@ -185,12 +171,9 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 59px;
     height: 13px;
-    font-family: Arial;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.38;
-    text-align: center;
-    color: #000;
     position: absolute;
     left: 649px;
     top: 1350px;
@@ -221,12 +204,9 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 123px;
     height: 13px;
-    font-family: Arial;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.38;
-    text-align: center;
-    color: #000;
     position: absolute;
     left: 851px;
     top: 1350px;
@@ -265,11 +245,8 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 285px;
     height: 64px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 1397px;
 }
@@ -278,12 +255,9 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 135px;
     height: 16px;
-    font-family: Arial;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.38;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 1350px;
     left: 1080px;
@@ -304,11 +278,8 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 296px;
     height: 64px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 1634px;
     left: 533px;
@@ -318,11 +289,8 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 300px;
     height: 64px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 1734px;
     left: 529px;
@@ -332,25 +300,20 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 280px;
     height: 61px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 2437px;
     left: 1006px;
 }
 
+
 .text10
 {
     width: 290px;
     height: 64px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 2536px;
     left: 1006px;
@@ -360,11 +323,8 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 292px;
     height: 64px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 3233px;
     left: 517px;
@@ -374,22 +334,23 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 287px;
     height: 64px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
-    color: #000;
     position: absolute;
     top: 3323px;
     left: 519px;
+}
+
+.image
+{
+    position: absolute;
+    object-fit: contain;
 }
 
 .notebook 
 {
     width: 306px;
     height: 434px;
-    object-fit: contain;
-    position: absolute;
     top: 1625px;
     left: 921px;
     z-index: 2;
@@ -399,18 +360,14 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 318px;
     height: 384px;
-    object-fit: contain;
     top: 1877px;
     left: 415px;
-    position: absolute;
 }
 
 .pen
 {
     width: 48px;
     height: 233px;
-    object-fit: contain;
-    position: absolute;
     top: 1877px;
     left: 765px;
 }
@@ -419,8 +376,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 454px;
     height: 179px;
-    object-fit: contain;
-    position: absolute;
     top: 1983px;
     left: 843px;
     z-index: 1;
@@ -430,8 +385,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 130px;
     height: 247px;
-    object-fit: contain;
-    position: absolute;
     top: 2142px;
     left: 921px;
     z-index: 2;
@@ -441,8 +394,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 227px;
     height: 292px;
-    object-fit: contain;
-    position: absolute;
     top: 2097px;
     left: 1233px;
     z-index: 2;
@@ -452,8 +403,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 304px;
     height: 453px;
-    object-fit: contain;
-    position: absolute;
     top: 2438px;
     left: 639px;
 }
@@ -462,8 +411,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 390px;
     height: 223px;
-    object-fit: contain;
-    position: absolute;
     top: 2675px;
     left: 999px;
 }
@@ -472,8 +419,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 228px;
     height: 622px;
-    object-fit: contain;
-    position: absolute;
     top: 2438px;
     left: 1155px;
 }
@@ -482,9 +427,7 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 148px;
     height: 278px;
-    object-fit: contain;
     mix-blend-mode: hard-light;
-    position: absolute;
     top: 2762px;
     left: 481px;
 }
@@ -493,8 +436,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 228px;
     height: 303px;
-    object-fit: contain;
-    position: absolute;
     top: 2807px;
     left: 765px;
 }
@@ -503,8 +444,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 475px;
     height: 409px;
-    object-fit: contain;
-    position: absolute;
     top: 3146px;
     left: 877px;
 }
@@ -513,8 +452,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 318px;
     height: 421px;
-    object-fit: contain;
-    position: absolute;
     top: 3499px;
     left: 528px;
 }
@@ -523,8 +460,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 306px;
     height: 411px;
-    object-fit: contain;
-    position: absolute;
     top: 3610px;
     left: 1116px;
 }
@@ -542,24 +477,17 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 .fourth-rectangle
 {
     height: 435px;
-    width: 954px;
-    border-left: solid 2px #000;
-    border-right: solid 2px #000;
-    border-bottom: solid 2px #000;
 }
 
 .text13
 {
     width: 439px;
     height: 164px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: #000;
     padding-top: 84px;
     padding-left: 95px;
-
 }
 
 .text13 p
@@ -570,16 +498,6 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 .text13 p:last-child
 {
     line-height: 1.75;
-}
-
-.logo-atom
-{
-    width: 102px;
-    height: 102px;
-    object-fit: contain;
-    position: absolute;
-    top: 4410px;
-    left: 1093px;
 }
 
 .sprite
@@ -597,11 +515,9 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 196px;
     height: 15px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: #000;
     position: absolute;
     top: 4714px;
     left: 533px;
@@ -616,12 +532,54 @@ input[class='thrd']:checked ~ .third-rectangle .georg-text
 {
     width: 174px;
     height: 15px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
     text-align: right;
-    color: #000;
     position: absolute;
     top: 4714px;
     left: 809px;
+}
+
+.svg
+{
+    background-image: url(https://vectr.com/lazzymind/e3yEgBkda0.svg?width=138&height=92&select=e3yEgBkda0page0);
+    background-repeat: no-repeat;
+    width: 138px;
+    height: 100px;
+    position: absolute;
+    left: 843px;
+    top: 167px;
+}
+
+.svg2
+{
+    background-image: url(https://vectr.com/lazzymind/b1E0UIg1q.svg?width=101&height=40&select=b1E0UIg1qpage0);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    left: 860px;
+    top: 175px;
+}
+
+.svg3
+{
+    background-image: url(https://vectr.com/lazzymind/iNqWyrWr.svg?width=31&height=42&select=iNqWyrWrpage0);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 1135px;
+    top: 822px;
+}
+
+.svg4
+{
+    background-image: url(https://vectr.com/lazzymind/h1j4x0U2X.svg?width=102&height=102&select=h1j4x0U2Xpage0);
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 4410px;
+    left: 1093px;
 }
