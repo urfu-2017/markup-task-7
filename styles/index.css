@@ -1,4 +1,3 @@
-@import 'fonts.css';
 @import 'defaults.css';
 @import 'settings.css';
 
@@ -15,20 +14,29 @@ main
     height: 571px;
     box-sizing: border-box;
     border: 2px solid black;
+    border-bottom: none;
+}
+
+.header-slide__arrow
+{
+    margin-top: -1px;
+    position: absolute;
+    left: calc(50% - 79px);
 }
 
 .header-slide__logo
 {
-    width: 78px;
-    height: 55px;
+    width: 80px;
+    height: 60px;
     position: absolute;
-    left: calc(50% - 39px);
+    left: calc(50% - 52px);
     background: url('../images/logo.svg') no-repeat;
     background-size: cover;
 }
 
 .header-slide__background
 {
+    z-index: 1;
     width: 1416px;
     height: 788px;
     margin-top: 70px;
@@ -39,6 +47,7 @@ main
 
 .header-slide__text
 {
+    z-index: 2;
     left: -8px;
     top: 386px;
     width: 740px;
@@ -50,4 +59,61 @@ main
     text-align: center;
     position: relative;
     font-family: Arial, sans-serif;
+}
+
+.atom-slide
+{
+    width: 100%;
+    height: 392px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.atom-slide__text
+{
+    z-index: 2;
+    top: 70px;
+    left: 95px;
+    width: 450px;
+    height: 236px;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: left;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.atom-slide__playbutton__shape
+{
+    margin: 0;
+    top: 75px;
+    right: 175px;
+    width: 138px;
+    height: 80px;
+    position: absolute;
+    border-radius: 4px;
+    border: solid 2px #000;
+}
+
+.atom-slide__playbutton__caption
+{
+    margin: 0;
+    top: 170px;
+    right: 118px;
+    width: 200px;
+    height: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    position: absolute;
+    font-family: Arial, sans-serif;
+}
+
+.footer-side
+{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 80px;
 }
