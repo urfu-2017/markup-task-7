@@ -2,9 +2,223 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Письмо из Яндекса»</title>
 </head>
 <body>
+    <main>
+        <input type="radio" name="person" class="person-button" person="Maxim" id="Maxim">
+        <input type="radio" name="person" class="person-button" person="Alexey" id="Alexey" checked>
+        <input type="radio" name="person" class="person-button" person="Georgiy" id="Georgiy">
+        <header class="main__section main__header">
+            <svg class="logo">
+                <polyline points="0 0, 138 0, 138 56, 69 92, 0 56, 0 0" class="logo__arrow"></polyline>
+                <text x="22" y="44" class="logo__text"><tspan class="logo__text__ya">Я</tspan>ндекс</text>
+            </svg>
+            <img src="images/bg.png"
+                 srcset="images/bg@2x.png 2x,
+                         images/bg@3x.png 3x"
+                 alt="bg"
+                 class="main__header__atom">
+            <h1 class="main__header__title">— А что если интернет подстроится под меня?</h1>
+        </header>
+        <section class="main__section main__description">
+            <span class="text main__description__text">
+                Интернет сегодня — это не только информация и технологии, это люди: их желания,
+                предпочтения, задачи. Люди — вот атомы, из которых на самом деле состоит цифровая материя;
+                и эти люди очень, очень разные. Сегодня поиск умеет подстраиваться,
+                помогая людям быстрее приходить к тем решениям, которые им нужны.
+                <br><br>
+                Мы представляем Атом: совокупность инструментов, призванных научить интернет
+                подстраиваться под разных людей, которые им нужны.
+            </span>
+            <div class="video-button">
+                <div class="video-button__border"></div>
+                <svg class="video-button__play-button">
+                    <polyline points="0 0, 0 37, 27 18, 0 0" fill="white"></polyline>
+                </svg>
+                <div class="text video-button__description">Весь сайт в одном видео</div>
+            </div>
+        </section>
+        <section class="main__section main__path">
+            <div class="main__path__persons-selector">
+                <div class="person person--maxim">
+                    <label for="Maxim" class="person__sprite person__sprite--maxim">
+                    </label>
+                    <div class="person__border"></div>
+                    <div class="text person__name">Максим</div>
+                    <p class="text person__description">
+                        Очень дорожит редкими отпусками и превыше всего ценит комфорт и
+                        качество обслуживания.
+                    </p>
+                </div>
+                <div class="person person--alexey">
+                    <label for="Alexey" class="person__sprite person__sprite--alexey">
+                    </label>
+                    <div class="person__border"></div>
+                    <div class="text person__name">Алексей Быков</div>
+                    <p class="text person__description">
+                        Очень дорожит редкими отпусками и превыше всего ценит комфорт и
+                        качество обслуживания.
+                    </p>
+                </div>
+                <div class="person person--george">
+                    <label for="Georgiy" class="person__sprite person__sprite--george">
+                    </label>
+                    <div class="person__border"></div>
+                    <div class="text person__name">Георгий И. Дауге</div>
+                    <p class="text person__description">
+                        Очень дорожит редкими отпусками и превыше всего ценит комфорт и
+                        качество обслуживания.
+                    </p>
+                </div>
+            </div>
+            <img src="images/path.png"
+                 srcset="images/path@2x.png 2x,
+                         images/path@3x.png 3x"
+                 alt="path"
+                 class="main__path__path-image">
+            <div class="main__path__text main__path__first-text">
+                <p class="text">
+                    Юра сразу покупает тур: в его ситуации так очевидно проще.
+                    Основные вводные - приемлемого качества.
+                </p>
+                <p class="text">
+                    Отель центре тайской жизни: чтобы и еда, и качественный пляж, достопримечательности,и рестораны.
+                </p>
+            </div>
+            <img src="images/notebook.png"
+                 srcset="images/notebook@2x.png 2x,
+                         images/notebook@3x.png 3x"
+                 alt="notebook"
+                 class="main__path__notebook-image">
+            <img src="images/phone.png"
+                 srcset="images/phone@2x.png 2x,
+                         images/phone@3x.png 3x"
+                 alt="phone"
+                 class="main__path__phone-image">
+            <img src="images/pen.png"
+                 srcset="images/pen@2x.png 2x,
+                         images/pen@3x.png 3x"
+                 alt="pen"
+                 class="main__path__pen-image">
+            <img src="images/ticket.png"
+                 srcset="images/ticket@2x.png 2x,
+                         images/ticket@3x.png 3x"
+                 alt="ticket"
+                 class="main__path__ticket-image">
+            <img src="images/watch.png"
+                 srcset="images/watch@2x.png 2x,
+                         images/watch@3x.png 3x"
+                 alt="watch"
+                 class="main__path__watch-image">
+            <img src="images/photo.png"
+                 srcset="images/photo@2x.png 2x,
+                         images/photo@3x.png 3x"
+                 alt="photo"
+                 class="main__path__photo-image">
+            <div class="main__path__text main__path__second-text">
+                <p class="text">
+                    Юра носит линзы, и у него как раз заканчивается запас - нужно купить новые.
+                </p>
+                <p class="text">
+                    Отель центре тайской жизни:
+                    чтобы и еда, и качественный пляж, достопримечательности, и рестораны.
+                </p>
+            </div>
+            <img src="images/ipad.png"
+                 srcset="images/ipad@2x.png 2x,
+                         images/ipad@3x.png 3x"
+                 alt="ipad"
+                 class="main__path__ipad-image">
+            <img src="images/palka.png"
+                 srcset="images/palka@2x.png 2x,
+                         images/palka@3x.png 3x"
+                 alt="palka"
+                 class="main__path__palka-image">
+            <img src="images/iphone.png"
+                 srcset="images/iphone@2x.png 2x,
+                         images/iphone@3x.png 3x"
+                 alt="iphone"
+                 class="main__path__iphone-image">
+            <img src="images/mask.png"
+                 srcset="images/mask@2x.png 2x,
+                         images/mask@3x.png 3x"
+                 alt="mask"
+                 class="main__path__mask-image">
+            <img src="images/cup.png"
+                 srcset="images/cup@2x.png 2x,
+                         images/cup@3x.png 3x"
+                 alt="cup"
+                 class="main__path__cup-image">
+            <div class="main__path__text main__path__third-text">
+                <p class="text">
+                    Что Юра точно не хочет упустить, так это возможность попробовать местную еду.
+                </p>
+                <p class="text">
+                    Каждый вечер они с женой - иногда с детьми, иногда вдвоем - отправляют в новый местный ресторан.
+                </p>
+            </div>
+            <img src="images/bag.png"
+                 srcset="images/bag@2x.png 2x,
+                         images/bag@3x.png 3x"
+                 alt="bag"
+                 class="main__path__bag-image">
+            <img src="images/newspaper.png"
+                 srcset="images/newspaper@2x.png 2x,
+                         images/newspaper@3x.png 3x"
+                 alt="newspaper"
+                 class="main__path__newspaper-image">
+            <img src="images/magazine.png"
+                 srcset="images/magazine@2x.png 2x,
+                         images/magazine@3x.png 3x"
+                 alt="magazine"
+                 class="main__path__magazine-image">
+            <div class="main__path__persons">
+                <div class="person person--maxim">
+                    <div class="person__sprite person__sprite--maxim"></div>
+                    <div class="text person__name">Максим</div>
+                </div>
+                <div class="person person--alexey">
+                    <div class="person__sprite person__sprite--alexey"></div>
+                    <div class="text person__name">Алексей Быков</div>
+                </div>
+                <div class="person person--george">
+                    <div class="person__sprite person__sprite--george"></div>
+                    <div class="text person__name">Георгий И. Дауге</div>
+                </div>
+            </div>
+        </section>
+        <footer class="main__section main__footer">
+            <div class="main__footer__text">
+                <p class="text">
+                    Интернет сегодня — это не только информация и технологии, это люди: их желания,
+                    предпочтения, задачи. Люди — вот атомы, из которых на самом деле
+                    состоит цифровая материя; и эти люди очень, очень разные.
+                </p>
+                <p class="text">
+                    Теперь посмотрите, как планировали путешествие в Таиланд Алексей Быков и Георгий И. Дауге.
+                </p>
+            </div>
+            <svg class="main__footer__atom-logo">
+                <circle cx="51" cy="51" r="51" fill="white"></circle>
+                <text x="26" y="78" class="main__footer__atom-logo__ya">Я</text>
+            </svg>
+            <div class="main__footer__social-links">
+                <a href="http://facebook.com" class="social-links__icon social-links__facebook"></a>
+                <a href="http://vk.com" class="social-links__icon social-links__vk"></a>
+                <a href="http://twitter.com" class="social-links__icon social-links__twitter"></a>
+                <a href="http://youtube.com" class="social-links__icon social-links__youtube"></a>
+                <a href="http://habrahabr.ru" class="social-links__icon social-links__habrahabr"></a>
+                <a href="http://instagram.com" class="social-links__icon social-links__instagram"></a>
+            </div>
+            <div class="main__footer__footer">
+                <a href="/help" class="text main__footer__footer__help-link">Помощь</a>
+                <a href="/feedback" class="text main__footer__footer__feedback-link">Обратная связь</a>
+                <span class="text main__footer__footer__copyright">&copy; 2017  ООО «Яндекс»</span>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
 
