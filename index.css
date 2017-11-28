@@ -136,14 +136,6 @@ main
     padding-top: 105px;
 }
 
-.people_select div
-{
-    position: absolute;
-    width: 138px;
-    height: 200px;
-    display: inline-block;
-}
-
 .mans
 {
     position: absolute;
@@ -171,6 +163,8 @@ input[id='george']:checked ~ section .george .people_description
     border-radius: 100%;
     border: 3px solid #fff;
     position: absolute;
+    width: 150px;
+    height: 150px;
     top: -9px;
     left: -9px;
     display: none;
