@@ -1,1 +1,649 @@
 
+@font-face
+{
+    font-family: YandexSans;
+    src: url(YandexSans.ttf);
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+}
+
+.artboard
+{
+    width: 993px;
+    height: 4634px;
+    margin: 149px auto 847px;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.header
+{
+    height: 551px;
+    border-bottom: 2px solid #000;
+}
+
+.bg
+{
+    width: 1416px;
+    height: 788px;
+    object-fit: contain;
+    position: absolute;
+    top: 70px;
+    left: -409px;
+}
+
+.mainarticle
+{
+    height: 392px;
+    border-bottom: 2px solid #000;
+}
+
+.videocontent polygon
+{
+    stroke-width: 2;
+}
+
+.videodesr
+{
+    width: 188px;
+    height: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+    position: absolute;
+    left: 640px;
+    top: 746px;
+}
+
+.rectwrapper
+{
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px #000;
+    position: absolute;
+    left: 640px;
+    top: 650px;
+}
+
+.play
+{
+    width: 27px;
+    height: 37px;
+    background-color: #fff;
+    border: solid 2px #000;
+    position: absolute;
+    left: 699px;
+    top: 655px;
+}
+
+p
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.text
+{
+    width: 450px;
+    height: 236px;
+    text-align: left;
+    position: absolute;
+    left: 93px;
+    top: 633px;
+}
+
+.maincontent
+{
+    height: 3208px;
+    border-bottom: 2px solid #000;
+}
+
+.toppeople .toppeopleimg
+{
+    left: 147px;
+    top: 979px;
+    height: 235px;
+    width: 702px;
+    position: absolute;
+    object-fit: contain;
+}
+
+.bottompeople .bottompeopleimg
+{
+    left: 147px;
+    bottom: 518px;
+    height: 235px;
+    width: 702px;
+    position: absolute;
+    object-fit: contain;
+}
+
+.toppeople .firstpersonname,
+.toppeople .secondpersonname,
+.toppeople .thirdpersonname
+{
+    height: 13px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    top: 1181px;
+}
+
+.toppeople .firstpersonname
+{
+    width: 59px;
+    left: 238px;
+}
+
+.toppeople .secondpersonname
+{
+    width: 123px;
+    left: 435px;
+}
+
+.toppeople .thirdpersonname
+{
+    height: 16px;
+    width: 142px;
+    left: 660px;
+}
+
+.bottompeople .firstpersonname,
+.bottompeople .secondpersonname,
+.bottompeople .thirdpersonname
+{
+    height: 13px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    bottom: 536px;
+}
+
+.bottompeople .firstpersonname
+{
+    width: 59px;
+    left: 238px;
+}
+
+.bottompeople .secondpersonname
+{
+    width: 123px;
+    left: 435px;
+}
+
+.bottompeople .thirdpersonname
+{
+    height: 16px;
+    width: 142px;
+    left: 660px;
+}
+
+.toppeople .firstpersonopinion,
+.toppeople .secondpersonopinion,
+.toppeople .thirdpersonopinion
+{
+    width: 285px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    top: 1228px;
+}
+
+.toppeople .firstpersonopinion
+{
+    left: 120px;
+}
+
+.toppeople .secondpersonopinion
+{
+    left: 350px;
+}
+
+.toppeople .thirdpersonopinion
+{
+    left: 600px;
+}
+
+.path
+{
+    width: 757px;
+    height: 2453px;
+    object-fit: contain;
+    position: absolute;
+    top: 1379px;
+    left: 94px;
+}
+
+/* тексты про Юру */
+
+.firsttextfirstitem
+{
+    width: 273px;
+    height: 64px;
+    text-align: center;
+    position: absolute;
+    top: 1425px;
+    left: 96px;
+}
+
+.firsttextseconditem
+{
+    width: 280px;
+    height: 64px;
+    text-align: center;
+    position: absolute;
+    top: 1540px;
+    left: 92px;
+}
+
+.secondtextfirstitem
+{
+    width: 280px;
+    height: 61px;
+    text-align: center;
+    position: absolute;
+    left: 569px;
+    top: 2230px;
+}
+
+.secondtextseconditem
+{
+    width: 280px;
+    height: 64px;
+    text-align: center;
+    position: absolute;
+    left: 569px;
+    bottom: 2200px;
+}
+
+.thirdtextfirstitem
+{
+    width: 292px;
+    height: 64px;
+    text-align: center;
+    position: absolute;
+    bottom: 1490px;
+    left: 80px;
+}
+
+.thirdtextseconditem
+{
+    width: 287px;
+    height: 64px;
+    text-align: center;
+    position: absolute;
+    bottom: 1390px;
+    left: 80px;
+}
+
+.notebook 
+{
+    width: 306px;
+    height: 434px;
+    object-fit: contain;
+    margin-left: 115px;
+    position: absolute;
+    top: 1476px;
+    left: 390px;
+    z-index: 2;
+}
+
+.phone
+{
+    width: 318px;
+    height: 384px;
+    object-fit: contain;
+    position: absolute;
+    top: 1710px;
+    left: -20px;
+}
+
+.pen
+{
+    width: 48px;
+    height: 233px;
+    object-fit: contain;
+    position: absolute;
+    top: 1710px;
+    left: 348px;
+}
+
+.ticket
+{
+    width: 454px;
+    height: 179px;
+    object-fit: contain;
+    position: absolute;
+    top: 1814px;
+    left: 406px;
+    z-index: 1;
+}
+
+.watch
+{
+    width: 130px;
+    height: 247px;
+    object-fit: contain;
+    position: absolute;
+    top: 1973px;
+    left: 484px;
+    z-index: 2;
+}
+
+.photo
+{
+    width: 227px;
+    height: 292px;
+    object-fit: contain;
+    position: absolute;
+    top: 1928px;
+    right: -71px;
+    z-index: 2;
+}
+
+.ipad
+{
+    width: 304px;
+    height: 453px;
+    object-fit: contain;
+    position: absolute;
+    top: 2269px;
+    left: 202px;
+}
+
+.palka
+{
+    width: 228px;
+    height: 622px;
+    object-fit: contain;
+    position: absolute;
+    top: 2269px;
+    left: 718px;
+    z-index: 2;
+}
+
+.mask
+{
+    width: 390px;
+    height: 223px;
+    object-fit: contain;
+    position: absolute;
+    top: 2506px;
+    left: 562px;
+    z-index: 1;
+}
+
+.cup
+{
+    width: 228px;
+    height: 303px;
+    object-fit: contain;
+    position: absolute;
+    top: 2638px;
+    left: 328px;
+}
+
+.iphone
+{
+    width: 148px;
+    height: 278px;
+    object-fit: contain;
+    position: absolute;
+    top: 2593px;
+    left: 44px;
+}
+
+.bag
+{
+    width: 475px;
+    height: 409px;
+    object-fit: contain;
+    position: absolute;
+    top: 2995px;
+    left: 440px;
+}
+
+.newspaper
+{
+    width: 318px;
+    height: 421px;
+    object-fit: contain;
+    position: absolute;
+    top: 3330px;
+    left: 91px;
+}
+
+.magazine
+{
+    width: 306px;
+    height: 411px;
+    object-fit: contain;
+    position: absolute;
+    top: 3441px;
+    right: -33px;
+}
+
+.logo-atom
+{
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    bottom: 243px;
+    left: 656px;
+}
+
+.textlogo-atom
+{
+    position: absolute;
+    left: 25px;
+    top: -5px;
+    font-size: 90px;
+    font-family: YandexSans;
+}
+
+.footer
+{
+    height: 435px;
+}
+
+.summary
+{
+    width: 439px;
+    height: 164px;
+    position: absolute;
+    left: 95px;
+    bottom: 200px;
+}
+
+.footerhelp,
+.footerfeedback,
+.footercopyright
+{
+    position: absolute;
+    bottom: 32px;
+}
+
+.footerfeedback
+{
+    left: 173px;
+}
+
+.footerhelp
+{
+    left: 95px;
+}
+
+.footercopyright
+{
+    left: 372px;
+}
+
+.logo
+{
+    position: absolute;
+    height: 92px;
+    width: 138px;
+    left: 440px;
+    opacity: .8;
+}
+
+.logo polyline
+{
+    stroke-width: 2;
+}
+
+.textlogo::first-letter
+{
+    color: #f00;
+}
+
+.textlogo
+{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 35px;
+    font-family: YandexSans;
+}
+
+.social
+{
+    height: 32px;
+    width: 192px;
+    position: absolute;
+    left: 92px;
+    bottom: 135px;
+    background: url('data:image/png;base64,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');
+}
+
+.yellowcircle
+{
+    height: 138px;
+    width: 138px;
+    position: absolute;
+    left: 190px;
+    top: 1023px;
+    border-radius: 7000px;
+    z-index: 2;
+}
+
+.pinkcircle
+{
+    height: 138px;
+    width: 138px;
+    position: absolute;
+    left: 425px;
+    top: 1023px;
+    border-radius: 7000px;
+    z-index: 2;
+}
+
+.bluecircle
+{
+    height: 138px;
+    width: 138px;
+    position: absolute;
+    left: 658px;
+    top: 1023px;
+    border-radius: 7000px;
+    z-index: 2;
+}
+
+.bluecircle:hover,
+.yellowcircle:hover,
+.pinkcircle:hover
+{
+    cursor: pointer;
+}
+
+.bluecircle:hover
+{
+    border: 5px solid #73c5f6;
+}
+
+.yellowcircle:hover
+{
+    border: 5px solid #ffe15d;
+}
+
+.pinkcircle:hover
+{
+    border: 5px solid #ff8384;
+}
+
+.firstpersonopinion,
+.secondpersonopinion,
+.thirdpersonopinion
+{
+    display: none;
+}
+
+input
+{
+    display: none;
+}
+
+input[id='yellow']:checked ~ .artboard .firstpersonopinion
+{
+    display: block;
+}
+
+input[id='yellow']:checked ~ .artboard 
+{
+    background-color: #ffe15d;
+}
+
+input[id='pink']:checked ~ .artboard .secondpersonopinion
+{
+    display: block;
+}
+
+input[id='pink']:checked ~ .artboard .textlogo-atom
+{
+    color: #ff8384;
+}
+
+input[id='yellow']:checked ~ .artboard .textlogo-atom
+{
+    color: #ffe15d;
+}
+
+input[id='blue']:checked ~ .artboard .textlogo-atom
+{
+    color: #73c5f6;
+}
+
+input[id='pink']:checked ~ .artboard
+{
+    background-color: #ff8384;
+}
+
+input[id='blue']:checked ~ .artboard .thirdpersonopinion
+{
+    display: block;
+}
+
+input[id='blue']:checked ~ .artboard
+{
+    background-color: #73c5f6;
+}
