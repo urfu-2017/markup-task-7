@@ -78,7 +78,7 @@ input[id='georgy']:checked ~ section .person__georgy .person__description
     width: 138px;
     height: 92px;
     left: calc(50% - 68px);
-
+    
 }
 
 .circles-img
@@ -127,6 +127,7 @@ h2
     margin-top: 0;
 }
 
+
 .icon
 {
     background-image: url(img/video-icon.svg);
@@ -156,13 +157,33 @@ h2
     cursor: pointer;
 }
 
+.icon-border
+{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.icon-border:hover
+{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.person__icon
+{
+    width: 138px;
+    height: 138px;
+    margin: 6px auto;
+}
+
 .person__photo
 {
     display: block;
     width: 138px;
     height: 138px;
     background-image: url(img/persons.png);
-    margin: 9px auto;
     cursor: pointer;
 }
 
@@ -183,6 +204,7 @@ h2
 
 .person__name
 {
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
