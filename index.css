@@ -8,14 +8,15 @@
 
 .logo
 {
+    margin-top: -70px;
     text-align: center;
     opacity: .5;
 }
 
 h1
 {
-    position: absolute;
-    left: 967px;
+    position: relative;
+    left: 455px;
     font-size: 1.7rem;
 }
 
@@ -163,8 +164,8 @@ header
 
 .info
 {
-    margin-top: -60px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: -70px;
     width: 290px;
     height: 64px;
     font-family: Arial;
@@ -362,6 +363,7 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 footer
 {
+    height: 359px;
     border-bottom: solid 3px;
 }
 
@@ -376,4 +378,52 @@ footer
     line-height: 1.5;
     text-align: left;
     color: #000;
+}
+
+.foot_logo
+{
+    margin-left: 650px;
+    margin-top: -170px;
+}
+
+.foot_logo > span
+{
+    position: relative;
+    margin-left: -275px;
+    top: -78px;
+    font-size: 4rem;
+}
+
+.sprite > .facebook
+{
+    margin-left: 96px;
+}
+
+.sprite > img
+{
+    margin-top: 24px;
+    margin-left: 8px;
+    margin-bottom: 92px;
+    
+}
+
+.help
+{
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 96px;
+}
+
+.callback
+{
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.footer
+{
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 80px;
 }
