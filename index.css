@@ -1,1 +1,527 @@
+input
+{
+    display: none;
+}
 
+.youngB:checked ~ main
+{
+    background-color: #ffe05d;
+}
+
+.adultB:checked ~ main
+{
+    background-color: #73c4f6;
+}
+
+.seniorB:checked ~ main
+{
+    background-color: #ff8283;
+}
+
+.yandexLogo
+{
+    height: 0;
+    position: relative;
+    left: 425px;
+    font-size: 30px;
+}
+
+.yandexLogo .logo
+{
+    position: absolute;
+    left: 19px;
+    top: -19px;
+}
+
+.yandexLogo polygon
+{
+    stroke-width: 2;
+    fill-opacity: .6;
+}
+
+.bg
+{
+    top: 92px;
+    z-index: 1;
+    right: 415px;
+    position: relative;
+}
+
+header
+{
+    z-index: 2;
+    left: 150px;
+    top: -390px;
+    position: relative;
+    width: 710px;
+    height: 86px;
+    font-family: Arial;
+    font-size: 44px;
+    text-align: center;
+    line-height: 1.09;
+}
+
+.description
+{
+    width: inherit;
+    position: relative;
+    top: -270px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    height: 394px;
+}
+
+.descriptionText
+{
+    z-index: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    top: 70px;
+    right: 470px;
+    width: 450px;
+    height: 236px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.videoRect
+{
+    margin: 0;
+    position: absolute;
+    right: 180px;
+    top: 70px;
+    width: 138px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.videoRect polygon
+{
+    stroke-width: 1;
+}
+
+.videoRectDescr
+{
+    position: absolute;
+    top: 165px;
+    right: 133px;
+    width: 190px;
+    height: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.triangle
+{
+    z-index: 1;
+    position: absolute;
+    right: 55px;
+    top: 20px;
+}
+
+.personOnHover
+{
+    visibility: hidden;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: -9px;
+    transform: translateX(-10px);
+}
+
+.personOnHover circle
+{
+    stroke-width: 3;
+    fill-opacity: 0;
+}
+
+.young:hover .personOnHover
+{
+    visibility: visible;
+}
+
+.adult:hover .personOnHover
+{
+    visibility: visible;
+}
+
+.seniorCitizen:hover .personOnHover
+{
+    visibility: visible;
+}
+
+.people
+{
+    top: -170px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.people .name
+{
+    display: block;
+    width: 140px;
+    position: relative;
+    top: 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+}
+
+.people .personInfo
+{
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+    transform: translateX(-70px);
+    margin-top: 30px;
+    width: 290px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.youngB:checked ~ main .young .personInfo
+{
+    visibility: visible;
+}
+
+.adultB:checked ~ main .adult .personInfo
+{
+    visibility: visible;
+}
+
+.seniorB:checked ~ main .seniorCitizen .personInfo
+{
+    visibility: visible;
+}
+
+.personIcon
+{
+    opacity: .99;
+    height: 138px;
+    width: 138px;
+}
+
+.path
+{
+    left: 118px;
+    position: relative;
+    top: 40px;
+    margin: auto;
+}
+
+.pathImg
+{
+    position: absolute;
+    z-index: 0;
+}
+
+.top
+{
+    position: relative;
+    left: -120px;
+    width: 993px;
+    height: 860px;
+}
+
+.topText
+{
+    position: relative;
+    left: 120px;
+    top: 80px;
+    width: 280px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.notebook
+{
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left: 512px;
+}
+
+.phone
+{
+    left: -20px;
+    top: 330px;
+    position: absolute;
+}
+
+.pen
+{
+    left: 340px;
+    top: 330px;
+    position: absolute;
+}
+
+.ticket
+{
+    left: 434px;
+    top: 435px;
+    position: absolute;
+}
+
+.watch
+{
+    z-index: 1;
+    left: 510px;
+    top: 595px;
+    position: absolute;
+}
+
+.photo
+{
+    z-index: 1;
+    right: -55px;
+    top: 550px;
+    position: absolute;
+}
+
+.mid
+{
+    position: relative;
+    left: -120px;
+    width: 993px;
+    height: 725px;
+}
+
+.midText
+{
+    top: 15px;
+    position: absolute;
+    right: 120px;
+    width: 280px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.iphone
+{
+    top: 360px;
+    left: 45px;
+    position: absolute;
+}
+
+.ipad
+{
+    top: 35px;
+    left: 210px;
+    position: absolute;
+}
+
+.cup
+{
+    top: 400px;
+    left: 335px;
+    position: absolute;
+}
+
+.mask
+{
+    top: 272px;
+    right: 8px;
+    position: absolute;
+}
+
+.palka
+{
+    z-index: 1;
+    top: 35px;
+    right: 15px;
+    position: absolute;
+}
+
+.bot
+{
+    position: relative;
+    left: -120px;
+    width: 993px;
+    height: 890px;
+}
+
+.botText
+{
+    left: 115px;
+    top: 80px;
+    position: absolute;
+    width: 280px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.bag
+{
+    top: 30px;
+    right: 50px;
+    position: absolute;
+}
+
+.newspaper
+{
+    top: 360px;
+    left: 120px;
+    position: absolute;
+}
+
+.magazine
+{
+    top: 480px;
+    right: -40px;
+    position: absolute;
+}
+
+.peopleFooter
+{
+    position: relative;
+    left: -120px;
+    top: 30px;
+    padding-bottom: 50px;
+}
+
+.footerInfo
+{
+    border-top: 2px solid #000;
+    top: 80px;
+    position: relative;
+}
+
+.footerText
+{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 440px;
+    font-family: Arial;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.75;
+}
+
+.footerText p
+{
+    margin-top: 0;
+}
+
+.logo
+{
+    position: absolute;
+    top: 80px;
+    right: 180px;
+    width: 102px;
+    height: 102px;
+}
+
+.youngB:checked ~ main .logo text
+{
+    fill: #ffe05d;
+}
+
+.adultB:checked ~ main .logo text
+{
+    fill: #73c4f6;
+}
+
+.seniorB:checked ~ main .logo text
+{
+    fill: #ff8283;
+}
+
+.logo text
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+}
+
+.spriteShare
+{
+    background-image: url('data:image/png;base64,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');
+    top: 300px;
+    left: 100px;
+    position: absolute;
+    width: 204px;
+    height: 34px;
+}
+
+.facebook
+{
+    background-position: -5px -5px;
+}
+
+.vkontakte
+{
+    background-position: -39px -5px;
+}
+
+.twitter
+{
+    background-position: -73px -5px;
+}
+
+.youtube
+{
+    background-position: -107px -5px;
+}
+
+.habra
+{
+    background-position: -141px -5px;
+}
+
+.instagram
+{
+    background-position: -175px -5px;
+}
+
+.finalFooter
+{
+    width: 410px;
+    top: 390px;
+    left: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.yandexFooter
+{
+    margin-left: 30px;
+}
+
+main
+{
+    border: solid;
+    height: 4630px;
+    width: 993px;
+    margin: auto;
+}
+
+.facebook:hover
+{
+    background-position: 0 -26px;
+}
