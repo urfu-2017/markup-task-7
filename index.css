@@ -1,1 +1,167 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    height: 20000px;
+}
 
+main
+{
+    width: 50%;
+    background-color: #6698ff;
+}
+
+.bg
+{
+    width: 150%;
+    text-align: right;
+}
+
+.yandex
+{
+    width: 100%;
+    margin-left: -45%;
+}
+
+.line
+{
+    margin-top: -30%;
+}
+
+.top
+{
+    width: 100px;
+    margin-left: 43%;
+    height: 40px;
+    position: relative;
+    background: rgba(255, 255, 255, .6);
+    font-size: 20px;
+    text-align: center;
+}
+
+.top:after
+{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #fff;
+    opacity: .6;
+}
+
+.yand-nadp
+{
+    font-size: 20px;
+}
+
+.top:first-letter
+{
+    color: #f00;
+}
+
+.what-if
+{
+    width: 95%;
+    margin-top: -20%;
+    padding-left: 2%;
+    font-family: Arial;
+    font-size: 44px;
+    line-height: 1.09;
+    text-align: center;
+}
+
+.internet
+{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.text
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.site
+{
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-around;
+    margin-bottom: 40%;
+}
+
+.rectangle
+{
+    margin-top: 15%;
+    margin-right: 10%;
+    width: 80%;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle
+{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 40px solid white;
+    border-bottom: 20px solid transparent;
+}
+
+.personage-s
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.description
+{
+    position: absolute;
+    width: 20%;
+    text-align: center;
+}
+
+.personages
+{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.class
+{
+    width: 25%;
+    overflow: hidden;
+}
+
+.two
+{
+    margin-left: -105%;
+}
+
+.three
+{
+    margin-left: -210%;
+}
+
+.delete-point
+{
+    display: none;
+}
+
+hr
+{
+    size: 1px;
+    color: black;
+}
