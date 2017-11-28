@@ -1,1 +1,427 @@
+body
+{
+    width: 954px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
 
+.first-block
+{
+    height: 551px;
+}
+
+[id='max']:checked ~ main .block
+{
+    background-color: #ffe15c;
+}
+
+[id='alex']:checked ~ main .block
+{
+    background-color: #72c6f6;
+}
+
+[id='georg']:checked ~ main .block
+{
+    background-color: #ff8384;
+}
+
+.person
+{
+    margin-top: 8px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 138px;
+    height: 138px;
+    cursor: pointer;
+}
+
+.person2
+{
+    top: 2805px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 138px;
+    height: 138px;
+    cursor: pointer;
+}
+
+.max-sprite
+{
+    background-image: url(image/max.png);
+}
+
+.alex-sprite
+{
+    background-image: url(image/alex.png);
+}
+
+.georg-sprite
+{
+    background-image: url(image/georg.png);
+}
+
+.person-info,
+input
+{
+    display: none;
+}
+
+.text-first
+{
+    text-align: center;
+    top: 280px;
+    height: 86px;
+    margin: auto;
+    width: 679px;
+    position: relative;
+    font-size: 44px;
+    z-index: 15;
+}
+
+.icon
+{
+    width: 138px;
+    height: 92px;
+    opacity: .6;
+    background-color: #fff;
+    border: solid 2px #010202;
+}
+
+.Artboard-1 
+{
+    height: 5630px;
+}
+
+.web-yandex
+{
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: -400px;
+}
+
+.block 
+{
+    position: relative;
+    border-width: 0 2px 2px;
+    border-style: solid;
+    border-color: #000;
+    box-sizing: border-box;
+}
+
+.second-block
+{
+    height: 392px;
+    line-height: 1.5;
+    padding: 64px 109px;
+}
+
+.atom1
+{
+    z-index: 10;
+    position: absolute;
+    width: 450px;
+}
+
+.atom2
+{
+    position: absolute;
+    top: 249px;
+    width: 450px;
+}
+
+.story
+{
+    line-height: 1.5;
+    text-align: center;
+    position: absolute;
+    font-size: 16px;
+    margin: auto;
+}
+
+.text0
+{
+    top: 281px;
+    left: 574px;
+}
+
+.text1
+{
+    width: 273px;
+    height: 64px;
+    left: 96px;
+    top: 518px;
+}
+
+.text2
+{
+    width: 273px;
+    height: 64px;
+    left: 92px;
+    top: 618px;
+}
+
+.text3
+{
+    width: 280px;
+    height: 61px;
+    left: 569px;
+    top: 1321px;
+}
+
+.text4
+{
+    width: 280px;
+    height: 64px;
+    left: 569px;
+    top: 1420px;
+}
+
+.text5
+{
+    width: 291px;
+    height: 64px;
+    left: 80px;
+    top: 2117px;
+}
+
+.text6
+{
+    width: 287px;
+    height: 64px;
+    left: 82px;
+    top: 2216px;
+}
+
+.path 
+{
+    position: absolute;
+    top: 432px;
+    left: 116px;
+    width: 757px;
+    height: 2453px;
+    background-size: cover;
+}
+
+.text-style-1 
+{
+    line-height: 1.75;
+    width: 450px;
+}
+
+.story-text
+{
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    width: 280px;
+}
+
+.Layer-0 
+{
+    text-align: center;
+    background-color: #fecf33;
+    width: 993px;
+    height: 4634px;
+}
+
+.Layer-156 
+{
+    width: 1200px;
+    height: 5397px;
+}
+
+.Rectangle-2 
+{
+    width: 138px;
+    height: 92px;
+    opacity: .6;
+    background-color: #fff;
+    border: solid 2px #010202;
+}
+
+.max
+{
+    position: relative;
+    top: 80px;
+    left: 191px;
+}
+
+.alex
+{
+    position: relative;
+    top: 80px;
+    left: 288px;
+}
+
+.georg
+{
+    position: relative;
+    top: 80px;
+    left: 364px;
+}
+
+.notebook
+{
+    position: absolute;
+    left: 484px;
+    top: 509px;
+    z-index: 2;
+}
+
+.phone
+{
+    position: absolute;
+    top: 761px;
+    left: -20px;
+}
+
+.pen
+{
+    position: absolute;
+    top: 761px;
+    left: 328px;
+}
+
+.ticket
+{
+    position: absolute;
+    left: 406px;
+    top: 867px;
+}
+
+.photo
+{
+    position: absolute;
+    left: 796px;
+    top: 981px;
+}
+
+.watch
+{
+    position: absolute;
+    left: 484px;
+    top: 1026px;
+}
+
+.ipad
+{
+    position: absolute;
+    left: 202px;
+    top: 1322px;
+}
+
+.iphone
+{
+    position: absolute;
+    left: 44px;
+    top: 1646px;
+}
+
+.cup
+{
+    position: absolute;
+    left: 358px;
+    top: 1691px;
+}
+
+.mask
+{
+    position: absolute;
+    left: 562px;
+    top: 1559px;
+}
+
+.palka
+{
+    position: absolute;
+    top: 1322px;
+    left: 718px;
+}
+
+.newspaper
+{
+    position: absolute;
+    top: 2382px;
+    left: 91px;
+}
+
+.magazine
+{
+    position: absolute;
+    top: 2494px;
+    left: 679px;
+}
+
+.bag
+{
+    position: absolute;
+    top: 2048px;
+    left: 440px;
+}
+
+.bg 
+{
+    width: 1086px;
+    height: 5630px;
+}
+
+.third-block
+{
+    height: 3208px;
+    padding-top: 70px;
+}
+
+.persons
+{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.fours-block
+{
+    height: 437px;
+    padding: 84px 93px 0;
+}
+
+.p1
+{
+    line-height: 1.5;
+    position: relative;
+    width: 439px;
+}
+
+.p2
+{
+    position: relative;
+    width: 439px;
+}
+
+.foot
+ {
+    display: inline;
+    position: relative;
+    margin-right: 80px;
+    top: 108px;
+    bottom: 5px;
+}
+
+.left-foot
+{
+    display: inline;
+    top: 108px;
+    position: relative;
+    margin-right: 80px;
+}
