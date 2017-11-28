@@ -26,22 +26,17 @@ input
     font-size: 30px;
 }
 
+.yandexLogo .logo
+{
+    position: absolute;
+    left: 19px;
+    top: -19px;
+}
+
 .yandexLogo polygon
 {
     stroke-width: 2;
     fill-opacity: .6;
-}
-
-.yandexLogoText
-{
-    position: relative;
-    left: 24px;
-    top: -75px;
-}
-
-.yandexLogoText::first-letter
-{
-    color: #f00;
 }
 
 .bg
@@ -166,7 +161,9 @@ header
     top: -170px;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 .people .name
@@ -397,17 +394,16 @@ header
 
 .peopleFooter
 {
-    width: 993px;
     position: relative;
-    left: -118px;
+    left: -120px;
     top: 30px;
     padding-bottom: 50px;
-    border-bottom: 2px solid #000;
 }
 
 .footerInfo
 {
-    top: 40px;
+    border-top: 2px solid #000;
+    top: 80px;
     position: relative;
 }
 
