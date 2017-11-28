@@ -114,7 +114,7 @@ main
 
 .persons-slide
 {
-    height: 500px;
+    height: 440px;
     text-align: center;
     box-sizing: border-box;
     border: 2px solid black;
@@ -176,6 +176,31 @@ main
     position: absolute;
     visibility: hidden;
     font-family: Arial, sans-serif;
+}
+
+.path-slide
+{
+    border: 2px solid black;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.path-text
+{
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    position: absolute;
+    font-family: Arial, sans-serif;
+}
+
+.path-text-first
+{
+    top: 75px;
+    left: 95px;
 }
 
 .footer-side
