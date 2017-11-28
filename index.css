@@ -9,9 +9,10 @@ body
 
 main
 {
-    background: #ffe05e;
-    display: flex;
-    justify-content: center;
+    width: 952px;
+    background-color: #ffe05e;
+    margin: 0 auto;
+    border: 2px solid black;
 }
 
 input
@@ -30,10 +31,10 @@ label
 
 .blue:checked ~ main
 {
-    background-color: #59c5fa;
+    background-color: #72c6f7;
 }
 
-.blue:checked ~ main > .main-box > div > .persons > .person-1 > .a-text
+.blue:checked ~ main > div > .persons > .person-1 > .a-text
 {
     opacity: 1;
 }
@@ -43,7 +44,7 @@ label
     background-color: #ffe05e;
 }
 
-.yellow:checked ~ main > .main-box > div > .persons > .person-2 > .a-text
+.yellow:checked ~ main > div > .persons > .person-2 > .a-text
 {
     opacity: 1;
 }
@@ -53,51 +54,34 @@ label
     background-color: #ff747b;
 }
 
-.red:checked ~ main > .main-box > div > .persons > .person-3 > .a-text
+.red:checked ~ main > div > .persons > .person-3 > .a-text
 {
     opacity: 1;
-}
-
-.main-box
-{
-    width: 952px;
-    text-align: center;
-    position: relative;
 }
 
 .hello-box
 {
     position: relative;
     height: 520px;
-    margin-top: 40px;
+    padding-top: 40px;
+    border-bottom: 2px solid black;
 }
 
-.yandex-label 
+.svgYandex
 {
-    height: 52px;
-    width: 138px;
-    background: rgba(255, 255, 255, .6);
+    opacity: .6;
     position: absolute;
-    top: -40px;
-    left: 384px;
+    top: 0;
+    left: 410px;
+    text-align: center;
 }
 
 .ya-logo
 {
-    width: 90%;
-}
-
-.yandex-label:before 
-{
-    content: '';
-    height: 0;
-    width: 0;
     position: absolute;
-    left: 0;
-    top: 52px;
-    border-top: 35px solid rgba(255, 255, 255, .6);
-    border-left: 69px solid transparent;
-    border-right: 69px solid transparent;
+    top: -8px;
+    left: 416px;
+    width: 128px;
 }
 
 .bg
@@ -106,7 +90,7 @@ label
     height: 788px;
     object-fit: contain;
     position: absolute;
-    left: -452px;
+    left: -432px;
     background: transparent;
 }
 
@@ -118,7 +102,7 @@ label
     text-align: center;
     font-size: 44px;
     position: absolute;
-    left: 44px;
+    left: 64px;
     top: 316px;
     z-index: 10;
 }
@@ -129,8 +113,10 @@ label
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 332px;
+    height: 300px;
     padding-top: 60px;
+    border-bottom: 2px solid black;
+    margin-bottom: 64px;
 }
 
 .history-today
@@ -138,6 +124,11 @@ label
     width: 450px;
     height: 236px;
     text-align: justify;
+}
+
+.history-today > p:first-of-type
+{
+    margin-top: 0;
 }
 
 .video-border  
@@ -190,6 +181,7 @@ label
 .a-text
 {
     opacity: 0;
+    text-align: center;
 }
 
 .hover-circle:hover
@@ -405,9 +397,11 @@ label
 
 .footer
 {
-    padding-top: 120px;
+    padding-top: 64px;
+    margin-top: 32px;
     position: relative;
-    left: 48px;
+    border-top: 2px solid black;
+    padding-left: 64px;
 }
 
 .footer-about
@@ -431,7 +425,7 @@ label
 {
     width: 444px;
     margin-top: 92px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
     text-align: left;
 }
 
