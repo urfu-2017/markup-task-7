@@ -1,1 +1,448 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font: 16px Arial;
+    line-height: 1.5;
+}
 
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.header_block 
+{
+    margin-top: 20px;
+    height: 553px;
+}
+
+.header_block p
+{
+    position: absolute;
+    width: 679px;
+    height: 86px;
+    font-size: 40px;
+    line-height: 1.09;
+    text-align: center;
+    top: 373px;
+    left: 110px;
+    z-index: 2;
+    font-weight: normal;
+    margin: 0;
+}
+
+.discription
+{
+    height: 394px;
+}
+
+.header_block img
+{
+    position: absolute;
+    left: -435px;
+    top: 70px;
+    z-index: 1;
+}
+
+.logo_border
+{
+    position: absolute;
+    left: 408px;
+    opacity: .6;
+}
+
+.logo_border polyline
+{
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.logo_text
+{
+    position: absolute;
+    font-size: 2em;
+    left: 423px;
+    top: 20px;
+}
+
+.logo_text:first-letter
+{
+    color: #f00;
+}
+
+.block
+{
+    position: relative;
+    width: 954px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+.man_input
+{
+    display: none;
+}
+
+.discription_text
+{
+    width: 450px;
+    height: 236px;
+    position: absolute;
+    z-index: 2;
+    top: 71px;
+    left: 92px;
+}
+
+.video_logo_border
+{
+    position: absolute;
+    left: 638px;
+    top: 73px;
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.video_logo_svg
+{
+    position: absolute;
+    left: 697px;
+    top: 96px;
+}
+
+.video_description
+{
+    position: absolute;
+    left: 638px;
+    top: 167px;
+    width: 187px;
+    height: 15px;
+}
+
+.people
+{
+    height: 3210px;
+}
+
+.people_select
+{
+    width: 100%;
+    height: 300px;
+    padding-top: 105px;
+}
+
+.people_select div
+{
+    position: absolute;
+    width: 138px;
+    height: 200px;
+    display: inline-block;
+}
+
+.mans
+{
+    position: absolute;
+    top: 2985px;
+}
+
+.man
+{
+    position: absolute;
+    width: 138px;
+    height: 200px;
+    display: inline-block;
+}
+
+.man:hover .border,
+input[id='maxim']:checked ~ section .maxim .people_description,
+input[id='alexey']:checked ~ section .alexey .people_description,
+input[id='george']:checked ~ section .george .people_description
+{
+    display: block;
+}
+
+.border
+{
+    border-radius: 100%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    display: none;
+}
+
+.people_description
+{
+    width: 300px;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: 35px;
+    display: none;
+}
+
+.maxim
+{
+    left: 171px;
+}
+
+.alexey
+{
+    left: 407px;
+}
+
+.george
+{
+    left: 644px;
+}
+
+.sprite_people
+{
+    z-index: 1;
+    position: relative;
+    display: block;
+    height: 138px;
+    width: 138px;
+    background: url(img/faces-sprite.png) no-repeat;
+}
+
+.sprite_alexey
+{
+    background-position: -138px 0;
+}
+
+.sprite_george
+{
+    background-position: -276px 0;
+}
+
+.path
+{
+    position: absolute;
+    left: 94px;
+    top: 490px;
+}
+
+input[id='maxim']:checked ~ .block
+{
+    background-color: #ffe05e;
+}
+
+input[id='alexey']:checked ~ .block
+{
+    background-color: #67bef5;
+}
+
+input[id='george']:checked ~ .block
+{
+    background-color: #ff7779;
+}
+
+.logo_atom
+{
+    position: absolute;
+    top: 84px;
+    left: 655px;
+}
+
+.logo_atom text
+{
+    font-size: 70px;
+}
+
+.footer_block
+{
+    height: 437px;
+    border-bottom: 2px solid;
+}
+
+.social
+{
+    position: absolute;
+    left: 96px;
+    bottom: 139px;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 32px;
+    left: 96px;
+}
+
+.help,
+.os
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.os:hover,
+.help:hover
+{
+    color: #852a26;
+}
+
+.help
+{
+    margin-right: 18px;
+}
+
+.os
+{
+    margin-right: 80px;
+}
+
+.name
+{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.path
+{
+    position: absolute;
+    left: 94px;
+    top: 490px;
+}
+
+.text
+{
+    position: absolute;
+    width: 280px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.text_one
+{
+    top: 565px;
+    left: 94px;
+}
+
+.notebook
+{
+    position: absolute;
+    left: 484px;
+    top: 565px;
+    z-index: 1;
+}
+
+.phone
+{
+    position: absolute;
+    left: -23px;
+    top: 819px;
+}
+
+.pen
+{
+    position: absolute;
+    top: 819px;
+    left: 327px;
+}
+
+.ticket
+{
+    position: absolute;
+    top: 923px;
+    left: 405px;
+}
+
+.watch
+{
+    position: absolute;
+    top: 1082px;
+    left: 482px;
+    z-index: 1;
+}
+
+.photo
+{
+    position: absolute;
+    left: 795px;
+    top: 1037px;
+}
+
+.text_two
+{
+    left: 568px;
+    top: 1360px;
+}
+
+.ipad
+{
+    position: absolute;
+    top: 1380px;
+    left: 201px;
+}
+
+.palka
+{
+    position: absolute;
+    top: 1378px;
+    left: 717px;
+    z-index: 1;
+}
+
+.mask
+{
+    position: absolute;
+    top: 1617px;
+    left: 561px;
+}
+
+.iphone
+{
+    position: absolute;
+    top: 1700px;
+    left: 44px;
+}
+
+.cup
+{
+    position: absolute;
+    top: 1749px;
+    left: 327px;
+    z-index: 1;
+}
+
+.text_three
+{
+    left: 80px;
+    top: 2155px;
+}
+
+.bag
+{
+    position: absolute;
+    left: 440px;
+    top: 2106px;
+}
+
+.newspaper
+{
+    position: absolute;
+    left: 91px;
+    top: 2441px;
+}
+
+.magazine
+{
+    position: absolute;
+    left: 678px;
+    top: 2550px;
+}
+
+.footer_text
+{
+    position: absolute;
+    left: 95px;
+    top: 84px;
+    width: 442px;
+}
