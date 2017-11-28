@@ -1,1 +1,381 @@
+body
+{
+    margin: 0 auto;
+}
 
+main
+{
+    width: 958px;
+    margin: 50px auto;
+    border: 1px solid #000;
+    height: 4650px;
+}
+
+.header
+{
+    position: relative;
+    border: 1px solid #000;
+    height: 551px;
+}
+
+h1
+{
+    text-align: center;
+    font-family: Arial, serif;
+    font-size: 40px;
+    position: absolute;
+    left: 120px;
+    top: 350px;
+    z-index: 3;
+    font-weight: 100;
+    width: 679px;
+}
+
+.bg
+{
+    position: absolute;
+    left: -428px;
+    top: 70px;
+}
+
+.logo
+{
+    position: absolute;
+    left: 420px;
+}
+
+.information
+{
+    position: relative;
+    border: 1px solid #000;
+    height: 450px;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5
+{
+    font-family: Arial, serif;
+}
+
+.text2,
+.text3,
+.text4
+{
+    text-align: center;
+}
+
+.text1
+{
+    position: absolute;
+    left: 95px;
+    top: 50px;
+    margin-bottom: 30px;
+    width: 450px;
+}
+
+.text2
+{
+    position: absolute;
+    width: 280px;
+    left: 94px;
+    top: 450px;
+}
+
+.text3
+{
+    position: absolute;
+    width: 280px;
+    left: 600px;
+    top: 1240px;
+}
+
+.text4
+{
+    position: absolute;
+    width: 292px;
+    left: 100px;
+    top: 2050px;
+}
+
+.text5
+{
+    position: absolute;
+    width: 439px;
+    left: 100px;
+    top: 40px;
+}
+
+p
+{
+    margin-top: 40px;
+}
+
+.main-data
+{
+    position: relative;
+    border: 1px solid #000;
+    height: 3200px;
+}
+
+.maxim-data,
+.maxim-switcher
+{
+    left: 93px;
+}
+
+.alexey-data,
+.alexey-switcher
+{
+    left: 328px;
+}
+
+.georgy-data,
+.georgy-switcher
+{
+    left: 562px;
+}
+
+.maxim-data,
+.alexey-data,
+.georgy-data,
+.maxim-switcher,
+.alexey-switcher,
+.georgy-switcher
+{
+    position: absolute;
+    width: 285px;
+    text-align: center;
+}
+
+.maxim-data,
+.alexey-data,
+.georgy-data
+{
+    top: 50px;
+}
+
+.maxim-switcher,
+.alexey-switcher,
+.georgy-switcher
+{
+    top: 2950px;
+}
+
+.name
+{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.description
+{
+    display: none;
+    margin: 20px 0;
+}
+
+input[id='maxim-info']:checked ~ main
+{
+    background: rgb(114,197,246);
+}
+
+input[id='alexey-info']:checked ~ main
+{
+    background: rgb(255,131,132);
+}
+
+input[id='georgy-info']:checked ~ main
+{
+    background: rgb(255,255,92);
+}
+
+input[id='maxim-info']:checked ~ main .maxim-data .description,
+input[id='alexey-info']:checked ~ main .alexey-data .description,
+input[id='georgy-info']:checked ~ main .georgy-data .description
+{
+    display: block;
+}
+
+input
+{
+    display: none;
+}
+
+.path
+{
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+
+.phone
+{
+    position: absolute;
+    top: 750px;
+    left: -20px;
+}
+
+.notebook
+{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    z-index: 1;
+}
+
+.pen
+{
+    position: absolute;
+    top: 750px;
+    left: 330px;
+}
+
+.ticket
+{
+    position: absolute;
+    top: 850px;
+    left: 424px;
+}
+
+.watch
+{
+    position: absolute;
+    top: 1010px;
+    left: 500px;
+    z-index: 1;
+}
+
+.photo
+{
+    position: absolute;
+    top: 970px;
+    left: 815px;
+}
+
+.ipad
+{
+    position: absolute;
+    top: 1300px;
+    left: 200px;
+}
+
+.iphone
+{
+    position: absolute;
+    top: 1600px;
+    left: 30px;
+}
+
+.cup
+{
+    position: absolute;
+    top: 1670px;
+    left: 325px;
+    z-index: 1;
+}
+
+.mask
+{
+    position: absolute;
+    top: 1525px;
+    left: 565px;
+}
+
+.palka
+{
+    position: absolute;
+    z-index: 1;
+    top: 1290px;
+    left: 720px;
+}
+
+.bag
+{
+    position: absolute;
+    top: 2015px;
+    left: 450px;
+}
+
+.newspaper
+{
+    position: absolute;
+    top: 2350px;
+    left: 100px;
+}
+
+.magazine
+{
+    position: absolute;
+    top: 2455px;
+    right: -35px;
+}
+
+.footer
+{
+    position: relative;
+}
+
+.social-networks
+{
+    position: absolute;
+    left: 98px;
+    top: 270px;
+}
+
+.social-networks a:not(:last-child)
+{
+    padding-right: 5px;
+}
+
+.social-networks a
+{
+    text-decoration: none;
+}
+
+.basement
+{
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+
+.basement div
+{
+    display: inline-block;
+}
+
+.help
+{
+    margin-right: 15px;
+}
+
+.yandex
+{
+    margin-left: 100px;
+}
+
+.circle1,
+.circle2
+{
+    fill: none;
+    stroke: #fff;
+    stroke-width: 5px;
+}
+
+.maxim-data label:hover .circle1,
+.georgy-data label:hover .circle1,
+.alexey-data label:hover .circle1
+{
+    display: block;
+}
+
+.circle1
+{
+    left: 43px;
+    display: none;
+    position: absolute;
+    top: -30px;
+    z-index: 1;
+}
