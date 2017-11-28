@@ -44,11 +44,25 @@ h1
     left: 420px;
 }
 
+.yandex-logo
+{
+    position: absolute;
+    left: 445px;
+    top: 5px;
+}
+
 .information
 {
     position: relative;
     border: 1px solid #000;
     height: 450px;
+}
+
+.video
+{
+    position: absolute;
+    left: 650px;
+    top: 100px;
 }
 
 .text1,
@@ -356,7 +370,7 @@ input
     margin-left: 100px;
 }
 
-.circle1,
+.circle,
 .circle2
 {
     fill: none;
@@ -364,14 +378,17 @@ input
     stroke-width: 5px;
 }
 
-.maxim-data label:hover .circle1,
-.georgy-data label:hover .circle1,
-.alexey-data label:hover .circle1
+.maxim-data label:hover .circle,
+.georgy-data label:hover .circle,
+.alexey-data label:hover .circle,
+.maxim-switcher label:hover .circle,
+.alexey-switcher label:hover .circle,
+.georgy-switcher label:hover .circle
 {
     display: block;
 }
 
-.circle1
+.circle
 {
     left: 43px;
     display: none;
@@ -379,3 +396,46 @@ input
     top: -30px;
     z-index: 1;
 }
+
+.yandex-img
+{
+    position: absolute;
+    left: 650px;
+    top: 100px;
+}
+
+.char-ya
+{
+    font-size: 70px;
+}
+
+input[id='maxim-info']:checked ~ main .char-ya
+{
+    fill: rgb(114,197,246);
+}
+
+input[id='alexey-info']:checked ~ main .char-ya
+{
+    fill: rgb(255,131,132);
+}
+
+input[id='georgy-info']:checked ~ main .char-ya
+{
+    fill: rgb(255,255,92);
+}
+
+input[id='maxim-info']:checked ~ main .polygon
+{
+    fill: rgb(200,232,251);
+}
+
+input[id='alexey-info']:checked ~ main .polygon
+{
+    fill: rgb(255,206,206);
+}
+
+input[id='georgy-info']:checked ~ main .polygon
+{
+    fill: rgb(255,243,191);
+}
+
