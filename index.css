@@ -1,1 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font: 16px 'Arial', sans-serif;
+    line-height: 24px;
+    hyphens: auto;
+}
+
+.logo {
+    position: absolute;
+    left: 406px;
+}
+
+.logo__arrow {
+    fill: #fff;
+    stroke: #010202;
+    stroke-width: 2px;
+    opacity: .6;
+}
+
+.logo__text {
+    font: 32px 'Roboto Condensed', sans-serif;
+}
+
+.logo__text__ya {
+    fill: #f83636;
+}
+
+.person-button {
+    display: none;
+}
+
+.person-button--maxim:checked ~ .main__section {
+    background-color: #fedf68;
+}
+
+.person-button--maxim:checked ~ .main__section .main__footer__atom-logo text {
+    fill: #fedf68;
+}
+
+.person-button--alexey:checked ~ .main__section {
+    background-color: #76c6f4;
+}
+
+.person-button--alexey:checked ~ .main__section .main__footer__atom-logo text {
+    fill: #76c6f4;
+}
+
+.person-button--georgiy:checked ~ .main__section {
+    background-color: #fd8486;
+}
+
+.person-button--georgiy:checked ~ .main__section .main__footer__atom-logo text {
+    fill: #fd8486;
+}
+
+.main__section {
+    position: relative;
+    width: 954px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+.main__header {
+    margin-top: 20px;
+    height: 553px;
+}
+
+.main__header__title {
+    position: absolute;
+    top: 377px;
+    left: 102px;
+    z-index: 2;
+    width: 738px;
+    height: 86px;
+    font: 44px 'Arial', sans-serif;
+    line-height: 48px;
+    text-align: center;
+    margin: 0;
+}
+
+.main__header__atom {
+    position: absolute;
+    left: -435px;
+    top: 70px;
+    z-index: 1;
+}
+
+.main__description {
+    height: 394px;
+}
+
+.main__description__text {
+    margin: -10px 0;
+    width: 450px;
+    height: 236px;
+    position: absolute;
+    z-index: 2;
+    top: 71px;
+    left: 92px;
+}
+
+.video-button {
+    position: absolute;
+    top: 73px;
+    left: 638px;
+}
+
+.video-button__border {
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.video-button__play-button {
+    position: absolute;
+    top: 24px;
+    left: 59px;
+    stroke: #010202;
+    stroke-width: 2px;
+}
+
+.video-button__description {
+    position: absolute;
+    top: 96px;
+    width: 187px;
+    height: 15px;
+}
+
+.main__path__persons-selector {
+    width: 100%;
+    height: 300px;
+    padding-top: 105px;
+}
+
+.person {
+    position: absolute;
+    width: 138px;
+    height: 200px;
+    display: inline-block;
+}
+
+.person__border {
+    border-radius: 100%;
+    border: 3px solid #fff;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    display: none;
+}
+
+.person--maxim {
+    left: 173px;
+}
+
+.person--alexey {
+    left: 408px;
+}
+
+.person--george {
+    left: 642px;
+}
+
+.person__sprite {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: 138px;
+    width: 138px;
+    background: url(images/persons-sprite.png) no-repeat;
+}
+
+.person__sprite--maxim {
+    background-position: 0;
+}
+
+.person__sprite--alexey {
+    background-position: -138px;
+}
+
+.person__sprite--george {
+    background-position: -276px;
+}
+
+.person:hover .person__border,
+.person-button--maxim:checked ~ .main__path .person--maxim .person__description,
+.person-button--alexey:checked ~ .main__path .person--alexey .person__description,
+.person-button--georgiy:checked ~ .main__path .person--george .person__description {
+    display: block;
+}
+
+.person__description {
+    width: 300px;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: 20px;
+    display: none;
+}
+
+.person__name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.main__path__path-image {
+    position: absolute;
+    left: 94px;
+    top: 490px;
+}
+
+.main__path__text {
+    position: absolute;
+    width: 280px;
+    text-align: center;
+}
+
+.main__path__first-text {
+    top: 566px;
+    left: 94px;
+}
+
+.main__path__notebook-image {
+    position: absolute;
+    left: 484px;
+    top: 566px;
+    z-index: 1;
+}
+
+.main__path__phone-image {
+    position: absolute;
+    left: -24px;
+    top: 820px;
+}
+
+.main__path__pen-image {
+    position: absolute;
+    top: 820px;
+    left: 326px;
+}
+
+.main__path__ticket-image {
+    position: absolute;
+    top: 923px;
+    left: 405px;
+}
+
+.main__path__watch-image {
+    position: absolute;
+    top: 1082px;
+    left: 482px;
+    z-index: 1;
+}
+
+.main__path__photo-image {
+    position: absolute;
+    left: 795px;
+    top: 1038px;
+}
+
+.main__path__second-text {
+    left: 568px;
+    top: 1360px;
+}
+
+.main__path__ipad-image {
+    position: absolute;
+    top: 1380px;
+    left: 200px;
+}
+
+.main__path__palka-image {
+    position: absolute;
+    top: 1378px;
+    left: 718px;
+    z-index: 1;
+}
+
+.main__path__mask-image {
+    position: absolute;
+    top: 1617px;
+    left: 560px;
+}
+
+.main__path__iphone-image {
+    position: absolute;
+    top: 1700px;
+    left: 44px;
+}
+
+.main__path__cup-image {
+    position: absolute;
+    top: 1749px;
+    left: 328px;
+    z-index: 1;
+}
+
+.main__path__third-text {
+    left: 80px;
+    top: 2155px;
+}
+
+.main__path__bag-image {
+    position: absolute;
+    left: 440px;
+    top: 2106px;
+}
+
+.main__path__newspaper-image {
+    position: absolute;
+    left: 91px;
+    top: 2441px;
+}
+
+.main__path__magazine-image {
+    position: absolute;
+    left: 678px;
+    top: 2550px;
+}
+
+.main__path__persons {
+    position: absolute;
+    top: 2986px;
+}
+
+.main__path {
+    height: 3210px;
+}
+
+.main__footer {
+    height: 438px;
+    border-bottom: 2px solid;
+}
+
+.main__footer__text {
+    position: absolute;
+    width: 440px;
+    top: 84px;
+    left: 95px;
+}
+
+.main__footer__text p {
+    margin-top: 0;
+}
+
+.main__footer__atom-logo {
+    position: absolute;
+    top: 84px;
+    left: 656px;
+}
+
+.main__footer__atom-logo__ya {
+    font: 80px 'Roboto Condensed', sans-serif;
+}
+
+.main__footer__social-links {
+    position: absolute;
+    left: 96px;
+    bottom: 139px;
+}
+
+.social-links__icon {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAYCAMAAAAie4Q/AAAA3lBMVEW4uLi4uLi4uLi4uLi3t7e4uLi5ubm6urq7u7u8vLy9vb2+vr6/v7/AwMDBwcHCwsLDw8PExMTFxcXGxsbHx8fIyMjJycnKysrLy8vMzMzNzc3Ozs7Pz8/Q0NDR0dHS0tLT09PV1dXW1tbX19fZ2dna2trb29vc3Nzd3d3e3t7f39/g4ODh4eHi4uLj4+Pk5OTl5eXm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7v7+/x8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7///+NiQOJAAAABHRSTlPg7vD2hvJsnAAAAgdJREFUeAHN1OlW2kAYxnFrfRKToFVbF8GKCy5VYq21xAIDxBDIc/831MC0ZJl4mBw4ld8XvsA7//NmwhpWxscPsbU1rJb11QkybNtQg8yvt+5D4116BuTAyAdVeoz9LjFmdwfLYTFm5YMemA8SkltByp4JqeqT4qB2jXkYSz71gwYk2083mUnS6DMST8+bMmzMCb/mLB5kdIbDjvLIQnKoTApEQLKFxAu7e8lCGT0icWeVDnIczKhBvjLJBQJSIPFtEnFgwJNBHlIYXBilgqo9UhwVBp03xmTYaJwqQSK7oa2AsbAdyKBm7uj+CSY2kGAKEgZQixiL4qJNJcin9Jyd1Kq7+TvUYdoV8ke/yG/PCQppAX1OdYBt8o2gZsEkFymXzDhWj46+VzSCXoEt/mUD43zQDy8ix55XL5rkp04wPaaEZtHR4Zf5QUM1SPNS13M72vkZceauaBft/cJLrT6ynvLIdIIgsq/Z9ogzQ0cN8k8BnaA6cCwv9SFwoR+kvPc4EPynpvxgdLUJvaCuERcJsnsEmAPdIOG6AclbpJmPMie6RBajpgNoBvE6+WO8p26Q1MaMvX9y98qpoIqc1i6gH8QbA1PmPUsFicx+qr8iTgyuLahKBVGcOUDlvE/NoDdYh6dntU9YTEhpNCJZPmj52szpvnOQSgmybNvC/7ShBi0+aanW/wAHMf6a8DHoYAAAAABJRU5ErkJggg==) no-repeat;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.social-links__facebook {
+    width: 24px;
+    height: 24px;
+    background-position: 0;
+}
+
+.social-links__vk {
+    width: 24px;
+    height: 24px;
+    background-position: -24px;
+}
+
+.social-links__twitter {
+    width: 24px;
+    height: 24px;
+    background-position: -48px;
+}
+
+.social-links__youtube {
+    width: 24px;
+    height: 24px;
+    background-position: -72px;
+}
+
+.social-links__habrahabr {
+    width: 24px;
+    height: 24px;
+    background-position: -96px;
+}
+
+.social-links__instagram {
+    width: 24px;
+    height: 24px;
+    background-position: -120px;
+}
+
+.main__footer__footer {
+    position: absolute;
+    bottom: 32px;
+    left: 96px;
+}
+
+.main__footer__footer__feedback-link,
+.main__footer__footer__help-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.main__footer__footer__feedback-link:hover,
+.main__footer__footer__help-link:hover {
+    color: #fc4441;
+}
+
+.main__footer__footer__help-link {
+    margin-right: 18px;
+}
+
+.main__footer__footer__feedback-link {
+    margin-right: 80px;
+}
