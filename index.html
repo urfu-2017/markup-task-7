@@ -3,8 +3,217 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="radio" name="person" value="" id="max" class="page__input" checked>
+    <input type="radio" name="person" value="" id="alex" class="page__input">
+    <input type="radio" name="person" value="" id="georgy" class="page__input">
+    <main class="letter">
+        <header class="letter__header">
+            <div class="header-background">
+                <img src="bg.png" alt="Изображение шаров" class="background"
+                srcset="images/bg@2x.png 2x, images/bg@3x.png 3x">
+            </div>
+            <div class="letter-logo">
+                <svg width="138" height="92">
+                    <polygon class="header-logo" points="0 0, 0 48, 69 92, 138 48, 138 0"></polygon>
+                    <image  href="images/ya.png" width="138" height="62"></image>
+                </svg>
+            </div>
+            <div class="header__text">
+                <h1>— А что если интернет подстроится под меня?</h1>
+            </div>
+        </header>
+        <section class="internet">
+            <div class="description-letter">
+                <p class="description-letter__text">
+                    Интернет сегодня — это не только информация и технологии, это люди: их желания,
+                    предпочтения, задачи. Люди — вот атомы, из которых на самом деле состоит цифровая
+                    материя; и эти люди очень, очень разные. Сегодня поиск умеет подстраиваться,
+                    помогая людям быстрее приходить к тем решениям, которые им нужны.
+                </p>
+                <br>
+                <p class="description-letter__text">
+                    Мы представляем Атом: совокупность инструментов, призванных научить интернет
+                    подстраиваться под разных людей, которые им нужны.
+                </p>
+            </div>
+            <div class="video">
+                <svg class="video__icon" width="138" height="80">
+                    <rect class="video__rect" width="138" height="80" rx="4"></rect>
+                    <polygon class="video-play" points="59 20, 86 40, 59 60"></polygon>
+                </svg>
+                <p class="video_description">Весь сайт в одном видео</p>
+            </div>
+        </section>
+        <section class="people">
+            <article class="person first-person">
+                <div class="img-container">
+                    <label class="person__img" for="max"></label>
+                </div>
+                <p class="person__name">Максим</p>
+                <div class="person__description">
+                    <p>
+                        Очень дорожит редкими отпусками и превыше всего ценит комфорт
+                        и качество обслуживания.
+                    </p>
+                </div>
+            </article>
+            <article class="person second-person">
+                <div class="img-container">
+                    <label class="person__img" for="alex"></label>
+                </div>
+                <p class="person__name">Алексей Быков</p>
+                <div class="person__description">
+                    <p>
+                        Очень дорожит редкими отпусками и превыше всего ценит комфорт
+                        и качество обслуживания.
+                    </p>
+                </div>
+            </article>
+            <article class="person third-person">
+                <div class="img-container">
+                    <label class="person__img" for="georgy"></label>
+                </div>
+                <p class="person__name">АГеоргий И. Дауге</p>
+                <div class="person__description">
+                    <p>
+                        Очень дорожит редкими отпусками и превыше всего ценит комфорт
+                        и качество обслуживания.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="information">
+            <img src="images/path.png" alt="Изображение разделителей" class="path"
+            srcset="images/path@2x.png 2x, images/path@3x.png 3x">
+            <div class="description">
+                <p class="description__text">
+                    Юра сра&shy;зу по&shy;ку&shy;па&shy;ет тур: в его
+                    си&shy;ту&shy;а&shy;ции так оче&shy;вид&shy;но про&shy;ще.
+                    Ос&shy;нов&shy;ные ввод&shy;ные - при&shy;ем&shy;ле&shy;мо&shy;го
+                    ка&shy;че&shy;ства.
+                </p>
+                <p class="description__text">
+                    Отель цен&shy;тре тай&shy;ской жиз&shy;ни: что&shy;бы и еда,
+                    и ка&shy;че&shy;ствен&shy;ный пляж,
+                    до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти,
+                    и ре&shy;сто&shy;ра&shy;ны.
+                </p>
+            </div>
+            <div class="description second-description">
+                <p class="description__text">
+                    Юра но&shy;сит лин&shy;зы, и у не&shy;го как раз
+                    за&shy;кан&shy;чи&shy;ва&shy;ет&shy;ся за&shy;пас
+                    - нуж&shy;но ку&shy;пить но&shy;вые.
+                </p>
+                <p class="description__text">
+                    Отель цен&shy;тре тай&shy;ской жиз&shy;ни:
+                    что&shy;бы и еда, и ка&shy;че&shy;ствен&shy;ный
+                    пляж, до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти,
+                    и ре&shy;сто&shy;ра&shy;ны.
+                </p>
+            </div>
+            <div class="description third-description">
+                <p class="description__text">
+                    Что Юра точ&shy;но не хо&shy;чет упу&shy;стить, так это
+                    воз&shy;мож&shy;ность по&shy;про&shy;бо&shy;вать мест&shy;ную
+                    еду. Каж&shy;дый ве&shy;чер они с же&shy;ной -
+                </p>
+                <p class="description__text">
+                    Каж&shy;дый ве&shy;чер они с же&shy;ной - ино&shy;гда с детьми,
+                    ино&shy;гда вдво&shy;ем - от&shy;прав&shy;ля&shy;ют в но&shy;вый
+                    мест&shy;ный ре&shy;сто&shy;ран.
+                </p>
+            </div>
+            <img src="images/notebook.png" alt="Изображение записной книжки" class="notebook"
+            srcset="images/notebook@2x.png 2x, images/notebook@3x.png 3x">
+            <img src="images/phone.png" alt="Изображение телефона" class="phone"
+            srcset="images/phone@2x.png 2x, images/phone@3x.png 3x">
+            <img src="images/pen.png" alt="Изображение ручки" class="pen"
+            srcset="images/pen@2x.png 2x, images/pen@3x.png 3x">
+            <img src="images/ticket.png" alt="Изображение билета" class="ticket"
+            srcset="images/ticket@2x.png 2x, images/ticket@3x.png 3x">
+            <img src="images/watch.png" alt="Изображение часов" class="watch"
+            srcset="images/watch@2x.png 2x, images/watch@3x.png 3x">
+            <img src="images/photo.png" alt="Изображение фоторамки" class="photo"
+            srcset="images/photo@2x.png 2x, images/photo@3x.png 3x">
+            <img src="images/ipad.png" alt="Изображение планшета" class="ipad"
+            srcset="images/ipad@2x.png 2x, images/ipad@3x.png 3x">
+            <img src="images/iphone.png" alt="Изображение мобильного телефона" class="iphone"
+            srcset="images/iphone@2x.png 2x, images/iphone@3x.png 3x">
+            <img src="images/cup.png" alt="Изображение кружки" class="cup"
+            srcset="images/cup@2x.png 2x, images/cup@3x.png 3x">
+            <img src="images/mask.png" alt="Изображение маски" class="mask"
+            srcset="images/mask@2x.png 2x, images/mask@3x.png 3x">
+            <img src="images/palka.png" alt="Изображение подводной трубки" class="palka"
+            srcset="images/palka@2x.png 2x, images/palka@3x.png 3x">
+            <img src="images/newspaper.png" alt="Изображение газеты" class="newspaper"
+            srcset="images/newspaper@2x.png 2x, images/newspaper@3x.png 3x">
+            <img src="images/magazine.png" alt="Изображение журнала" class="magazine"
+            srcset="images/magazine@2x.png 2x, images/magazine@3x.png 3x">
+            <img src="images/bag.png" alt="Изображение портфеля" class="bag"
+            srcset="images/bag@2x.png 2x, images/bag@3x.png 3x">
+        </section>
+        <section class="people people__block">
+            <article class="person">
+                <div class="img-container first-person">
+                    <label class="person__img" for="max"></label>
+                </div>
+                <p class="person__name">Максим</p>
+            </article>
+            <article class="person">
+                <div class="img-container second-person">
+                    <label class="person__img" for="alex"></label>
+                </div>
+                <p class="person__name">Алексей Быков</p>
+            </article>
+            <article class="person">
+                <div class="img-container third-person">
+                    <label class="person__img" for="georgy"></label>
+                </div>
+                <p class="person__name">АГеоргий И. Дауге</p>
+            </article>
+        </section>
+        <footer>
+            <div class="footer_description">
+                <p>
+                    Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко
+                    ин&shy;фор&shy;ма&shy;ция и тех&shy;но&shy;ло&shy;гии,
+                    это лю&shy;ди: их же&shy;ла&shy;ния, пред&shy;по&shy;чте&shy;ния,
+                    за&shy;да&shy;чи. Лю&shy;ди — вот ато&shy;мы, из ко&shy;то&shy;рых
+                    на са&shy;мом де&shy;ле со&shy;сто&shy;ит циф&shy;ро&shy;вая
+                    ма&shy;те&shy;рия; и эти лю&shy;ди очень, очень раз&shy;ные.
+                </p>
+                <br>
+                <p>
+                    Те&shy;перь по&shy;смот&shy;ри&shy;те, как пла&shy;ни&shy;ро&shy;ва&shy;ли
+                    пу&shy;те&shy;ше&shy;ствие в Та&shy;и&shy;ланд Алек&shy;сей Бы&shy;ков
+                    и Ге&shy;ор&shy;гий И. Да&shy;у&shy;ге.
+                </p>
+            </div>
+            <svg class="footer__logo" width="102" height="102">
+                <image href="images/logo-atom.png" width="102" height="102"></image>
+            </svg>
+            <section class="social-networks">
+                <div class="facebook social-networks__item"></div>
+                <div class="vkontakte social-networks__item"></div>
+                <div class="twitter social-networks__item"></div>
+                <div class="youtube social-networks__item"></div>
+                <div class="habra social-networks__item"></div>
+                <div class="instagram social-networks__item"></div>
+            </section>
+            <div class="links-footer">
+                <a class="footer__link" href="#">Помощь</a>
+                <a class="footer__link" href="#">Обратная связь</a>
+            </div>
+            <div class="company">
+                <span>&copy;</span>
+                <time class="current-year">2017</time>
+                <p><abbr title="">ООО</abbr> «Яндекс»</p>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
-
