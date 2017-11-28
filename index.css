@@ -1,9 +1,18 @@
+@font-face
+{
+    font-family: 'Yandex Sans Text Regular';
+    src: url('./fonts/Yandex Sans Text-Regular.ttf') format('ttf');
+    src: url('./fonts/Yandex Sans Text-Regular.eot') format('eot');
+    src: url('./fonts/Yandex Sans Text-Regular.woff2') format('woff2');
+    src: url('./fonts/YandexSansText-Regular.woff') format('woff');
+}
+
 body
 {
     display: flex;
     justify-content: center;
     margin: 0;
-    font: 16px Arial;
+    font: 16px 'Yandex Sans Text Regular';
     line-height: 1.5;
 }
 
@@ -64,8 +73,9 @@ main
 {
     position: absolute;
     font-size: 2em;
-    left: 423px;
-    top: 20px;
+    left: 424px;
+    top: 10px;
+    transform: scaleX(.8);
 }
 
 .logo_text:first-letter
@@ -113,6 +123,12 @@ main
     position: absolute;
     left: 697px;
     top: 96px;
+}
+
+.video_logo_svg polyline
+{
+    stroke: #000;
+    stroke-width: 2px;
 }
 
 .video_description
@@ -223,17 +239,32 @@ input[id='george']:checked ~ section .george .people_description
 
 input[id='maxim']:checked ~ .block
 {
-    background-color: #ffe05e;
+    background-color: #67bef5;
 }
 
 input[id='alexey']:checked ~ .block
 {
-    background-color: #67bef5;
+    background-color: #ff7779;
 }
 
 input[id='george']:checked ~ .block
 {
-    background-color: #ff7779;
+    background-color: #ffe05e;
+}
+
+input[id='maxim']:checked ~ .block .logo_atom text
+{
+    fill: #67bef5;
+}
+
+input[id='alexey']:checked ~ .block .logo_atom text
+{
+    fill: #ff7779;
+}
+
+input[id='george']:checked ~ .block .logo_atom text
+{
+    fill: #ffe05e;
 }
 
 .logo_atom
@@ -259,6 +290,45 @@ input[id='george']:checked ~ .block
     position: absolute;
     left: 96px;
     bottom: 139px;
+}
+
+.base64
+{
+    width: 24px;
+    height: 24px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAYCAAAAAAwzivRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIjSURBVEjHzZZvU9pAEMb9/l+ITUiC1D8VgVhw1EG0SCy1llgGDhKTgzy+CDbJXVIuipV9k8wmt89v9vb2do92xqqmaZr1PdotM3YHSDNNTQbSv906971P4fEATxOBanMA+FMizOHBtvYKAAwR6B4iEIvNqaV/O9LXL20fYA27v1EOANJPVSAPwOThRogEAMvjlPPhsRqDrQAAvm29H0ibhuFU2jIOhFKkgAUAxinnE2ZHSUIRjVLfBkZpIMsqPGUc8KVIDlEAsJTzOxCNGhq5MZCbWRBcaqWA2nOANXOBLnorgPd6HQmIZTO0HwAAnwQx0FCQXpwREVElZ+cFII3IjgAgahJVJSB/veIxG2ncdcQamqYFcC3mAk/HORmSgDgMokXsnBLVgQKgYU4kJx3+KsODliwd/agpAD0T7b96TaKVCPTTjYCV63bzIvkpBd1NC3A9T5p/3QwUbgAqLuqukKODX1EiMMjLxeRkc1FzGETzf2xZMRCx7DGrLxOe0JKB/I7KKePoErXioj4luiwDJJx7arC/QLa0YHldJTWgmUbUYsCsSaR7qkDMcQIAt9lbeLSu3itROhpain2IA/2kMd5BFWhdFInPPDkbPMfeoC1Kjw+VOzUHcLPuovodSgGxTH7av+Oa9vqG4l1eCAR2bhHVLhZQBCoaFk475/aXd04c/PXiXiYd4a1AW7EJBJt9MpDCTG2YpvFf9StbG/IrH5WhF4LgeMhKP2EjAAAAAElFTkSuQmCC') no-repeat;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.facebook
+{
+    background-position: 0 0;
+}
+
+.habra
+{
+    background-position: -96px 0;
+}
+
+.instagram
+{
+    background-position: -120px 0;
+}
+
+.twitter
+{
+    background-position: -48px 0;
+}
+
+.vkontakte
+{
+    background-position: -24px 0;
+}
+
+.youtube
+{
+    background-position: -72px 0;
 }
 
 .footer
