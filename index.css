@@ -1,1 +1,456 @@
+body 
+{
+    width: 993px;
+    margin: 0 auto;
+}
+
+main
+{
+    margin: 50px;
+    font-family: Arial;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+input
+{
+    display: none;
+}
+
+section
+{
+    width: 100%;
+    border: 2px solid #000;
+    border-bottom: 0;
+    position: relative;
+}
+
+section:not([class='section-1'])
+{
+    padding: 80px 0;
+}
+
+.section-4
+{
+    border-bottom: 2px solid #000;
+}
+
+input[id='maxim']:checked ~ section
+{
+    background: #27f4ff;
+}
+
+input[id='alexey']:checked ~ section
+{
+    background: #ff8285;
+}
+
+input[id='georgy']:checked ~ section
+{
+    background: #ffe05d;
+}
+
+input[id='maxim']:checked ~ section .person__maxim .person__description
+{
+    display: inline-block;
+}
+
+input[id='alexey']:checked ~ section .person__alexey .person__description
+{
+    display: inline-block;
+}
+
+input[id='georgy']:checked ~ section .person__georgy .person__description
+{
+    display: inline-block;
+}
+
+.section-1
+{
+    min-height: 550px;
+}
+
+.logo-yandex
+{
+    position: absolute;
+    background-image: url(img/logo-yandex.svg);
+    width: 138px;
+    height: 92px;
+    left: calc(50% - 68px);
+
+}
+
+.circles-img
+{
+    position: absolute;
+    width: 1416px;
+    height: 757px;
+    z-index: 1;
+    background-image: url(img/bg.png);
+    left: -420px;
+    top: 70px;
+}
+
+h2 
+{
+    position: absolute;
+    width: 800px;
+    height: 86px;
+    z-index: 2;
+    bottom: 40px;
+    left: calc(50% - 400px);
+    font-family: Arial;
+    font-size: 44px;
+    line-height: 1.09;
+    text-align: center;
+}
+
+.section-2
+{
+    display: flex;
+    height: 236px;
+}
+
+.section-2__info
+{
+    z-index: 2;
+    position: relative;
+    padding-left: 113px;
+    padding-right: 97px;
+    width: 450px;
+    height: 236px;
+}
+
+.section-2__info > p:first-child
+{
+    margin-top: 0;
+}
+
+.icon
+{
+    background-image: url(img/video-icon.svg);
+    width: 138px;
+    height: 80px;
+}
+
+.persons
+{
+    display: flex;
+    height: 352px;
+    justify-content: space-around;
+}
+
+.persons.foot
+{
+    margin-top: 100px;
+    height: 243px;
+}
+
+.person
+{
+    text-align: center;
+    width: 285px;
+    margin: 0 -28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.person__photo
+{
+    display: block;
+    width: 138px;
+    height: 138px;
+    background-image: url(img/persons.png);
+    margin: 9px auto;
+    cursor: pointer;
+}
+
+.maxim
+{
+    background-position: -88px -88px;
+}
+
+.alexey
+{
+    background-position: -402px -88px;
+}
+
+.georgy
+{
+    background-position: -716px -88px;
+}
+
+.person__name
+{
+    font-weight: bold;
+}
+
+.person__description
+{
+    display: none;
+    width: 290px;
+}
+
+.path
+{
+    position: relative;
+    background-image: url(img/path.png);
+    width: 757px;
+    height: 2453px;
+    max-height: 2453px;
+    margin-left: 90px;
+}
+
+.path__text
+{
+    width: 295px;
+    text-align: center;
+    position: relative;
+}
+
+.path__text-1
+{
+    top: 76px;
+}
+
+.path__text-2
+{
+    top: 709px;
+    left: 475px;
+}
+
+.path__text-3
+{
+    top: 1340px;
+}
+
+.phone
+{
+    width: 318px;
+    height: 384px;
+    background-image: url(img/phone.png);
+    position: absolute;
+    top: 329px;
+    left: -115px;
+}
+
+.pen
+{
+    width: 48px;
+    height: 233px;
+    background-image: url(img/pen.png);
+    position: absolute;
+    top: 329px;
+    left: 234px;
+}
+
+.ticket
+{
+    width: 454px;
+    height: 179px;
+    background-image: url(img/ticket.png);
+    position: absolute;
+    top: 435px;
+    left: 312px;
+}
+
+.notebook
+{
+    width: 306px;
+    height: 434px;
+    background-image: url(img/notebook.png);
+    position: absolute;
+    top: 77px;
+    left: 390px;
+}
+
+.watch
+{
+    width: 130px;
+    height: 247px;
+    background-image: url(img/watch.png);
+    position: absolute;
+    top: 594px;
+    left: 390px;
+}
+
+.photo
+{
+    width: 227px;
+    height: 292px;
+    background-image: url(img/photo.png);
+    position: absolute;
+    top: 549px;
+    left: 702px;
+}
+
+.iphone
+{
+    width: 148px;
+    height: 278px;
+    background-image: url(img/iphone.png);
+    position: absolute;
+    top: 1214px;
+    left: -50px;
+}
+
+.ipad
+{
+    width: 304px;
+    height: 453px;
+    background-image: url(img/ipad.png);
+    position: absolute;
+    top: 890px;
+    left: 108px;
+}
+
+.cup
+{
+    width: 228px;
+    height: 303px;
+    background-image: url(img/cup.png);
+    position: absolute;
+    top: 1259px;
+    left: 234px;
+}
+
+.mask
+{
+    width: 390px;
+    height: 223px;
+    background-image: url(img/mask.png);
+    position: absolute;
+    top: 1127px;
+    left: 468px;
+}
+
+.palka
+{
+    width: 228px;
+    height: 622px;
+    background-image: url(img/palka.png);
+    position: absolute;
+    top: 890px;
+    left: 624px;
+}
+
+.bag
+{
+    width: 475px;
+    height: 409px;
+    background-image: url(img/bag.png);
+    position: absolute;
+    top: 1616px;
+    left: 346px;
+}
+
+.newspaper
+{
+    width: 318px;
+    height: 421px;
+    background-image: url(img/newspaper.png);
+    position: absolute;
+    top: 1951px;
+    left: 3px;
+}
+
+.magazine
+{
+    width: 306px;
+    height: 411px;
+    background-image: url(img/magazine.png);
+    position: absolute;
+    top: 2062px;
+    left: 585px;
+}
+
+.end
+{
+    display: flex;
+}
+
+.end__text
+{
+    width: 450px;
+    padding-left: 80px;
+    padding-right: 97px;
+}
+
+.end__text p
+{
+    margin-top: 0;
+}
+
+.end__logo
+{
+    background-image: url(img/logo-atom.svg);
+    width: 101px;
+    height: 101px;
+    text-align: center;
+}
+
+.social-logos
+{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    padding-left: 80px;
+    margin-bottom: 60px;
+}
+
+.social-link
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(data:image/png;base64,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);
+    cursor: pointer;
+}
+
+.vk
+{
+    background-position-x: -30px;
+}
+
+.tw
+{
+    background-position-x: -60px;
+}
+
+.yt
+{
+    background-position-x: -90px;
+}
+
+.hb
+{
+    background-position-x: -120px;
+}
+
+.ig
+{
+    background-position-x: -150px;
+}
+
+footer
+{
+    padding-left: 80px;
+}
+
+footer a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.feedback
+{
+    margin-left: 20px;
+}
+
+.copyright
+{
+    margin-left: 80px;
+}
 
