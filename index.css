@@ -6,29 +6,43 @@ body {
     width: 993px;
     margin: 0 auto;
     background-color: yellow;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 68px;
+    right: -4px;
+    width: 1416px;
+    height: 757px;
+    background-image: url(img/bg_2017-11-27/bg.png);
 }
 
 .logo {
-    background-color: rgb(115,197,246);
-    height: 531px;
-    position: relative;
+    background-color: rgb(115, 197, 246);
+    height: 547px;
+    position: initial;
     border: 2px solid black;
+    border-bottom: 1px solid black;
     margin: 0 21px 0 18px;
 }
 
-.logo span {
-    display: block;
-    /* margin-top: 345px;  */
+.greetings {
+    margin-top: 345px;
+    text-align: center;
+    height: 86px;
+    margin: 365px 115px 158px;
+}
+
+.greetings span {
     position: relative;
     font-size: 44px;
     line-height: 48px;
-    margin-left: 43px;
     text-align: center;
     font-family: Arial;
-    margin: 345px 115px 158px;
 }
 
-.logo span:before{
+.greetings span:before {
     display: block;
     content: '';
     width: 43px;
@@ -36,18 +50,34 @@ body {
     position: absolute;
     background-color: #000;
     top: 20px;
-    left: 60px;
-}
-
-.bg {
-    position: absolute;
-    top: 45px;
-    right: -27px;
-    width: 1416px;
-    height: 513px;
-    background-image: url(img/bg_2017-11-27/bg.png);
+    left: -10px;
 }
 
 .container {
     z-index: 100;
+}
+
+
+.description {
+    background-color: rgb(115, 197, 246);
+    height: 392px;
+    position: initial;
+    margin: 0 21px 0 18px;
+    border: 2px solid black;
+    border-top: 1px solid black;
+
+}
+
+.description div {
+    width: 450px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 24px;
+    position: relative;
+    font-family: Arial;
+    margin: 75px 0 0 93px;
+}
+
+.description div p:first-child {
+    margin-bottom: 30px;
 }
