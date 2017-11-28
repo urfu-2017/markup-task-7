@@ -12,6 +12,7 @@ main
 {
     width: 100%;
     height: 571px;
+    margin-top: 80px;
     box-sizing: border-box;
     border: 2px solid black;
     border-bottom: none;
@@ -68,6 +69,7 @@ main
     position: relative;
     box-sizing: border-box;
     border: 2px solid black;
+    border-bottom: none;
 }
 
 .atom-slide__text
@@ -107,6 +109,68 @@ main
     font-size: 16px;
     line-height: 1.5;
     position: absolute;
+    font-family: Arial, sans-serif;
+}
+
+.persons-slide
+{
+    height: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-bottom: none;
+    padding: 75px 140px 0;
+}
+
+.person
+{
+    margin: 0 40px;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.person__photo-container
+{
+    padding: 0;
+    width: 138px;
+    height: 138px;
+    margin: 0 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.person__photo-container:after
+{
+    top: -7px;
+    left: -7px;
+    content: '';
+    width: 145px;
+    height: 145px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.person__name
+{
+    width: 138px;
+    height: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.person__description
+{
+    width: 285px;
+    height: 64px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
     font-family: Arial, sans-serif;
 }
 

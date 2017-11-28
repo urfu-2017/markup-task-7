@@ -4,26 +4,12 @@
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
     <link rel="stylesheet" href="styles/index.css">
-
-    <!--
-        Необходимо для того чтобы избавиться от мерцания кнопок
-        в header'е после загрузки страницы из-за применения transition'а.
-    -->
-    <script>
-        console.log("https://bugs.chromium.org/p/chromium/issues/detail?id=332189");
-    </script>
 </head>
 <body>
 
 <input type="radio" name="theme" class="theme-toggler-blue" id="theme-blue" checked hidden>
 <input type="radio" name="theme" class="theme-toggler-red" id="theme-red" hidden>
 <input type="radio" name="theme" class="theme-toggler-yellow" id="theme-yellow" hidden>
-
-<header>
-    <label for="theme-blue" class="theme-toggler-label theme-toggler-label-blue">Maya Blue</label>
-    <label for="theme-red" class="theme-toggler-label theme-toggler-label-red">Watermelon</label>
-    <label for="theme-yellow" class="theme-toggler-label theme-toggler-label-yellow">Mustard</label>
-</header>
 
 <main>
     <section class="header-slide">
@@ -62,6 +48,32 @@
             <figcaption class="atom-slide__playbutton__caption">
                 Весь сайт в одном видео
             </figcaption>
+        </figure>
+    </section>
+
+    <section class="persons-slide">
+        <figure class="person">
+            <label for="theme-blue" class="theme-toggler-label-blue person__photo-container">
+                <img src="images/maxim.png" alt="Максим" class="person__photo"
+                     srcset="images/maxim.png 1x, images/maxim@2x.png 2x, images/maxim@3x.png 3x">
+            </label>
+            <figcaption class="person__name">Максим</figcaption>
+        </figure>
+
+        <figure class="person">
+            <label for="theme-red" class=" theme-toggler-label-red person__photo-container">
+                <img src="images/alex.png" alt="Алексей" class="person__photo"
+                     srcset="images/alex.png 1x, images/alex@2x.png 2x, images/alex@3x.png 3x">
+            </label>
+            <figcaption class="person__name">Алексей Быков</figcaption>
+        </figure>
+
+        <figure class="person">
+            <label for="theme-yellow" class="theme-toggler-label-yellow person__photo-container">
+                <img src="images/george.png" alt="Георгий И. Дауге" class="person__photo"
+                     srcset="images/george.png 1x, images/george@2x.png 2x, images/george@3x.png 3x">
+            </label>
+            <figcaption class="person__name">Георгий И. Дауге</figcaption>
         </figure>
     </section>
 
