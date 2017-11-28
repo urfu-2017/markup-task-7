@@ -13,21 +13,20 @@ input
     line-height: 1.5;
     text-align: left;
     word-break: normal;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    border: solid 2px;
 }
 
-input:first-of-type:checked ~ .letter
+.user1-mode:checked ~ .letter
 {
     background-color: #73c5f7;
 }
 
-input:nth-of-type(2):checked ~ .letter
+.user2-mode:checked ~ .letter
 {
     background-color: #ff8384;
 }
 
-input:nth-of-type(3):checked ~ .letter
+.user3-mode:checked ~ .letter
 {
     background-color: #ffe15c;
 }
@@ -36,24 +35,14 @@ section,
 header,
 footer
 {
-    border: solid 2px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-}
-
-header
-{
-    height: 551px;
+    border-bottom: solid 2px;
 }
 
 h2
 {
-    position: absolute;
-    left: 104px;
-    top: 372px;
-    margin: 0;
+    position: relative;
+    margin: 372px 104px 91px;
     width: 738px;
-    height: 86px;
     font-weight: inherit;
     font-size: 44px;
     line-height: 1.09;
@@ -103,19 +92,21 @@ h2
 {
     display: flex;
     box-sizing: border-box;
-    height: 394px;
-    padding-top: 80px;
-    padding-left: 93px;
+    padding: 80px 93px;
 }
 
 .introduction .text-block
 {
     position: relative;
     width: 450px;
-    height: 236px;
 }
 
-.text-block p
+p
+{
+    margin: 0;
+}
+
+.text-block p:not(:last-of-type)
 {
     margin-top: 0;
     margin-bottom: 24px;
@@ -152,27 +143,16 @@ h2
     margin-top: calc(1.5em * 4 - 84px);
 }
 
-.story
-{
-    position: relative;
-    height: 3208px;
-}
-
 .users
 {
     display: flex;
     margin-left: 162px;
-}
-
-.users-top
-{
     margin-top: 71px;
 }
 
 .users-bottom
 {
-    position: absolute;
-    top: 2965px;
+    margin-bottom: 76px;
 }
 
 .user
@@ -215,9 +195,9 @@ h2
     text-align: center;
 }
 
-input:first-of-type:checked ~ .letter .user-1 .user-description,
-input:nth-of-type(2):checked ~ .letter .user-2 .user-description,
-input:nth-of-type(3):checked ~ .letter .user-3 .user-description
+.user1-mode:checked ~ .letter .user-1 .user-description,
+.user2-mode:checked ~ .letter .user-2 .user-description,
+.user3-mode:checked ~ .letter .user-3 .user-description
 {
     display: block;
 }
@@ -229,7 +209,8 @@ input:nth-of-type(3):checked ~ .letter .user-3 .user-description
 
 .user-2 .user-description
 {
-    left: calc(50% - .5 * 285px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .user-3 .user-description
@@ -239,40 +220,61 @@ input:nth-of-type(3):checked ~ .letter .user-3 .user-description
 
 .story article
 {
-    position: absolute;
-    left: 94px;
-    top: 432px;
-    width: 757px;
-    height: 2453px;
-    background: url(images/path.png) no-repeat;
+    margin-left: 94px;
+    margin-top: 80px;
+}
+
+.path
+{
+    position: relative;
+    width: 100%;
+}
+
+.path-1
+{
+    height: 53px;
+    background: url(images/path-1.png) no-repeat;
+}
+
+.path-2
+{
+    height: 568px;
+    background: url(images/path-2.png) no-repeat;
+}
+
+.path-3
+{
+    height: 567px;
+    background: url(images/path-3.png) no-repeat;
+}
+
+.path-4
+{
+    height: 568px;
+    background: url(images/path-4.png) no-repeat;
 }
 
 .story .text-block
 {
+    margin: 32px auto;
     text-align: center;
 }
 
 .story .text-1
 {
-    position: absolute;
-    left: 0;
-    top: 86px;
+    margin-left: 0;
     width: 275px;
 }
 
 .story .text-2
 {
-    position: absolute;
-    left: 475px;
-    top: 889px;
+    margin-left: 475px;
     width: 280px;
 }
 
 .story .text-3
 {
-    position: absolute;
-    left: -14px;
-    top: 1685px;
+    margin-left: -14px;
     width: 292px;
 }
 
@@ -280,107 +282,107 @@ input:nth-of-type(3):checked ~ .letter .user-3 .user-description
 {
     position: absolute;
     left: -116px;
-    top: 329px;
+    top: 47px;
 }
 
 .pen
 {
     position: absolute;
     left: 234px;
-    top: 329px;
+    top: 47px;
 }
 
 .notebook
 {
     position: absolute;
     left: 390px;
-    top: 77px;
+    top: -205px;
 }
 
 .ticket
 {
     position: absolute;
     left: 312px;
-    top: 435px;
+    top: 153px;
 }
 
 .watch
 {
     position: absolute;
     left: 390px;
-    top: 594px;
+    top: 312px;
 }
 
 .photo
 {
     position: absolute;
     left: 702px;
-    top: 549px;
+    top: 267px;
 }
 
 .iphone
 {
     position: absolute;
     left: -50px;
-    top: 1214px;
+    top: 129px;
 }
 
 .ipad
 {
     position: absolute;
     left: 108px;
-    top: 890px;
+    top: -195px;
 }
 
 .cup
 {
     position: absolute;
     left: 254px;
-    top: 1259px;
+    top: 174px;
 }
 
 .mask
 {
     position: absolute;
     left: 468px;
-    top: 1127px;
+    top: 42px;
 }
 
 .palka
 {
     position: absolute;
     left: 624px;
-    top: 890px;
+    top: -195px;
 }
 
 .bag
 {
     position: absolute;
     left: 346px;
-    top: 1616px;
+    top: -269px;
 }
 
 .newspaper
 {
     position: absolute;
     left: -3px;
-    top: 1951px;
+    top: 66px;
 }
 
 .magazine
 {
     position: absolute;
     left: 585px;
-    top: 2062px;
+    top: 177px;
 }
 
 .letter footer
 {
     position: relative;
-    border-bottom: solid 2px;
-    height: 435px;
+    border-bottom: none;
     padding-left: 95px;
     padding-top: 84px;
+    padding-bottom: 32px;
     box-sizing: border-box;
 }
 
@@ -399,6 +401,11 @@ input:nth-of-type(3):checked ~ .letter .user-3 .user-description
     margin-left: 122px;
     width: 102px;
     height: 102px;
+}
+
+.social
+{
+    margin-top: 32px;
 }
 
 .sprite
@@ -453,8 +460,7 @@ input:nth-of-type(3):checked ~ .letter .user-3 .user-description
 
 .end-line
 {
-    position: absolute;
-    bottom: 32px;
+    margin-top: 80px;
 }
 
 .links
