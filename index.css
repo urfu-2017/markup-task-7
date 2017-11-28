@@ -15,12 +15,20 @@ label
     height: 138px;
 }
 
-.padding-top-80
+.start-description,
+.people,
+.people-bottom,
+.final-description
 {
     padding-top: 80px;
 }
 
-.margin-left-93
+.internet-now,
+.people,
+.path,
+.people-bottom,
+.social-media,
+.footer
 {
     margin-left: 93px;
 }
@@ -32,9 +40,7 @@ label
 
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font: 16px/24px Arial, Helvetica, sans-serif;
     text-align: left;
     margin: 0 auto;
     width: 993px;
@@ -47,7 +53,7 @@ main
 
 input[id='person-1']:checked ~ section
 {
-    background-color: #72c4f6;
+    background-color: #ffe05d;
 }
 
 input[id='person-2']:checked ~ section
@@ -57,7 +63,7 @@ input[id='person-2']:checked ~ section
 
 input[id='person-3']:checked ~ section
 {
-    background-color: #ffe05d;
+    background-color: #72c4f6;
 }
 
 section
@@ -78,7 +84,6 @@ section:first-of-type
 {
     position: absolute;
     z-index: 1;
-    background-image: url(png/bg.png);
     width: 1416px;
     height: 757px;
     left: -427px;
@@ -236,10 +241,14 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .path
 {
     position: relative;
-    background-image: url(png/path.png);
     width: 757px;
     height: 2453px;
     max-height: 2453px;
+}
+
+.path-picture
+{
+    position: absolute;
 }
 
 .path-text
@@ -269,7 +278,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 318px;
     height: 384px;
-    background-image: url(png/phone.png);
     position: absolute;
     top: 329px;
     left: -115px;
@@ -279,7 +287,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 48px;
     height: 233px;
-    background-image: url(png/pen.png);
     position: absolute;
     top: 329px;
     left: 234px;
@@ -289,7 +296,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 454px;
     height: 179px;
-    background-image: url(png/ticket.png);
     position: absolute;
     top: 435px;
     left: 312px;
@@ -299,7 +305,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 306px;
     height: 434px;
-    background-image: url(png/notebook.png);
     position: absolute;
     top: 77px;
     left: 390px;
@@ -309,7 +314,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 130px;
     height: 247px;
-    background-image: url(png/watch.png);
     position: absolute;
     top: 594px;
     left: 390px;
@@ -319,7 +323,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 227px;
     height: 292px;
-    background-image: url(png/photo.png);
     position: absolute;
     top: 549px;
     left: 702px;
@@ -329,7 +332,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 148px;
     height: 278px;
-    background-image: url(png/iphone.png);
     position: absolute;
     top: 1214px;
     left: -50px;
@@ -339,7 +341,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 304px;
     height: 453px;
-    background-image: url(png/ipad.png);
     position: absolute;
     top: 890px;
     left: 108px;
@@ -349,7 +350,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 228px;
     height: 303px;
-    background-image: url(png/cup.png);
     position: absolute;
     top: 1259px;
     left: 234px;
@@ -359,7 +359,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 390px;
     height: 223px;
-    background-image: url(png/mask.png);
     position: absolute;
     top: 1127px;
     left: 468px;
@@ -369,7 +368,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 228px;
     height: 622px;
-    background-image: url(png/palka.png);
     position: absolute;
     top: 890px;
     left: 624px;
@@ -379,7 +377,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 475px;
     height: 409px;
-    background-image: url(png/bag.png);
     position: absolute;
     top: 1616px;
     left: 346px;
@@ -389,7 +386,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 318px;
     height: 421px;
-    background-image: url(png/newspaper.png);
     position: absolute;
     top: 1951px;
     left: 3px;
@@ -399,7 +395,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 {
     width: 306px;
     height: 411px;
-    background-image: url(png/magazine.png);
     position: absolute;
     top: 2062px;
     left: 585px;
