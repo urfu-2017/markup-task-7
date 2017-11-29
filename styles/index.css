@@ -288,6 +288,34 @@ main
     position: absolute;
 }
 
+.path-slide__text_third
+{
+    left: 80px;
+    top: 1670px;
+    position: absolute;
+}
+
+.path-slide__bag
+{
+    right: 35px;
+    top: 1616px;
+    position: absolute;
+}
+
+.path-slide__newspaper
+{
+    top: 1951px;
+    left: 90px;
+    position: absolute;
+}
+
+.path-slide__magazine
+{
+    top: 2062px;
+    right: -40px;
+    position: absolute;
+}
+
 .footer-side
 {
     top: 10px;
