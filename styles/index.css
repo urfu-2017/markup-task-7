@@ -187,7 +187,7 @@ main
     position: relative;
 }
 
-.path-text
+.path-slide__text
 {
     width: 300px;
     font-size: 16px;
@@ -197,10 +197,53 @@ main
     font-family: Arial, sans-serif;
 }
 
-.path-text-first
+.path-slide__text_first
 {
     top: 75px;
     left: 95px;
+}
+
+.path-slide__phone
+{
+    top: 329px;
+    left: -25px;
+    position: absolute;
+}
+
+.path-slide__pen
+{
+    top: 329px;
+    left: 329px;
+    position: absolute;
+}
+
+.path-slide__notebook
+{
+    z-index: 2;
+    top: 75px;
+    left: 484px;
+    position: absolute;
+}
+
+.path-slide__ticket
+{
+    top: 435px;
+    left: 406px;
+    position: absolute;
+}
+
+.path-slide__watch
+{
+    top: 594px;
+    left: 485px;
+    position: absolute;
+}
+
+.path-slide__photo
+{
+    left: 795px;
+    top: 550px;
+    position: absolute;
 }
 
 .footer-side
