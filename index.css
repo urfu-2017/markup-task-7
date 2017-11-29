@@ -1,5 +1,6 @@
 body {
     background-color: rgb(246, 245, 243);
+    font-family: Arial;
 }
 
 .wrapper {
@@ -15,7 +16,7 @@ body {
     right: -4px;
     width: 1416px;
     height: 757px;
-    background-image: url(img/bg_2017-11-27/bg.png);
+    background-image: url(img/bg.png);
 }
 
 .logo {
@@ -64,20 +65,251 @@ body {
     position: initial;
     margin: 0 21px 0 18px;
     border: 2px solid black;
-    border-top: 1px solid black;
-
+    border-width: 1px 2px 1px 2px;
 }
 
-.description div {
+.row {
+    position: relative;
+    margin: 75px 0 0 93px;
+}
+
+.desc {
     width: 450px;
     font-size: 16px;
     text-align: left;
     line-height: 24px;
-    position: relative;
     font-family: Arial;
-    margin: 75px 0 0 93px;
+    float: left;
 }
 
-.description div p:first-child {
+.desc p:first-child {
     margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.video {
+    height: 100px;
+    float: left;
+    margin: 3px 0 0 93px;
+}
+
+.border {
+    width: 138px;
+    height: 80px;
+    margin-bottom: 13px;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.play {
+    border-style: solid;
+    border-width: 20px 0 20px 27px;
+    border-color: transparent transparent transparent #0e0f0f;
+    top: 22px;
+    left: 59px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.play > div {
+    border-style: solid;
+    border-width: 16px 0 16px 21px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: -16px;
+    left: -25px;
+    border-radius: 1px;
+
+}
+
+.video span {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+.users {
+    background-color: rgb(115, 197, 246);
+    height: 3208px;
+    position: relative;
+    margin: 0 21px 0 18px;
+    border: 2px solid black;
+    border-width: 1px 2px 1px 2px;
+}
+
+.users-row {
+    height: 360px;
+    margin: 80px 174px 0 171px;
+    text-align: justify;
+    position: absolute;
+}
+
+.users-row > div {
+    display: inline-block;
+}
+
+.avatar {
+    width: 138px;
+    height: 139px;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+    border-radius: 50%;
+}
+
+.avatar:hover {
+    box-shadow: inset 0 0 10px #0f0;
+}
+
+.maks .avatar {
+    background-image: url('img/layer-172.png');
+}
+
+.aleks .avatar {
+    background-image: url('img/layer-173.png')
+}
+
+.georg .avatar {
+    background-image: url('img/layer-174.png');
+}
+
+.user {
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.user:nth-child(2) {
+    margin: 0 95px;
+}
+
+.user .desription {
+    width: 286px;
+    display: block;
+    position: absolute;
+    left: -70px;
+    top: 200px;
+    size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.path {
+    position: absolute;
+    top: 432px;
+    left: 94px;
+    width: 1416px;
+    height: 2453px;
+    background-image: url(img/path.png);
+    background-repeat: no-repeat;
+}
+
+.tour {
+    width: 282px;
+    position: absolute;
+    text-align: center;
+    line-height: 24px;
+}
+
+.tour p:first-child {
+    margin-bottom: 30px;
+}
+
+.tour-1 {
+    top: 500px;
+    left: 93px;
+}
+
+.tour-2 {
+    top: 1295px;
+    right: 93px;
+}
+
+.tour-3 {
+    top: 2095px;
+    left: 93px;
+}
+
+figure {
+    margin: 0;
+    position: absolute;
+}
+
+.notebook {
+    top: 509px;
+    left: 484px;
+}
+
+.phone {
+    top: 761px;
+    left: -20px;
+}
+
+.pen {
+    top: 761px;
+    left: 328px;
+}
+
+.ticket {
+    top: 867px;
+    left: 406px;
+}
+
+.watch {
+    top: 1024px;
+    left: 484px;
+}
+
+.photo {
+    top: 981px;
+    left: 796px;
+}
+
+.bag {
+    top: 2048px;
+    left: 440px;
+}
+
+.ipad {
+    top: 1322px;
+    left: 202px;
+}
+
+.mask {
+    top: 1559px;
+    left: 562px;
+}
+
+.palka {
+    top: 1322px;
+    left: 718px;
+}
+
+.cup {
+    top: 1691px;
+    left: 328px;
+}
+
+.iphone {
+    top: 1646px;
+    left: 44px;
+}
+
+.newspaper {
+    top: 2383px;
+    left: 91px;
+}
+
+.magazine {
+    top: 2494px;
+    left: 679px;
+}
+
+.row-bot {
+    bottom: 76px;
+    height: 175px;
 }
