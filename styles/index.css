@@ -241,15 +241,57 @@ main
 
 .path-slide__photo
 {
-    left: 795px;
     top: 550px;
+    left: 795px;
+    position: absolute;
+}
+
+.path-slide__text_second
+{
+    top: 889px;
+    right: 86px;
+    position: absolute;
+}
+
+.path-slide__iphone
+{
+    left: 44px;
+    top: 1214px;
+    position: absolute;
+}
+
+.path-slide__ipad
+{
+    top: 890px;
+    left: 205px;
+    position: absolute;
+}
+
+.path-slide__cup
+{
+    top: 1260px;
+    left: 330px;
+    position: absolute;
+}
+
+.path-slide__mask
+{
+    right: 0;
+    top: 1127px;
+    position: absolute;
+}
+
+.path-slide__palka
+{
+    top: 889px;
+    right: 5px;
     position: absolute;
 }
 
 .footer-side
 {
-    position: relative;
     top: 10px;
     left: 10px;
     margin-bottom: 80px;
+    position: relative;
 }
