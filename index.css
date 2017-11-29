@@ -1,1 +1,545 @@
+main
+{
+    width: 957px;
+    height: 4664px;
+    background-color: #73c5f6;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.personSwitcher
+{
+    display: none;
+}
+
+.maxTheme:checked ~ main
+{
+    background-color: #73c5f6;
+}
+
+.alexTheme:checked ~ main
+{
+    background-color: #fe8283;
+}
+
+.gregoryTheme:checked ~ main
+{
+    background-color: #ffe05e;
+}
+
+.gregoryTheme:checked ~ main .gregoryDescription,
+.alexTheme:checked ~ main .alexDescription,
+.maxTheme:checked ~ main .maxDescription
+{
+    display: block;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg
+{
+    width: 1416px;
+    height: 788px;
+    object-fit: contain;
+}
+
+.Rectangle-2
+{
+    width: 138px;
+    height: 92px;
+    opacity: .6;
+    background-color: #fff;
+    border: solid 2px #010202;
+}
+
+.logo
+{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+
+.bigYandexLogo
+{
+    z-index: 10;
+    position: relative;
+    margin-top: -40px;
+    margin-left: -432px;
+    width: 1416px;
+    height: 788px;
+}
+
+.bigYandexLogo img
+{
+    width: 1416px;
+}
+
+.mainQuestion
+{
+    margin-left: 158px;
+    position: absolute;
+    z-index: 120;
+    width: 690px;
+    height: 86px;
+    font-size: 44px;
+    line-height: 1.09;
+    text-align: center;
+    color: #000;
+    top: 0;
+    margin-top: 377px;
+    display: flex;
+}
+
+.personsCards1
+{
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personsCards
+{
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 87px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personCard
+{
+    width: 285px;
+    text-align: center;
+}
+
+.personsCards .personCard:first-child,
+.personsCards1 .personCard:first-child
+{
+    margin-right: -65px;
+}
+
+.personsCards .personCard:last-child,
+.personsCards1 .personCard:last-child
+{
+    margin-left: -65px;
+}
+
+.personCard img
+{
+    width: 138px;
+    height: 138px;
+}
+
+.personCard .personName
+{
+    display: block;
+    height: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.personDescription
+{
+    position: absolute;
+    display: none;
+}
+
+.personDescription p
+{
+    margin-top: 0;
+    width: 285px;
+    height: 64px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.itroText
+{
+    margin-right: 97px;
+    position: relative;
+    z-index: 1000;
+    margin-left: 93px;
+    line-height: 1.75;
+    width: 450px;
+    height: 236px;
+    text-align: left;
+    color: #000;
+}
+
+.itroText p:first-child
+{
+    margin-top: 0;
+}
+
+.exampleVideo p
+{
+    margin-top: 16px;
+}
+
+.firstPage
+{
+    padding-top: 80px;
+    display: flex;
+    margin-top: -290px;
+    width: 100%;
+    height: 392px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.lastPage
+{
+    margin-top: 73px;
+    border-top: 2px solid black;
+}
+
+.pathImage
+{
+    position: absolute;
+    top: 0;
+    width: 757px;
+    height: 2453px;
+}
+
+.pathRegion
+{
+    background-image: url('img/path.png');
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 96px;
+    margin-top: 87px;
+    width: 100%;
+    height: 2453px;
+    display: flex;
+}
+
+.text1
+{
+    width: 280px;
+    margin-right: 115px;
+}
+
+.text3
+{
+    margin-left: 63px;
+    width: 280px;
+}
+
+.block1
+{
+    width: 390px;
+    padding-top: 86px;
+}
+
+.pathItem
+{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.pathItem p:first-child
+{
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+.notebookImage
+{
+    position: relative;
+    z-index: 200;
+    width: 294px;
+    height: 422px;
+}
+
+.phoneImage
+{
+    margin-left: -116px;
+    display: inline-block;
+    width: 294px;
+    height: 360px;
+}
+
+.block2
+{
+    position: relative;
+    padding-top: 77px;
+}
+
+.penImage
+{
+    position: relative;
+    margin-left: 32px;
+    width: 42px;
+    height: 227px;
+}
+
+.subblock
+{
+    padding-top: 86px;
+    display: flex;
+}
+
+.ticketImage
+{
+    margin-left: -78px;
+    z-index: 100;
+    margin-top: -70px;
+    width: 450px;
+    height: 175px;
+}
+
+.watchImage
+{
+    margin-right: 192px;
+    width: 120px;
+    height: 236px;
+    display: block;
+}
+
+.subblock2
+{
+    display: flex;
+    position: relative;
+    z-index: 200;
+    margin-top: -25px;
+}
+
+.photoImage
+{
+    margin-top: -43px;
+    width: 216px;
+    height: 281px;
+}
+
+.ipadImage
+{
+    margin-top: 177px;
+    margin-left: 108px;
+    width: 294px;
+    height: 442px;
+}
+
+.maskImage
+{
+    margin-top: 75px;
+    width: 372px;
+    height: 205px;
+}
+
+.palkaImage
+{
+    margin-left: -128px;
+    margin-top: 25px;
+    width: 216px;
+    height: 610px;
+}
+
+.sublock3
+{
+    margin-top: 48px;
+    display: flex;
+}
+
+.iphoneImage
+{
+    margin-top: -118px;
+    margin-left: -52px;
+    width: 138px;
+    height: 268px;
+}
+
+.cupImage
+{
+    margin-left: 234px;
+    margin-top: -240px;
+    width: 216px;
+    height: 291px;
+}
+
+.text2
+{
+    width: 292px;
+    margin-top: 123px;
+}
+
+.newspaperImage
+{
+    margin-top: 103px;
+    width: 294px;
+    height: 396px;
+}
+
+.bagImage
+{
+    margin-left: -20px;
+    margin-top: 134px;
+    width: 450px;
+    height: 384px;
+}
+
+.magazineImage
+{
+    margin-left: 200px;
+    margin-top: 37px;
+    width: 294px;
+    height: 399px;
+}
+
+.lastTextBlock
+{
+    width: 439px;
+    height: 164px;
+}
+
+.logoAtomImage
+{
+    width: 102px;
+    height: 102px;
+    margin-left: 122px;
+}
+
+.lastPageSubblock
+{
+    margin-left: 95px;
+    margin-top: 84px;
+    display: flex;
+}
+
+.smIcons
+{
+    margin-left: 96px;
+    display: flex;
+    margin-top: 8px;
+}
+
+.smIcon
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url('img/socialSprites.png');
+    background-repeat: no-repeat;
+}
+
+.fbIcon
+{
+    background-position: 0 0;
+}
+
+.fbIcon:hover
+{
+    background-position: 0 -24px;
+}
+
+.vkIcon
+{
+    background-position: -24px 0;
+}
+
+.vkIcon:hover
+{
+    background-position: -24px -24px;
+}
+
+.twitterIcon
+{
+    background-position: -48px 0;
+}
+
+.twitterIcon:hover
+{
+    background-position: -48px -24px;
+}
+
+.youtubeIcon
+{
+    background-position: -72px 0;
+}
+
+.youtubeIcon:hover
+{
+    background-position: -72px -24px;
+}
+
+.habraIcon
+{
+    background-position: -96px 0;
+}
+
+.habraIcon:hover
+{
+    background-position: -96px -24px;
+}
+
+.instagramIcon
+{
+    background-position: -120px 0;
+}
+
+.instagramIcon:hover
+{
+    background-position: -120px -24px;
+}
+
+.boldDash
+{
+    margin-left: 102px;
+    top: 370px;
+    z-index: 120;
+    position: absolute;
+    width: 43px;
+    height: 5px;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    color: #000;
+}
+
+footer
+{
+    margin-top: 92px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.footerBtns
+{
+    display: inline-block;
+    margin-left: 96px;
+    margin-right: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 196px;
+    height: 15px;
+    line-height: 24px;
+    text-align: left;
+    color: #000;
+    margin-top: -32px;
+}
 
