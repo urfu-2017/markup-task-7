@@ -1,21 +1,39 @@
-.Layer-0
+main
 {
     width: 957px;
-    height: 4614px;
+    height: 4664px;
     background-color: #73c5f6;
     border: 2px solid black;
     margin-bottom: 20px;
+    font-family: Arial;
+    font-size: 16px;
 }
 
-.Layer-171
+.personSwitcher
 {
-    width: 938px;
-    height: 364px;
+    display: none;
 }
 
-.Layer-171 img
+.maxTheme:checked ~ main
 {
-    width: 100%;
+    background-color: #73c5f6;
+}
+
+.alexTheme:checked ~ main
+{
+    background-color: #fe8283;
+}
+
+.gregoryTheme:checked ~ main
+{
+    background-color: #ffe05e;
+}
+
+.gregoryTheme:checked ~ main .gregoryDescription,
+.alexTheme:checked ~ main .alexDescription,
+.maxTheme:checked ~ main .maxDescription
+{
+    display: block;
 }
 
 body
@@ -54,7 +72,7 @@ body
     margin-bottom: 5px;
 }
 
-.Layer-171
+.bigYandexLogo
 {
     z-index: 10;
     position: relative;
@@ -64,28 +82,28 @@ body
     height: 788px;
 }
 
-.Layer-171 img
+.bigYandexLogo img
 {
     width: 1416px;
 }
 
-.header1
+.mainQuestion
 {
     margin-left: 158px;
     position: absolute;
     z-index: 120;
     width: 690px;
     height: 86px;
-    font-family: Arial;
     font-size: 44px;
     line-height: 1.09;
     text-align: center;
     color: #000;
     top: 0;
     margin-top: 377px;
+    display: flex;
 }
 
-.personsCards
+.personsCards1
 {
     position: relative;
     margin-top: 80px;
@@ -94,20 +112,33 @@ body
     align-items: center;
 }
 
-.personsCards .personCard:first-child
+.personsCards
 {
-    margin-right: 88px;
-}
-
-.personsCards .personCard:last-child
-{
-    margin-left: 88px;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 87px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .personCard
 {
-    width: 138px;
+    width: 285px;
     text-align: center;
+}
+
+.personsCards .personCard:first-child,
+.personsCards1 .personCard:first-child
+{
+    margin-right: -65px;
+}
+
+.personsCards .personCard:last-child,
+.personsCards1 .personCard:last-child
+{
+    margin-left: -65px;
 }
 
 .personCard img
@@ -118,10 +149,8 @@ body
 
 .personCard .personName
 {
-    width: 132px;
+    display: block;
     height: 16px;
-    font-family: Arial;
-    font-size: 16px;
     font-weight: bold;
     line-height: 1.38;
     text-align: center;
@@ -130,18 +159,24 @@ body
     margin-bottom: 32px;
 }
 
+.personDescription
+{
+    position: absolute;
+    display: none;
+}
+
 .personDescription p
 {
+    margin-top: 0;
     width: 285px;
     height: 64px;
-    font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #000;
 }
 
-.textBox1
+.itroText
 {
     margin-right: 97px;
     position: relative;
@@ -150,18 +185,16 @@ body
     line-height: 1.75;
     width: 450px;
     height: 236px;
-    font-family: Arial;
-    font-size: 16px;
     text-align: left;
     color: #000;
 }
 
-.textBox1 p:first-child
+.itroText p:first-child
 {
     margin-top: 0;
 }
 
-.ExampleVideo p
+.exampleVideo p
 {
     margin-top: 16px;
 }
@@ -175,8 +208,6 @@ body
     height: 392px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    font-family: Arial;
-    font-size: 16px;
     line-height: 1.5;
     text-align: left;
     color: #000;
@@ -226,14 +257,14 @@ body
     padding-top: 86px;
 }
 
-.textInblock
+.pathItem
 {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
 }
 
-.textInblock p:first-child
+.pathItem p:first-child
 {
     margin-top: 0;
     margin-bottom: 36px;
@@ -413,9 +444,71 @@ body
     width: 24px;
     height: 24px;
     margin-right: 10px;
+    background-image: url('img/socialSprites.png');
+    background-repeat: no-repeat;
 }
 
-.BoldDash
+.fbIcon
+{
+    background-position: 0 0;
+}
+
+.fbIcon:hover
+{
+    background-position: 0 -24px;
+}
+
+.vkIcon
+{
+    background-position: -24px 0;
+}
+
+.vkIcon:hover
+{
+    background-position: -24px -24px;
+}
+
+.twitterIcon
+{
+    background-position: -48px 0;
+}
+
+.twitterIcon:hover
+{
+    background-position: -48px -24px;
+}
+
+.youtubeIcon
+{
+    background-position: -72px 0;
+}
+
+.youtubeIcon:hover
+{
+    background-position: -72px -24px;
+}
+
+.habraIcon
+{
+    background-position: -96px 0;
+}
+
+.habraIcon:hover
+{
+    background-position: -96px -24px;
+}
+
+.instagramIcon
+{
+    background-position: -120px 0;
+}
+
+.instagramIcon:hover
+{
+    background-position: -120px -24px;
+}
+
+.boldDash
 {
     margin-left: 102px;
     top: 370px;
@@ -423,7 +516,6 @@ body
     position: absolute;
     width: 43px;
     height: 5px;
-    font-family: TextbookNew;
     font-size: 48px;
     line-height: 1;
     text-align: center;
@@ -439,13 +531,15 @@ footer
 
 .footerBtns
 {
+    display: inline-block;
     margin-left: 96px;
     margin-right: 80px;
+    font-family: Arial, Helvetica, sans-serif;
     width: 196px;
     height: 15px;
-    font-family: Arial;
-    font-size: 16px;
     line-height: 24px;
     text-align: left;
     color: #000;
+    margin-top: -32px;
 }
+
