@@ -10,17 +10,17 @@ p
 
 input[id='max']:checked ~ .letter
 {
-    background-color: #00bfff;
+    background-color: #72c5f6;
 }
 
 input[id='alex']:checked ~ .letter
 {
-    background-color: #fc69b4;
+    background-color: #ff8384;
 }
 
 input[id='georgy']:checked ~ .letter
 {
-    background-color: #ffd700;
+    background-color: #ffe05e;
 }
 
 .img-container:hover,
