@@ -2,8 +2,7 @@ body
 {
     display: flex;
     justify-content: center;
-    font-family: Arial;
-    font-size: 16px;
+    font: 16px Arial, sans-serif;
 }
 
 .main
@@ -20,22 +19,22 @@ body
 
 .background
 {
-    position: absolute;
-    z-index: 1;
     top: 90px;
     right: -6px;
+    width: 1416px;
+    height: 757px;
+    background-image: url(img/bg.webp);
 }
 
-.block
+.page-part
 {
-    position: relative;
     width: 954px;
     border: 2px solid black;
 }
 
-/* ********** Первый блок ********** */
+/* ********** Первая часть ********** */
 
-.block-1
+.page-part-1
 {
     margin-top: 18px;
     height: 551px;
@@ -44,29 +43,23 @@ body
 .yandex-logo
 {
     position: absolute;
-    top: 25px;
-    left: 426px;
-    font-size: 30px;
+    top: 20px;
+    left: 445px;
     opacity: .6;
-}
-
-.yandex-logo::first-letter
-{
-    color: red;
+    width: 100px;
 }
 
 .yandex-logo-svg
 {
     position: absolute;
-    left: 406px;
+    left: 426px;
     opacity: .6;
     stroke-width: 2;
 }
 
-.block-1-header
+.page-part-1-header
 {
     position: relative;
-    z-index: 2;
     top: 345px;
     left: 130px;
     width: 679px;
@@ -75,30 +68,29 @@ body
     text-align: center;
 }
 
-/* ********** Второй блок ********** */
+/* ********** Вторая часть ********** */
 
-.block-2
+.page-part-2
 {
-    border-top: none;
+    border-top: 0;
     height: 392px;
     line-height: 1.5;
 }
 
-.block-2-text-wrapper
+.page-part-2-text-wrapper
 {
     position: absolute;
-    z-index: 2;
-    top: 58px;
+    top: 630px;
     left: 93px;
     width: 450px;
     height: 236px;
 }
 
-.video-block
+.video
 {
     display: inline-block;
     position: absolute;
-    top: 72px;
+    top: 650px;
     right: 153px;
 }
 
@@ -120,49 +112,47 @@ body
     stroke-width: 2;
 }
 
-/* ********** Третий блок ********** */
+/* ********** Третья часть ********** */
 
-.block-3
+.page-part-3
 {
-    border-top: none;
+    border-top: 0;
     height: 3208px;
 }
 
 .path
 {
-    position: absolute;
-    top: 432px;
-    left: 116px;
+    top: 1379px;
+    left: 114px;
     width: 757px;
     height: 2453px;
     background-image: url(img/path.png);
-    background-size: cover;
 }
 
-.persons-block-1
+.persons-1
 {
     position: relative;
     top: 71px;
 }
 
-.peson-block
+.person
 {
     display: inline-block;
     position: absolute;
     width: 155px;
 }
 
-.maxim-block
+.maxim
 {
     left: 162px;
 }
 
-.alexey-block
+.alexey
 {
     left: 406px;
 }
 
-.george-block
+.george
 {
     right: 162px;
 }
@@ -229,7 +219,7 @@ body
     background-position: -5px -154px;
 }
 
-.block-3-paragraph
+.page-part-3-paragraph
 {
     width: 280px;
     line-height: 1.5;
@@ -239,141 +229,175 @@ body
 .text-wrapper-1
 {
     position: absolute;
-    top: 500px;
+    top: 1445px;
     left: 110px;
+}
+
+.background-image
+{
+    position: absolute;
+    background-size: cover;
 }
 
 .phone
 {
-    position: absolute;
-    top: 761px;
-    left: -20px;
+    top: 1728px;
+    left: 0;
+    width: 318px;
+    height: 384px;
+    background-image: url(img/phone.png);
 }
 
 .pen
 {
-    position: absolute;
-    top: 761px;
-    left: 328px;
+    top: 1728px;
+    left: 348px;
+    width: 48px;
+    height: 233px;
+    background-image: url(img/pen.png);
 }
 
 .ticket
 {
-    position: absolute;
-    top: 867px;
-    left: 406px;
+    top: 1834px;
+    left: 426px;
+    width: 454px;
+    height: 179px;
+    background-image: url(img/ticket.png);
 }
 
 .notebook
 {
-    position: absolute;
-    top: 509px;
-    left: 486px;
+    top: 1476px;
+    left: 504px;
+    width: 306px;
+    height: 434px;
+    background-image: url(img/notebook.png);
 }
 
 .watch
 {
-    position: absolute;
-    top: 1026px;
-    left: 484px;
+    top: 1993px;
+    left: 504px;
+    width: 130px;
+    height: 247px;
+    background-image: url(img/watch.webp);
 }
 
 .photo
 {
-    position: absolute;
-    top: 981px;
-    left: 796px;
+    top: 1948px;
+    left: 816px;
+    width: 227px;
+    height: 292px;
+    background-image: url(img/photo.png);
 }
 
 .text-wrapper-2
 {
     position: absolute;
-    top: 1300px;
+    top: 2245px;
     left: 575px;
 }
 
 .ipad
 {
-    position: absolute;
-    top: 1322px;
-    left: 202px;
+    top: 2289px;
+    left: 222px;
+    width: 304px;
+    height: 453px;
+    background-image: url(img/ipad.png);
 }
 
 .mask
 {
-    position: absolute;
-    top: 1559px;
-    left: 562px;
+    top: 2526px;
+    left: 582px;
+    width: 390px;
+    height: 223px;
+    background-image: url(img/mask.png);
 }
 
 .palka
 {
-    position: absolute;
-    top: 1322px;
-    left: 718px;
+    top: 2289px;
+    left: 738px;
+    width: 228px;
+    height: 622px;
+    background-image: url(img/palka.png);
 }
 
 .iphone
 {
-    position: absolute;
-    top: 1646px;
-    left: 44px;
+    top: 2613px;
+    left: 64px;
+    width: 148px;
+    height: 278px;
+    background-image: url(img/iphone.png);
 }
 
 .cup
 {
-    position: absolute;
-    top: 1691px;
-    left: 328px;
+    top: 2658px;
+    left: 348px;
+    width: 228px;
+    height: 303px;
+    background-image: url(img/cup.png);
 }
 
 .text-wrapper-3
 {
     position: absolute;
-    top: 2095px;
+    top: 3045px;
     left: 105px;
 }
 
 .bag
 {
-    position: absolute;
-    top: 2048px;
-    left: 440px;
+    top: 3015px;
+    left: 460px;
+    width: 475px;
+    height: 409px;
+    background-image: url(img/bag.png);
 }
 
 .newspaper
 {
-    position: absolute;
-    top: 2383px;
-    left: 91px;
+    top: 3350px;
+    left: 111px;
+    width: 318px;
+    height: 421px;
+    background-image: url(img/newspaper.png);
 }
 
 .magazine
 {
-    position: absolute;
-    top: 2494px;
-    left: 679px;
+    top: 3461px;
+    left: 699px;
+    width: 306px;
+    height: 411px;
+    background-image: url(img/magazine.png);
 }
 
-.persons-block-2
+.persons-2
 {
     position: relative;
     top: 2960px;
 }
 
-/* ********** Блок четвертый ********** */
+/* ********** Четвертая часть ********** */
 
-.block-4
+.page-part-4
 {
-    border-top: none;
+    border-top: 0;
     height: 435px;
 }
 
-.block-4-text-wrapper
+.page-part-4-text-wrapper
 {
     position: absolute;
-    top: 80px;
-    left: 95px;
+    top: 4241px;
+    left: 115px;
     width: 441px;
     line-height: 1.5;
 }
@@ -381,8 +405,8 @@ body
 .logo-atom
 {
     position: absolute;
-    top: 92px;
-    left: 656px;
+    top: 4261px;
+    left: 676px;
 }
 
 .logo-atom text
@@ -393,8 +417,8 @@ body
 .social-networks
 {
     position: absolute;
-    top: 272px;
-    left: 93px;
+    top: 4449px;
+    left: 113px;
 }
 
 .social-network-sprite
@@ -440,19 +464,19 @@ body
 a
 {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 a:hover
 {
-    color: rgb(204,0,0);
+    color: #c00;
 }
 
 footer
 {
     position: absolute;
-    top: 388px;
-    left: 96px;
+    top: 4565px;
+    left: 116px;
 }
 
 .help
@@ -472,47 +496,215 @@ input
     display: none;
 }
 
-.input-maxim:checked ~ .block
+.input-maxim:checked ~ .page-part
 {
-    background-color: rgb(255,225,92);
+    background-color: #ffe15c;
 }
 
-.input-alexey:checked ~ .block
+.input-alexey:checked ~ .page-part
 {
-    background-color: rgb(114,198,246);
+    background-color: #72c6f6;
 }
 
-.input-george:checked ~ .block
+.input-george:checked ~ .page-part
 {
-    background-color: rgb(255,131,132);
+    background-color: #ff8384;
 }
 
-.input-maxim:checked ~ .block-3 .maxim-info
-{
-    display: block;
-}
-
-.input-alexey:checked ~ .block-3 .alexey-info
+.input-maxim:checked ~ .page-part-3 .maxim-info
 {
     display: block;
 }
 
-.input-george:checked ~ .block-3 .george-info
+.input-alexey:checked ~ .page-part-3 .alexey-info
 {
     display: block;
 }
 
-.input-george:checked ~ .block-4 .logo-atom text
+.input-george:checked ~ .page-part-3 .george-info
+{
+    display: block;
+}
+
+.input-george:checked ~ .page-part-4 .logo-atom text
 {
     fill: rgb(255,131,132);
 }
 
-.input-maxim:checked ~ .block-4 .logo-atom text
+.input-maxim:checked ~ .page-part-4 .logo-atom text
 {
     fill: rgb(255,225,92);
 }
 
-.input-alexey:checked ~ .block-4 .logo-atom text
+.input-alexey:checked ~ .page-part-4 .logo-atom text
 {
     fill: rgb(114,198,246);
+}
+
+/*  ********** Фоновые картинки ********** */
+
+@media (-webkit-min-device-pixel-ratio: 2)
+{
+    .background
+    {
+        background-image: url(img/bg@2x.webp);
+    }
+
+    .path
+    {
+        background-image: url(img/path@2x.png);
+    }
+
+    .phone
+    {
+        background-image: url(img/phone@2x.png);
+    }
+
+    .pen
+    {
+        background-image: url(img/pen@2x.png);
+    }
+
+    .ticket
+    {
+        background-image: url(img/ticket@2x.png);
+    }
+
+    .notebook
+    {
+        background-image: url(img/notebook@2x.png);
+    }
+
+    .watch
+    {
+        background-image: url(img/watch@2x.webp);
+    }
+
+    .photo
+    {
+        background-image: url(img/photo@2x.png);
+    }
+
+    .ipad
+    {
+        background-image: url(img/ipad@2x.png);
+    }
+
+    .mask
+    {
+        background-image: url(img/mask@2x.png);
+    }
+
+    .palka
+    {
+        background-image: url(img/palka@2x.png);
+    }
+
+    .iphone
+    {
+        background-image: url(img/iphone@2x.png);
+    }
+
+    .cup
+    {
+        background-image: url(img/cup@2x.png);
+    }
+
+    .bag
+    {
+        background-image: url(img/bag@2x.png);
+    }
+
+    .newspaper
+    {
+        background-image: url(img/newspaper@2x.png);
+    }
+
+    .magazine
+    {
+        background-image: url(img/magazine@2x.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3)
+{
+    .background
+    {
+        background-image: url(img/bg@2x.webp);
+    }
+    
+    .path
+    {
+        background-image: url(img/path@3x.png);
+    }
+
+    .phone
+    {
+        background-image: url(img/phone@3x.png);
+    }
+
+    .pen
+    {
+        background-image: url(img/pen@3x.png);
+    }
+
+    .ticket
+    {
+        background-image: url(img/ticket@3x.png);
+    }
+
+    .notebook
+    {
+        background-image: url(img/notebook@3x.png);
+    }
+
+    .watch
+    {
+        background-image: url(img/watch@3x.webp);
+    }
+
+    .photo
+    {
+        background-image: url(img/photo@3x.png);
+    }
+
+    .ipad
+    {
+        background-image: url(img/ipad@3x.png);
+    }
+
+    .mask
+    {
+        background-image: url(img/mask@3x.png);
+    }
+
+    .palka
+    {
+        background-image: url(img/palka@3x.png);
+    }
+
+    .iphone
+    {
+        background-image: url(img/iphone@3x.png);
+    }
+
+    .cup
+    {
+        background-image: url(img/cup@3x.png);
+    }
+
+    .bag
+    {
+        background-image: url(img/bag@3x.png);
+    }
+
+    .newspaper
+    {
+        background-image: url(img/newspaper@3x.png);
+    }
+
+    .magazine
+    {
+        background-image: url(img/magazine@3x.png);
+    }
 }
