@@ -1,12 +1,27 @@
+/* TODO
+- отрефакторить
+- спраиты
+- base64
+- оптимизировать изображения
+- картинки сделать бэкграундом (?)
+- смена фона
+ */
+
 body {
     background-color: rgb(246, 245, 243);
     font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
 }
 
 .wrapper {
     width: 993px;
     margin: 0 auto;
-    background-color: yellow;
     position: relative;
 }
 
@@ -19,17 +34,55 @@ body {
     background-image: url(img/bg.png);
 }
 
-.logo {
+section {
     background-color: rgb(115, 197, 246);
+    margin: 0 21px 0 18px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.logo {
     height: 547px;
     position: initial;
-    border: 2px solid black;
-    border-bottom: 1px solid black;
-    margin: 0 21px 0 18px;
+    border-bottom-width: 1px;
+}
+
+.flag {
+    background: #c8e8fb;
+    position: absolute;
+    width: 128px;
+    height: 46px;
+    left: 430px;
+    margin: 0 auto;
+    border: 2px solid;
+    border-width: 0 2px;
+}
+
+.flag:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 46px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 42px 64px 0;
+    border-color: #c8e8fb transparent transparent;
+}
+
+.flag:before {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 46px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 44px 67px 0;
+    border-color: #000 transparent transparent;
 }
 
 .greetings {
-    margin-top: 345px;
     text-align: center;
     height: 86px;
     margin: 365px 115px 158px;
@@ -40,7 +93,6 @@ body {
     font-size: 44px;
     line-height: 48px;
     text-align: center;
-    font-family: Arial;
 }
 
 .greetings span:before {
@@ -58,14 +110,12 @@ body {
     z-index: 100;
 }
 
-
 .description {
-    background-color: rgb(115, 197, 246);
     height: 392px;
     position: initial;
     margin: 0 21px 0 18px;
     border: 2px solid black;
-    border-width: 1px 2px 1px 2px;
+    border-width: 1px 2px;
 }
 
 .row {
@@ -75,10 +125,7 @@ body {
 
 .desc {
     width: 450px;
-    font-size: 16px;
     text-align: left;
-    line-height: 24px;
-    font-family: Arial;
     float: left;
 }
 
@@ -99,6 +146,7 @@ body {
     margin-bottom: 13px;
     border: 2px solid #000;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .play {
@@ -119,23 +167,16 @@ body {
     top: -16px;
     left: -25px;
     border-radius: 1px;
-
 }
 
 .video span {
-    font-size: 16px;
-    line-height: 24px;
     text-align: left;
 }
 
-
 .users {
-    background-color: rgb(115, 197, 246);
     height: 3208px;
     position: relative;
-    margin: 0 21px 0 18px;
-    border: 2px solid black;
-    border-width: 1px 2px 1px 2px;
+    border-width: 1px 2px;
 }
 
 .users-row {
@@ -166,7 +207,7 @@ body {
 }
 
 .aleks .avatar {
-    background-image: url('img/layer-173.png')
+    background-image: url('img/layer-173.png');
 }
 
 .georg .avatar {
@@ -177,7 +218,6 @@ body {
     float: left;
     text-align: center;
     line-height: 22px;
-    font-size: 16px;
     font-weight: bold;
     position: relative;
 }
@@ -193,7 +233,7 @@ body {
     left: -70px;
     top: 200px;
     size: 16px;
-    line-height: 24px;
+
     text-align: center;
     font-weight: normal;
 }
@@ -202,7 +242,7 @@ body {
     position: absolute;
     top: 432px;
     left: 94px;
-    width: 1416px;
+    width: 757px;
     height: 2453px;
     background-image: url(img/path.png);
     background-repeat: no-repeat;
@@ -312,4 +352,80 @@ figure {
 .row-bot {
     bottom: 76px;
     height: 175px;
+}
+
+.footer {
+    height: 435px;
+    border-width: 1px 2px 2px;
+}
+
+.footer_text {
+    width: 441px;
+    margin: 68px 122px 24px 96px;
+    float: left;
+}
+
+.footer_text p:first-child {
+    margin-bottom: 30px;
+}
+
+.footer_logo {
+    float: left;
+    margin: 84px 0 0;
+}
+
+.social {
+    clear: both;
+    margin: 0 0 0 100px;
+}
+
+.social > div {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 8px 0 -4px;
+}
+
+.social > div > a {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.fb {
+    background-image: url(img/facebook.png);
+}
+
+.vk {
+    background-image: url(img/vkontakte.png);
+}
+
+.twitter {
+    background-image: url(img/twitter.png);
+}
+
+.youtube {
+    background-image: url(img/youtube.png);
+}
+
+.habra {
+    background-image: url(img/habra.png);
+}
+
+.instagram {
+    background-image: url(img/instagram.png);
+}
+
+.copy {
+    position: absolute;
+    bottom: 32px;
+    left: 96px;
+}
+
+.copy a:first-child {
+    margin-right: 15px;
+}
+
+.copy a:nth-child(2) {
+    margin-right: 70px;
 }
