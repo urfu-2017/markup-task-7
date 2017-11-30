@@ -1,1 +1,430 @@
+@font-face
+{
+    font-family: 'Yandex Sans Text Regular';
+    src: url('./fonts/Yandex Sans Text-Regular.ttf') format('ttf');
+    src: url('./fonts/Yandex Sans Text-Regular.eot') format('eot');
+    src: url('./fonts/Yandex Sans Text-Regular.woff2') format('woff2');
+    src: url('./fonts/YandexSansText-Regular.woff') format('woff');
+}
 
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font: 16px 'Yandex Sans Text Regular';
+    line-height: 1.5;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.header_block 
+{
+    margin-top: 20px;
+    height: 553px;
+}
+
+.header_block p
+{
+    position: absolute;
+    width: 679px;
+    height: 86px;
+    font-size: 40px;
+    line-height: 1.09;
+    text-align: center;
+    top: 373px;
+    left: 110px;
+    z-index: 2;
+    font-weight: normal;
+    margin: 0;
+}
+
+.discription
+{
+    height: 394px;
+}
+
+.header_block img
+{
+    position: absolute;
+    left: -435px;
+    top: 70px;
+    z-index: 1;
+}
+
+.logo_border
+{
+    position: absolute;
+    left: 408px;
+    opacity: .6;
+}
+
+.logo_border polyline
+{
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.logo_text
+{
+    position: absolute;
+    font-size: 2em;
+    left: 424px;
+    top: 10px;
+    transform: scaleX(.8);
+}
+
+.logo_text:first-letter
+{
+    color: #f00;
+}
+
+.block
+{
+    position: relative;
+    width: 954px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+.man_input
+{
+    display: none;
+}
+
+.discription_text
+{
+    width: 450px;
+    height: 236px;
+    position: absolute;
+    z-index: 2;
+    top: 76px;
+    left: 95px;
+}
+
+.video_logo_border
+{
+    position: absolute;
+    left: 638px;
+    top: 73px;
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.video_logo_svg
+{
+    position: absolute;
+    left: 697px;
+    top: 96px;
+}
+
+.video_logo_svg polyline
+{
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.video_description
+{
+    position: absolute;
+    left: 638px;
+    top: 167px;
+    width: 187px;
+    height: 15px;
+}
+
+.people
+{
+    height: 3210px;
+}
+
+.people_select
+{
+    width: 100%;
+    height: 300px;
+    padding-top: 105px;
+}
+
+.mans
+{
+    position: absolute;
+    top: 2985px;
+}
+
+.man
+{
+    position: absolute;
+    width: 138px;
+    height: 200px;
+    display: inline-block;
+}
+
+.man:hover .border,
+input[id='maxim']:checked ~ section .maxim .people_description,
+input[id='alexey']:checked ~ section .alexey .people_description,
+input[id='george']:checked ~ section .george .people_description
+{
+    display: block;
+}
+
+.border
+{
+    border-radius: 100%;
+    border: 3px solid #fff;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -9px;
+    left: -9px;
+    display: none;
+}
+
+.people_description
+{
+    width: 300px;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: 35px;
+    display: none;
+}
+
+.maxim
+{
+    left: 171px;
+}
+
+.alexey
+{
+    left: 407px;
+}
+
+.george
+{
+    left: 644px;
+}
+
+.sprite_people
+{
+    z-index: 1;
+    position: relative;
+    display: block;
+    height: 138px;
+    width: 138px;
+    background: url(img/faces-sprite.png) no-repeat;
+}
+
+.sprite_alexey
+{
+    background-position: -138px 0;
+}
+
+.sprite_george
+{
+    background-position: -276px 0;
+}
+
+.path
+{
+    position: absolute;
+    left: 94px;
+    top: 490px;
+}
+
+input[id='maxim']:checked ~ .block
+{
+    background-color: #67bef5;
+}
+
+input[id='alexey']:checked ~ .block
+{
+    background-color: #ff7779;
+}
+
+input[id='george']:checked ~ .block
+{
+    background-color: #ffe05e;
+}
+
+input[id='maxim']:checked ~ .block .logo_atom text
+{
+    fill: #67bef5;
+}
+
+input[id='alexey']:checked ~ .block .logo_atom text
+{
+    fill: #ff7779;
+}
+
+input[id='george']:checked ~ .block .logo_atom text
+{
+    fill: #ffe05e;
+}
+
+.logo_atom
+{
+    position: absolute;
+    top: 84px;
+    left: 655px;
+}
+
+.logo_atom text
+{
+    font-size: 70px;
+}
+
+.footer_block
+{
+    height: 437px;
+    border-bottom: 2px solid;
+}
+
+.social
+{
+    position: absolute;
+    left: 96px;
+    bottom: 125px;
+}
+
+.base64
+{
+    width: 24px;
+    height: 24px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAYCAAAAAAwzivRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIjSURBVEjHzZZvU9pAEMb9/l+ITUiC1D8VgVhw1EG0SCy1llgGDhKTgzy+CDbJXVIuipV9k8wmt89v9vb2do92xqqmaZr1PdotM3YHSDNNTQbSv906971P4fEATxOBanMA+FMizOHBtvYKAAwR6B4iEIvNqaV/O9LXL20fYA27v1EOANJPVSAPwOThRogEAMvjlPPhsRqDrQAAvm29H0ibhuFU2jIOhFKkgAUAxinnE2ZHSUIRjVLfBkZpIMsqPGUc8KVIDlEAsJTzOxCNGhq5MZCbWRBcaqWA2nOANXOBLnorgPd6HQmIZTO0HwAAnwQx0FCQXpwREVElZ+cFII3IjgAgahJVJSB/veIxG2ncdcQamqYFcC3mAk/HORmSgDgMokXsnBLVgQKgYU4kJx3+KsODliwd/agpAD0T7b96TaKVCPTTjYCV63bzIvkpBd1NC3A9T5p/3QwUbgAqLuqukKODX1EiMMjLxeRkc1FzGETzf2xZMRCx7DGrLxOe0JKB/I7KKePoErXioj4luiwDJJx7arC/QLa0YHldJTWgmUbUYsCsSaR7qkDMcQIAt9lbeLSu3itROhpain2IA/2kMd5BFWhdFInPPDkbPMfeoC1Kjw+VOzUHcLPuovodSgGxTH7av+Oa9vqG4l1eCAR2bhHVLhZQBCoaFk475/aXd04c/PXiXiYd4a1AW7EJBJt9MpDCTG2YpvFf9StbG/IrH5WhF4LgeMhKP2EjAAAAAElFTkSuQmCC') no-repeat;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.facebook
+{
+    background-position: 0 0;
+}
+
+.habra
+{
+    background-position: -96px 0;
+}
+
+.instagram
+{
+    background-position: -120px 0;
+}
+
+.twitter
+{
+    background-position: -48px 0;
+}
+
+.vkontakte
+{
+    background-position: -24px 0;
+}
+
+.youtube
+{
+    background-position: -72px 0;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 32px;
+    left: 96px;
+}
+
+.help,
+.os
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.os:hover,
+.help:hover
+{
+    color: #852a26;
+}
+
+.help
+{
+    margin-right: 18px;
+}
+
+.os
+{
+    margin-right: 80px;
+}
+
+.name
+{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text
+{
+    position: absolute;
+    width: 273px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.text_one,
+.text_two,
+.text_three
+{
+    top: 570px;
+}
+
+.text_one
+{
+    left: 94px;
+}
+
+.img_block
+{
+    position: absolute;
+    left: -28px;
+    top: 487px;
+    z-index: 1;
+}
+
+.content
+{
+    position: relative;
+    top: -447px;
+}
+
+.text_block1,
+.text_block2,
+.text_block3
+{
+    height: 800px;
+    position: relative;
+}
+
+.text_two
+{
+    left: 568px;
+}
+
+.text_three
+{
+    left: 80px;
+    width: 280px;
+}
+
+.footer_text
+{
+    position: absolute;
+    left: 95px;
+    top: 84px;
+    width: 442px;
+}
