@@ -47,12 +47,32 @@ section {
     border-bottom-width: 1px;
 }
 
+.logo_yandex {
+    position: absolute;
+    /* height: 46px; */
+    left: 430px;
+}
+
+.logo_yandex span {
+    position: absolute;
+    display: block;
+    width: 132px;
+    height: 30px;
+    text-align: center;
+    font-size: 28px;
+    top: 17px;
+}
+
+.logo_yandex span::first-letter {
+    color: #f22;
+}
+
 .flag {
     background: #c8e8fb;
     position: absolute;
     width: 128px;
-    height: 46px;
-    left: 430px;
+    height: 50px;
+    /* left: 430px; */
     margin: 0 auto;
     border: 2px solid;
     border-width: 0 2px;
@@ -62,7 +82,7 @@ section {
     content: '';
     position: absolute;
     right: 0;
-    top: 46px;
+    top: 50px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -74,7 +94,7 @@ section {
     content: '';
     position: absolute;
     right: -3px;
-    top: 46px;
+    top: 50px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -274,79 +294,121 @@ section {
     left: 93px;
 }
 
-figure {
+.bg_img > div {
     margin: 0;
     position: absolute;
 }
 
 .notebook {
+    width: 306px;
+    height: 434px;
     top: 509px;
     left: 484px;
+    background-image: url(img/notebook.png);
 }
 
 .phone {
+    width: 318px;
+    height: 384px;
     top: 761px;
     left: -20px;
+    background-image: url(img/phone.png);
 }
 
 .pen {
+    width: 48px;
+    height: 233px;
     top: 761px;
     left: 328px;
+    background-image: url(img/pen.png);
 }
 
 .ticket {
+    width: 454px;
+    height: 179px;
     top: 867px;
     left: 406px;
+    background-image: url(img/ticket.png);
 }
 
 .watch {
+    width: 130px;
+    height: 247px;
     top: 1024px;
     left: 484px;
+    background-image: url(img/watch.png);
 }
 
 .photo {
+    width: 227px;
+    height: 292px;
     top: 981px;
     left: 796px;
+    background-image: url(img/photo.png);
 }
 
 .bag {
+    width: 475px;
+    height: 409px;
     top: 2048px;
     left: 440px;
+    background-image: url(img/bag.png);
 }
 
 .ipad {
+    width: 304px;
+    height: 453px;
     top: 1322px;
     left: 202px;
+    background-image: url(img/ipad.png);
 }
 
 .mask {
+    width: 390px;
+    height: 223px;
     top: 1559px;
     left: 562px;
+    background-image: url(img/mask.png);
 }
 
 .palka {
+    width: 228px;
+    height: 622px;
     top: 1322px;
     left: 718px;
+    background-image: url(img/palka.png);
 }
 
 .cup {
+    width: 228px;
+    height: 303px;
     top: 1691px;
     left: 328px;
+    background-image: url(img/cup.png);
 }
 
 .iphone {
+    width: 148px;
+    height: 278px;
     top: 1646px;
     left: 44px;
+    background-image: url(img/iphone.png);
 }
 
 .newspaper {
+    width: 318px;
+    height: 421px;
     top: 2383px;
     left: 91px;
+    background-image: url(img/newspaper.png);
 }
 
 .magazine {
+    width: 306px;
+    height: 411px;
     top: 2494px;
     left: 679px;
+    background-image: url(img/magazine.png);
 }
 
 .row-bot {
