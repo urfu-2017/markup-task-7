@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'Oswald';
+    src: url(Oswald-Regular.ttf);
+}
+
 html
 {
     display: flex;
@@ -10,7 +16,7 @@ html
 main
 {
     position: relative;
-    width: 993px;
+    width: 956px;
     height: 4654px;
     background-color: rgb(114, 195, 245);
     border: 2px solid rgb(0, 0, 0);
@@ -24,10 +30,12 @@ main
 
 .begin > svg
 {
+    top: -2px;
     position: absolute;
     left: 406px;
     fill-opacity: .6;
     stroke-width: 2;
+    opacity: .5;
 }
 
 .yandex-logo
@@ -36,37 +44,28 @@ main
     margin-left: 410px;
     width: 130px;
     height: 80px;
-    top: -17px;
+    top: -20px;
     position: absolute;
-    transform: scale(.6);
+    transform: scale(.7);
 }
 
 .bg 
 {
     position: absolute;
+    left: -435px;
     top: 70px;
-    right: -5px;
-    width: 1416px;
-    height: 788px;
-    object-fit: contain;
 }
 
-header
+.main-title
 {
-    position: relative;
-    width: 722px;
+    position: absolute;
     height: 86px;
-    font-size: 39px;
-    line-height: 48px;
+    font-size: 44px;
+    line-height: 1.09;
     text-align: center;
-    top: 385px;
-    left: 125px;
-    letter-spacing: 2px;
-}
-
-header::before
-{
-    content: '— ';
+    top: 377px;
+    left: 103px;
+    right: 115px;
 }
 
 .begin
@@ -102,9 +101,11 @@ header::before
 .video-triangle
 {
     position: absolute;
-    top: 24px;
-    left: 62px;
-    stroke-width: 1;
+    top: 22px;
+    left: 59px;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
 }
 
 .video-rectangle
@@ -132,7 +133,7 @@ header::before
 
 .character
 {
-    margin: 80px 50px 0;
+    margin: 80px 44px 0;
 }
 
 .character-face
@@ -177,12 +178,12 @@ header::before
 
 .face2
 {
-    background-position: -152px -5px;
+    background-position: -153px -5px;
 }
 
 .face3
 {
-    background-position: -5px -154px;
+    background-position: -4px -155px;
 }
 
 .path
@@ -239,7 +240,7 @@ header::before
     margin-bottom: 26px;
 }
 
-.more_info
+.more-info
 {
     position: absolute;
     top: 1685px;
@@ -327,18 +328,13 @@ header::before
     left: -86px;
 }
 
-input
-{
-    display: none;
-}
-
 .characters2
 {
     position: absolute;
     top: 2460px;
     display: flex;
     justify-content: center;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .character
@@ -374,13 +370,13 @@ input
 {
     position: absolute;
     top: 2062px;
-    left: 620px;
+    left: 585px;
 }
 
 .social-networks
 {
     position: relative;
-    top: 40px;
+    top: 24px;
 }
 
 .social-networks > span
@@ -474,15 +470,16 @@ footer
     border-top: 2px solid rgb(0, 0, 0);
     height: 420px;
     top: 2800px;
-    width: 997px;
-    margin-left: -93px;
+    width: 956px;
+    margin-left: -90px;
 }
 
 .the-end
 {
-    top: 80px;
+    top: 84px;
     position: relative;
     left: 108px;
+    width: 439px;
 }
 
 .conclusion
@@ -498,14 +495,15 @@ footer
 .ya
 {
     position: relative;
-    top: 100px;
+    top: 92px;
 }
 
 .logo-atom
 {
+    font-family: 'Oswald';
     position: absolute;
     top: 10px;
-    left: 616px;
+    left: 561px;
 }
 
 .yandex
