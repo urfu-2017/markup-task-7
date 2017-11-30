@@ -13,13 +13,15 @@
 
 <main>
     <section class="header-slide">
-        <svg class="header-slide__arrow"
-             height="98" width="138"
-             fill="#fff" opacity="0.6"
-             stroke="#000">
-            <polygon points="0,0 138,0 137,0 137,50 138,50 69,92 1,50 1,0"></polygon>
-        </svg>
-        <div class="header-slide__logo"></div>
+        <div class="header-slide__arrow-logo">
+            <svg class="header-slide__arrow"
+                 height="98" width="138"
+                 fill="#fff" opacity="0.6"
+                 stroke="#000">
+                <polygon points="0,0 138,0 137,0 137,50 138,50 69,92 1,50 1,0"></polygon>
+            </svg>
+            <div class="header-slide__logo"></div>
+        </div>
         <img class="header-slide__background" src="images/bg.png" alt="Фон первого слайда"
              srcset="images/bg.png 1x, images/bg@2x.png 2x, images/bg@3x.png 3x">
         <p class="header-slide__text">
@@ -204,8 +206,8 @@
         </div>
     </div>
 
-    <section class="footer-side">
-        <p class="footer-side__statement">
+    <section class="footer-slide">
+        <p class="footer-slide__statement">
             Ин&shy;тер&shy;нет се&shy;го&shy;дня&nbsp;&mdash; это
             не&nbsp;толь&shy;ко ин&shy;фор&shy;ма&shy;ция
             и&nbsp;тех&shy;но&shy;ло&shy;гии, это лю&shy;ди:
@@ -222,12 +224,23 @@
             и&nbsp;Ге&shy;ор&shy;гий И. Да&shy;у&shy;ге.
         </p>
 
-        <span class="footer-side__links">
-            <a class="footer-side__link" href="#">Помощь</a>
-            <a class="footer-side__link" href="#">Обратная связь</a>
+        <div class="footer-slide__social">
+            <a href="#" class="social-link social-link-facebook"></a>
+            <a href="#" class="social-link social-link-vk"></a>
+            <a href="#" class="social-link social-link-twitter"></a>
+            <a href="#" class="social-link social-link-youtube"></a>
+            <a href="#" class="social-link social-link-habrahabr"></a>
+            <a href="#" class="social-link social-link-instagram"></a>
+        </div>
+
+        <div class="footer-slide__ya-letter"></div>
+
+        <span class="footer-slide__links">
+            <a class="footer-slide__link" href="#">Помощь</a>
+            <a class="footer-slide__link" href="#">Обратная связь</a>
         </span>
 
-        <span class="footer-side__copyright">© 2017  ООО «Яндекс»</span>
+        <span class="footer-slide__copyright">© 2017  ООО «Яндекс»</span>
     </section>
 </main>
 
