@@ -43,11 +43,12 @@ input[id='georgy']:checked ~ .letter .third-person .person__description
 {
     margin: 0 auto;
     width: 954px;
+    font-size: 16px;
     height: 4634px;
+    line-height: 22px;
     box-sizing: border-box;
     border: 2px solid black;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: Arial, sans-serif;
 }
 
 .letter__header
@@ -112,7 +113,7 @@ input[id='georgy']:checked ~ .letter .third-person .person__description
     top: 80px;
     left: 93px;
     width: 450px;
-    height: 236px;
+    height: 240px;
     position: absolute;
 }
 
@@ -210,7 +211,7 @@ input[id='georgy']:checked ~ .letter .third-person .person__description
     top: 86px;
     left: 96px;
     width: 280px;
-    height: 64px;
+    height: 170px;
     position: absolute;
     z-index: 2;
 }
@@ -236,6 +237,14 @@ input[id='georgy']:checked ~ .letter .third-person .person__description
     height: 64px;
     text-align: center;
     margin-bottom: 36px;
+}
+
+.description,
+.description__text,
+.description-letter,
+.footer__description
+{
+    overflow: hidden;
 }
 
 .notebook
@@ -356,7 +365,7 @@ footer
     border-top: 2px solid #000;
 }
 
-.footer_description
+.footer__description
 {
     top: 84px;
     left: 95px;
