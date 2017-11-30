@@ -263,7 +263,7 @@ picture
 
 .path-start
 {
-    top: 86px;
+    top: 81px;
 }
 
 .notebook
@@ -279,8 +279,8 @@ picture
 
 .ticket
 {
-    top: 435px;
     left: 312px;
+    bottom: 276px;
 }
 
 .pen,
@@ -302,19 +302,24 @@ picture
 .photo,
 .watch
 {
-    bottom: 1612px;
+    bottom: 49px;
 }
 
 .photo
 {
-    left: 702px;
+    right: -172px;
 }
 
 .path-middle,
+.path-finish
+{
+    top: -5px;
+}
+
 .ipad,
 .palka
 {
-    top: 890px;
+    top: 0;
 }
 
 .path-middle
@@ -329,54 +334,55 @@ picture
 
 .mask
 {
-    top: 1127px;
-    left: 468px;
+    
+    right: -101px;
+    bottom: 335px;
 }
 
 .palka
 {
-    left: 624px;
+    right: -95px;
 }
 
 .iphone
 {
-    top: 1214px;
+    bottom: 193px;
     left: -50px;
 }
 
 .cup
 {
     left: 234px;
-    bottom: 891px;
+    bottom: 123px;
 }
 
 .path-finish
 {
-    top: 1685px;
     left: -14px;
 }
 
 .bag
 {
-    bottom: 428px;
+    top: -69px;
     left: 346px;
 }
 
 .newspaper
 {
-    bottom: 106px;
+    bottom: 81px;
     left: 3px;
 }
 
 .magazine
 {
-    left: 585px;
-    top: 2062px;
+    right: -133px;
+    bottom: -20px;
 }
 
 footer
 {
     border-top: 2px solid #000;
+    height: 435px;
 }
 
 .svg-firstletter
@@ -387,10 +393,11 @@ footer
 
 .svg-circle-yandex
 {
-    vertical-align: top;
+    position: absolute;
     margin-top: 80px;
     width: 102px;
     height: 102px;
+    right: 194px;
 }
 
 .social
@@ -399,9 +406,17 @@ footer
     margin: 0 0 92px 93px;
 }
 
+.social,
+footer .info
+{
+    bottom: 0;
+    position: absolute;
+}
+
 footer .text-block
 {
     margin: 80px 97px 8px 93px;
+    position: absolute;
 }
 
 .social .facebook,
@@ -647,4 +662,27 @@ input[value^='g']:checked ~ .wrapper .svg-firstletter
 .watch img
 {
     width: 130px;
+}
+
+.path-part-1,
+.path-part-2,
+.path-part-3
+{
+    position: relative;
+    width: 100%;
+}
+
+.path-part-1
+{
+    height: 889px;
+}
+
+.path-part-2
+{
+    height: 796px;
+}
+
+.path-part-3
+{
+    height: 768px;
 }
