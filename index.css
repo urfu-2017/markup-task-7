@@ -61,7 +61,10 @@ p.header-question
     text-align: center;
     width: 85%;
     left: 7.5%;
-    top: 314px;
+    top: 375px;
+    margin: 0 0 88px;
+    line-height: 1.09;
+    height: 86px;
 }
 
 .header-logo .flag
@@ -398,7 +401,7 @@ footer
 
 footer .text-block
 {
-    margin: 80px 97px 24px 93px;
+    margin: 80px 97px 8px 93px;
 }
 
 .social .facebook,
@@ -528,7 +531,10 @@ footer .copyright
 }
 
 .face-picture:hover .outline,
-.outline:hover
+.outline:hover,
+input[value^='m']:checked ~ .wrapper .maxim .outline,
+input[value^='a']:checked ~ .wrapper .alexey .outline,
+input[value^='g']:checked ~ .wrapper .george .outline
 {
     display: block;
 }
