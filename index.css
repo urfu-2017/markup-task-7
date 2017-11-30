@@ -20,7 +20,7 @@ section h2
 
 .wrapper header
 {
-    height: 540px;
+    height: 551px;
 }
 
 .wrapper p
@@ -32,6 +32,7 @@ section h2
 .wrapper p:first-child
 {
     margin-top: 0;
+    padding-bottom: 16px;
 }
 
 .wrapper header,
@@ -40,12 +41,17 @@ section h2
     border-bottom: 2px solid #000;
 }
 
+.presentation
+{
+    height: 392px;
+}
+
 .background
 {
     width: 1024px;
     position: absolute;
     left: -435px;
-    top: 60px;
+    top: 70px;
 }
 
 p.header-question
@@ -144,10 +150,16 @@ p.header-question
 {
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-    margin: 80px auto;
-    margin-bottom: 100px;
+    width: 612px;
+    margin: 0 auto;
+    padding-top: 80px;
+    height: 352px;
     justify-content: space-between;
+}
+
+.faces:last-of-type
+{
+    height: 243px;
 }
 
 .faces .name
@@ -172,15 +184,16 @@ p.header-question
 .description
 {
     position: absolute;
-    width: 285px;
+    width: 286px;
     left: -50%;
 }
 
 .face-picture
 {
+    font-size: 0;
     display: block;
     width: 138px;
-    height: 138px;
+    height: 139px;
     margin: 0 auto;
     background-image: url('img/faces.png');
     background-size: cover;
@@ -189,7 +202,7 @@ p.header-question
 
 .maxim .face-picture
 {
-    background-position: 137px 0;
+    background-position: 138px 0;
 }
 
 .alexey .face-picture
@@ -199,7 +212,7 @@ p.header-question
 
 .george .face-picture
 {
-    background-position: 274px 0;
+    background-position: 276px 0;
 }
 
 .path
@@ -210,6 +223,11 @@ p.header-question
     background-image: url('img/path.png');
     background-size: cover;
     position: relative;
+}
+
+picture
+{
+    font-size: 0;
 }
 
 .path-start,
@@ -237,29 +255,35 @@ p.header-question
 .path-middle,
 .path-finish
 {
-    width: 280px;
+    width: 295px;
 }
 
 .path-start
 {
-    top: 65px;
+    top: 86px;
 }
 
 .notebook
 {
-    top: 75px;
+    top: 77px;
+}
+
+.notebook,
+.watch
+{
+    left: 390px;
 }
 
 .ticket
 {
-    top: 434px;
-    left: 300px;
+    top: 435px;
+    left: 312px;
 }
 
 .pen,
 .phone
 {
-    top: 330px;
+    top: 329px;
 }
 
 .pen
@@ -269,25 +293,25 @@ p.header-question
 
 .phone
 {
-    left: -125px;
+    left: -116px;
 }
 
 .photo,
 .watch
 {
-    bottom: 1600px;
+    bottom: 1612px;
 }
 
 .photo
 {
-    right: -160px;
+    left: 702px;
 }
 
 .path-middle,
 .ipad,
 .palka
 {
-    top: 882px;
+    top: 890px;
 }
 
 .path-middle
@@ -297,53 +321,54 @@ p.header-question
 
 .ipad
 {
-    left: 103px;
+    left: 108px;
 }
 
 .mask
 {
-    top: 1116px;
-    right: -100px;
+    top: 1127px;
+    left: 468px;
 }
 
 .palka
 {
-    right: -90px;
+    left: 624px;
 }
 
 .iphone
 {
-    bottom: 975px;
+    top: 1214px;
     left: -50px;
 }
 
 .cup
 {
-    left: 225px;
-    bottom: 895px;
+    left: 234px;
+    bottom: 891px;
 }
 
 .path-finish
 {
-    bottom: 590px;
+    top: 1685px;
+    left: -14px;
 }
 
 .bag
 {
-    bottom: 430px;
-    right: -65px;
+    bottom: 428px;
+    left: 346px;
 }
 
 .newspaper
 {
-    bottom: 80px;
-    left: 0;
+    bottom: 106px;
+    left: 3px;
 }
 
 .magazine
 {
-    bottom: -20px;
-    right: -135px;
+    left: 585px;
+    top: 2062px;
 }
 
 footer
@@ -496,7 +521,7 @@ footer .copyright
     height: 157px;
     position: absolute;
     background-image: url('data:image/svg+xml;utf8,<svg baseProfile="full" xmlns="http://www.w3.org/2000/svg"><circle cx="78" cy="78" r="77" stroke-width="3" stroke="#fff" fill="none"/></svg>');
-    top: -9px;
+    top: -8px;
     left: -9px;
     display: none;
     cursor: pointer;
