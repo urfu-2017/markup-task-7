@@ -1,10 +1,255 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-</body>
-</html>
 
+<body>
+    <input name="face" type="radio" value="maxim" id="face-maxim" checked>
+    <input name="face" type="radio" value="alexey" id="face-alexey">
+    <input name="face" type="radio" value="george" id="face-george">
+    <div class="wrapper">
+        <header>
+            <svg class="header-logo" width="138" height="93">
+                <polygon class="flag" points="1,-1 1,56 68,92 137,56 137,-1"></polygon>
+            </svg>
+            <div class="company-name"></div>
+            <picture class="background">
+                <source media="(min-resolution: 192dpi)" srcset="img/bg@2x.png" type="img/png">
+                <source media="(min-resolution: 288dpi)" srcset="img/bg@3x.png" type="img/png">
+                <img src="img/bg.png" alt="Яндекс">
+            </picture>
+            <p class="header-question">
+                &mdash; A что если интернет подстроится под меня?
+            </p>
+
+        </header>
+        <section class="presentation">
+            <h2>Вступление. Презентация.</h2>
+            <div class="text-block">
+                <p class="no-margin-top">
+                    Ин­тер­нет се­го­дня — это не толь­ко ин­фор­ма­ция и тех­но­ло­гии,
+                    это лю­ди: их же­ла­ния, пред­по­чте­ния, за­да­чи.
+                    Лю­ди – вот ато­мы, из ко­то­рых на са­мом де­ле
+                    со­сто­ит циф­ро­вая ма­те­рия; и эти лю­ди очень, очень
+                    раз­ные. Се­го­дня по­иск уме­ет под­стра­и­вать­ся,
+                    по­мо­гая лю­дям быст­рее при­хо­дить к тем ре­ше­ни­ям,
+                    ко­то­рые им нуж­ны.
+                </p>
+                <p class="no-margin-top">
+                    Мы пред­став­ля­ем Атом: со­во­куп­ность ин­стру­мен­тов, 
+                    при­зван­ных на­учить ин­тер­нет под­стра­и­вать­ся под раз­ных
+                    людей, ко­то­рые им нуж­ны.
+                </p>
+            </div>
+            <div class="play-video">
+                <div class="button">
+                    <svg width="27" height="37">
+                        <path d="M 2 1 Q 1 1 1 2 V 35 Q 1 36 2 36 L 25 20 Q 27 18 25 16 L 2 0 Z"></path>
+                    </svg>
+                </div>
+                <p>Весь сайт в одном видео</p>
+            </div>
+        </section>
+        <main>
+            <section class="faces">
+                <h2>Лица</h2>
+                <div class="maxim">
+                    <label for="face-maxim" class="face-picture">
+                        <span class="outline"></span>
+                    </label>
+                    <p class="name">Максим</p>
+                    <p class="description">
+                        Очень дорожит редкими отпусками и превыше всего
+                        ценит комфорт и каче&shy;ство обслуживания.
+                    </p>
+                </div>
+                <div class="alexey">
+                    <label for="face-alexey" class="face-picture">
+                        <span class="outline"></span>
+                    </label>
+                    <p class="name">Алексей Быков</p>
+                    <p class="description">
+                        Очень дорожит редкими отпусками и превыше всего
+                        ценит комфорт и каче&shy;ство обслуживания.
+                    </p>
+                </div>
+                <div class="george">
+                    <label for="face-george" class="face-picture">
+                        <span class="outline"></span>
+                    </label>
+                    <p class="name">Георгий И. Дауге</p>
+                    <p class="description">
+                        Очень дорожит редкими отпусками и превыше всего
+                        ценит комфорт и каче&shy;ство обслуживания.
+                    </p>
+                </div>
+            </section>
+
+            <section class="path">
+                <h2>Маршрут</h2>
+                <div class="path-part-1">
+                <div class="path-start">
+                    <p>
+                        Юра сразу покупает тур: в его ситуа&shy;ции так очевидно проще. 
+                        Основные вводные - приемлемого качества.
+                    </p>
+                    <p>
+                        Отель центре тайской жизни: чтобы и еда, 
+                        и качественный пляж, достопри&shy;мечательности, и рестораны.
+                    </p>
+                </div>
+                <picture class="ticket">
+                    <source media="(min-resolution: 192dpi)" srcset="img/ticket@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/ticket@3x.png" type="image/png">
+                    <img src="img/ticket.png" alt="Билет">
+                </picture>
+                <picture class="notebook">
+                    <source media="(min-resolution: 192dpi)" srcset="img/notebook@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/notebook@3x.png" type="image/png">
+                    <img src="img/notebook.png" alt="Блокнот">
+                </picture>
+                <picture class="pen">
+                    <source media="(min-resolution: 192dpi)" srcset="img/pen@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/pen@3x.png" type="image/png">
+                    <img src="img/pen.png" alt="Ручка">
+                </picture>
+                <picture class="phone">
+                    <source media="(min-resolution: 192dpi)" srcset="img/phone@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/phone@3x.png" type="image/png">
+                    <img src="img/phone.png" alt="Телефон">
+                </picture>
+                <picture class="watch">
+                    <source media="(min-resolution: 192dpi)" srcset="img/watch@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/watch@3x.png" type="image/png">
+                    <img src="img/watch.png" alt="Часы">
+                </picture>
+                <picture class="photo">
+                    <source media="(min-resolution: 192dpi)" srcset="img/photo@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/photo@3x.png" type="image/png">
+                        <img src="img/photo.png" alt="Фотография"></picture>
+                </div>
+                <div class="path-part-2">
+                <div class="path-middle">
+                    <p>
+                        Юра носит линзы, и у него как раз за&shy;
+                        канчивается запас - нужно купить новые.
+                    </p>
+                    <p>
+                        Отель центре тайской жизни: чтобы и еда, 
+                        и качественный пляж, достопри&shy;
+                        мечательности, и рестораны.
+                    </p>
+                </div>
+                <picture class="ipad">
+                    <source media="(min-resolution: 192dpi)" srcset="img/ipad@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/ipad@3x.png" type="image/png">
+                    <img src="img/ipad.png" alt="IPad">
+                </picture>
+                <picture class="mask">
+                    <source media="(min-resolution: 192dpi)" srcset="img/mask@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/mask@3x.png" type="image/png">
+                    <img src="img/mask.png" alt="Маска">
+                </picture>
+                <picture class="palka">
+                    <source media="(min-resolution: 192dpi)" srcset="img/palka@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/palka@3x.png" type="image/png">
+                    <img src="img/palka.png" alt="Шноркель">
+                </picture>
+                <picture class="iphone">
+                    <source media="(min-resolution: 192dpi)" srcset="img/iphone@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/iphone@3x.png" type="image/png">
+                    <img src="img/iphone.png" alt="IPhone">
+                </picture>
+                <picture class="cup">
+                    <source media="(min-resolution: 192dpi)" srcset="img/cup@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/cup@3x.png" type="image/png">
+                    <img src="img/cup.png" alt="Чашка">
+                </picture>
+                </div>
+                <div class="path-part-3">
+                <div class="path-finish">
+                    <p>
+                            Что Юра точно не хочет упустить, 
+                            так это возможность попробовать местную еду. 
+                            Каждый вечер они с женой -
+                    </p>
+                    <p>
+                            Каждый вечер они с женой - иногда с детьми, 
+                            иногда вдвоем - отправляют в новый местный ресторан.
+                    </p>
+                </div>
+                <picture class="bag">
+                    <source media="(min-resolution: 192dpi)" srcset="img/bag@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/bag@3x.png" type="image/png">
+                    <img src="img/bag.png" alt="Сумка">
+                </picture>
+                <picture class="newspaper">
+                    <source media="(min-resolution: 192dpi)" srcset="img/newspaper@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/newspaper@3x.png" type="image/png">
+                    <img src="img/newspaper.png" alt="Газета">
+                </picture>
+                <picture class="magazine">
+                    <source media="(min-resolution: 192dpi)" srcset="img/magazine@2x.png" type="image/png">
+                    <source media="(min-resolution: 288dpi)" srcset="img/magazine@3x.png" type="image/png">
+                    <img src="img/magazine.png" alt="Журнал">
+                    </picture></div>
+            </section>
+            <section class="faces">
+                <h2>Лица</h2>
+                <div class="maxim">
+                    <label for="face-maxim" class="face-picture">
+                        <span class="outline"></span>
+                    </label>
+                    <p class="name">Максим</p>
+                </div>
+                <div class="alexey">
+                    <label for="face-alexey" class="face-picture">
+                        <span class="outline"></span>
+                    </label>
+                    <p class="name">Алексей Быков</p>
+                </div>
+                <div class="george">
+                    <label for="face-george" class="face-picture">
+                        <span class="outline"></span>
+                    </label>
+                    <p class="name">Георгий И. Дауге</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="text-block">
+                <p>
+                    Интернет сегодня — это не только информация и техноло&shy;гии, 
+                    это люди: их желания, предпочтения, задачи. Люди &mdash; вот атомы, из
+                    которых на самом деле состоит цифровая материя; и эти люди очень, очень разные.
+                </p>
+                <p>
+                    Теперь посмотрите, как планировали путешествие в Таи&shy;
+                    ланд Алексей Быков и Георгий И. Дауге.
+                </p>
+            </div>
+            <svg class="svg-circle-yandex" viewbox="0 0 102 102">
+                <circle cx="51" cy="51" r="51" fill="#fff"></circle>
+                <text x="30" y="76" class="svg-firstletter">Я</text>
+            </svg>
+            <div class="social">
+                <div class="facebook"></div>
+                <div class="vk"></div>
+                <div class="twitter"></div>
+                <div class="youtube"></div>
+                <div class="habrahabr"></div>
+                <div class="instagram"></div>
+            </div>
+            <div class="info">
+                <span>Помощь&nbsp;&nbsp;&nbsp;&nbsp;Обратная связь</span>
+                <span class="copyright">&copy; 2017 ООО «Яндекс»</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
