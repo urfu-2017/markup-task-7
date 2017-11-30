@@ -35,16 +35,14 @@ main
     stroke-width: 2;
 }
 
-.yandex-logo image
-{
-    position: absolute;
-    top: 25px;
-    left: 426px;
-}
-
 .yandex-logo polygon
 {
     opacity: .6;
+}
+
+.yandex-logo path
+{
+    stroke-width: 3px;
 }
 
 .bgr
@@ -60,7 +58,7 @@ main
     position: relative;
     z-index: 2;
     top: 280px;
-    width: 679px;
+    width: 740px;
     height: 86px;
     font-size: 44px;
     margin: 0 auto;
@@ -485,7 +483,6 @@ input[name='persons']
 .person-1:checked ~ .part-4 .ya
 {
     fill: #ffe15d;
-    
 }
 
 .person-2:checked ~ .element
