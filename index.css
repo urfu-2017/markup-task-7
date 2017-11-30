@@ -1,1 +1,710 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    font: 16px Arial, sans-serif;
+}
 
+.main
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 993px;
+    height: 4634px;
+}
+
+.background
+{
+    top: 90px;
+    right: -6px;
+    width: 1416px;
+    height: 757px;
+    background-image: url(img/bg.webp);
+}
+
+.page-part
+{
+    width: 954px;
+    border: 2px solid black;
+}
+
+/* ********** Первая часть ********** */
+
+.page-part-1
+{
+    margin-top: 18px;
+    height: 551px;
+}
+
+.yandex-logo
+{
+    position: absolute;
+    top: 20px;
+    left: 445px;
+    opacity: .6;
+    width: 100px;
+}
+
+.yandex-logo-svg
+{
+    position: absolute;
+    left: 426px;
+    opacity: .6;
+    stroke-width: 2;
+}
+
+.page-part-1-header
+{
+    position: relative;
+    top: 345px;
+    left: 130px;
+    width: 679px;
+    height: 86px;
+    font-size: 37px;
+    text-align: center;
+}
+
+/* ********** Вторая часть ********** */
+
+.page-part-2
+{
+    border-top: 0;
+    height: 392px;
+    line-height: 1.5;
+}
+
+.page-part-2-text-wrapper
+{
+    position: absolute;
+    top: 630px;
+    left: 93px;
+    width: 450px;
+    height: 236px;
+}
+
+.video
+{
+    display: inline-block;
+    position: absolute;
+    top: 650px;
+    right: 153px;
+}
+
+.video-rectangle
+{
+    position: relative;
+    width: 138px;
+    height: 80px;
+    margin-left: 0;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.video-triangle
+{
+    position: absolute;
+    top: 22px;
+    left: 59px;
+    stroke-width: 2;
+}
+
+/* ********** Третья часть ********** */
+
+.page-part-3
+{
+    border-top: 0;
+    height: 3208px;
+}
+
+.path
+{
+    top: 1379px;
+    left: 114px;
+    width: 757px;
+    height: 2453px;
+    background-image: url(img/path.png);
+}
+
+.persons-1
+{
+    position: relative;
+    top: 71px;
+}
+
+.person
+{
+    display: inline-block;
+    position: absolute;
+    width: 155px;
+}
+
+.maxim
+{
+    left: 162px;
+}
+
+.alexey
+{
+    left: 406px;
+}
+
+.george
+{
+    right: 162px;
+}
+
+.sprite-border
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.person-sprite
+{
+    margin-top: 8px;
+    margin-left: 5px;
+    background-image: url(img/people-sprites.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 138px;
+    height: 138px;
+    cursor: pointer;
+}
+
+.person-sprite:hover ~ .sprite-border
+{
+    display: block;
+}
+
+.person-name
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.person-info
+{
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 286px;
+    height: 64px;
+    left: -66px;
+}
+
+.maxim-sprite
+{
+    background-position: -5px -5px;
+}
+
+.alexey-sprite
+{
+    background-position: -153px -5px;
+}
+
+.george-sprite
+{
+    background-position: -5px -154px;
+}
+
+.page-part-3-paragraph
+{
+    width: 280px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.text-wrapper-1
+{
+    position: absolute;
+    top: 1445px;
+    left: 110px;
+}
+
+.background-image
+{
+    position: absolute;
+    background-size: cover;
+}
+
+.phone
+{
+    top: 1728px;
+    left: 0;
+    width: 318px;
+    height: 384px;
+    background-image: url(img/phone.png);
+}
+
+.pen
+{
+    top: 1728px;
+    left: 348px;
+    width: 48px;
+    height: 233px;
+    background-image: url(img/pen.png);
+}
+
+.ticket
+{
+    top: 1834px;
+    left: 426px;
+    width: 454px;
+    height: 179px;
+    background-image: url(img/ticket.png);
+}
+
+.notebook
+{
+    top: 1476px;
+    left: 504px;
+    width: 306px;
+    height: 434px;
+    background-image: url(img/notebook.png);
+}
+
+.watch
+{
+    top: 1993px;
+    left: 504px;
+    width: 130px;
+    height: 247px;
+    background-image: url(img/watch.webp);
+}
+
+.photo
+{
+    top: 1948px;
+    left: 816px;
+    width: 227px;
+    height: 292px;
+    background-image: url(img/photo.png);
+}
+
+.text-wrapper-2
+{
+    position: absolute;
+    top: 2245px;
+    left: 575px;
+}
+
+.ipad
+{
+    top: 2289px;
+    left: 222px;
+    width: 304px;
+    height: 453px;
+    background-image: url(img/ipad.png);
+}
+
+.mask
+{
+    top: 2526px;
+    left: 582px;
+    width: 390px;
+    height: 223px;
+    background-image: url(img/mask.png);
+}
+
+.palka
+{
+    top: 2289px;
+    left: 738px;
+    width: 228px;
+    height: 622px;
+    background-image: url(img/palka.png);
+}
+
+.iphone
+{
+    top: 2613px;
+    left: 64px;
+    width: 148px;
+    height: 278px;
+    background-image: url(img/iphone.png);
+}
+
+.cup
+{
+    top: 2658px;
+    left: 348px;
+    width: 228px;
+    height: 303px;
+    background-image: url(img/cup.png);
+}
+
+.text-wrapper-3
+{
+    position: absolute;
+    top: 3045px;
+    left: 105px;
+}
+
+.bag
+{
+    top: 3015px;
+    left: 460px;
+    width: 475px;
+    height: 409px;
+    background-image: url(img/bag.png);
+}
+
+.newspaper
+{
+    top: 3350px;
+    left: 111px;
+    width: 318px;
+    height: 421px;
+    background-image: url(img/newspaper.png);
+}
+
+.magazine
+{
+    top: 3461px;
+    left: 699px;
+    width: 306px;
+    height: 411px;
+    background-image: url(img/magazine.png);
+}
+
+.persons-2
+{
+    position: relative;
+    top: 2960px;
+}
+
+/* ********* Четвертая часть ********* */
+
+.page-part-4
+{
+    border-top: 0;
+    height: 435px;
+}
+
+.page-part-4-text-wrapper
+{
+    position: absolute;
+    top: 4241px;
+    left: 115px;
+    width: 441px;
+    line-height: 1.5;
+}
+
+.logo-atom
+{
+    position: absolute;
+    top: 4261px;
+    left: 676px;
+}
+
+.logo-atom text
+{
+    font-size: 80px;
+}
+
+.social-networks
+{
+    position: absolute;
+    top: 4449px;
+    left: 113px;
+}
+
+.social-network-sprite
+{
+    background-image: url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding-right: 8px;
+}
+
+.facebook
+{
+    background-position: -5px -5px;
+}
+
+.vkontakte
+{
+    background-position: -39px -5px;
+}
+
+.twitter
+{
+    background-position: -39px -39px;
+}
+
+.youtube
+{
+    background-position: -73px -39px;
+}
+
+.habra
+{
+    background-position: -39px -5px;
+}
+
+.instagram
+{
+    background-position: -5px -39px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover
+{
+    color: #c00;
+}
+
+footer
+{
+    position: absolute;
+    top: 4565px;
+    left: 116px;
+}
+
+.help
+{
+    margin-right: 15px;
+}
+
+.feedback
+{
+    margin-right: 80px;
+}
+
+/* ********** Инпуты ********** */
+
+input
+{
+    display: none;
+}
+
+.input-maxim:checked ~ .page-part
+{
+    background-color: #ffe15c;
+}
+
+.input-alexey:checked ~ .page-part
+{
+    background-color: #72c6f6;
+}
+
+.input-george:checked ~ .page-part
+{
+    background-color: #ff8384;
+}
+
+.input-maxim:checked ~ .page-part-3 .maxim-info
+{
+    display: block;
+}
+
+.input-alexey:checked ~ .page-part-3 .alexey-info
+{
+    display: block;
+}
+
+.input-george:checked ~ .page-part-3 .george-info
+{
+    display: block;
+}
+
+.input-george:checked ~ .page-part-4 .logo-atom text
+{
+    fill: rgb(255,131,132);
+}
+
+.input-maxim:checked ~ .page-part-4 .logo-atom text
+{
+    fill: rgb(255,225,92);
+}
+
+.input-alexey:checked ~ .page-part-4 .logo-atom text
+{
+    fill: rgb(114,198,246);
+}
+
+/*  ********** Фоновые картинки ********** */
+
+@media (-webkit-min-device-pixel-ratio: 2)
+{
+    .background
+    {
+        background-image: url(img/bg@2x.webp);
+    }
+
+    .path
+    {
+        background-image: url(img/path@2x.png);
+    }
+
+    .phone
+    {
+        background-image: url(img/phone@2x.png);
+    }
+
+    .pen
+    {
+        background-image: url(img/pen@2x.png);
+    }
+
+    .ticket
+    {
+        background-image: url(img/ticket@2x.png);
+    }
+
+    .notebook
+    {
+        background-image: url(img/notebook@2x.png);
+    }
+
+    .watch
+    {
+        background-image: url(img/watch@2x.webp);
+    }
+
+    .photo
+    {
+        background-image: url(img/photo@2x.png);
+    }
+
+    .ipad
+    {
+        background-image: url(img/ipad@2x.png);
+    }
+
+    .mask
+    {
+        background-image: url(img/mask@2x.png);
+    }
+
+    .palka
+    {
+        background-image: url(img/palka@2x.png);
+    }
+
+    .iphone
+    {
+        background-image: url(img/iphone@2x.png);
+    }
+
+    .cup
+    {
+        background-image: url(img/cup@2x.png);
+    }
+
+    .bag
+    {
+        background-image: url(img/bag@2x.png);
+    }
+
+    .newspaper
+    {
+        background-image: url(img/newspaper@2x.png);
+    }
+
+    .magazine
+    {
+        background-image: url(img/magazine@2x.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3)
+{
+    .background
+    {
+        background-image: url(img/bg@2x.webp);
+    }
+    
+    .path
+    {
+        background-image: url(img/path@3x.png);
+    }
+
+    .phone
+    {
+        background-image: url(img/phone@3x.png);
+    }
+
+    .pen
+    {
+        background-image: url(img/pen@3x.png);
+    }
+
+    .ticket
+    {
+        background-image: url(img/ticket@3x.png);
+    }
+
+    .notebook
+    {
+        background-image: url(img/notebook@3x.png);
+    }
+
+    .watch
+    {
+        background-image: url(img/watch@3x.webp);
+    }
+
+    .photo
+    {
+        background-image: url(img/photo@3x.png);
+    }
+
+    .ipad
+    {
+        background-image: url(img/ipad@3x.png);
+    }
+
+    .mask
+    {
+        background-image: url(img/mask@3x.png);
+    }
+
+    .palka
+    {
+        background-image: url(img/palka@3x.png);
+    }
+
+    .iphone
+    {
+        background-image: url(img/iphone@3x.png);
+    }
+
+    .cup
+    {
+        background-image: url(img/cup@3x.png);
+    }
+
+    .bag
+    {
+        background-image: url(img/bag@3x.png);
+    }
+
+    .newspaper
+    {
+        background-image: url(img/newspaper@3x.png);
+    }
+
+    .magazine
+    {
+        background-image: url(img/magazine@3x.png);
+    }
+}
