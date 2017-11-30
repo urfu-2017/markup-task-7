@@ -1,1 +1,506 @@
+@font-face
+{
+    font-family: Yandex-Sans;
+    src: url(YandexSansText-Regular.ttf);
+}
 
+main
+{
+    width: 975px;
+    margin: 2% auto;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.element
+{
+    position: relative;
+    border: #000 solid;
+    border-width: 1px 2px;
+    box-sizing: border-box;
+}
+
+/* ----------- First Part -------------- */
+
+.part-1
+{
+    height: 553px;
+    border-top-width: 2px;
+    text-align: center;
+}
+
+.yandex-logo
+{
+    display: inline-block;
+    stroke-width: 2;
+}
+
+.yandex-logo polygon
+{
+    opacity: .6;
+}
+
+.yandex-logo path
+{
+    stroke-width: 3px;
+}
+
+.bgr
+{
+    position: absolute;
+    z-index: 1;
+    top: 68px;
+    right: -8px;
+}
+
+.header
+{
+    position: relative;
+    z-index: 2;
+    top: 280px;
+    width: 740px;
+    height: 86px;
+    font-size: 44px;
+    margin: 0 auto;
+}
+
+/* ----------- Second Part -------------- */
+
+.part-2
+{
+    height: 392px;
+    line-height: 1.5;
+    padding-left: 93px;
+    padding-top: 80px;
+}
+
+.text-info
+{
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    width: 450px;
+    height: 236px;
+    margin-right: 97px;
+}
+
+.text-info p
+{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.video
+{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    vertical-align: top;
+}
+
+.video-border
+{
+    position: relative;
+    width: 138px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+
+.play-button
+{
+    position: absolute;
+    top: 22px;
+    left: 59px;
+}
+
+.play-button polygon
+{
+    stroke-width: 2;
+}
+
+.video p
+{
+    margin-top: 16px;
+}
+
+/* ----------- Third Part -------------- */
+
+.part-3
+{
+    height: 3208px;
+    padding-top: 71px;
+}
+
+.persons
+{
+    display: flex;
+    justify-content: space-between;
+    width: 625px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.person
+{
+    position: relative;
+    width: 155px;
+}
+
+.name
+{
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.icon-border
+{
+    position: absolute;
+    display: none;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    top: -8px;
+    left: 0;
+}
+
+.sprite-1,
+.sprite-2,
+.sprite-3
+{
+    position: relative;
+    display: inline-block;
+    background-image: url('img/persons.png');
+    width: 138px;
+    height: 138px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sprite-1
+{
+    background-position: -10px -10px;
+}
+
+.sprite-2
+{
+    background-position: -168px -10px;
+}
+
+.sprite-3
+{
+    background-position: -326px -10px;
+}
+
+.description-1,
+.description-2,
+.description-3
+{
+    position: absolute;
+    display: none;
+    width: 285px;
+    height: 64px;
+    margin: 0;
+    left: -65px;
+}
+
+label:hover ~ .icon-border,
+.person-1:checked ~ .part-3 .description-1,
+.person-2:checked ~ .part-3 .description-2,
+.person-3:checked ~ .part-3 .description-3
+{
+    display: block;
+}
+
+/* ----------- Img Part -------------- */
+
+.path
+{
+    position: absolute;
+    top: 432px;
+    left: 94px;
+    width: 757px;
+    height: 2453px;
+}
+
+.text-1
+{
+    position: absolute;
+    width: 275px;
+    top: 518px;
+    left: 96px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.text-1 p
+{
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+.notebook
+{
+    position: absolute;
+    top: 509px;
+    right: 177px;
+}
+
+.phone
+{
+    position: absolute;
+    top: 761px;
+    left: -20px;
+}
+
+.pen
+{
+    position: absolute;
+    top: 761px;
+    left: 328px;
+}
+
+.ticket
+{
+    position: absolute;
+    top: 867px;
+    right: 99px;
+}
+
+.watch
+{
+    position: absolute;
+    top: 1026px;
+    left: 484px;
+}
+
+.photo
+{
+    position: absolute;
+    top: 981px;
+    left: 796px;
+}
+
+.text-2
+{
+    position: absolute;
+    width: 280px;
+    top: 1321px;
+    left: 569px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.text-2 p
+{
+    margin-top: 0;
+    margin-bottom: 38px;
+}
+
+.ipad
+{
+    position: absolute;
+    top: 1322px;
+    left: 202px;
+}
+
+.mask
+{
+    position: absolute;
+    top: 1559px;
+    right: 21px;
+}
+
+.palka
+{
+    position: absolute;
+    top: 1322px;
+    right: 21px;
+}
+
+.iphone
+{
+    position: absolute;
+    top: 1646px;
+    left: 44px;
+}
+
+.cup
+{
+    position: absolute;
+    top: 1691px;
+    left: 328px;
+}
+
+.text-3
+{
+    position: absolute;
+    top: 2095px;
+    left: 105px;
+    width: 280px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.text-3 p
+{
+    margin-top: 18px;
+    margin-bottom: 35px;
+}
+
+.bag
+{
+    position: absolute;
+    top: 2048px;
+    right: 65px;
+}
+
+.newspaper
+{
+    position: absolute;
+    top: 2383px;
+    left: 91px;
+}
+
+.magazine
+{
+    position: absolute;
+    top: 2494px;
+    left: 679px;
+}
+
+.bottom-icons
+{
+    position: relative;
+    top: 2665px;
+}
+
+/* ----------- Fourth Part -------------- */
+
+.part-4
+{
+    height: 435px;
+    padding-top: 84px;
+    padding-left: 97px;
+    border-bottom-width: 2px;
+}
+
+.text-4
+{
+    width: 441px;
+    line-height: 1.5;
+}
+
+.text-4 p
+{
+    margin: 0;
+}
+
+.text-4 p:first-child
+{
+    margin-bottom: 24px;
+}
+
+.logo
+{
+    position: absolute;
+    top: 84px;
+    right: 197px;
+}
+
+.logo text
+{
+    font-family: Yandex-Sans, Arial Narrow, Helvetica, sans-serif;
+    font-size: 82px;
+}
+
+.social
+{
+    margin-top: 24px;
+    margin-bottom: 92px;
+}
+
+.social a
+{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAwCAYAAACynDzrAAAFtklEQVRoQ+2a90ssMRDH5+z92UWxgl0sWFCxISL+y/qDDbsogoq9V+y9l3t8w8uxe5vdze6tPr27AVHZzWzyyWQymYmrt7fXTUHRJeAKAjK2jiAgk9VjG1BISAilp6dTfHw8hYeHk8vlosfHR9re3varBWsLUGRkJDU0NFBsbKwKxtXVFU1PTwcBVVRUUHZ2tgaEFUA9PT2q9n19far/zZ7LzEJLS4vua+jr5uYmvby8GKqyZUHt7e0UHR3tUXx9fU3Pz8/08PBAGxsbMn0nMwBmz2U+4q3Du83Hxwez+NvbW2d3sa6uLgoLC2NK397eaGBgQKa/lizEaUCvr6+En4iICPbD5fz8nGZnZ78OECxneHj4xwPa39+npaUl1s/Ozk4PpPv7exobG3MGUE5ODrOcwsJCwi4GeX9/p62tLfY3YB0fH0vBMjN/byXePkrmI8pvKAHBN8XFxTEVjlpQR0cHRUVF6fbt9PSU5ubmZPqu8UFmjXwFBBCYvMTERMJEQxz3QWaA9vb2aHl52Wys7Pl3W5CoU0qr0uu0pV2sqqqKrd3k5GQWGEI+Pz8JWybk6OiI/cjITwDE3cLk5KTudm8JEB+4chf7jU46KyuLKisrPfNoZEkBCQhklI7aaCcLWECyW33AAIKVcF+ZkZGhChYRpqyvrwtdZ8AA0ts4cEyamppyJlD8zU7amwAsCnGbnuXw9/+bBcmEAj/hnSAgk1kIAvoKQDiw8kja7XazA6u/ii0L8lcYonE5Bsjlcj253e5nr48gVZf3m4E6BkgHwg0R/Ql4QPBHPAULfwS/9E+CgACnra3Nk8R/enqikZERDikICJaD9IdS+vv7+c5mGxDAo+4Ga0S15H+Jzz7IKiBUYjFgJNr0JC0tjcrLyz3pXRwLkHBHBRftUc/6LvEZEGa6qalJtcSQofvnhzQWVF1dzRL+8/PzLCfsLQAAfbwooHyO5BxSujhgooTzHWIJEK8nWeicBhBK1kjZ3t3d0cLCAvutFL2qLd4BdCTe0U5WSkpKmMXZDWalAMHk8SFei4fJr6ys0MXFhVk/NYCKi4upoKCAteMDPjg4YFaB/+vr6yklJUWoF9+bmZkx+6bqOXLfmFBAQmpVscNK6RECwrLhinCDo6amxnO04FrxHBVJDik0NFS0ZDSAUDZqbm5WJaygEzMM8DExMZpn/JtWqia8jbI4gNsna2trdHJyooGD8fDjk/KhChBPxit2IbaFo9MiQU17YmKCPUKtHjV7iKKGJfRB0JeQkCA1g8qXkLvhRUrZxqLqyeXlJa2urhrW5Ll+DSA4zqGhIfYcs41amJGgLo/6PKS7u5s5VyNAeXl5VFpaKjs+1XuwWBQArYheeQkWgxIVoBvd8NAAQkN+GeErAAFgbW2trp/RGzyW4ODgoGF4IGprVn+DXvi1mxsYu1ZMl1hra6vmohRXY2eJoS2cfVFREbuhJlr3oo7u7OywZWFVjABhY4BO/NYTISBso7xCmpqaymbceyCwNJDHeobk5uZSWVmZqQ/CC/BXqEvBscsIlvDo6Kit2EcECPEUnLXMRQshIMQmcL58JwMkbPP8RgSegzzfwbBsYGn8UpWRD+JAkpKSWLTMdRqBwoUIJNjtiBIQ/Cuc/O7urjBIlV5ieBE3xbxDer1AEU4XzpeLDCC8C7AIDFEKFgkmCBOBAdkVAIIexEAYj4Ugl31SaEG8M1CIH73gCgNE4KeEg7Z6gHCWgv/BJVBcQ8nMzGR/iwQDWVxcpLOzM7tsWLu6ujoGGTGWHTEEBIVQDAeJjnL6GBQcbH5+vjBGMrIgROW4n4NlK3LQSJccHh4yq7F7PLADQq+NKSBlQ364NHOuMksMWQAEi4ANS4QjxmQg2v1JogLU2NjITN8XgQMfHx/nKmzng3zpg5NtpQ6rPnzQfwHpHd4swvJfQBZB6L1uCMihSXCoq2I1fwHBoQu9TCyBjQAAAABJRU5ErkJggg==');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+}
+
+.facebook
+{
+    background-position: 0 0;
+}
+
+.vkontakte
+{
+    background-position: -48px 0;
+}
+
+.twitter
+{
+    background-position: -24px -24px;
+}
+
+.youtube
+{
+    background-position: -48px -24px;
+}
+
+.habrahabr
+{
+    background-position: -24px 0;
+}
+
+.instagram
+{
+    background-position: 0 -24px;
+}
+
+.help
+{
+    margin-right: 15px;
+}
+
+.feedback
+{
+    margin-right: 80px;
+}
+
+input[name='persons']
+{
+    display: none;
+}
+
+.person-1:checked ~ .element
+{
+    background-color: #ffe15d;
+}
+
+.person-1:checked ~ .part-4 .ya
+{
+    fill: #ffe15d;
+}
+
+.person-2:checked ~ .element
+{
+    background-color: #73c5f6;
+}
+
+.person-2:checked ~ .part-4 .ya
+{
+    fill: #73c5f6;
+}
+
+.person-3:checked ~ .element
+{
+    background-color: #ff8384;
+}
+
+.person-3:checked ~ .part-4 .ya
+{
+    fill: #ff8384;
+}
