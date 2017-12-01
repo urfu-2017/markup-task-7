@@ -51,6 +51,7 @@ input[id='george']:checked ~ .block .ya-letter text
 .block
 {
     position: relative;
+    box-sizing: border-box;
     width: 954px;
     border-top: 2px solid;
     border-right: 2px solid;
@@ -112,23 +113,31 @@ input[id='george']:checked ~ .block .ya-letter text
 .block-description
 {
     height: 394px;
+    padding-top: 78px;
+    padding-left: 90px;
+
 }
 
 .description
 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
     width: 450px;
     height: 236px;
-    position: absolute;
     z-index: 2;
-    top: 71px;
-    left: 92px;
+}
+
+.video
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 96px;
 }
 
 .video-button-border
 {
-    position: absolute;
-    left: 638px;
-    top: 73px;
+    position: relative;
     width: 138px;
     height: 80px;
     border-radius: 4px;
@@ -138,15 +147,14 @@ input[id='george']:checked ~ .block .ya-letter text
 .video-button-triangle
 {
     position: absolute;
-    left: 697px;
-    top: 96px;
+    left: 60px;
+    top: 23px;
 }
 
 .video-button-description
 {
-    position: absolute;
-    left: 638px;
-    top: 167px;
+    position: relative;
+    margin-top: 15px;
     width: 187px;
     height: 15px;
 }
