@@ -39,7 +39,6 @@ main
 .background_picture
 {
     position: absolute;
-    z-index: 0;
     background-image: url(image/bg.png);
     background-repeat: no-repeat;
     width: 1416px;
@@ -60,7 +59,6 @@ main
 .text
 {
     position: absolute;
-    z-index: 2;
     margin-left: 95px;
 }
 
@@ -209,49 +207,49 @@ input[id='george']:checked ~ main .main_page
 {
     height: 64px;
     line-height: 1.5;
+    margin: 0;
 }
 
 .first_part
 {
     width: 275px;
-    margin-top: 86px;
-    margin-left: 0;
+    top: 86px;
 }
 
 .second_part
 {
     width: 280px;
-    margin-top: 186px;
-    margin-left: -4px;
-    margin-right: -3px;
+    top: 186px;
+    right: -3px;
+    left: -4px;
 }
 
 .third_part
 {
     width: 280px;
-    margin-top: 889px;
-    margin-left: 473px;
+    top: 889px;
+    left: 473px;
 }
 
 .fourth_part
 {
     width: 280px;
-    margin-top: 988px;
-    margin-left: 473px;
+    top: 988px;
+    left: 473px;
 }
 
 .fifth_part
 {
     width: 292px;
-    margin-top: 1685px;
-    margin-left: -16px;
+    top: 1685px;
+    left: -16px;
 }
 
 .sixth_part
 {
     width: 287px;
-    margin-top: 1784px;
-    margin-left: -14px;
+    top: 1784px;
+    left: -14px;
 }
 
 .path img
