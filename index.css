@@ -1,7 +1,7 @@
 .container
 {
     width: 950px;
-    height: 4634px;
+    height: 4590px;
     margin: 0 auto;
     position: relative;
     border: 2px solid #000;
@@ -44,10 +44,10 @@ main > .description
     position: absolute;
 }
 
-p.text
+.video p.text
 {
     width: 190px;
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 .description-text
@@ -77,9 +77,8 @@ p.text
 
 .persons
 {
-    height: 400px;
+    height: 420px;
     text-align: center;
-    position: relative;
     margin-bottom: 20px;
 }
 
@@ -94,8 +93,15 @@ p.text
 .person-3
 {
     width: 300px;
-    position: absolute;
-    top: 73px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-top: 75px;
+}
+
+.persons div[class*='person']:not(:first-child)
+{
+    margin-left: -70px;
 }
 
 .persons .description,
@@ -167,21 +173,6 @@ input[id='georg']:checked ~ .container .person-3 .description
     display: inline-block;
 }
 
-.person-1
-{
-    left: 84px;
-}
-
-.person-2
-{
-    left: 330px;
-}
-
-.person-3
-{
-    left: 576px;
-}
-
 .persons .description
 {
     display: none;
@@ -191,6 +182,8 @@ input[id='georg']:checked ~ .container .person-3 .description
 {
     font-weight: bold;
     line-height: 1.38;
+    margin-top: 3px;
+    margin-bottom: 32px;
 }
 
 .photo-alexey
@@ -415,6 +408,11 @@ footer
     color: #000;
 }
 
+.footer-text p:first-child
+{
+    margin-bottom: 30px;
+}
+
 .circle-yandex
 {
     position: absolute;
@@ -479,7 +477,7 @@ footer > a
     line-height: 1.5;
     color: #000;
     position: absolute;
-    bottom: -120px;
+    bottom: -115px;
 }
 
 .contacts a
