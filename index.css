@@ -1,8 +1,17 @@
 main
 {
-    display: grid;
-    grid-template-rows: 167px 70px 757px 4550px 84px;
-    grid-template-columns: 435px 954px 1086px;
+    position: absolute;
+    margin-top: 167px;
+    margin-left: 15%;
+    width: 954px;
+}
+
+.bg
+{
+    position: inherit;
+    margin-left: -46%;
+    margin-top: 70px;
+    width: 1416px;
 }
 
 .back-plate
