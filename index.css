@@ -115,7 +115,6 @@ input[id='george']:checked ~ .block .ya-letter text
     height: 394px;
     padding-top: 78px;
     padding-left: 90px;
-
 }
 
 .description
@@ -394,27 +393,36 @@ input[id='george']:checked ~ section div .george .person-description
 .block-footer
 {
     height: 437px;
+    padding-left: 90px;
+    padding-top: 80px;
     border-bottom: 2px solid;
+}
+
+.footer
+{
+    display: flex;
 }
 
 .footer-text
 {
-    position: absolute;
-    left: 95px;
-    top: 84px;
-    width: 442px;
+    position: relative;
 }
 
 .footer-text p
 {
-    margin-top: 0;
+    width: 442px;
+    margin: 0;
+}
+
+.footer-text p:first-of-type
+{
+    margin-bottom: 40px;
 }
 
 .ya-letter
 {
-    position: absolute;
-    top: 84px;
-    left: 655px;
+    position: relative;
+    margin-left: 80px;
 }
 
 .ya-letter text
@@ -424,9 +432,8 @@ input[id='george']:checked ~ section div .george .person-description
 
 .sn-sprites
 {
-    position: absolute;
-    left: 96px;
-    bottom: 139px;
+    position: relative;
+    margin-top: 24px;
 }
 
 .sprite-sn
@@ -478,11 +485,10 @@ input[id='george']:checked ~ section div .george .person-description
     background-position: -48px -24px;
 }
 
-.footer
+.credits
 {
-    position: absolute;
-    bottom: 32px;
-    left: 96px;
+    position: relative;
+    margin-top: 65px;
 }
 
 .link-help,
