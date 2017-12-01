@@ -1,1 +1,434 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
 
+input
+{
+    display: none;
+}
+
+main
+{
+    width: 993px;
+    height: 4634px;
+    position: relative;
+    font: 16px 'Arial';
+}
+
+.main_page
+{
+    margin: 18px 18px 0;
+    background-color: #72c5f6;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+    border-top: solid 2px #000;
+}
+
+.header
+{
+    height: 551px;
+    width: 954px;
+    box-sizing: border-box;
+    border-bottom: solid 2px #000;
+    text-align: center;
+}
+
+.background_picture
+{
+    position: absolute;
+    background-image: url(image/bg.png);
+    background-repeat: no-repeat;
+    width: 1416px;
+    height: 788px;
+    left: -417px;
+    top: 90px;
+}
+
+.header_name
+{
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.09;
+    margin-top: 280px;
+    margin-right: 115px;
+}
+
+.text
+{
+    position: absolute;
+    margin-left: 95px;
+}
+
+.internet_now
+{
+    display: inline-block;
+    height: 392px;
+    width: 100%;
+    border-bottom: solid 2px #000;
+    box-sizing: border-box;
+}
+
+.internet.text
+{
+    width: 450px;
+    height: 236px;
+    margin-top: 76px;
+    margin-bottom: 76px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.internet.text p
+{
+    margin: 0;
+}
+
+.video
+{
+    margin-top: 76px;
+    margin-left: 640px;
+}
+
+.people
+{
+    width: 100%;
+    height: 432px;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.people div
+{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 156px;
+}
+
+.maxim
+{
+    margin-left: 171px;
+}
+
+.alexey,
+.george
+{
+    margin-left: 70px;
+}
+
+.sprite_person
+{
+    width: 138px;
+    height: 138px;
+    z-index: 1;
+    position: relative;
+    display: block;
+    background: url(image/sprite_person.png) no-repeat;
+    cursor: pointer;
+}
+
+.alexey .sprite_person
+{
+    background-position: -138px 0;
+}
+
+.george .sprite_person
+{
+    background-position: -276px 0;
+}
+
+.name
+{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-left: -10px;
+}
+
+.person_description
+{
+    width: 285px;
+    text-align: center;
+    line-height: 1.5;
+    margin-left: -70px;
+    margin-top: 32px;
+    visibility: hidden;
+}
+
+.border
+{
+    border-radius: 100%;
+    border: solid 3.1px #fff;
+    height: 156px;
+    bottom: 304px;
+    left: -11px;
+    position: relative;
+    visibility: hidden;
+}
+
+.alexey .border,
+.george .border
+{
+    bottom: 255px;
+}
+
+.person:hover .border,
+input[id='maxim']:checked ~ main section .people .maxim .person_description,
+input[id='alexey']:checked ~ main section .people .alexey .person_description,
+input[id='george']:checked ~ main section .people .george .person_description
+{
+    visibility: visible;
+}
+
+input[id='maxim']:checked ~ main .main_page
+{
+    background-color: #ff8384;
+}
+
+input[id='george']:checked ~ main .main_page
+{
+    background-color: #f5de7a;
+}
+
+.path
+{
+    width: 100%;
+    height: 2453px;
+    background: url(image/path.png) no-repeat;
+    margin-left: 96px;
+    text-align: center;
+    position: relative;
+}
+
+.path .text
+{
+    height: 64px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.first_part
+{
+    width: 275px;
+    top: 86px;
+}
+
+.second_part
+{
+    width: 280px;
+    top: 186px;
+    right: -3px;
+    left: -4px;
+}
+
+.third_part
+{
+    width: 280px;
+    top: 889px;
+    left: 473px;
+}
+
+.fourth_part
+{
+    width: 280px;
+    top: 988px;
+    left: 473px;
+}
+
+.fifth_part
+{
+    width: 292px;
+    top: 1685px;
+    left: -16px;
+}
+
+.sixth_part
+{
+    width: 287px;
+    top: 1784px;
+    left: -14px;
+}
+
+.path img
+{
+    display: block;
+    position: absolute;
+}
+
+.notebook
+{
+    top: 77px;
+    left: 390px;
+    z-index: 1;
+}
+
+.phone
+{
+    top: 329px;
+    left: -116px;
+}
+
+.pen
+{
+    top: 329px;
+    left: 234px;
+}
+
+.ticket
+{
+    top: 435px;
+    left: 312px;
+}
+
+.watch
+{
+    top: 594px;
+    left: 390px;
+}
+
+.photo
+{
+    top: 549px;
+    left: 702px;
+}
+
+.iphone
+{
+    top: 1214px;
+    left: -50px;
+}
+
+.ipad
+{
+    top: 890px;
+    left: 108px;
+}
+
+.cup
+{
+    top: 1259px;
+    left: 234px;
+}
+
+.mask
+{
+    top: 1127px;
+    left: 468px;
+}
+
+.palka
+{
+    top: 890px;
+    left: 624px;
+}
+
+.bag
+{
+    top: 1616px;
+    left: 346px;
+}
+
+.newspaper
+{
+    top: 1951px;
+    left: -3px;
+}
+
+.magazine
+{
+    top: 2062px;
+    left: 585px;
+}
+
+.people.border_bottom
+{
+    height: 315px;
+    padding-top: 76px;
+    border-bottom: solid 2px #000;
+}
+
+.footer
+{
+    height: 435px;
+}
+
+.footer .internet.text
+{
+    width: 439px;
+    height: 164px;
+    margin-bottom: 0;
+}
+
+.ya_footer
+{
+    margin-left: 656px;
+    margin-top: 84px;
+}
+
+.icons
+{
+    display: flex;
+    width: 184px;
+    justify-content: space-between;
+    margin-left: 96px;
+    margin-top: 72px;
+}
+
+.sprite
+{
+    background: url(image/icons_sprite.png) no-repeat;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.facebook
+{
+    background-position: 0 0;
+}
+
+.vkontakte
+{
+    background-position: -96px 0;
+}
+
+.twitter
+{
+    background-position: -72px 0;
+}
+
+.youtube
+{
+    background-position: -120px 0;
+}
+
+.habra
+{
+    background-position: -24px 0;
+}
+
+.instagram
+{
+    background-position: -48px 0;
+}
+
+footer
+{
+    margin-top: 92px;
+    margin-left: 96px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.end
+{
+    padding-left: 80px;
+}
