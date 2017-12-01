@@ -72,10 +72,13 @@ input[id='george']:checked ~ .block .ya-letter text
 
 .logo-text
 {
+    width: 80px;
+    height: 30px;
     position: absolute;
-    font-size: 2em;
-    left: 423px;
+    left: 437px;
     top: 20px;
+    background: url('images/logo.svg') no-repeat;
+    background-size: contain;
 }
 
 .logo-text:first-letter
@@ -238,7 +241,7 @@ input[id='george']:checked ~ section div .george .person-description
 {
     position: absolute;
     left: 94px;
-    top: 490px;
+    top: 430px;
 }
 
 .text
@@ -251,7 +254,7 @@ input[id='george']:checked ~ section div .george .person-description
 
 .text1
 {
-    top: 565px;
+    top: 505px;
     left: 94px;
 }
 
@@ -259,7 +262,7 @@ input[id='george']:checked ~ section div .george .person-description
 {
     position: absolute;
     left: 484px;
-    top: 565px;
+    top: 505px;
     z-index: 1;
 }
 
@@ -267,27 +270,27 @@ input[id='george']:checked ~ section div .george .person-description
 {
     position: absolute;
     left: -23px;
-    top: 819px;
+    top: 759px;
 }
 
 .pen
 {
     position: absolute;
-    top: 819px;
+    top: 759px;
     left: 327px;
 }
 
 .ticket
 {
     position: absolute;
-    top: 923px;
+    top: 863px;
     left: 405px;
 }
 
 .watch
 {
     position: absolute;
-    top: 1082px;
+    top: 1022px;
     left: 482px;
     z-index: 1;
 }
@@ -296,26 +299,26 @@ input[id='george']:checked ~ section div .george .person-description
 {
     position: absolute;
     left: 795px;
-    top: 1037px;
+    top: 977px;
 }
 
 .text2
 {
     left: 568px;
-    top: 1360px;
+    top: 1300px;
 }
 
 .ipad
 {
     position: absolute;
-    top: 1380px;
+    top: 1320px;
     left: 201px;
 }
 
 .palka
 {
     position: absolute;
-    top: 1378px;
+    top: 1338px;
     left: 717px;
     z-index: 1;
 }
@@ -323,21 +326,21 @@ input[id='george']:checked ~ section div .george .person-description
 .mask
 {
     position: absolute;
-    top: 1617px;
+    top: 1557px;
     left: 561px;
 }
 
 .iphone
 {
     position: absolute;
-    top: 1700px;
+    top: 1640px;
     left: 44px;
 }
 
 .cup
 {
     position: absolute;
-    top: 1749px;
+    top: 1689px;
     left: 327px;
     z-index: 1;
 }
@@ -345,39 +348,39 @@ input[id='george']:checked ~ section div .george .person-description
 .text3
 {
     left: 80px;
-    top: 2155px;
+    top: 2095px;
 }
 
 .bag
 {
     position: absolute;
     left: 440px;
-    top: 2106px;
+    top: 2046px;
 }
 
 .newspaper
 {
     position: absolute;
     left: 91px;
-    top: 2441px;
+    top: 2381px;
 }
 
 .magazine
 {
     position: absolute;
     left: 678px;
-    top: 2550px;
+    top: 2490px;
 }
 
 .persons
 {
     position: absolute;
-    top: 2985px;
+    top: 2925px;
 }
 
 .block-path
 {
-    height: 3210px;
+    height: 3150px;
 }
 
 .block-footer
