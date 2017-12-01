@@ -158,19 +158,26 @@ input[id='george']:checked ~ .block .ya-letter text
     height: 15px;
 }
 
-.person-selection
+.persons
 {
     width: 100%;
+    padding-left: 170px ;
+    display: flex;
+}
+
+.persons-selection
+{
     height: 300px;
     padding-top: 105px;
 }
 
 .person
 {
-    position: absolute;
     width: 138px;
     height: 200px;
     display: inline-block;
+    margin-right: 90px;
+    position: relative;
 }
 
 .border
@@ -183,21 +190,6 @@ input[id='george']:checked ~ .block .ya-letter text
     top: -9px;
     left: -9px;
     display: none;
-}
-
-.maxim
-{
-    left: 171px;
-}
-
-.alexey
-{
-    left: 407px;
-}
-
-.george
-{
-    left: 644px;
 }
 
 .sprite-person
@@ -379,7 +371,7 @@ input[id='george']:checked ~ section div .george .person-description
     top: 2490px;
 }
 
-.persons
+.persons-footer
 {
     position: absolute;
     top: 2925px;
