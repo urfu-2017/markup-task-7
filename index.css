@@ -1,1 +1,527 @@
+input
+{
+    display: none;
+}
 
+main
+{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 954px;
+    margin: auto;
+    border: solid black 2px;
+}
+
+h1
+{
+    width: 679px;
+    font-size: 36px;
+    line-height: 1.09;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin: 377px 0 88px 130px;
+}
+
+header
+{
+    position: relative;
+    border-bottom: solid black 2px;
+}
+
+.yandex-logo
+{
+    position: absolute;
+    left: 406px;
+    top: -378px;
+}
+
+.yandex-polyline
+{
+    stroke: black;
+}
+
+.yandex
+{
+    position: absolute;
+    left: 27px;
+    top: 12px;
+}
+
+.bubbles
+{
+    z-index: 1;
+    position: absolute;
+    left: -435px;
+    top: -320px;
+}
+
+.first-section
+{
+    position: relative;
+    z-index: 1;
+    border-bottom: solid black 2px;
+}
+
+.first-section-text
+{
+    width: 450px;
+    margin: 80px 0 76px 93px;
+}
+
+.video-section
+{
+    position: absolute;
+    left: 640px;
+    top: 0;
+}
+
+.video-border
+{
+    width: 138px;
+    height: 80px;
+    border-radius: 5px;
+    border: solid black 2px;
+    position: relative;
+}
+
+.video-svg
+{
+    position: absolute;
+    top: 21px;
+    left: 58px;
+}
+
+.second-section
+{
+    border-bottom: solid black 2px;
+    position: relative;
+}
+
+.first-paragraph
+{
+    margin-top: 0;
+}
+
+.first-character-section
+{
+    position: relative;
+    top: 75px;
+}
+
+.character-div
+{
+    width: 155px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.maksim
+{
+    left: 170px;
+}
+
+.alexey
+{
+    left: 250px;
+}
+
+.georgy
+{
+    left: 330px;
+}
+
+.character-sprite
+{
+    background: url(Images/characters.png) no-repeat;
+    display: block;
+    width: 139px;
+    height: 139px;
+    position: relative;
+    z-index: 1;
+}
+
+.maksim-sprite
+{
+    background-position: -4px 0;
+}
+
+.alexey-sprite
+{
+    background-position: -157px 0;
+}
+
+.georgy-sprite
+{
+    background-position: -309px 0;
+}
+
+.border-circle
+{
+    border-radius: 100%;
+    position: absolute;
+    top: -8px;
+    left: -9px;
+    border: 3px solid white;
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+
+h2
+{
+    width: 139px;
+    height: 13px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+}
+
+.character-description
+{
+    width: 285px;
+    text-align: center;
+    margin: 40px 0 0 -75px;
+    display: none;
+}
+
+.path
+{
+    background: url(Images/path.png) no-repeat;
+    width: 757px;
+    position: relative;
+}
+
+.first-path
+{
+    height: 200px;
+    top: 150px;
+    left: 100px;
+}
+
+.second-path
+{
+    background-position: 0 -300px;
+    height: 600px;
+    top: 20px;
+    left: 100px;
+}
+
+.third-path
+{
+    background-position: 0 -1100px;
+    height: 600px;
+    top: 20px;
+    left: 90px;
+}
+
+.fourth-path
+{
+    background-position: 0 -1900px;
+    height: 600px;
+    top: 20px;
+    left: 90px;
+}
+
+.text-after-path
+{
+    width: 273px;
+    text-align: center;
+    margin: 40px 0 0 110px;
+}
+
+.notebook
+{
+    width: 294px;
+    height: 422px;
+    position: absolute;
+    top: -185px;
+    left: 400px;
+}
+
+.phone
+{
+    width: 294px;
+    height: 360px;
+    position: absolute;
+    top: 50px;
+    left: -110px;
+}
+
+.pen
+{
+    width: 42px;
+    height: 227px;
+    position: absolute;
+    top: 50px;
+    left: 215px;
+}
+
+.ticket
+{
+    width: 450px;
+    height: 175px;
+    position: absolute;
+    top: 150px;
+    left: 325px;
+}
+
+.watch
+{
+    width: 120px;
+    height: 236px;
+    position: absolute;
+    top: 305px;
+    left: 400px;
+}
+
+.photo
+{
+    width: 216px;
+    height: 281px;
+    position: absolute;
+    top: 260px;
+    left: 710px;
+}
+
+.text-after-photo
+{
+    width: 280px;
+    text-align: center;
+    margin: -10px 0 0 580px;
+}
+
+.iphone
+{
+    width: 138px;
+    height: 268px;
+    position: absolute;
+    top: 100px;
+    left: -25px;
+}
+
+.ipad
+{
+    width: 294px;
+    height: 442px;
+    position: absolute;
+    top: -180px;
+    left: 125px;
+}
+
+.cup
+{
+    width: 216px;
+    height: 291px;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+}
+
+.mask
+{
+    width: 372px;
+    height: 205px;
+    position: absolute;
+    top: 25px;
+    left: 475px;
+}
+
+.pipe
+{
+    width: 216px;
+    height: 610px;
+    position: absolute;
+    top: -200px;
+    left: 625px;
+}
+
+.text-after-pipe
+{
+    width: 292px;
+    text-align: center;
+    margin: -10px 0 0 90px;
+}
+
+.bag
+{
+    width: 450px;
+    height: 384px;
+    position: absolute;
+    top: -225px;
+    left: 350px;
+}
+
+.newspaper
+{
+    width: 294px;
+    height: 396px;
+    position: absolute;
+    top: 60px;
+}
+
+.magazine
+{
+    width: 294px;
+    height: 399px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+
+.second-character-section
+{
+    position: relative;
+    top: 75px;
+    margin-bottom: 140px;
+}
+
+.third-section
+{
+    position: relative;
+}
+
+.third-section-text
+{
+    width: 439px;
+    text-align: left;
+    margin: 84px 0 70px 95px;
+}
+
+.logo
+{
+    position: absolute;
+    top: 0;
+    left: 656px;
+}
+
+footer
+{
+    height: 120px;
+    position: relative;
+}
+
+.social-section
+{
+    position: absolute;
+    left: 96px;
+    top: -40px;
+}
+
+.social
+{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAAYCAAAAAAwzivRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACM0lEQVRIx83Wa1PaQBQGYP//H+JNSIJUsSIXC446iBSJpdQSy8ACMSzk7YcEQi4KaaDjfsnMZnP2mbNnN3uCzC2v67pexIHayYHiaJ8HpOi6cjyQ+q1jPrdSeebkXDkWqDAlyT+p1ooktShIOT87COiZERBJbj8/BpVUv7Nmk6JcbwfDhNfMQjrQnORo8JgGpIwXi7G/ZIOXPACgtCJJ2nUjFIgklxepQJJchDo+BBlGZJe9clIKEk23HwrkCIfkMBKkq+0A2fuCalNSVEKg76TbLyuwPJAVDmQCDikiYejcKe+BblsrUrZaDcQyHQEpQN0lSbcC5DegU4ck5cjxPujFQCKeIZKzawBALgay/ZlfdoAkNWDmdY6BIumDBuPt8XwIzztsmgk1RJJ8vUjM0BrU2wV6A07XvTqwWoPuQx5WEQ9kIglE90chAfTTcsmVZTV3gRbvgFRre7xUE0C0C0kgUn7996KW1IBpwpLh7JcbgLqI1VAzniN/8OgSWUBNoOoV9RVwF4CKy8CzMOIgiNg289LWyLTtJScKUBXkpAKo8wCEstiA6kgAOUmg5UMeGUFsBwfjE7dAUPt+ld7H5hWm6ZDsRF64PSPrwShJPvqnmfrEDUi/vO6+eR6nhuTa5SjyYnie/aSWJCluDKBwO2MAQu23V9Pztpa8uyk6SPsvs3ffEOT6R7kMTgRfoF01bupfDncf2g80YqRNjnZj3A/0H+/Umq7vFzn3iS/5YVAua6C/RPl4yNzjm8sAAAAASUVORK5CYII=');
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.vk
+{
+    background-position: -96px 0;
+}
+
+.twitter
+{
+    background-position: -72px 0;
+}
+
+.youtube
+{
+    background-position: -120px 0;
+}
+
+.habr
+{
+    background-position: -24px 0;
+}
+
+.instagram
+{
+    background-position: -48px 0;
+}
+
+.footer-text
+{
+    position: absolute;
+    top: 70px;
+}
+
+.help
+{
+    left: 96px;
+}
+
+.feedback
+{
+    left: 175px;
+}
+
+.copyright
+{
+    left: 400px;
+}
+
+input[id='maksim']:checked ~ main
+{
+    background-color: #ff8384;
+}
+
+input[id='alexey']:checked ~ main
+{
+    background-color: #73c5f6;
+}
+
+input[id='georgy']:checked ~ main
+{
+    background-color: #ffe15d;
+}
+
+input[id='maksim']:checked ~ main .third-section .logo .logo-text
+{
+    color: #ff8384;
+}
+
+input[id='alexey']:checked ~ main .third-section .logo .logo-text
+{
+    color: #73c5f6;
+}
+
+input[id='georgy']:checked ~ main .third-section .logo .logo-text
+{
+    color: #ffe15d;
+}
+
+input[id='maksim']:checked ~ main .second-section .first-character-section .maksim .character-description,
+input[id='georgy']:checked ~ main .second-section .first-character-section .georgy .character-description,
+input[id='alexey']:checked ~ main .second-section .first-character-section .alexey .character-description,
+input[id='maksim']:checked ~ main .second-section .first-character-section .maksim .border-circle,
+input[id='georgy']:checked ~ main .second-section .first-character-section .georgy .border-circle,
+input[id='alexey']:checked ~ main .second-section .first-character-section .alexey .border-circle,
+input[id='maksim']:checked ~ main .second-section .second-character-section .maksim .border-circle,
+input[id='georgy']:checked ~ main .second-section .second-character-section .georgy .border-circle,
+input[id='alexey']:checked ~ main .second-section .second-character-section .alexey .border-circle,
+label:hover ~ .border-circle
+{
+    display: block;
+}
+
+input[id='maksim']:checked ~ main header .yandex-logo svg polyline
+{
+    fill: #ffcece;
+}
+
+input[id='alexey']:checked ~ main header .yandex-logo svg polyline
+{
+    fill: #c8e8fb;
+}
+
+input[id='georgy']:checked ~ main header .yandex-logo svg polyline
+{
+    fill: #fff3bf;
+}

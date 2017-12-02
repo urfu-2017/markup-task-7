@@ -3,8 +3,203 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<input id="maksim" type="radio" name="character">
+<input id="alexey" type="radio" name="character" checked>
+<input id="georgy" type="radio" name="character">
+<main>
+    <header>
+        <div class="yandex-logo">
+            <svg>
+                <polyline points="0 0, 0 50, 69 88, 138 50, 138 0, 0 0" class="yandex-polyline"></polyline>
+            </svg>
+            <img src="Images/yandex-logo.svg" class="yandex" alt="Лого Яндекса">
+        </div>
+        <img src="Images/bg.png" srcset="Images/bg@2x.png 2x, Images/bg@3x.png 3x" alt="Пузыри"
+             class="bubbles">
+        <h1>— А что если интернет подстроится под меня?</h1>
+    </header>
+    <section class="first-section">
+        <article class="first-section-text">
+            <p class="first-paragraph">
+                Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко ин&shy;фор&shy;ма&shy;ция и
+                тех&shy;но&shy;ло&shy;гии, это лю&shy;ди: их же&shy;ла&shy;ния,
+                пред&shy;по&shy;чте&shy;ния,
+                за&shy;да&shy;чи. Лю&shy;ди — вот ато&shy;мы, из ко&shy;то&shy;рых на са&shy;мом де&shy;ле
+                со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия; и эти лю&shy;ди
+                очень,
+                очень раз&shy;ные. Се&shy;го&shy;дня по&shy;иск уме&shy;ет под&shy;стра&shy;и&shy;вать&shy;ся,
+                по&shy;мо&shy;гая лю&shy;дям быст&shy;рее при&shy;хо&shy;дить к тем
+                ре&shy;ше&shy;ни&shy;ям, ко&shy;то&shy;рые им нуж&shy;ны.
+            </p>
+            <p>
+                Мы пред&shy;став&shy;ля&shy;ем Атом: со&shy;во&shy;куп&shy;ность ин&shy;стру&shy;мен&shy;тов,
+                при&shy;зван&shy;ных на&shy;учить ин&shy;тер&shy;нет
+                под&shy;стра&shy;и&shy;вать&shy;ся
+                под раз&shy;ных лю&shy;дей, ко&shy;то&shy;рые им нуж&shy;ны.
+            </p>
+        </article>
+        <section class="video-section">
+            <div class="video-border">
+                <img src="Images/arrow.svg" class="video-svg" alt="Стрелка">
+            </div>
+            <p>
+                Весь сайт в одном видео
+            </p>
+        </section>
+    </section>
+    <section class="second-section">
+        <section class="first-character-section">
+            <div class="character-div maksim">
+                <label for="maksim" class="character-sprite maksim-sprite"></label>
+                <div class="border-circle"></div>
+                <h2>Максим</h2>
+                <p class="character-description">
+                    Очень до&shy;ро&shy;жит ред&shy;ки&shy;ми от&shy;пус&shy;ка&shy;ми и пре&shy;вы&shy;ше
+                    все&shy;го це&shy;нит ком&shy;форт и ка&shy;че&shy;ство об&shy;слу&shy;жи&shy;ва&shy;ния.
+                </p>
+            </div>
+            <div class="character-div alexey">
+                <label for="alexey" class="character-sprite alexey-sprite"></label>
+                <div class="border-circle"></div>
+                <h2>Алексей Быков</h2>
+                <p class="character-description">
+                    Очень до&shy;ро&shy;жит ред&shy;ки&shy;ми от&shy;пус&shy;ка&shy;ми и пре&shy;вы&shy;ше
+                    все&shy;го це&shy;нит ком&shy;форт и ка&shy;че&shy;ство об&shy;слу&shy;жи&shy;ва&shy;ния.
+                </p>
+            </div>
+            <div class="character-div georgy">
+                <label for="georgy" class="character-sprite georgy-sprite"></label>
+                <div class="border-circle"></div>
+                <h2>Георгий И. Дауге</h2>
+                <p class="character-description">
+                    Очень до&shy;ро&shy;жит ред&shy;ки&shy;ми от&shy;пус&shy;ка&shy;ми и пре&shy;вы&shy;ше
+                    все&shy;го це&shy;нит ком&shy;форт и ка&shy;че&shy;ство об&shy;слу&shy;жи&shy;ва&shy;ния.
+                </p>
+            </div>
+        </section>
+        <div class="path first-path"></div>
+        <article class="text-after-path">
+            <p>
+                Юра сра&shy;зу по&shy;ку&shy;па&shy;ет тур: в его
+                си&shy;ту&shy;а&shy;ции так оче&shy;вид&shy;но
+                про&shy;ще. Ос&shy;нов&shy;ные ввод&shy;ные - при&shy;ем&shy;ле&shy;мо&shy;го
+                ка&shy;че&shy;ства.
+            </p>
+            <p>
+                Отель цен&shy;тре тай&shy;ской жиз&shy;ни: что&shy;бы и еда, и ка&shy;че&shy;ствен&shy;ный
+                пляж, до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти, и
+                ре&shy;сто&shy;ра&shy;ны.
+            </p>
+        </article>
+        <div class="path second-path">
+            <img src="Images/ticket.png" srcset="Images/ticket@2x.png 2x, Images/ticket@3x.png 3x"
+                 alt="Билет" class="ticket">
+            <img src="Images/notebook.png" srcset="Images/notebook@2x.png 2x, Images/notebook@3x.png 3x"
+                 alt="Блокнот" class="notebook">
+            <img src="Images/phone.png" srcset="Images/phone@2x.png 2x, Images/phone@3x.png 3x" alt="Телефон"
+                 class="phone">
+            <img src="Images/pen.png" srcset="Images/pen@2x.png 2x, Images/pen@3x.png 3x" alt="Ручка"
+                 class="pen">
+            <img src="Images/watch.png" srcset="Images/watch@2x.png 2x, Images/watch@3x.png 3x" alt="Часы"
+                 class="watch">
+            <img src="Images/photo.png" srcset="Images/photo@2x.png 2x, Images/photo@3x.png 3x" alt="Рамка"
+                 class="photo">
+        </div>
+        <article class="text-after-photo">
+            <p>
+                Юра но&shy;сит лин&shy;зы, и у не&shy;го как раз за&shy;кан&shy;чи&shy;ва&shy;ет&shy;ся
+                за&shy;пас - нуж&shy;но ку&shy;пить но&shy;вые.
+            </p>
+            <p>
+                Отель цен&shy;тре тай&shy;ской жиз&shy;ни: что&shy;бы и еда, и ка&shy;че&shy;ствен&shy;ный
+                пляж, до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти, и
+                ре&shy;сто&shy;ра&shy;ны.
+            </p>
+        </article>
+        <div class="path third-path">
+            <img src="Images/iphone.png" srcset="Images/iphone@2x.png 2x, Images/iphone@3x.png 3x"
+                 alt="iPhone" class="iphone">
+            <img src="Images/ipad.png" srcset="Images/ipad@2x.png 2x, Images/ipad@3x.png 3x" alt="iPad"
+                 class="ipad">
+            <img src="Images/cup.png" srcset="Images/cup@2x.png 2x, Images/cup@3x.png 3x" alt="Кружка"
+                 class="cup">
+            <img src="Images/mask.png" srcset="Images/mask@2x.png 2x, Images/mask@3x.png 3x"
+                 alt="Маска для подводного плавания" class="mask">
+            <img src="Images/palka.png" srcset="Images/palka@2x.png 2x, Images/palka@3x.png 3x"
+                 alt="Трубка для подводного плавания" class="pipe">
+        </div>
+        <article class="text-after-pipe">
+            <p>
+                Что Юра точ&shy;но не хо&shy;чет упу&shy;стить, так это воз&shy;мож&shy;ность
+                по&shy;про&shy;бо&shy;вать мест&shy;ную еду.
+            </p>
+            <p>
+                Каж&shy;дый ве&shy;чер они с же&shy;ной - ино&shy;гда с детьми, ино&shy;гда вдво&shy;ем
+                - от&shy;прав&shy;ля&shy;ют в но&shy;вый мест&shy;ный ре&shy;сто&shy;ран.
+            </p>
+        </article>
+        <div class="path fourth-path">
+            <img src="Images/bag.png" srcset="Images/bag@2x.png 2x, Images/bag@3x.png 3x" alt="Портфель"
+                 class="bag">
+            <img src="Images/newspaper.png" srcset="Images/newspaper@2x.png 2x, Images/newspaper@3x.png 3x"
+                 alt="Газета" class="newspaper">
+            <img src="Images/magazine.png" srcset="Images/magazine@2x.png 2x, Images/magazine@3x.png 3x"
+                 alt="Журнал" class="magazine">
+        </div>
+        <section class="second-character-section">
+            <div class="character-div maksim">
+                <label for="maksim" class="character-sprite maksim-sprite"></label>
+                <div class="border-circle"></div>
+                <h2>Максим</h2>
+            </div>
+            <div class="character-div alexey">
+                <label for="alexey" class="character-sprite alexey-sprite"></label>
+                <div class="border-circle"></div>
+                <h2>Алексей Быков</h2>
+            </div>
+            <div class="character-div georgy">
+                <label for="georgy" class="character-sprite georgy-sprite"></label>
+                <div class="border-circle"></div>
+                <h2>Георгий И. Дауге</h2>
+            </div>
+        </section>
+    </section>
+    <section class="third-section">
+        <article class="third-section-text">
+            <p class="first-paragraph">
+                Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко ин&shy;фор&shy;ма&shy;ция
+                и тех&shy;но&shy;ло&shy;гии, это лю&shy;ди: их же&shy;ла&shy;ния,
+                пред&shy;по&shy;чте&shy;ния,
+                за&shy;да&shy;чи. Лю&shy;ди — вот ато&shy;мы, из ко&shy;то&shy;рых на са&shy;мом
+                де&shy;ле со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия; и эти лю&shy;ди
+                очень, очень раз&shy;ные.
+            </p>
+            <p>
+                Те&shy;перь по&shy;смот&shy;ри&shy;те, как
+                пла&shy;ни&shy;ро&shy;ва&shy;ли пу&shy;те&shy;ше&shy;ствие
+                в Та&shy;и&shy;ланд Алек&shy;сей Бы&shy;ков и Ге&shy;ор&shy;гий И. Да&shy;у&shy;ге.
+            </p>
+        </article>
+        <img src="Images/atom-logo.svg" class="logo" alt="Лого Атома">
+    </section>
+    <footer>
+        <section class="social-section">
+            <a href="" class="social"></a>
+            <a href="" class="vk social"></a>
+            <a href="" class="twitter social"></a>
+            <a href="" class="youtube social"></a>
+            <a href="" class="habr social"></a>
+            <a href="" class="instagram social"></a>
+        </section>
+        <section>
+            <span class="help footer-text">Помощь</span>
+            <span class="feedback footer-text">Обратная связь</span>
+            <span class="copyright footer-text">© 2017  ООО «Яндекс»</span>
+        </section>
+    </footer>
+</main>
 </body>
 </html>
-
