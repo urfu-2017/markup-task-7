@@ -12,8 +12,8 @@
     margin-top: -68px;
     text-align: center;
     opacity: .6;
-    background-color: #fff;
-    border: solid 2px #010202;
+    background-color: var(--white);
+    border: solid 2px var(--almost-black);
 }
 
 h1
