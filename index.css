@@ -28,10 +28,9 @@ body
 
 .yandex-logo
 {
-    position: absolute;
-    top: 25px;
-    left: 426px;
-    font-size: 30px;
+    position: relative;
+    margin: auto;
+    width: 139px;
 }
 
 .yandex-logo::first-letter
@@ -41,9 +40,17 @@ body
 
 .yandex-logo-svg
 {
-    display: inline-block;
+    position: absolute;
+    left: 0;
     opacity: .6;
     stroke-width: 2;
+}
+
+.yandex-logo-name
+{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
 }
 
 .background
