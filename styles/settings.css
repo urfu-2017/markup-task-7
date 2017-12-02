@@ -1,0 +1,28 @@
+.theme-toggler-blue:checked ~ main .theme-toggler-label-blue:after,
+.theme-toggler-red:checked ~ main .theme-toggler-label-red:after,
+.theme-toggler-yellow:checked ~ main .theme-toggler-label-yellow:after
+{
+    border: 4px solid #fff;
+}
+
+.theme-toggler-blue:checked ~ main .person__description-blue,
+.theme-toggler-red:checked ~ main .person__description-red,
+.theme-toggler-yellow:checked ~ main .person__description-yellow
+{
+    visibility: visible;
+}
+
+.theme-toggler-blue:checked ~ main
+{
+    background: #73c2fb;
+}
+
+.theme-toggler-red:checked ~ main
+{
+    background: #fd5b78;
+}
+
+.theme-toggler-yellow:checked ~ main
+{
+    background: #ffde5c;
+}
