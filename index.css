@@ -90,7 +90,7 @@ h1
 
 .personSelector
 {
-    margin: 80px auto;
+    margin: 70px auto;
     display: flex;
     justify-content: space-around;
 }
@@ -161,45 +161,42 @@ input[id='Georgy']:checked ~ main .Georgy figcaption
     position: relative;
 }
 
-.pathPart
-{
-    position: relative;
-}
-
-.path
+.pathSection img
 {
     display: block;
     margin: auto;
+}
+
+.pathSection
+{
+    position: relative;
 }
 
 .pathText
 {
     width: 292px;
     text-align: center;
-    position: absolute;
 }
 
 .pathText p
 {
     margin: 36px 0;
+    line-height: 1.5;
 }
 
 .pathText1
 {
-    top: 60px;
-    left: 80px;
+    margin: 26px 0 0 96px;
 }
 
 .pathText2
 {
-    top: 860px;
-    right: 100px;
+    margin-left: 570px;
 }
 
 .pathText3
 {
-    bottom: 575px;
-    left: 90px;
+    margin-left: 80px;
 }
 
 .pathImage
@@ -210,87 +207,91 @@ input[id='Georgy']:checked ~ main .Georgy figcaption
 
 .notebook
 {
-    top: 90px;
+    top: -220px;
     left: 500px;
-    z-index: 2;
 }
 
 .phone
 {
-    top: 330px;
+    top: 20px;
     left: -20px;
 }
 
 .pen
 {
-    top: 330px;
+    top: 20px;
     left: 330px;
 }
 
 .ticket
 {
-    top: 445px;
+    top: 135px;
     left: 425px;
 }
 
 .watch
 {
-    top: 605px;
+    top: 295px;
     left: 502px;
 }
 
 .photo
 {
-    top: 558px;
+    top: 248px;
     left: 812px;
 }
 
 .ipad
 {
-    top: 896px;
+    top: -214px;
     left: 210px;
 }
 
 .palka
 {
-    top: 896px;
+    top: -214px;
     right: 5px;
 }
 
 .iphone
 {
-    top: 1220px;
+    top: 110px;
     left: 50px;
 }
 
 .mask
 {
-    top: 1125px;
+    top: 15px;
     left: 564px;
 }
 
 .cup
 {
-    top: 1264px;
+    top: 154px;
     left: 337px;
 }
 
 .bag
 {
-    top: 1620px;
+    top: -280px;
     left: 445px;
 }
 
 .newspaper
 {
-    top: 1950px;
+    top: 70px;
     left: 95px;
 }
 
 .magazine
 {
-    top: 2062px;
+    top: 175px;
     right: -35px;
+}
+
+.personSelectorBottom
+{
+    margin: 60px auto;
 }
 
 h2
