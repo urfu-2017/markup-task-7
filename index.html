@@ -1,10 +1,232 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Письмо из Яндекса»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+
+    <main>
+        <input type="radio" id="maxim" name="tourist" class="tourist-input" checked>
+        <input type="radio" id="alexey" name="tourist" class="tourist-input">
+        <input type="radio" id="georgii" name="tourist" class="tourist-input">
+        <header class="first block">
+            <img class="logo" src="images/yandex-logo.svg" alt="логотип яндекса с рамкой"
+                title="логотип яндекса с рамкой">
+            <img class="yandex-balls" src="images/bg.png" srcset="images/bg@2x.png 2x,images/bg@3x.png 3x"
+                alt="яндекс шары" title="яндекс шары">
+            <h3 class="text">
+                <span class="dash">
+                    &ndash;
+                </span>
+                <span class="question">
+                    А что если интернет подстроится под меня?
+                </span>
+            </h3>
+        </header>
+
+        <section class="second block">
+            <div class="description">
+                <p>
+                    Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко ин&shy;фор&shy;ма&shy;ция
+                    и тех&shy;но&shy;ло&shy;гии, это лю&shy;ди: их же&shy;ла&shy;ния,
+                    пред&shy;по&shy;чте&shy;ния, за&shy;да&shy;чи. Лю&shy;ди
+                    — вот ато&shy;мы, из ко&shy;то&shy;рых на са&shy;мом де&shy;ле
+                    со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия;
+                    и эти лю&shy;ди очень, очень раз&shy;ные. Се&shy;го&shy;дня
+                    по&shy;иск уме&shy;ет под&shy;стра&shy;и&shy;вать&shy;ся,
+                    по&shy;мо&shy;гая лю&shy;дям быст&shy;рее при&shy;хо&shy;дить
+                    к тем ре&shy;ше&shy;ни&shy;ям, ко&shy;то&shy;рые им нуж&shy;ны.
+                </p>
+                <p>
+                    Мы пред&shy;став&shy;ля&shy;ем Атом: со&shy;во&shy;куп&shy;ность 
+                    ин&shy;стру&shy;мен&shy;тов,
+                    при&shy;зван&shy;ных на&shy;учить ин&shy;тер&shy;нет под&shy;стра&shy;и&shy;вать&shy;ся
+                    под раз&shy;ных лю&shy;дей, ко&shy;то&shy;рые им нуж&shy;ны.
+                </p>
+            </div>
+            <div class="video">
+                <div class="video-border">
+                    <svg class="video-triangle">
+                        <polyline points="0 0, 0 37, 27 18, 0 0"></polyline>
+                    </svg>
+                </div>
+                <div class="video-description">Весь сайт в одном видео</div>
+            </div>
+        </section>
+
+        <section class="third block">
+            <div class="cards">
+                <div class="card maxim">
+                    <div class="card-circle">
+                        <label for="maxim" class="sprite maxim">
+
+                        </label>
+                    </div>
+
+                    <div class="card-name">Максим</div>
+                    <p class="card-description">
+                        Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.
+                    </p>
+                </div>
+                <div class="card alexey">
+                    <div class="card-circle">
+                        <label for="alexey" class="sprite alexey">
+
+                        </label>
+                    </div>
+
+                    <div class="card-name">Алексей Быков</div>
+                    <p class="card-description">
+                        Очень любит отдыхать
+                    </p>
+                </div>
+                <div class="card georgii">
+                    <div class="card-circle">
+                        <label for="georgii" class="sprite georgii">
+                        </label>
+                    </div>
+                    <div class="card-name">Георгий И. Дауге</div>
+                    <p class="card-description">
+                        Любит работать
+                    </p>
+                </div>
+            </div>
+            <img src="images/path.png" alt="нить" title="нить" 
+                srcset="images/path@2x.png 2x,images/path@3x.png 3x" class="path">
+            <div class="description-two">
+                <p>Юра сра&shy;зу по&shy;ку&shy;па&shy;ет тур: в его си&shy;ту&shy;а&shy;ции
+                    так оче&shy;вид&shy;но про&shy;ще. Ос&shy;нов&shy;ные ввод&shy;ные
+                    - при&shy;ем&shy;ле&shy;мо&shy;го ка&shy;че&shy;ства.
+                </p>
+                <p>
+                    Отель в цен&shy;тре тай&shy;ской жиз&shy;ни: что&shy;бы и еда, и 
+                    ка&shy;че&shy;ствен&shy;ный
+                    пляж, до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти,
+                    и ре&shy;сто&shy;ра&shy;ны
+                </p>
+            </div>
+            <img src="images/notebook.png" alt="блокнот" title="блокнот" 
+                srcset="images/notebook@2x.png 2x,images/notebook@3x.png 3x" class="notebook">
+            <img src="images/phone.png" alt="телефон" title="телефон" 
+                srcset="images/phone@2x.png 2x,images/phone@3x.png 3x" class="phone">
+            <img src="images/pen.png" alt="ручка" title="ручка" 
+                srcset="images/pen@2x.png 2x,images/pen@3x.png 3x" class="pen">
+            <img src="images/ticket.png" alt="билет" title="билет" 
+                srcset="images/ticket@2x.png 2x,images/ticket@3x.png 3x" class="ticket">
+            <img src="images/watch.png" alt="часы" title="часы" 
+                srcset="images/watch@2x.png 2x,images/watch@3x.png 3x" class="watch">
+            <img src="images/photo.png" alt="фоторамка" 
+                srcset="images/photo@2x.png 2x,images/photo@3x.png 3x" class="photo">
+            <div class="description-three">
+                <p>
+                    Юра но&shy;сит лин&shy;зы, и у не&shy;го как раз за&shy;кан&shy;чи&shy;ва&shy;ет&shy;ся
+                    за&shy;пас - нуж&shy;но ку&shy;пить новые.
+                </p>
+                <p>
+                    Отель цен&shy;тре тай&shy;ской жиз&shy;ни: что&shy;бы и еда, и ка&shy;че&shy;ствен&shy;ный
+                    пляж, до&shy;сто&shy;при&shy;ме&shy;ча&shy;тель&shy;но&shy;сти,
+                    и ре&shy;сто&shy;ра&shy;ны.
+                </p>
+            </div>
+            <img src="images/ipad.png" alt="ipad" title="ipad" 
+                srcset="images/ipad@2x.png 2x,images/ipad@3x.png 3x" class="ipad">
+            <img src="images/palka.png" alt="подводна трубка" title="подводна трубка" 
+                srcset="images/palka@2x.png 2x,images/palka@3x.png 3x" class="palka">
+            <img src="images/iphone.png" alt="iphone" title="iphone" 
+                srcset="images/iphone@2x.png 2x,images/iphone@3x.png 3x" class="iphone">
+            <img src="images/mask.png" alt="маска" title="маска" 
+                srcset="images/mask@2x.png 2x,images/mask@3x.png 3x" class="mask">
+            <img src="images/cup.png" alt="чашка" title="чашка" 
+                srcset="images/cup@2x.png 2x,images/cup@3x.png 3x" class="cup">
+            <div class="description-four">
+                <p>
+                    Что Юра точ&shy;но не хо&shy;чет упу&shy;стить, так это воз&shy;мож&shy;ность
+                    по&shy;про&shy;бо&shy;вать мест&shy;ную еду.
+                </p>
+                <p>
+                    Каж&shy;дый ве&shy;чер они с же&shy;ной - ино&shy;гда с детьми, ино&shy;гда
+                    вдво&shy;ем - от&shy;прав&shy;ля&shy;ют в но&shy;вый мест&shy;ный
+                    ре&shy;сто&shy;ран.
+                </p>
+            </div>
+            <img src="images/bag.png" alt="портфель" title="портфель" 
+                srcset="images/bag@2x.png 2x,images/bag@3x.png 3x" class="bag">
+            <img src="images/newspaper.png" alt="газета" title="газета" 
+                srcset="images/newspaper@2x.png 2x,images/newspaper@3x.png 3x" class="newspaper">
+            <img src="images/magazine.png" alt="журнал" title="журнал" 
+                srcset="images/magazine@2x.png 2x,images/magazine@3x.png 3x" class="magazine">
+
+            <div class="cards-two">
+                <div class="card maxim">
+                    <div class="card-circle">
+                        <label for="maxim" class="sprite maxim">
+
+                        </label>
+                    </div>
+                    <div class="card-name">Максим</div>
+                </div>
+                <div class="card alexey">
+                    <div class="card-circle">
+                        <label for="alexey" class="sprite alexey">
+
+                        </label>
+                    </div>
+                    <div class="card-name">Алексей Быков</div>
+                </div>
+                <div class="card georgii">
+                    <div class="card-circle">
+                        <label for="georgii" class="sprite georgii">
+                        </label>
+                    </div>
+                    <div class="card-name">Георгий И. Дауге</div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="fourth block">
+            <div class="description-final">
+                <p>
+                    Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко ин&shy;фор&shy;ма&shy;ция
+                    и тех&shy;но&shy;ло&shy;гии, это лю&shy;ди: их же&shy;ла&shy;ния,
+                    пред&shy;по&shy;чте&shy;ния, за&shy;да&shy;чи. Лю&shy;ди
+                    — вот ато&shy;мы, из ко&shy;то&shy;рых на са&shy;мом де&shy;ле
+                    со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия;
+                    и эти лю&shy;ди очень, очень раз&shy;ные.
+                </p>
+                <p>
+                    Те&shy;перь по&shy;смот&shy;ри&shy;те, как пла&shy;ни&shy;ро&shy;ва&shy;ли 
+                    пу&shy;те&shy;ше&shy;ствие
+                    в Та&shy;и&shy;ланд Алек&shy;сей Бы&shy;ков и Ге&shy;ор&shy;гий
+                    И. Да&shy;у&shy;ге.
+                </p>
+            </div>
+            <div class="ya-letter-in-ball">
+                <svg class="ya-letter">
+                    <circle cx="51" cy="51" r="51" fill="white"></circle>
+                    <text x="22" y="75">Я</text>
+                </svg>
+            </div>
+            <div class="sprites-icon">
+                <a href="#" class="sprite-icon facebook"></a>
+                <a href="#" class="sprite-icon vkontakte"></a>
+                <a href="#" class="sprite-icon twitter"></a>
+                <a href="#" class="sprite-icon youtube"></a>
+                <a href="#" class="sprite-icon habra"></a>
+                <a href="#" class="sprite-icon instagram"></a>
+            </div>
+            <div class="footer">
+                <div class="href">
+                    <a href="help" class="link help">Помощь</a>
+                    <a href="feedback" class="link feedback">Обратная связь</a>
+                </div>
+                <span class="copyright">&copy; 2017 ООО «Яндекс»</span>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
-

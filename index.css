@@ -1,1 +1,561 @@
+main
+{
+    margin: 0 auto;
+    width: 993px;
+    height: 4634px;
+}
 
+.block
+{
+    border: 2px solid #000;
+    width: 954px;
+}
+
+.first.block
+{
+    height: 553px;
+}
+
+.logo
+{
+    position: relative;
+    left: 408px;
+}
+
+.yandex-balls
+{
+    position: relative;
+    right: 440px;
+    bottom: 24px;
+}
+
+.question
+{
+    font-family: Arial;
+    font-size: 44px;
+    line-height: 1.09;
+    text-align: center;
+    color: #000;
+}
+
+.dash
+{
+    font-family: TextbookNew;
+    font-size: 48px;
+    line-height: 1;
+    color: #000;
+}
+
+.text
+{
+    position: relative;
+    bottom: 480px;
+    left: 65px;
+    z-index: 2;
+    width: 820px;
+    text-align: center;
+}
+
+.second.block
+{
+    border-top: none;
+    height: 392px;
+}
+
+.description
+{
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    left: 93px;
+    width: 450px;
+    height: 236px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.video
+{
+    display: inline-block;
+    position: relative;
+    left: 180px;
+    bottom: 30px;
+    width: 440px;
+}
+
+.video-border
+{
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px #000;
+}
+
+.video-description
+{
+    width: 200px;
+    height: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.video-triangle
+{
+    position: relative;
+    left: 55px;
+    top: 20px;
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 1;
+}
+
+.third.block
+{
+    border-top: none;
+    border-bottom: none;
+    height: 3208px;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 71px;
+    height: 361px;
+}
+
+.card
+{
+    flex-basis: 230px;
+    display: block;
+    width: 230px;
+    text-align: center;
+    position: relative;
+}
+
+.sprite
+{
+    z-index: 100;
+    display: block;
+    height: 138px;
+    width: 138px;
+    background: url(images/sprites/faces-sprite.png) no-repeat;
+    margin: 0 auto;
+}
+
+.sprite.maxim
+{
+    background-position-x: 0;
+}
+
+.sprite.alexey
+{
+    background-position-x: -138px;
+}
+
+.sprite.georgii
+{
+    background-position-x: -276px;
+}
+
+.card-name
+{
+    width: 140px;
+    height: 13px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    margin: 10px auto;
+    color: #000;
+}
+
+.card-description
+{
+    z-index: 2;
+    position: relative;
+    margin: 20px auto;
+    display: none;
+    color: #000;
+}
+
+.card-circle
+{
+    border-radius: 100%;
+    border: 3px solid;
+    width: 157px;
+    height: 157px;
+    position: relative;
+    left: 34px;
+    top: -14px;
+    border-color: inherit;
+}
+
+.card:hover > .card-circle
+{
+    border-color: #fff;
+}
+
+.card-circle label
+{
+    margin-top: 10px;
+}
+
+.tourist-input
+{
+    display: none;
+}
+
+#maxim:checked ~ .third.block .maxim .card-description,
+#alexey:checked ~ .third.block .alexey .card-description,
+#georgii:checked ~ .third.block .georgii .card-description
+{
+    display: block;
+}
+
+.path
+{
+    position: relative;
+    left: 96px;
+}
+
+.description-two
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2400px;
+    left: 100px;
+}
+
+.description-two p
+{
+    width: 278px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.notebook
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2610px;
+    left: 500px;
+}
+
+.phone
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2410px;
+    left: -330px;
+}
+
+.pen
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2560px;
+    left: -300px;
+}
+
+.ticket
+{
+    z-index: 0;
+    position: relative;
+    bottom: 2800px;
+    left: 420px;
+}
+
+.watch
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2575px;
+    left: 40px;
+}
+
+.photo
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2575px;
+    left: 215px;
+}
+
+.description-three
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2540px;
+    left: 580px;
+}
+
+.description-three p
+{
+    width: 280px;
+    height: 61px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.ipad
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2855px;
+    left: 215px;
+}
+
+.palka
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2690px;
+    left: 415px;
+}
+
+.iphone
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2690px;
+    left: -500px;
+}
+
+.mask
+{
+    z-index: 0;
+    position: relative;
+    bottom: 3160px;
+    left: 570px;
+}
+
+.cup
+{
+    z-index: 2;
+    position: relative;
+    bottom: 2960px;
+    left: -40px;
+}
+
+.description-four
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2850px;
+    left: 86px;
+}
+
+.description-four p
+{
+    width: 292px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bag
+{
+    z-index: 1;
+    position: relative;
+    bottom: 3150px;
+    left: 446px;
+}
+
+.newspaper
+{
+    z-index: 1;
+    position: relative;
+    bottom: 2830px;
+    left: -380px;
+}
+
+.magazine
+{
+    z-index: 1;
+    position: relative;
+    bottom: 3110px;
+    left: 680px;
+}
+
+.cards-two
+{
+    position: relative;
+    display: flex;
+    bottom: 3000px;
+    justify-content: center;
+}
+
+.fourth.block
+{
+    height: 435px;
+}
+
+.description-final
+{
+    z-index: 1;
+    position: relative;
+    left: 86px;
+    top: 60px;
+}
+
+.description-final p
+{
+    width: 450px;
+    height: 120px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ya-letter-in-ball
+{
+    position: relative;
+    left: 666px;
+    bottom: 205px;
+}
+
+.sprites-icon
+{
+    display: flex;
+}
+
+.sprite-icon
+{
+    position: relative;
+    bottom: 160px;
+    left: 75px;
+    background: url(data:image/png;base64,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) no-repeat;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 10px;
+}
+
+.facebook
+{
+    background-position: 0 0;
+}
+
+.vkontakte
+{
+    background-position: -96px 0;
+}
+
+.twitter
+{
+    background-position: -72px 0;
+}
+
+.youtube
+{
+    background-position: -120px 0;
+}
+
+.habra
+{
+    background-position: -24px 0;
+}
+
+.instagram
+{
+    background-position: -48px 0;
+}
+
+.footer
+{
+    position: relative;
+    bottom: 100px;
+    left: 75px;
+}
+
+.href
+{
+    display: inline-block;
+    width: 250px;
+}
+
+.link
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #000;
+}
+
+.copyright
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.ya-letter
+{
+    font-size: 80px;
+}
+
+#maxim:checked ~ .block
+{
+    background-color: #ffe05e;
+}
+
+#maxim:checked ~ .block text
+{
+    fill: #ffe05e;
+}
+
+#maxim:checked ~ .block .card
+{
+    color: #ffe05e;
+}
+
+#alexey:checked ~ .block
+{
+    background-color: #67bef5;
+}
+
+#alexey:checked ~ .block text
+{
+    fill: #67bef5;
+}
+
+#alexey:checked ~ .block .card
+{
+    color: #67bef5;
+}
+
+#georgii:checked ~ .block text
+{
+    fill: #ff7779;
+}
+
+#georgii:checked ~ .block .card
+{
+    color: #ff7779;
+}
+
+#georgii:checked ~ .block
+{
+    background-color: #ff7779;
+}
