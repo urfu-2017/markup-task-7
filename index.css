@@ -1,11 +1,13 @@
 body
 {
+    font-weight: bold;
     width: 954px;
     margin: 20px auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 24px;
     text-align: left;
+    line-height: 1.5;
+    color: #000;
 }
 
 .first-block
@@ -28,6 +30,32 @@ body
     background-color: #ff8384;
 }
 
+.icon
+{
+    left: 408px;
+    position: relative;
+    width: 138px;
+    height: 92px;
+}
+
+.youtube
+{
+    top: 20px;
+    position: relative;
+    width: 138px;
+    height: 80px;
+    left: 540px;
+}
+
+.yand-svg
+{
+    position: relative;
+    width: 102px;
+    height: 102px;
+    left: 529px;
+    top: -223px;
+}
+
 .person
 {
     margin-top: 8px;
@@ -41,34 +69,91 @@ body
     cursor: pointer;
 }
 
-.person2
+.circle
 {
-    top: 2805px;
-    margin-left: 5px;
-    background-repeat: no-repeat;
-    display: inline-block;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.person-name
+{
     position: relative;
-    z-index: 1;
+    width: 200px;
+    right: 25px;
+}
+
+.pers
+{
+    position: relative;
+    width: 155px;
+}
+
+.person:hover ~ .circle
+{
+    display: block;
+}
+
+.persons-block-2 
+{
+    position: relative;
+    top: 2680px;
+}
+
+[id='max']:checked ~ main .max-info,
+[id='alex']:checked ~ main .alex-info,
+[id='georg']:checked ~ main .georg-info
+{
+    display: block;
+}
+
+.sprite 
+{
+    background-image: url(image/clients.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-alex
+{
+    width: 138px;
+    height: 139px;
+    background-position: -5px -5px;
+}
+
+.sprite-georg 
+{
     width: 138px;
     height: 138px;
-    cursor: pointer;
+    background-position: -153px -5px;
 }
 
-.max-sprite
+.sprite-max 
 {
-    background-image: url(image/max.png);
+    width: 138px;
+    height: 138px;
+    background-position: -5px -154px;
 }
 
-.alex-sprite
+.person-info
 {
-    background-image: url(image/alex.png);
+    right: 70px;
+    position: relative;
+    width: 285px;
 }
 
-.georg-sprite
+.georg-info
 {
-    background-image: url(image/georg.png);
+    right: 93px;
+    position: relative;
 }
 
+.circle,
 .person-info,
 input
 {
@@ -77,23 +162,15 @@ input
 
 .text-first
 {
+    line-height: 1.09;
     text-align: center;
-    top: 280px;
-    height: 86px;
-    margin: auto;
-    width: 679px;
     position: relative;
+    z-index: 2;
+    top: 250px;
+    left: 103px;
+    width: 761px;
+    height: 86px;
     font-size: 44px;
-    z-index: 15;
-}
-
-.icon
-{
-    width: 138px;
-    height: 92px;
-    opacity: .6;
-    background-color: #fff;
-    border: solid 2px #010202;
 }
 
 .Artboard-1 
@@ -106,37 +183,42 @@ input
     position: absolute;
     z-index: 1;
     top: 70px;
-    left: -400px;
+    left: -440px;
 }
 
 .block 
 {
     position: relative;
-    border-width: 0 2px 2px;
-    border-style: solid;
-    border-color: #000;
-    box-sizing: border-box;
+    border: 1px solid #000;
 }
 
 .second-block
 {
     height: 392px;
     line-height: 1.5;
-    padding: 64px 109px;
+    padding: 70px 93px;
 }
 
 .atom1
 {
     z-index: 10;
     position: absolute;
-    width: 450px;
+    width: 472px;
 }
 
 .atom2
 {
+    z-index: 10;
     position: absolute;
     top: 249px;
-    width: 450px;
+    width: 472px;
+}
+
+.youtube-info
+{
+    top: 16px;
+    position: relative;
+    left: 540px;
 }
 
 .story
@@ -156,7 +238,7 @@ input
 
 .text1
 {
-    width: 273px;
+    width: 300px;
     height: 64px;
     left: 96px;
     top: 518px;
@@ -164,7 +246,7 @@ input
 
 .text2
 {
-    width: 273px;
+    width: 300px;
     height: 64px;
     left: 92px;
     top: 618px;
@@ -172,7 +254,7 @@ input
 
 .text3
 {
-    width: 280px;
+    width: 300px;
     height: 61px;
     left: 569px;
     top: 1321px;
@@ -180,7 +262,7 @@ input
 
 .text4
 {
-    width: 280px;
+    width: 300px;
     height: 64px;
     left: 569px;
     top: 1420px;
@@ -409,19 +491,66 @@ input
     width: 439px;
 }
 
+.social 
+{
+    padding-right: 8px;
+    background-image: url(image/social.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.social-facebook 
+{
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px;
+}
+
+.social-habra 
+{
+    width: 24px;
+    height: 24px;
+    background-position: -39px -5px;
+}
+
+.social-instagram 
+{
+    width: 24px;
+    height: 24px;
+    background-position: -5px -39px;
+}
+
+.social-twitter 
+{
+    width: 24px;
+    height: 24px;
+    background-position: -39px -39px;
+}
+
+.social-vkontakte 
+{
+    width: 24px;
+    height: 24px;
+    background-position: -73px -5px;
+}
+
+.social-youtube 
+{
+    width: 24px;
+    height: 24px;
+    background-position: -73px -39px;
+}
+
 .foot
  {
     display: inline;
     position: relative;
     margin-right: 80px;
-    top: 108px;
-    bottom: 5px;
 }
 
 .left-foot
 {
     display: inline;
-    top: 108px;
     position: relative;
     margin-right: 80px;
 }
