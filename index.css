@@ -166,14 +166,14 @@ main
 
 .card-name
 {
-    margin-top: 10px;
-    width: 130;
+    width: 140px;
     height: 13px;
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.38;
     text-align: center;
+    margin: 10px auto;
     color: #000;
 }
 
@@ -181,7 +181,7 @@ main
 {
     z-index: 2;
     position: relative;
-    width: 250px;
+    margin: 20px auto;
     display: none;
     color: #000;
 }
@@ -203,14 +203,19 @@ main
     border-color: #fff;
 }
 
+.card-circle label
+{
+    margin-top: 10px;
+}
+
 .tourist-input
 {
     display: none;
 }
 
-input[id='maxim']:checked ~ .third.block .cards .maxim .card-description,
-input[id='alexey']:checked ~ .third.block .cards .alexey .card-description,
-input[id='georgii']:checked ~ .third.block .cards .georgii .card-description
+#maxim:checked ~ .third.block .maxim .card-description,
+#alexey:checked ~ .third.block .alexey .card-description,
+#georgii:checked ~ .third.block .georgii .card-description
 {
     display: block;
 }
@@ -437,7 +442,7 @@ input[id='georgii']:checked ~ .third.block .cards .georgii .card-description
     position: relative;
     bottom: 160px;
     left: 75px;
-    background: url(images/sprites/sprites.png) no-repeat;
+    background: url(data:image/png;base64,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) no-repeat;
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -510,47 +515,47 @@ input[id='georgii']:checked ~ .third.block .cards .georgii .card-description
     font-size: 80px;
 }
 
-input[id='maxim']:checked ~ .block
+#maxim:checked ~ .block
 {
     background-color: #ffe05e;
 }
 
-input[id='maxim']:checked ~ .block .ya-letter text
+#maxim:checked ~ .block text
 {
     fill: #ffe05e;
 }
 
-input[id='maxim']:checked ~ .block .card
+#maxim:checked ~ .block .card
 {
     color: #ffe05e;
 }
 
-input[id='alexey']:checked ~ .block
+#alexey:checked ~ .block
 {
     background-color: #67bef5;
 }
 
-input[id='alexey']:checked ~ .block .ya-letter text
+#alexey:checked ~ .block text
 {
     fill: #67bef5;
 }
 
-input[id='alexey']:checked ~ .block .card
+#alexey:checked ~ .block .card
 {
     color: #67bef5;
 }
 
-input[id='georgii']:checked ~ .block .ya-letter text
+#georgii:checked ~ .block text
 {
     fill: #ff7779;
 }
 
-input[id='georgii']:checked ~ .block .card
+#georgii:checked ~ .block .card
 {
     color: #ff7779;
 }
 
-input[id='georgii']:checked ~ .block
+#georgii:checked ~ .block
 {
     background-color: #ff7779;
 }
