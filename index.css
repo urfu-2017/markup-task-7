@@ -51,7 +51,6 @@ article
     top: 70px;
     right: -27px;
     width: 1416px;
-    height: 788px;
     position: absolute;
 }
 
@@ -61,7 +60,6 @@ header
     left: 140px;
     position: absolute;
     width: 729px;
-    height: 86px;
     font-family: Arial;
     font-size: 42px;
     line-height: 1.09;
@@ -71,7 +69,7 @@ header
 
 .description
 {
-    height: 392px;
+    padding-bottom: 90px;
     display: grid;
     grid-template-areas: 'a b';
 }
@@ -82,7 +80,6 @@ header
     margin-left: 93px;
     grid-area: a;
     width: 450px;
-    height: 236px;
     font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
@@ -114,7 +111,6 @@ header
 
 .video_desc
 {
-    height: 15px;
     font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
@@ -129,7 +125,6 @@ header
     display: grid;
     grid-template-columns: 125px 250px 250px 250px 125px;
     grid-template-areas: 'a d f g b';
-    height: 432px;
     border-bottom: none;
 }
 
@@ -138,21 +133,9 @@ header
     grid-area: d;
 }
 
-.young > img
-{
-    width: 138px;
-    height: 138px;
-}
-
 .adult
 {
     grid-area: f;
-}
-
-.adult > img
-{
-    width: 138px;
-    height: 138px;
 }
 
 .senior
@@ -160,30 +143,15 @@ header
     grid-area: g;
 }
 
-.senior > img
-{
-    width: 138px;
-    height: 138px;
-}
-
 .caption
 {
+    display: block;
+    text-align: center;
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.38;
-    color: #000;
-    text-align: center;
-}
-
-.young > .caption
-{
-    margin-left: 42px;
-}
-
-.adult > .caption
-{
-    margin-left: 5px;
+    margin: auto;
 }
 
 .hero_on_hover
@@ -203,26 +171,13 @@ header
 {
     margin-top: 20px;
     width: 290px;
-    height: 64px;
     font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
 }
 
-.young > .info
-{
-    position: relative;
-    right: 80px;
-}
-
-.adult > .info
-{
-    position: relative;
-    right: 80px;
-}
-
-.senior > .info
+.info
 {
     position: relative;
     right: 80px;
@@ -230,7 +185,7 @@ header
 
 .heroes > label 
 {
-    height: 138px;
+    position: relative;
     width: 138px;
     margin: 80px auto;
 }
@@ -242,25 +197,10 @@ header
     z-index: 1;
 }
 
-.young:hover > svg
+.heroes > label:hover > svg
 {
-    position: relative;
-    top: 1023px;
-    left: 175px;
-}
-
-.adult:hover > svg
-{
-    position: relative;
-    top: 1023px;
-    left: 425px;
-}
-
-.senior:hover > svg
-{
-    position: relative;
-    top: 1023px;
-    left: 675px;
+    top: -6px;
+    left: -9px;
 }
 
 input[name='color']
@@ -315,8 +255,8 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 .path
 {
-    height: 2402px;
     border-bottom: none;
+    position: relative;
 }
 
 .path > section > img,
@@ -328,13 +268,12 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 .path_img
 {
     position: relative;
-    top: 1379px;
     margin-left: 96px;
 }
 
 .step_one_text
 {
-    top: 1455px;
+    top: 76px;
     left: 96px;
     width: 300px;
     font-family: Arial;
@@ -345,44 +284,44 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 .notebook
 {
-    top: 1456px;
+    top: 76px;
     left: 484px;
     z-index: 1;
 }
 
 .phone
 {
-    top: 1708px;
+    top: 329px;
     left: -20px;
 }
 
 .pen
 {
-    top: 1708px;
+    top: 329px;
     left: 328px;
 }
 
 .ticket
 {
-    top: 1814px;
+    top: 435px;
     left: 406px;
 }
 
 .watch
 {
-    top: 1973px;
+    top: 594px;
     left: 483px;
 }
 
 .photo
 {
-    top: 1928px;
+    top: 549px;
     left: 796px;
 }
 
 .step_two_text
 {
-    top: 2245px;
+    top: 866px;
     left: 568px;
     width: 280px;
     font-family: Arial;
@@ -394,39 +333,38 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 .smartphone
 {
     left: 44px;
-    top: 2594px;
+    top: 1215px;
 }
 
 .planchet
 {
     left: 200px;
-    top: 2270px;
+    top: 891px;
 }
 
 .cup
 {
     left: 328px;
-    top: 2639px;
+    top: 1260px;
 }
 
 .mask
 {
     left: 565px;
-    top: 2507px;
+    top: 1128px;
 }
 
 .palka
 {
     left: 718px;
-    top: 2270px;
+    top: 891px;
 }
 
 .step_three_text
 {
     left: 80px;
     width: 292px;
-    height: 180px;
-    top: 3040px;
+    top: 1661px;
     font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
@@ -435,46 +373,41 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 .bag
 {
-    top: 2994px;
+    top: 1615px;
     left: 440px;
 }
 
 .newspaper
 {
-    top: 3329px;
+    top: 1950px;
     left: 91px;
 }
 
 .magazine
 {
-    top: 3440px;
+    top: 2061px;
     left: 679px;
 }
 
 .path + .heroes
 {
-    height: 324px;
+    padding-top: 2438px;
     border-bottom: solid 3px;
 }
 
 footer
 {
+    padding-top: 80px;
+    padding-bottom: 30px;
     border: solid 3px;
     border-top: none;
-    height: 415px;
     border-bottom: solid 3px;
-}
-
-.costil
-{
-    height: 84px;
 }
 
 .foot
 {
     margin-left: 95px;
     width: 439px;
-    height: 164px;
     font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
@@ -486,7 +419,6 @@ footer
 {
     margin-left: 650px;
     margin-top: -170px;
-    height: 300px;
     width: 300px;
 }
 
@@ -499,6 +431,7 @@ footer
 {
     position: relative;
     top: -50px;
+    margin-top: 100px;
     margin-left: 8px;
     margin-bottom: 20px;
 }
