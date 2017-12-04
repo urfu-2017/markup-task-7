@@ -9,7 +9,7 @@
 
 .logo
 {
-    margin-top: -68px;
+    margin-top: px;
     text-align: center;
     opacity: .6;
     background-color: var(--white);
@@ -19,7 +19,9 @@
 h1
 {
     z-index: 1;
-    position: relative;
+    position: absolute;
+    top: 175px;
+    left: 632px;
     text-align: center;
     font-size: 1.7rem;
 }
@@ -87,9 +89,9 @@ header
 
 .area_b
 {
-    margin-top: 70px;
+    position: relative;
+    top: 77px;
     grid-area: b;
-    margin-left: -40px;
 }
 
 .video
@@ -121,8 +123,8 @@ header
 {
 
     display: grid;
-    grid-template-columns: 333px 333px 333px;
-    grid-template-areas: 'd f g';
+    grid-template-columns: 125px 250px 250px 250px 125px;
+    grid-template-areas: 'a d f g b';
     height: 432px;
     border-bottom: none;
 }
@@ -134,7 +136,6 @@ header
 
 .young > img
 {
-    margin-left: 74px;
     width: 138px;
     height: 138px;
 }
@@ -146,7 +147,6 @@ header
 
 .adult > img
 {
-    margin-left: -26px;
     width: 138px;
     height: 138px;
 }
@@ -158,7 +158,6 @@ header
 
 .senior > img
 {
-    margin-left: -127px;
     width: 138px;
     height: 138px;
 }
@@ -175,17 +174,12 @@ header
 
 .young > .caption
 {
-    margin-left: 112px;
+    margin-left: 42px;
 }
 
 .adult > .caption
 {
-    margin-left: -18px;
-}
-
-.senior > .caption
-{
-    margin-left: -125px;
+    margin-left: 5px;
 }
 
 .hero_on_hover
@@ -212,14 +206,22 @@ header
     text-align: center;
 }
 
+.young > .info
+{
+    position: relative;
+    right: 80px;
+}
+
 .adult > .info
 {
-    margin-left: -90px;
+    position: relative;
+    right: 80px;
 }
 
 .senior > .info
 {
-    margin-left: -190px;
+    position: relative;
+    right: 80px;
 }
 
 .heroes > label 
@@ -238,20 +240,23 @@ header
 
 .young:hover > svg
 {
-    margin-top: -6px;
-    margin-left: 68px;
+    position: relative;
+    top: 1194px;
+    left: 376px;
 }
 
 .adult:hover > svg
 {
-    margin-top: -6px;
-    margin-left: -32px;
+    position: relative;
+    top: 1194px;
+    left: 626px;
 }
 
 .senior:hover > svg
 {
-    margin-top: -6px;
-    margin-left: -132px;
+    position: relative;
+    top: 1194px;
+    left: 876px;
 }
 
 input[name='color']
@@ -318,7 +323,8 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 .path_img
 {
-    margin-top: -60px;
+    position: relative;
+    top: 1490px;
     margin-left: 96px;
 }
 
