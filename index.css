@@ -1,29 +1,25 @@
 .Yandex_letter
 {
-    height: 4546px;
     width: 954px;
     margin: auto;
     margin-top: 167px;
     border-top: solid 3px;
+    position: relative;
 }
 
 .logo
 {
-    margin-top: px;
     text-align: center;
     opacity: .6;
     background-color: var(--white);
     border: solid 2px var(--almost-black);
 }
 
-h1
+.top_logo
 {
-    z-index: 1;
     position: absolute;
-    top: 175px;
-    left: 632px;
-    text-align: center;
-    font-size: 1.7rem;
+    left: 408px;
+    z-index: 2;
 }
 
 .main_header::first-letter
@@ -44,8 +40,8 @@ article
 
 .bg 
 {
-    top: 237px;
-    right: 173px;
+    top: 70px;
+    right: -27px;
     width: 1416px;
     height: 788px;
     position: absolute;
@@ -53,8 +49,8 @@ article
 
 header
 {
-    top: 549px;
-    left: 315px;
+    top: 337px;
+    left: 140px;
     position: absolute;
     width: 729px;
     height: 86px;
@@ -241,22 +237,22 @@ header
 .young:hover > svg
 {
     position: relative;
-    top: 1194px;
-    left: 376px;
+    top: 1023px;
+    left: 175px;
 }
 
 .adult:hover > svg
 {
     position: relative;
-    top: 1194px;
-    left: 626px;
+    top: 1023px;
+    left: 425px;
 }
 
 .senior:hover > svg
 {
     position: relative;
-    top: 1194px;
-    left: 876px;
+    top: 1023px;
+    left: 675px;
 }
 
 input[name='color']
@@ -324,14 +320,14 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 .path_img
 {
     position: relative;
-    top: 1490px;
+    top: 1379x;
     margin-left: 96px;
 }
 
 .step_one_text
 {
-    top: 1553px;
-    left: 293px;
+    top: 1455px;
+    left: 96px;
     width: 300px;
     font-family: Arial;
     font-size: 16px;
@@ -341,45 +337,45 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 .notebook
 {
-    top: 1566px;
-    left: 684px;
+    top: 1456px;
+    left: 484px;
     z-index: 1;
 }
 
 .phone
 {
-    top: 1818px;
-    left: 180px;
+    top: 1708px;
+    left: -20px;
 }
 
 .pen
 {
-    top: 1818px;
-    left: 528px;
+    top: 1708px;
+    left: 328px;
 }
 
 .ticket
 {
-    top: 1924px;
-    left: 606px;
+    top: 1814px;
+    left: 406px;
 }
 
 .watch
 {
-    top: 2083px;
-    left: 683px;
+    top: 1973px;
+    left: 483px;
 }
 
 .photo
 {
-    top: 2038px;
-    left: 996px;
+    top: 1928px;
+    left: 796px;
 }
 
 .step_two_text
 {
-    top: 2355px;
-    left: 768px;
+    top: 2245px;
+    left: 568px;
     width: 280px;
     font-family: Arial;
     font-size: 16px;
@@ -389,40 +385,40 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 .smartphone
 {
-    left: 244px;
-    top: 2704px;
+    left: 44px;
+    top: 2594px;
 }
 
 .planchet
 {
-    left: 400px;
-    top: 2380px;
+    left: 200px;
+    top: 2270px;
 }
 
 .cup
 {
-    left: 528px;
-    top: 2749px;
+    left: 328px;
+    top: 2639px;
 }
 
 .mask
 {
-    left: 765px;
-    top: 2617px;
+    left: 565px;
+    top: 2507px;
 }
 
 .palka
 {
-    left: 918px;
-    top: 2380px;
+    left: 718px;
+    top: 2270px;
 }
 
 .step_three_text
 {
-    left: 280px;
+    left: 80px;
     width: 292px;
     height: 180px;
-    top: 3150px;
+    top: 3040px;
     font-family: Arial;
     font-size: 16px;
     line-height: 1.5;
@@ -431,20 +427,20 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 .bag
 {
-    top: 3104px;
-    left: 640px;
+    top: 2994px;
+    left: 440px;
 }
 
 .newspaper
 {
-    top: 3439px;
-    left: 291px;
+    top: 3329px;
+    left: 91px;
 }
 
 .magazine
 {
-    top: 3550px;
-    left: 879px;
+    top: 3440px;
+    left: 679px;
 }
 
 .path + .heroes
@@ -484,11 +480,6 @@ footer
     margin-top: -170px;
 }
 
-text
-{
-    font-size: 4rem;
-}
-
 .sprite > .facebook
 {
     margin-left: 96px;
@@ -496,7 +487,6 @@ text
 
 .sprite > img
 {
-    margin-top: 30px;
     margin-left: 8px;
     margin-bottom: 92px;
     
@@ -521,4 +511,12 @@ text
     font-family: Arial;
     font-size: 16px;
     margin-left: 80px;
+}
+
+.foot_logo > img
+{
+    position: relative;
+    top: -40px;
+    left: -40px;
+    height: 200px;
 }
