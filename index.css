@@ -160,19 +160,19 @@ input
 .person.max
 {
     left: 171px;
-    background: url(img/max.png) no-repeat 7px 7px;
+    background: url(img/people.png) no-repeat 3px 2px;
 }
 
 .person.alex
 {
     left: 406px;
-    background: url(img/alex.png) no-repeat 7px 7px;
+    background: url(img/people.png) no-repeat -143px 2px ;
 }
 
 .person.georg
 {
     left: 640px;
-    background: url(img/georg.png) no-repeat 7px 7px;
+    background: url(img/people.png) no-repeat -289px 2px;
 }
 
 .person-description
