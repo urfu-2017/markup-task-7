@@ -147,25 +147,32 @@ input
     z-index: 2;
 }
 
-.person img
+.person label
 {
-    vertical-align: middle;
     margin: auto;
+    width: 138px;
+    height: 138px;
+    position: relative;
+    z-index: 2;
+    display: block;
 }
 
 .person.max
 {
     left: 171px;
+    background: url(img/max.png) no-repeat 7px 7px;
 }
 
 .person.alex
 {
     left: 406px;
+    background: url(img/alex.png) no-repeat 7px 7px;
 }
 
 .person.georg
 {
     left: 640px;
+    background: url(img/georg.png) no-repeat 7px 7px;
 }
 
 .person-description
@@ -346,7 +353,7 @@ input
 
 .last-note p
 {
-    margin-top: 0 ;
+    margin-top: 0;
 }
 
 .contacts
@@ -386,7 +393,6 @@ input
 
 .vk
 {
-
     background-position: -39px -39px;
 }
 
@@ -415,7 +421,6 @@ input
     position: absolute;
     top: 82px;
     right: 192px;
-
 }
 
 .logo-atom img
