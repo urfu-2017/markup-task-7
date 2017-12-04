@@ -23,7 +23,7 @@ input[id='maxim']:checked ~ .block
     background-color: #ffe05e;
 }
 
-input[id='maxim']:checked ~ .block .ya-letter text
+input[id='maxim']:checked ~ .block .ya-letter path
 {
     fill: #ffe05e;
 }
@@ -33,7 +33,7 @@ input[id='alexey']:checked ~ .block
     background-color: #67bef5;
 }
 
-input[id='alexey']:checked ~ .block .ya-letter text
+input[id='alexey']:checked ~ .block .ya-letter path
 {
     fill: #67bef5;
 }
@@ -43,7 +43,7 @@ input[id='george']:checked ~ .block
     background-color: #ff7779;
 }
 
-input[id='george']:checked ~ .block .ya-letter text
+input[id='george']:checked ~ .block .ya-letter path
 {
     fill: #ff7779;
 }
@@ -417,9 +417,9 @@ input[id='george']:checked ~ section div .george .person-description
     margin-left: 80px;
 }
 
-.ya-letter text
+.ya-letter path
 {
-    font-size: 70px;
+    transform: translate(35px, 20px) scale(1.5);
 }
 
 .sn-sprites
