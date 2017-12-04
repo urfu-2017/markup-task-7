@@ -63,7 +63,6 @@ h1
 {
     display: block;
     width: 450px;
-    height: 236px;
     margin: 80px 97px 76px 93px ;
     z-index: 5;
 }
@@ -358,13 +357,11 @@ input[id='person3']:checked ~ .artboard
     display: flex;
     margin: 0;
     border-top: 2px solid;
-    height: 250px;
 }
 
 .info
 {
     width: 439px;
-    height: 164px;
     margin: 70px 122px 24px 95px;
 }
 
