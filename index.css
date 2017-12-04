@@ -1,1 +1,512 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font: 16px Arial;
+    line-height: 1.5;
+}
 
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-selector
+{
+    display: none;
+}
+
+input[id='maxim']:checked ~ .block
+{
+    background-color: #ffe05e;
+}
+
+input[id='maxim']:checked ~ .block .ya-letter path
+{
+    fill: #ffe05e;
+}
+
+input[id='alexey']:checked ~ .block
+{
+    background-color: #67bef5;
+}
+
+input[id='alexey']:checked ~ .block .ya-letter path
+{
+    fill: #67bef5;
+}
+
+input[id='george']:checked ~ .block
+{
+    background-color: #ff7779;
+}
+
+input[id='george']:checked ~ .block .ya-letter path
+{
+    fill: #ff7779;
+}
+
+.block
+{
+    position: relative;
+    box-sizing: border-box;
+    width: 954px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+.block-header
+{
+    margin-top: 20px;
+    height: 553px;
+}
+
+.logo-bg
+{
+    position: absolute;
+    left: 408px;
+    opacity: .6;
+}
+
+.logo-text
+{
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    left: 437px;
+    top: 20px;
+    background: url('images/logo.svg') no-repeat;
+    background-size: contain;
+}
+
+.logo-text:first-letter
+{
+    color: #f00;
+}
+
+.h1
+{
+    position: absolute;
+    width: 679px;
+    height: 86px;
+    font-size: 40px;
+    line-height: 1.09;
+    text-align: center;
+    top: 373px;
+    left: 110px;
+    z-index: 2;
+    font-weight: normal;
+    margin: 0;
+}
+
+.block-header img
+{
+    position: absolute;
+    left: -435px;
+    top: 70px;
+    z-index: 1;
+}
+
+.block-description
+{
+    padding: 78px 0 76px 90px;
+}
+
+.description
+{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 450px;
+    z-index: 2;
+}
+
+.video
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 96px;
+}
+
+.video-button-border
+{
+    position: relative;
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.video-button-triangle
+{
+    position: absolute;
+    left: 60px;
+    top: 23px;
+}
+
+.video-button-description
+{
+    position: relative;
+    margin-top: 15px;
+    width: 187px;
+    height: 15px;
+}
+
+.persons
+{
+    padding: 0 125px;
+    display: flex;
+}
+
+.persons-selection
+{
+    padding-top: 31px;
+}
+
+.person
+{
+    width: 138px;
+    height: 200px;
+    display: inline-block;
+    margin: 48px;
+    position: relative;
+}
+
+.border
+{
+    border-radius: 100%;
+    border: 3px solid #fff;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    display: none;
+}
+
+.sprite-person
+{
+    z-index: 1;
+    position: relative;
+    display: block;
+    height: 138px;
+    width: 138px;
+    background: url(images/sprites/faces-sprite.png) no-repeat;
+}
+
+.sprite-alexey
+{
+    background-position: -138px 0;
+}
+
+.sprite-george
+{
+    background-position: -276px 0;
+}
+
+.person:hover .border,
+input[id='maxim']:checked ~ section div .maxim .person-description,
+input[id='alexey']:checked ~ section div .alexey .person-description,
+input[id='george']:checked ~ section div .george .person-description
+{
+    display: block;
+}
+
+.person-description
+{
+    width: 300px;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: 20px;
+    display: none;
+}
+
+.name
+{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.path
+{
+    position: absolute;
+    left: 94px;
+    top: 430px;
+}
+
+.text
+{
+    position: absolute;
+    width: 280px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.text1
+{
+    top: 505px;
+    left: 94px;
+}
+
+.notebook
+{
+    position: absolute;
+    left: 484px;
+    top: 505px;
+    z-index: 1;
+}
+
+.phone
+{
+    position: absolute;
+    left: -23px;
+    top: 759px;
+}
+
+.pen
+{
+    position: absolute;
+    top: 759px;
+    left: 327px;
+}
+
+.ticket
+{
+    position: absolute;
+    top: 863px;
+    left: 405px;
+}
+
+.watch
+{
+    position: absolute;
+    top: 1022px;
+    left: 482px;
+    z-index: 1;
+}
+
+.photo
+{
+    position: absolute;
+    left: 795px;
+    top: 977px;
+}
+
+.text2
+{
+    left: 568px;
+    top: 1300px;
+}
+
+.ipad
+{
+    position: absolute;
+    top: 1320px;
+    left: 201px;
+}
+
+.palka
+{
+    position: absolute;
+    top: 1338px;
+    left: 717px;
+    z-index: 1;
+}
+
+.mask
+{
+    position: absolute;
+    top: 1557px;
+    left: 561px;
+}
+
+.iphone
+{
+    position: absolute;
+    top: 1640px;
+    left: 44px;
+}
+
+.cup
+{
+    position: absolute;
+    top: 1689px;
+    left: 327px;
+    z-index: 1;
+}
+
+.text3
+{
+    left: 80px;
+    top: 2095px;
+}
+
+.bag
+{
+    position: absolute;
+    left: 440px;
+    top: 2046px;
+}
+
+.newspaper
+{
+    position: absolute;
+    left: 91px;
+    top: 2381px;
+}
+
+.magazine
+{
+    position: absolute;
+    left: 678px;
+    top: 2490px;
+}
+
+.persons-footer
+{
+    position: absolute;
+    top: 2885px;
+}
+
+.block-path
+{
+    height: 3150px;
+}
+
+.block-footer
+{
+    padding: 80px 0 30px 90px;
+    border-bottom: 2px solid;
+}
+
+.footer
+{
+    display: flex;
+}
+
+.footer-text
+{
+    position: relative;
+}
+
+.footer-text p
+{
+    width: 442px;
+    margin: 0;
+}
+
+.footer-text p:first-of-type
+{
+    margin-bottom: 40px;
+}
+
+.ya-letter
+{
+    position: relative;
+    margin-left: 80px;
+}
+
+.ya-letter path
+{
+    transform: translate(35px, 20px) scale(1.5);
+}
+
+.sn-sprites
+{
+    position: relative;
+    margin-top: 24px;
+}
+
+.sprite-sn
+{
+    background: url(data:image/png;base64,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) no-repeat;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.sprite-sn-facebook
+{
+    width: 24px;
+    height: 24px;
+    background-position: 0 0;
+}
+
+.sprite-sn-habra
+{
+    width: 24px;
+    height: 24px;
+    background-position: -24px 0;
+}
+
+.sprite-sn-instagram
+{
+    width: 24px;
+    height: 24px;
+    background-position: 0 -24px;
+}
+
+.sprite-sn-twitter
+{
+    width: 24px;
+    height: 24px;
+    background-position: -24px -24px;
+}
+
+.sprite-sn-vkontakte
+{
+    width: 24px;
+    height: 24px;
+    background-position: -48px 0;
+}
+
+.sprite-sn-youtube
+{
+    width: 24px;
+    height: 24px;
+    background-position: -48px -24px;
+}
+
+.credits
+{
+    position: relative;
+    margin-top: 65px;
+}
+
+.link-help,
+.link-os
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.link-os:hover,
+.link-help:hover
+{
+    color: #852a26;
+}
+
+.link-help
+{
+    margin-right: 18px;
+}
+
+.link-os
+{
+    margin-right: 80px;
+}
+
+.logo-bg polyline
+{
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.video-button-triangle
+{
+    stroke: black;
+    stroke-width: 2;
+}
