@@ -1,1 +1,468 @@
+.Yandex_letter
+{
+    width: 954px;
+    margin: auto;
+    margin-top: 167px;
+    border-top: solid 3px;
+    position: relative;
+}
 
+.header > img
+{
+    position: absolute;
+    left: 429px;
+    z-index: 1;
+    max-height: 70px;
+}
+
+.logo
+{
+    text-align: center;
+    opacity: .6;
+    background-color: var(--white);
+    border: solid 2px var(--almost-black);
+}
+
+.top_logo
+{
+    position: absolute;
+    left: 408px;
+    z-index: 2;
+}
+
+.main_header::first-letter
+{
+    color: red;
+}
+
+article
+{
+    border: solid 3px;
+    border-top: none;
+}
+
+.header
+{
+    height: 551px;
+}
+
+.bg 
+{
+    top: 70px;
+    right: -27px;
+    width: 1416px;
+    position: absolute;
+}
+
+header
+{
+    top: 337px;
+    left: 140px;
+    position: absolute;
+    width: 729px;
+    font-family: Arial;
+    font-size: 42px;
+    line-height: 1.09;
+    text-align: center;
+    color: #000;
+}
+
+.description
+{
+    padding-bottom: 90px;
+    display: grid;
+    grid-template-areas: 'a b';
+}
+
+.text
+{
+    margin-top: 70px;
+    margin-left: 93px;
+    grid-area: a;
+    width: 450px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+    z-index: 1;
+}
+
+.area_b
+{
+    position: relative;
+    top: 77px;
+    grid-area: b;
+}
+
+.video
+{
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px #000;
+}
+
+.triangle
+{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.video_desc
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+    margin-top: 5px;
+}
+
+.heroes
+{
+
+    display: grid;
+    grid-template-columns: 125px 250px 250px 250px 125px;
+    grid-template-areas: 'a d f g b';
+    border-bottom: none;
+}
+
+.young
+{
+    grid-area: d;
+}
+
+.adult
+{
+    grid-area: f;
+}
+
+.senior
+{
+    grid-area: g;
+}
+
+.caption
+{
+    display: block;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    margin: auto;
+}
+
+.hero_on_hover
+{
+    fill: none;
+    stroke-width: 3px;
+}
+
+.hero_on_hover,
+.info
+{
+
+    display: none;
+}
+
+.info
+{
+    margin-top: 20px;
+    width: 290px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.info
+{
+    position: relative;
+    right: 80px;
+}
+
+.heroes > label 
+{
+    position: relative;
+    width: 138px;
+    margin: 80px auto;
+}
+
+.heroes > label:hover > svg
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.heroes > label:hover > svg
+{
+    top: -6px;
+    left: -9px;
+}
+
+input[name='color']
+{
+    display: none;
+}
+
+input[id='blue']:checked ~ .Yandex_letter
+{
+    background-color: #73c4f6;
+}
+
+input[id='blue']:checked ~ .Yandex_letter > footer > .foot_logo > svg > text
+{
+    fill: #73c4f6;
+}
+
+input[id='blue']:checked ~ .Yandex_letter > .heroes > .young > .info
+{
+    display: block;
+}
+
+input[id='red']:checked ~ .Yandex_letter
+{
+    background-color: #ff8283;
+}
+
+input[id='red']:checked ~ .Yandex_letter > footer > .foot_logo > svg > text
+{
+    fill: #ff8283;
+}
+
+input[id='red']:checked ~ .Yandex_letter > .heroes > .adult > .info
+{
+    display: block;
+}
+
+input[id='yellow']:checked ~ .Yandex_letter
+{
+    background-color: #ffe05d;
+}
+
+input[id='yellow']:checked ~ .Yandex_letter > footer > .foot_logo > svg > text
+{
+    fill: #ffe05d;
+}
+
+input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
+{
+    display: block;
+}
+
+.path
+{
+    border-bottom: none;
+    position: relative;
+}
+
+.path > section > img,
+.path > section > div
+{
+    position: absolute;
+}
+
+.path_img
+{
+    position: relative;
+    margin-left: 96px;
+}
+
+.step_one_text
+{
+    top: 76px;
+    left: 96px;
+    width: 300px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.notebook
+{
+    top: 76px;
+    left: 484px;
+    z-index: 1;
+}
+
+.phone
+{
+    top: 329px;
+    left: -20px;
+}
+
+.pen
+{
+    top: 329px;
+    left: 328px;
+}
+
+.ticket
+{
+    top: 435px;
+    left: 406px;
+}
+
+.watch
+{
+    top: 594px;
+    left: 483px;
+}
+
+.photo
+{
+    top: 549px;
+    left: 796px;
+}
+
+.step_two_text
+{
+    top: 866px;
+    left: 568px;
+    width: 280px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.smartphone
+{
+    left: 44px;
+    top: 1215px;
+}
+
+.planchet
+{
+    left: 200px;
+    top: 891px;
+}
+
+.cup
+{
+    left: 328px;
+    top: 1260px;
+}
+
+.mask
+{
+    left: 565px;
+    top: 1128px;
+}
+
+.palka
+{
+    left: 718px;
+    top: 891px;
+}
+
+.step_three_text
+{
+    left: 80px;
+    width: 292px;
+    top: 1661px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.bag
+{
+    top: 1615px;
+    left: 440px;
+}
+
+.newspaper
+{
+    top: 1950px;
+    left: 91px;
+}
+
+.magazine
+{
+    top: 2061px;
+    left: 679px;
+}
+
+.path + .heroes
+{
+    padding-top: 2438px;
+    border-bottom: solid 3px;
+}
+
+footer
+{
+    border: solid 3px;
+    border-top: none;
+    border-bottom: solid 3px;
+    padding-left: 96px;
+    padding-top: 80px;
+}
+
+footer > section
+{
+    padding-bottom: 50px;
+}
+
+.foot
+{
+    display: inline-block;
+    width: 439px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.foot_logo
+{
+    margin-left: 90px;
+    display: inline-block;
+}
+
+.sprite > img
+{
+    margin-top: 20px;
+    margin-right: 8px;
+}
+
+.help
+{
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.callback
+{
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.footer
+{
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+input[id='blue']:checked ~ main > footer > .k > .foot_logo > svg > g > path
+{
+    fill: #73c4f6;
+}
+
+input[id='red']:checked ~ main > footer > .k > .foot_logo > svg > g > path
+{
+    fill: #ff8283;
+}
+
+input[id='yellow']:checked ~ main > footer > .k > .foot_logo > svg > g > path
+{
+    fill: #ffe05d;
+}
