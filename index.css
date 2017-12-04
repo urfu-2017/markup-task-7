@@ -17,7 +17,7 @@ article
     transition: background-color 1s ease-out;
 }
 
-.header
+header
 {
     position: relative;
     text-align: center;
@@ -207,19 +207,19 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     text-align: center;
 }
 
-.path__text-1
+.path__text.path__elem_at_1
 {
     left: 92px;
     top: 494px;
 }
 
-.path__text-2
+.path__text.path__elem_at_8
 {
     left: 569px;
     top: 1323px;
 }
 
-.path__text-3
+.path__text.path__elem_at_14
 {
     left: 93px;
     top: 2093px;
@@ -230,85 +230,85 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     position: absolute;
 }
 
-.path__phone
+.phone_pen > .path__elem_at_2
 {
     left: -20px;
     top: 761px;
 }
 
-.path__notebook
-{
-    left: 484px;
-    top: 509px;
-}
-
-.path__pen
+.phone_pen > .path__elem_at_3
 {
     left: 328px;
     top: 761px;
 }
 
-.path__ticket
+.ticket_notebook_watch_photo > .path__elem_at_4
 {
     left: 406px;
     top: 867px;
 }
 
-.path__watch
+.ticket_notebook_watch_photo > .path__elem_at_5
+{
+    left: 484px;
+    top: 509px;
+}
+
+.ticket_notebook_watch_photo > .path__elem_at_6
 {
     left: 484px;
     top: 1026px;
 }
 
-.path__photo
+.ticket_notebook_watch_photo > .path__elem_at_7
 {
     left: 796px;
     top: 981px;
 }
 
-.path__ipad
+.ipad_iphone_cup > .path__elem_at_9
 {
     left: 202px;
     top: 1322px;
 }
 
-.path__iphone
+.ipad_iphone_cup > .path__elem_at_10
 {
     left: 44px;
     top: 1646px;
 }
 
-.path__cup
+.ipad_iphone_cup > .path__elem_at_11
 {
     left: 328px;
     top: 1691px;
 }
 
-.path__mask
+.mask_snorkel > .path__elem_at_12
 {
     left: 562px;
     top: 1559px;
 }
 
-.path__palka
+.mask_snorkel > .path__elem_at_13
 {
     left: 718px;
     top: 1322px;
 }
 
-.path__bag
+.bag_newspaper_magazine > .path__elem_at_15
 {
     left: 440px;
     top: 2048px;
 }
 
-.path__newspaper
+.bag_newspaper_magazine > .path__elem_at_16
 {
     left: 91px;
     top: 2383px;
 }
 
-.path__magazine
+.bag_newspaper_magazine > .path__elem_at_17
 {
     left: 679px;
     top: 2494px;
@@ -316,93 +316,88 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
 
 .summary
 {
-    height: 435px;
+    height: 300px;
     position: relative;
+    padding: 60px 0 0 95px;
+}
+
+.summary__block
+{
+    display: flex;
 }
 
 .summary__text
 {
     font-size: 16px;
     line-height: 24px;
-    position: absolute;
-    top: 60px;
-    left: 95px;
     width: 439px;
 }
 
-.summary__logo-atom
+.summary__logo
 {
-    position: absolute;
-    left: 656px;
-    top: 84px;
+    margin-top: 24px;
+    margin-left: 122px;
 }
 
 .summary__social
 {
-    position: absolute;
-    left: 96px;
-    top: 272px;
     display: flex;
     width: 188px;
     justify-content: space-between;
 }
 
-.facebook
+.social__icon
 {
     width: 24px;
     height: 24px;
+    cursor: pointer;
+    float: left;
+    margin-right: 8px;
+}
+
+.social__icon_type_facebook
+{
     background: url('img/css_sprites.png') -10px -10px;
-    cursor: pointer;
 }
 
-.vk
+.social__icon_type_vk
 {
-    width: 24px;
-    height: 24px;
     background: url('img/css_sprites.png') -54px -10px;
-    cursor: pointer;
 }
 
-.twitter
+.social__icon_type_twitter
 {
-    width: 24px;
-    height: 24px;
     background: url('img/css_sprites.png') -10px -54px;
-    cursor: pointer;
 }
 
-.youtube
+.social__icon_type_youtube
 {
-    width: 24px;
-    height: 24px;
     background: url('img/css_sprites.png') -54px -54px;
-    cursor: pointer;
 }
 
-.habr
+.social__icon_type_habr
 {
-    width: 24px;
-    height: 24px;
     background: url('img/css_sprites.png') -98px -10px;
-    cursor: pointer;
 }
 
-.instagram
+.social__icon_type_instagram
 {
-    width: 24px;
-    height: 24px;
     background: url('img/css_sprites.png') -98px -54px;
-    cursor: pointer;
 }
 
 footer
 {
-    position: absolute;
-    left: 96px;
-    bottom: 20px;
+    text-align: center;
+    position: relative;
 }
 
-a
+.ya-links
+{
+    position: absolute;
+    left: 95px;
+}
+
+.ya-link
 {
     text-decoration: none;
     color: #000;
@@ -413,7 +408,3 @@ a
     margin-left: 20px;
 }
 
-footer span
-{
-    margin-left: 80px;
-}
