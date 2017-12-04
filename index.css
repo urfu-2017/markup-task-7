@@ -60,30 +60,36 @@ header
     margin-right: 13px;
 }
 
+p
+{
+    margin: 0;
+}
+
+p + p
+{
+    margin-top: 16px;
+}
+
 .intro
 {
-    position: relative;
+    padding: 96px 86px 64px 93px;
+    display: flex;
     height: 392px;
+    box-sizing: border-box;
     border-bottom: 2px solid #000;
+}
+
+.intro__text,
+.intro__video
+{
+    vertical-align: top;
+    z-index: 0;
 }
 
 .intro__text
 {
-    position: absolute;
-    left: 93px;
-    top: 80px;
     width: 450px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.intro__video
-{
-    position: absolute;
-    margin-top: 16px;
-    left: 640px;
-    top: 80px;
+    margin-right: 97px;
 }
 
 .path
@@ -97,7 +103,7 @@ header
 {
     margin: 80px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .persons:last-of-type
@@ -111,7 +117,6 @@ header
 .person
 {
     width: 33%;
-    margin: 0 20px;
     text-align: center;
 }
 
@@ -205,6 +210,7 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     position: absolute;
     width: 280px;
     text-align: center;
+    margin-top: 16px;
 }
 
 .path__text.path__elem_at_1
@@ -213,13 +219,13 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     top: 494px;
 }
 
-.path__text.path__elem_at_8
+.path__text.path__elem_at_4
 {
     left: 569px;
     top: 1323px;
 }
 
-.path__text.path__elem_at_14
+.path__text.path__elem_at_7
 {
     left: 93px;
     top: 2093px;
@@ -230,88 +236,92 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     position: absolute;
 }
 
-.phone_pen > .path__elem_at_2
+.path__elem_at_2
 {
+    position: absolute;
     left: -20px;
     top: 761px;
 }
 
-.phone_pen > .path__elem_at_3
+.pen
 {
-    left: 328px;
-    top: 761px;
+    left: 348px;
 }
 
-.ticket_notebook_watch_photo > .path__elem_at_4
+.path__elem_at_3
 {
+    position: absolute;
     left: 406px;
     top: 867px;
 }
 
-.ticket_notebook_watch_photo > .path__elem_at_5
+.notebook
 {
-    left: 484px;
-    top: 509px;
+    left: 78px;
+    top: -358px;
 }
 
-.ticket_notebook_watch_photo > .path__elem_at_6
+.watch
 {
-    left: 484px;
-    top: 1026px;
+    left: 78px;
+    top: 159px;
 }
 
-.ticket_notebook_watch_photo > .path__elem_at_7
+.photo
 {
-    left: 796px;
-    top: 981px;
+    left: 390px;
+    top: 114px;
 }
 
-.ipad_iphone_cup > .path__elem_at_9
+.path__elem_at_5
 {
+    position: absolute;
     left: 202px;
     top: 1322px;
 }
 
-.ipad_iphone_cup > .path__elem_at_10
+.iphone
 {
-    left: 44px;
-    top: 1646px;
+    left: -158px;
+    top: 324px;
 }
 
-.ipad_iphone_cup > .path__elem_at_11
+.cup
 {
-    left: 328px;
-    top: 1691px;
+    left: 126px;
+    top: 369px;
 }
 
-.mask_snorkel > .path__elem_at_12
+.path__elem_at_6
 {
+    position: absolute;
     left: 562px;
     top: 1559px;
 }
 
-.mask_snorkel > .path__elem_at_13
+.snorkel
 {
-    left: 718px;
-    top: 1322px;
+    left: 156px;
+    top: -237px;
 }
 
-.bag_newspaper_magazine > .path__elem_at_15
+.path__elem_at_8
 {
+    position: absolute;
     left: 440px;
     top: 2048px;
 }
 
-.bag_newspaper_magazine > .path__elem_at_16
+.newspaper
 {
-    left: 91px;
-    top: 2383px;
+    left: -349px;
+    top: 335px;
 }
 
-.bag_newspaper_magazine > .path__elem_at_17
+.magazine
 {
-    left: 679px;
-    top: 2494px;
+    left: 239px;
+    top: 446px;
 }
 
 .summary
@@ -342,7 +352,7 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
 .summary__social
 {
     display: flex;
-    width: 188px;
+    width: 184px;
     justify-content: space-between;
 }
 
@@ -351,8 +361,7 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     width: 24px;
     height: 24px;
     cursor: pointer;
-    float: left;
-    margin-right: 8px;
+
 }
 
 .social__icon_type_facebook
@@ -397,7 +406,7 @@ footer
     left: 95px;
 }
 
-.ya-link
+.ya-links a
 {
     text-decoration: none;
     color: #000;
