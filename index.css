@@ -397,16 +397,21 @@ input[id='yellow']:checked ~ .Yandex_letter > .heroes > .senior > .info
 
 footer
 {
-    padding-top: 80px;
-    padding-bottom: 30px;
     border: solid 3px;
     border-top: none;
     border-bottom: solid 3px;
+    padding-left: 96px;
+    padding-top: 80px;
+}
+
+footer > section
+{
+    padding-bottom: 50px;
 }
 
 .foot
 {
-    margin-left: 95px;
+    display: inline-block;
     width: 439px;
     font-family: Arial;
     font-size: 16px;
@@ -417,30 +422,20 @@ footer
 
 .foot_logo
 {
-    margin-left: 650px;
-    margin-top: -170px;
-    width: 300px;
-}
-
-.sprite > .facebook
-{
-    margin-left: 96px;
+    margin-left: 90px;
+    display: inline-block;
 }
 
 .sprite > img
 {
-    position: relative;
-    top: -50px;
-    margin-top: 100px;
-    margin-left: 8px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 8px;
 }
 
 .help
 {
     font-family: Arial;
     font-size: 16px;
-    margin-left: 96px;
 }
 
 .callback
@@ -450,11 +445,6 @@ footer
     margin-left: 20px;
 }
 
-.foot_logo
-{
-    margin-top: -229px;
-}
-
 .footer
 {
     font-family: Arial;
@@ -462,17 +452,17 @@ footer
     margin-left: 80px;
 }
 
-input[id='blue']:checked ~ .Yandex_letter > footer > .foot_logo > svg > g > path
+input[id='blue']:checked ~ main > footer > .k > .foot_logo > svg > g > path
 {
     fill: #73c4f6;
 }
 
-input[id='red']:checked ~ .Yandex_letter > footer > .foot_logo > svg > g > path
+input[id='red']:checked ~ main > footer > .k > .foot_logo > svg > g > path
 {
     fill: #ff8283;
 }
 
-input[id='yellow']:checked ~ main > footer > .foot_logo > svg > g > path
+input[id='yellow']:checked ~ main > footer > .k > .foot_logo > svg > g > path
 {
     fill: #ffe05d;
 }
