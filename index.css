@@ -157,7 +157,7 @@ footer
     display: flex;
     justify-content: center;
     position: relative;
-    top: calc(377px - 48px);
+    top: 329px;
     z-index: 5;
 }
 
