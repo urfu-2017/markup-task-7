@@ -1,1 +1,430 @@
+.layout-background
+{
+    width: 952px;
+    margin: auto;
+    border: 2px black solid;
+    position: relative;
+}
 
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#max:checked ~ .layout-background section
+{
+    background-color: #72c6f6;
+}
+
+#alex:checked ~ .layout-background section
+{
+    background-color: #ff8384;
+}
+
+#georg:checked ~ .layout-background section
+{
+    background-color: #ffe15c;
+}
+
+.bg
+{
+    position: absolute;
+    z-index: 2;
+    right: -27px;
+    top: 70px;
+}
+
+.first-block
+{
+    height: 551px;
+}
+
+.question
+{
+    position: absolute;
+    font-size: 44px;
+    text-align: center;
+    line-height: 48px;
+    right: 115px;
+    top: 337px;
+    z-index: 4;
+    left: 102px;
+}
+
+.second-block
+{
+    height: 392px;
+}
+
+section + section
+{
+    border-top: 2px black solid;
+}
+
+.person p.person-name
+{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+section
+{
+    position: relative;
+}
+
+.second-block .text-content
+{
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    left: 93px;
+    width: 450px;
+    height: 236px;
+    line-height: 1.5;
+    text-align: left;
+    display: inline-block;
+}
+
+.video-icon span
+{
+    position: absolute;
+    top: 176px;
+    left: 640px;
+}
+
+.video-icon img
+{
+    position: absolute;
+    top: 80px;
+    left: 640px;
+}
+
+.third-block
+{
+    padding-top: 87px;
+    height: 3208px;
+    position: relative;
+}
+
+#max:checked ~ .layout-background .max,
+#alex:checked ~ .layout-background .alex,
+#georg:checked ~ .layout-background .georg,
+.person:hover
+{
+    border: solid 3px white;
+    margin: -3px -3px;
+    border-radius: 50%;
+}
+
+.person
+{
+    position: absolute;
+}
+
+input
+{
+    display: none;
+}
+
+.people .person
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 138px;
+    height: 138px;
+    padding: 7px;
+}
+
+.top-logo
+{
+    width: 138;
+    position: absolute;
+    left: 406px;
+    z-index: 2;
+}
+
+.person label
+{
+    margin: auto;
+    width: 138px;
+    height: 138px;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.person.max
+{
+    left: 171px;
+    background: url(img/people.png) no-repeat 3px 2px;
+}
+
+.person.alex
+{
+    left: 406px;
+    background: url(img/people.png) no-repeat -143px 2px ;
+}
+
+.person.georg
+{
+    left: 640px;
+    background: url(img/people.png) no-repeat -289px 2px;
+}
+
+.person-description
+{
+    position: absolute;
+    margin-top: 32px;
+    width: 285px;
+    text-align: center;
+    left: -50%;
+    display: none;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#alex:checked ~ .layout-background .alex .person-description,
+#georg:checked ~ .layout-background .georg .person-description,
+#max:checked ~ .layout-background .max .person-description
+{
+    display: block;
+}
+
+.people-2
+{
+    position: absolute;
+    top: 2960px;
+}
+
+.path
+{
+    position: absolute;
+    z-index: 0;
+    top: 432px;
+    left: 93px;
+    width: 757px;
+    height: 2453px;
+}
+
+.yuri
+{
+    position: absolute;
+    width: 292px;
+    height: 163px;
+    text-align: center;
+    left: 96px;
+    top: 518px;
+}
+
+.yuri-2
+{
+    position: absolute;
+    width: 280px;
+    top: 1300px;
+    left: 575px;
+}
+
+.yuri-3
+{
+    text-align: center;
+    position: absolute;
+    width: 292px;
+    top: 2095px;
+    left: 105px;
+}
+
+.phone
+{
+    position: absolute;
+    top: 761px;
+    left: -20px;
+}
+
+.notebook
+{
+    position: absolute;
+    top: 509px;
+    left: 486px;
+}
+
+.pen
+{
+    position: absolute;
+    top: 761px;
+    left: 328px;
+}
+
+.ticket
+{
+    position: absolute;
+    top: 867px;
+    left: 406px;
+}
+
+.photo
+{
+    position: absolute;
+    top: 981px;
+    left: 796px;
+}
+
+.ipad
+{
+    position: absolute;
+    top: 1322px;
+    left: 202px;
+}
+
+.watch
+{
+    position: absolute;
+    top: 1026px;
+    left: 484px;
+}
+
+.mask
+{
+    position: absolute;
+    top: 1559px;
+    left: 562px;
+}
+
+.palka
+{
+    position: absolute;
+    top: 1322px;
+    left: 718px;
+}
+
+.newspaper
+{
+    position: absolute;
+    top: 2383px;
+    left: 91px;
+}
+
+.magazine
+{
+    position: absolute;
+    top: 2494px;
+    left: 679px;
+}
+
+.iphone
+{
+    position: absolute;
+    top: 1646px;
+    left: 44px;
+}
+
+.cup
+{
+    position: absolute;
+    top: 1691px;
+    left: 328px;
+}
+
+.bag
+{
+    position: absolute;
+    top: 2048px;
+    left: 440px;
+}
+
+.fourth-block
+{
+    height: 435px;
+    position: relative;
+}
+
+.last-note
+{
+    position: absolute;
+    width: 439px;
+    height: 164px;
+    top: 84px;
+    left: 95px;
+}
+
+.last-note p
+{
+    margin-top: 0;
+}
+
+.contacts
+{
+    left: 96px;
+    position: absolute;
+    bottom: 32px;
+}
+
+.contacts span + span
+{
+    margin-left: 80px;
+}
+
+.social-network
+{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAAAiCAYAAAATbDYAAAAG4ElEQVR4Xu1c90scTRiei12j2ENCYgG7REUNKkkUEfH+ZP3Bhl0UQYO9myixxN7bxzN8c8ztbd+Zu/NuBg41uzfz7jPP87ZZ4iNqKAQUArYR8Nm+U92oEFAIECUYRQKFgAMElGAcgKVuVQgowSgOKAQcIKArmN7e3lcHczi+1e/32xKqsiMYWoWHHDx8Pt/t6+vrnYbIF36/v0RLbiUYG3JXRJVDVCPoo8Shnvv9/mwlGA6BKNkYouwIpmU48fD5fCQxMZEa8PT0RF5fA8mVfMG8e/eOFBYWkszMTJKUlERgzM3NDdna2gpCJJyAmAUQZUfkiBoN+wJ+/vz5k6SlpVFzbm9vycjICBONXMGkpKSQb9++kYyMjCAsTk9PyfT0dFwKBhsCPOC1rq+vDTmihBsZ4SKydHV1BS3e399PIw0hRK5gamtryefPn0NIIUsw379/NyQg1tzY2CD39/emFYpboiKCQgAvLy+G8xcUFJCamhqSmppK77m6uiKLi4s08uL7sI8Nt3bYKL8c3eLVjp6enqD1+vr6gv62uh5uPCIqmPb29kBow4OfnZ2Ru7s7Sqz19XXhEUYLvpYZz8/PNLJdXFwI9+z19fUE6ef8/DzBOtoBQbS2ttJ7tAOYLC0tUXweHh7oZa9EdaQKk5u92mElCKvr4RYMMgDsE5+STU5OhiclQ2hjxdPj4yMZGBgQTlR+Qh58EA+f5ORk+mHj+PiYzM7OCrcDqWdubi65vLwkCwsL9Cc/jKIt7kF6dnBwQL8nmiCVlZU0cv2fUjjWUSwLhvGCOSkb4MhNyXjBwIsODw8LJ6qRYPb29mi6g9HZ2RkQDdKgsbEx4XZUVFSQ0tJSOi8TwO/fv2nUwN/Nzc0kLy9Pd92TkxMyMzMjPOJiQjgREAKiASZcx8cGP7xHOqsIYnVdtAPBfEiN4UhYbQ1OLC8vE+yDxZAjmC9fvtDIUlZWFkhB4OE2NzepPRAPPCo/vHoyRg42Jy8Y1Dbv37+nl2RFGNQlbW1tQdEM6+G5sSHp6ekh15itu7u7NCUTjYcWE3QnV1dXyd+/f0N4ASEhHdEOr/tilSZr19PWOCIEg+dijgId24aGhpBnxXVkHkw0CQkJeqm1HMF0dHQECls9xR4eHpK5uTnhBOE3B8KAKLOzswkEjCG7hoEosrKyrLxUyPW1tbWAMxFBEH4BPcL++/ePrKysmNZyouyIpGBYhsN1uWjLGPukN1DbTkxM0EuoYVCDY3AijoxgZHlUq83ho44Rq9161OLiYlJVVeVYLPgCPBsELjvC8PPDo+7v7xOI1axz6BYPtpbVnsiMMBAMnOTQ0BBdBlkAnLnZQJ2Nehuju7ubZkjSBVNXV0fTDxTBLMyj3YrWLgY2Ch/RBLGzOUgH0fUwIolbggDYxsZGwzrFaJOQsg0ODoa0o93aoV3HChOsj/rp/Pxc10SvdlitL1swcAys2RS1gmEgREvR/+nTJ/L169fA3phFGi8EQRFZXl5O32zQqwf0GLm9vU3TI+3wYgc/lxlh0ZDA2vgpOuIaRZhwnsPopWQ/fvwIOUhntkYsJYs2wcAevvA365R5ISryXqyDgtHOQOgfHR0NnL2IjriYT08wiLIo/rWNFz2bveCht34kBIN2Pcto8vPzaSagdWiIRIi0qO8wioqKSHV1Nf1dekoWjYKx21r2SpCcnBx6ms+6cmbCQeMDDRAZRNXz8Mjn0anc2dnRPVyVYYdV29jqOrPJzb6wCIMzMRTzrFMG0aCtzPYI1xFpWYcM6TUiETu8jAvBIIqwmunDhw9BLV2QBsWuDIJgTgCOg0qkgnoDG4cNAnFlpUK8YLAe0lCcxTg4pKNTuCEq/0xWgrC6LkIwmANvlvCvHuHfjA4u0bxBE4eNuBCMERGRr09NTQklKt4FQ/2Cl03Rxv748SP9XW+AsL9+/SJHR0dmwcczUdnkTU1NVJxwIG5GrAgGzw7B4GN0eAtHhwNoXiz4XlwKBoRB+mMUWbx4MnwXp8c470G41yv48Zr4nz9/aFSx85qKV6K6EYeMiGsVQayue9kXvunE5gEP0GiBw2LRFs4NjZqSkhLdM5qYFYwIknglKt5wwOElNgEeC4U9Ngmn7E6GVzucrGV271u2Q08w/LOyl2StmjRKMCYMecsEESUSfp63jEdLSwtNkb0MNATGx8fZFHJO+tns4T6H8QKMl9AvYl3tHG+ZqDGMh1zBID1h+TwKLbPcXREkmGYKD7F4GL1c6lDccgXjxJhYIoiIzYklPJzwwOjeKMHDvmBEPLSaQyEQiwjY+g/1YvHB1TMpBNwgoATjBjX1nbhFQAkmbrdePbgbBJRg3KCmvhO3CPwHnO+0biin5oIAAAAASUVORK5CYII=);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 9px;
+}
+
+.social-media
+{
+    font-size: 0;
+    position: absolute;
+    top: 272px;
+    left: 93px;
+}
+
+.fb
+{
+    background-position: -5px -5px;
+}
+
+.vk
+{
+    background-position: -39px -39px;
+}
+
+.tw
+{
+    background-position: -73px -5px;
+}
+
+.yt
+{
+    background-position: -107px -5px;
+}
+
+.habr
+{
+    background-position: -141px -5px;
+}
+
+.inst
+{
+    background-position: -175px -5px;
+}
+
+.logo-atom
+{
+    position: absolute;
+    top: 82px;
+    right: 192px;
+}
+
+.logo-atom img
+{
+    width: 102px;
+    height: 102px;
+}
