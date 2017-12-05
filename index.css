@@ -90,6 +90,7 @@ body
 {
     width: 250px;
     position: relative;
+    margin: 20px 10px;
 }
 
 .person:hover ~ .circle
@@ -100,14 +101,14 @@ body
 .persons-block-1
 {
     position: relative;
-    top: 50px;
+    top: 30px;
 }
 
 .persons-block-2 
 {
     position: absolute;
     top: 2980px;
-    left: 100px;
+    left: 70px;
 }
 
 [id='max']:checked ~ main .max-info,
@@ -468,9 +469,8 @@ input
 
 .persons
 {
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
-    width: 80%;
     margin: auto;
     text-align: center;
 }
