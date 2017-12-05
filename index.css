@@ -2,8 +2,6 @@ body
 {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    width: 2475px;
-    height: 5630px;
     margin: auto;
 }
 
@@ -59,14 +57,13 @@ input[id='person-3']:checked ~ .container .circle > text
 .container
 {
     width: 958px;
-    height: 4720px;
     margin: 0 auto;
     border: 2px solid #000;
 }
 
 .logo-block
 {
-    margin: 0 420px;
+    margin: 0 410px;
 }
 
 .logo-svg
@@ -75,6 +72,18 @@ input[id='person-3']:checked ~ .container .circle > text
     fill-opacity: .5;
     fill: #fff;
     stroke: #000;
+}
+
+.logo-text__letter
+{
+    fill: #fc0d1b;
+    font-size: 2rem;
+}
+
+.logo-text
+{
+    font-size: 1.7rem;
+    letter-spacing: -1px;
 }
 
 /* Header */
@@ -161,7 +170,6 @@ input[id='person-3']:checked ~ .container .circle > text
 
 .main
 {
-    height: 3260px;
     border-bottom: 2px solid #000;
     border-top: 2px solid #000;
 }
@@ -493,7 +501,7 @@ input[id='person-3']:checked ~ .container .circle > text
 {
     display: flex;
     justify-content: flex-start;
-    margin: 80px 93px;
+    margin: 80px 93px 25px;
 }
 
 .footer__menu-item
