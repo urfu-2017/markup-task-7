@@ -58,8 +58,6 @@ body
 
 .person
 {
-    margin-top: 8px;
-    margin-left: 5px;
     background-repeat: no-repeat;
     display: inline-block;
     position: relative;
@@ -73,8 +71,8 @@ body
 {
     display: none;
     position: absolute;
-    top: 0;
-    left: -2px;
+    top: -7px;
+    left: -8px;
     width: 150px;
     height: 150px;
     border: 3px solid white;
@@ -99,10 +97,16 @@ body
     display: block;
 }
 
+.persons-block-1
+{
+    position: relative;
+    top: 50px;
+}
+
 .persons-block-2 
 {
     position: relative;
-    top: 2680px;
+    top: 2750px;
 }
 
 [id='max']:checked ~ main .max-info,
@@ -121,23 +125,23 @@ body
 
 .sprite-alex
 {
-    width: 138px;
-    height: 139px;
+    width: 140px;
+    height: 140px;
     background-position: -5px -5px;
 }
 
 .sprite-georg 
 {
-    width: 138px;
-    height: 138px;
-    background-position: -153px -5px;
+    width: 140px;
+    height: 140px;
+    background-position: -152px -6px;
 }
 
 .sprite-max 
 {
-    width: 138px;
-    height: 138px;
-    background-position: -5px -154px;
+    width: 140px;
+    height: 140px;
+    background-position: -5px -152px;
 }
 
 .person-info
@@ -149,7 +153,6 @@ body
 
 .georg-info
 {
-    right: 93px;
     position: relative;
 }
 
