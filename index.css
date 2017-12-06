@@ -1,1 +1,625 @@
+html
+{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
 
+body
+{
+    display: flex;
+    justify-content: center;
+}
+
+main 
+{
+    position: relative;
+    align-items: center;
+    width: 954px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input
+{
+    display: none;
+}
+
+.bg 
+{
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: -27px;
+    width: 1416px;
+    object-fit: contain;
+}
+
+.page-one
+{
+    height: 700px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.logotype
+{
+    position: absolute;
+    top: 15px;
+    left: 423px;
+    font-size: 30px;
+}
+
+.logo-border
+{
+    position: absolute;
+    left: 405px;
+    fill: #fff;
+    stroke: #000;
+    opacity: .6;
+}
+
+.logotype::first-letter
+{
+    color: #c00;
+}
+
+.first-title
+{
+    position: relative;
+    z-index: 2;
+    top: 350px;
+    left: 60px;
+    text-align: center;
+    width: 679px;
+    height: 86px;
+    font-family: Arial;
+    font-size: 38px;
+    line-height: 1.09;
+    color: #000;
+}
+
+.page-two
+{
+    display: flex;
+    height: 520px;
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.page-two-text
+{
+    position: relative;
+    top: 80px;
+    left: 93px;
+    z-index: 2;
+    width: 450px;
+    height: 236px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.m .page-two-text
+{
+    line-height: 1.75;
+}
+
+.page-two-image
+{
+    position: relative;
+    top: 105px;
+    left: 220px;
+}
+
+.page-two-video
+{
+    position: relative;
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px #000;
+}
+
+.video-arrow
+{
+    position: relative;
+    top: 22px;
+    left: 59px;
+    stroke-width: 2;
+}
+
+.page-two-image .video-comment
+{
+    width: 186px;
+    height: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.page-three
+{
+    display: flex;
+    flex-direction: column;
+    height: 3208px;
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.page-three-bg
+{
+    position: relative;
+    top: 450px;
+    left: 100px;
+    width: 757px;
+    height: 2453px;
+    background-size: cover;
+    background-image: url(img/path.png);
+}
+
+.persons
+{
+    position: absolute;
+    margin-top: 71px;
+}
+
+.persons .maxim
+{
+    display: inline-block;
+    position: absolute;
+    width: 285px;
+    left: 101px;
+}
+
+.persons .alexey
+{
+    display: inline-block;
+    position: absolute;
+    width: 285px;
+    left: 336px;
+}
+
+.persons .georgy
+{
+    display: inline-block;
+    position: absolute;
+    width: 285px;
+    left: 570px;
+}
+
+.person
+{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 138px;
+    height: 138px;
+    background-image: url(img/persons.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    left: 74px;
+}
+
+.img-maxim
+{
+    background-position: -10px -10px;
+}
+
+.img-alexey
+{
+    background-position: -168px -10px;
+}
+
+.img-georgy
+{
+    background-position: -326px -10px;
+}
+
+.person-name
+{
+    margin-top: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    color: #000;
+}
+
+.person-desc
+{
+    display: none;
+    width: 285px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.icon-border
+{
+    position: absolute;
+    display: none;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    width: 148px;
+    height: 148px;
+    top: -9px;
+    left: -10px;
+}
+
+.person:hover .icon-border
+{
+    display: block;
+}
+
+input[id='input-maxim']:checked ~ .page-three .img-maxim .icon-border,
+input[id='input-alexey']:checked ~ .page-three .img-alexey .icon-border,
+input[id='input-georgy']:checked ~ .page-three .img-georgy .icon-border
+{
+    display: block;
+}
+
+.input-maxim:checked ~ div
+{
+    background-color: #ff8384;
+}
+
+.input-maxim:checked ~ .page-three .persons .maxim .person-desc
+{
+    display: block;
+}
+
+.input-alexey:checked ~ div
+{
+    background-color: #ffe05e;
+}
+
+.input-alexey:checked ~ .page-three .persons .alexey .person-desc
+{
+    display: block;
+}
+
+.input-georgy:checked ~ div
+{
+    background-color: #60bff5;
+}
+
+.input-georgy:checked ~ .page-three .persons .georgy .person-desc
+{
+    display: block;
+}
+
+.illustrations
+{
+    position: absolute;
+}
+
+.page-three-text-1
+{
+    position: relative;
+    top: 520px;
+    left: 112px;
+}
+
+.page-three-text-1 p
+{
+    width: 280px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.note
+{
+    z-index: 1;
+    position: relative;
+    width: 294px;
+    height: 422px;
+    left: 484px;
+    top: 350px;
+}
+
+.ticket
+{
+    position: relative;
+    width: 450px;
+    height: 175px;
+    left: 106px;
+    top: 450px;
+}
+
+.phone
+{
+    position: relative;
+    width: 294px;
+    height: 360px;
+    left: -16px;
+    top: 160px;
+}
+
+.pen
+{
+    position: relative;
+    width: 42px;
+    height: 227px;
+    left: 27px;
+    top: 30px;
+}
+
+.watch
+{
+    position: relative;
+    width: 120px;
+    height: 236px;
+    left: 130px;
+    top: 319px;
+}
+
+.photo
+{
+    position: relative;
+    width: 216px;
+    height: 281px;
+    left: 330px;
+    top: 285px;
+}
+
+.page-three-text-2
+{
+    position: absolute;
+    left: 590px;
+    top: 1300px;
+}
+
+.page-three-text-2 p
+{
+    width: 280px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.ipad
+{
+    position: relative;
+    width: 294px;
+    height: 442px;
+    left: 230px;
+    top: 370px;
+}
+
+.iphone
+{
+    position: relative;
+    width: 138px;
+    height: 268px;
+    left: -250px;
+    top: 530px;
+}
+
+.cup
+{
+    position: relative;
+    width: 216px;
+    height: 291px;
+    left: -100px;
+    top: 590px;
+}
+
+.mask
+{
+    position: relative;
+    width: 372px;
+    height: 205px;
+    left: 570px;
+    top: -240px;
+}
+
+.palka
+{
+    position: relative;
+    width: 216px;
+    height: 610px;
+    left: 330px;
+    top: -60px;
+}
+
+.page-three-text-3
+{
+    position: relative;
+    top: 85px;
+    left: 100px;
+}
+
+.page-three-text-3 p
+{
+    width: 287px;
+    height: 64px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.bag
+{
+    position: relative;
+    width: 450px;
+    height: 384px;
+    left: 450px;
+    top: -160px;
+}
+
+.newspaper
+{
+    position: relative;
+    width: 294px;
+    height: 396px;
+    left: -350px;
+    top: 200px;
+}
+
+.magazine
+{
+    position: relative;
+    width: 294px;
+    height: 399px;
+    left: 700px;
+    top: -80px;
+}
+
+.persons-1
+{
+    position: absolute;
+    top: 4210px;
+}
+
+.persons-1 .maxim
+{
+    display: inline-block;
+    position: absolute;
+    width: 285px;
+    left: 101px;
+}
+
+.persons-1 .alexey
+{
+    display: inline-block;
+    position: absolute;
+    width: 285px;
+    left: 336px;
+}
+
+.persons-1 .georgy
+{
+    display: inline-block;
+    position: absolute;
+    width: 285px;
+    left: 570px;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.footer-text
+{
+    position: relative;
+    left: 95px;
+    top: 84px;
+    display: flex;
+    flex-direction: row;
+    height: 164px;
+}
+
+.footer-text p
+{
+    width: 439px;
+    height: 164px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.logo-atom
+{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    width: 102px;
+    height: 102px;
+}
+
+.social
+{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 24px;
+    left: 95px;
+    margin-top: 120px;
+}
+
+.social-logo
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(data:image/png;base64,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);
+    cursor: pointer;
+}
+
+.vk
+{
+    background-position: -30px;
+}
+
+.twitter
+{
+    background-position: -60px;
+}
+
+.youtube
+{
+    background-position: -90px;
+}
+
+.habrhabr
+{
+    background-position: -120px;
+}
+
+.instagram
+{
+    background-position: -150px;
+}
+
+.footer-bottom
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 95px;
+    margin-top: 150px;
+}
+
+.footer span
+{
+    white-space: nowrap;
+}
+
+.help
+{
+    margin-right: 20px;
+}
+
+.back
+{
+    margin-right: 100px;
+}
