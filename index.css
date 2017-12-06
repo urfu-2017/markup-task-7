@@ -10,6 +10,7 @@ p:first-of-type
 
 label
 {
+    cursor: pointer;
     display: inline-block;
     width: 138px;
     height: 138px;
@@ -38,6 +39,11 @@ label
     display: flex;
 }
 
+.active
+{
+    cursor: pointer;
+}
+
 body
 {
     font: 16px/24px Arial, Helvetica, sans-serif;
@@ -53,17 +59,17 @@ main
 
 input[id='person-1']:checked ~ section
 {
-    background-color: #ffe05d;
+    background-color: #ffe15c;
 }
 
 input[id='person-2']:checked ~ section
 {
-    background-color: #ff8283;
+    background-color: #ff8384;
 }
 
 input[id='person-3']:checked ~ section
 {
-    background-color: #72c4f6;
+    background-color: #72c5f6;
 }
 
 section
@@ -85,7 +91,6 @@ section:first-of-type
     position: absolute;
     z-index: 1;
     width: 1416px;
-    height: 757px;
     left: -427px;
     top: 70px;
 }
@@ -193,7 +198,6 @@ section:nth-of-type(2) > article
 .person-icon
 {
     width: 138px;
-    height: 138px;
     margin: 6px;
 }
 
@@ -223,16 +227,8 @@ section:nth-of-type(2) > article
     width: 290px;
 }
 
-input[id='person-1']:checked ~ section .people .person-values-1
-{
-    display: block;
-}
-
-input[id='person-2']:checked ~ section .people .person-values-2
-{
-    display: block;
-}
-
+input[id='person-1']:checked ~ section .people .person-values-1,
+input[id='person-2']:checked ~ section .people .person-values-2,
 input[id='person-3']:checked ~ section .people .person-values-3
 {
     display: block;
@@ -277,7 +273,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .phone-picture
 {
     width: 318px;
-    height: 384px;
     position: absolute;
     top: 329px;
     left: -115px;
@@ -286,7 +281,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .pen-picture
 {
     width: 48px;
-    height: 233px;
     position: absolute;
     top: 329px;
     left: 234px;
@@ -295,7 +289,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .ticket-picture
 {
     width: 454px;
-    height: 179px;
     position: absolute;
     top: 435px;
     left: 312px;
@@ -304,7 +297,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .notebook-picture
 {
     width: 306px;
-    height: 434px;
     position: absolute;
     top: 77px;
     left: 390px;
@@ -313,7 +305,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .watch-picture
 {
     width: 130px;
-    height: 247px;
     position: absolute;
     top: 594px;
     left: 390px;
@@ -322,7 +313,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .photo-picture
 {
     width: 227px;
-    height: 292px;
     position: absolute;
     top: 549px;
     left: 702px;
@@ -331,7 +321,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .iphone-picture
 {
     width: 148px;
-    height: 278px;
     position: absolute;
     top: 1214px;
     left: -50px;
@@ -340,7 +329,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .ipad-picture
 {
     width: 304px;
-    height: 453px;
     position: absolute;
     top: 890px;
     left: 108px;
@@ -349,7 +337,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .cup-picture
 {
     width: 228px;
-    height: 303px;
     position: absolute;
     top: 1259px;
     left: 234px;
@@ -358,7 +345,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .mask-picture
 {
     width: 390px;
-    height: 223px;
     position: absolute;
     top: 1127px;
     left: 468px;
@@ -367,7 +353,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .palka-picture
 {
     width: 228px;
-    height: 622px;
     position: absolute;
     top: 890px;
     left: 624px;
@@ -376,7 +361,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .bag-picture
 {
     width: 475px;
-    height: 409px;
     position: absolute;
     top: 1616px;
     left: 346px;
@@ -385,7 +369,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .newspaper-picture
 {
     width: 318px;
-    height: 421px;
     position: absolute;
     top: 1951px;
     left: 3px;
@@ -394,7 +377,6 @@ input[id='person-3']:checked ~ section .people .person-values-3
 .magazine-picture
 {
     width: 306px;
-    height: 411px;
     position: absolute;
     top: 2062px;
     left: 585px;
@@ -428,6 +410,7 @@ section:last-of-type
 
 .social-media-icon
 {
+    cursor: pointer;
     width: 24px;
     height: 24px;
     margin-right: 8px;
