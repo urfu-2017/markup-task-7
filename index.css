@@ -45,7 +45,7 @@ main
 
 .bg-yandex
 {
-    width: 1468px;
+    width: 1423px;
     margin-left: -448px;
     margin-top: -43px;
     height: 775px;
@@ -157,22 +157,25 @@ img[src*='main2']
 {
     position: absolute;
     z-index: -1;
-    width: 20%;
-    margin-top: -22px;
-    margin-left: -30px;
+    width: 17%;
+    height: 56%;
+    margin-top: -11px;
+    margin-left: 74px;
+    border: solid 3px #fff;
+    border-radius: 50%;
 }
 
-img[title*='1'],
-img[title*='2'],
-img[title*='3'],
+p[title*='1'],
+p[title*='2'],
+p[title*='3'],
 input
 {
     visibility: hidden;
 }
 
-input[id='choose-1']:checked ~ .align img[title*='1'],
-input[id='choose-2']:checked ~ .align img[title*='2'],
-input[id='choose-3']:checked ~ .align img[title*='3'],
+input[id='choose-1']:checked ~ .align p[title*='1'],
+input[id='choose-2']:checked ~ .align p[title*='2'],
+input[id='choose-3']:checked ~ .align p[title*='3'],
 input[id='choose-1']:checked ~ .align > .choose-mans > .max > .about,
 input[id='choose-2']:checked ~ .align > .choose-mans > .alex > .about,
 input[id='choose-3']:checked ~ .align > .choose-mans > .geor > .about
@@ -192,7 +195,7 @@ input[id='choose-3']:checked ~ .align
 
 .names
 {
-    margin-top: 30px;
+    margin-top: 17px;
     font-family: Arial, serif;
     font-size: 16px;
     font-weight: bold;
@@ -353,4 +356,19 @@ img[title='ya']
 .instagram
 {
     background-position: -196px -1px;
+}
+
+img[title='phone']
+{
+    margin-top: -627px;
+    height: 9%;
+    margin-left: -964px;
+    position: absolute;
+}
+
+img[title='photo']
+{
+    position: absolute;
+    margin-top: -307px;
+    margin-left: 309px;
 }
