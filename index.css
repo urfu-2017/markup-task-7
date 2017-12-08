@@ -13,12 +13,9 @@ input
     fill: #73c5f6;
 }
 
-.person-1-input:checked ~ .box .person-description-1
-{
-    display: block;
-}
-
-.person-2-input:checked ~ .box .person-description-2
+.person-1-input:checked ~ .box .person-description-1,
+.person-2-input:checked ~ .box .person-description-2,
+.person-3-input:checked ~ .box .person-description-3
 {
     display: block;
 }
@@ -31,11 +28,6 @@ input
 .person-2-input:checked ~ .box
 {
     background-color: #ff8384;
-}
-
-.person-3-input:checked ~ .box .person-description-3
-{
-    display: block;
 }
 
 .person-3-input:checked ~ .box
@@ -97,6 +89,7 @@ header
 {
     stroke: #000;
     stroke-width: 3px;
+    fill: transparent;
 }
 
 .video-pol
