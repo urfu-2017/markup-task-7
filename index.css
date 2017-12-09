@@ -4,6 +4,12 @@
     src: url('font/textbook-cyrillic_[allfont.ru].ttf');
 }
 
+@font-face
+{
+    font-family: arial-mt;
+    src: url('font/arial-mt.ttf');
+}
+
 body
 {
     min-width: 1200px;
@@ -13,7 +19,7 @@ body
 {
     width: 954px;
     height: 4596px;
-    margin: 167px auto 867px;
+    margin: 67px auto;
     border: 2px solid #000;
 }
 
@@ -29,26 +35,18 @@ header
     height: 551px;
 }
 
-.logo-rectangle
+.logo-pentagon
 {
     position: absolute;
     left: 408px;
 }
 
-.logo-rectangle polyline
-{
-    fill: #fff;
-    stroke: #010202;
-    stroke-width: 2px;
-    fill-opacity: .6;
-}
-
 .yandex-title
 {
     position: absolute;
-    left: 20px;
-    top: 24px;
-    font: bold 28px Arial, sans-serif;
+    left: 24px;
+    top: 22px;
+    font: 500 27px Helvetica, Arial, sans-serif;
 }
 
 .yandex-title::first-letter
@@ -92,12 +90,17 @@ header
 {
     position: absolute;
     left: 93px;
-    top: 80px;
+    top: 63px;
     width: 450px;
-    font: 16px Arial, sans-serif;
+    font: 16px arial-mt, sans-serif;
     line-height: 1.5;
     text-align: left;
     color: #000;
+}
+
+.internet-text > p:first-child
+{
+    margin-bottom: 30px;
 }
 
 .video
@@ -107,27 +110,22 @@ header
     left: 640px;
 }
 
-.video .rect
+.rect-video
 {
     position: absolute;
+    top: 80px;
+    left: 640px;
     width: 138px;
     height: 80px;
     border-radius: 4px;
     border: solid 2px #000;
 }
 
-.video polygon
-{
-    fill: #fff;
-    stroke: #000;
-    stroke-width: 2px;
-    stroke-linejoin: round;
-}
-
 .text-under-video
 {
     position: absolute;
-    top: 96px;
+    top: 176px;
+    left: 640px;
     font: 16px Arial;
     line-height: 1.5;
     text-align: left;
@@ -141,7 +139,7 @@ main
 
 main img
 {
-    width: 100%;
+    object-fit: contain;
 }
 
 .characters-buttons
@@ -197,7 +195,7 @@ main img
     position: absolute;
     top: 243px;
     width: 285px;
-    font: 15px Arial, sans-serif;
+    font: 16px Arial, sans-serif;
     line-height: 1.5;
     text-align: center;
     color: #000;
@@ -256,9 +254,9 @@ input[id='maxim']:checked ~ .model
     background: #ff8384;
 }
 
-input[id='maxim']:checked ~ .model .logo-circle > text
+input[id='maxim']:checked ~ .model .logo-circle > .ya-logo
 {
-    fill: #ff8384;
+    color: #ff8384;
 }
 
 input[id='maxim']:checked ~ .model .description
@@ -271,9 +269,9 @@ input[id='alex']:checked ~ .model
     background: #ffe15c;
 }
 
-input[id='alex']:checked ~ .model .logo-circle > text
+input[id='alex']:checked ~ .model .logo-circle > .ya-logo
 {
-    fill: #ffe15c;
+    color: #ffe15c;
 }
 
 input[id='alex']:checked ~ .model .description
@@ -286,9 +284,9 @@ input[id='georgia']:checked ~ .model
     background: #72c5f6;
 }
 
-input[id='georgia']:checked ~ .model .logo-circle > text
+input[id='georgia']:checked ~ .model .logo-circle > .ya-logo
 {
-    fill: #72c5f6;
+    color: #72c5f6;
 }
 
 input[id='georgia']:checked ~ .model .description
@@ -307,10 +305,11 @@ input[id='georgia']:checked ~ .model .description
 
 .paragraph-style
 {
-    font: 15px Arial, sans-serix;
+    font: 16px Arial, sans-serix;
     line-height: 1.5;
     text-align: center;
     color: #000;
+    margin: 0 0 10px;
 }
 
 .text1-under-rope
@@ -318,7 +317,7 @@ input[id='georgia']:checked ~ .model .description
     position: absolute;
     top: 518px;
     left: 96px;
-    width: 273px;
+    width: 281px;
 }
 
 .text2-under-rope
@@ -326,14 +325,14 @@ input[id='georgia']:checked ~ .model .description
     position: absolute;
     top: 618px;
     left: 92px;
-    width: 280px;
+    width: 281px;
 }
 
 .phone
 {
     position: absolute;
     top: 761px;
-    left: -16px;
+    left: -20px;
     width: 294px;
     height: 360px;
 }
@@ -350,7 +349,7 @@ input[id='georgia']:checked ~ .model .description
 .notebook
 {
     position: absolute;
-    top: 524px;
+    top: 509px;
     left: 484px;
     width: 294px;
     height: 422px;
@@ -418,7 +417,7 @@ input[id='georgia']:checked ~ .model .description
     position: absolute;
     top: 1321px;
     left: 569px;
-    width: 280px;
+    width: 281px;
 }
 
 .text4-under-rope
@@ -426,7 +425,7 @@ input[id='georgia']:checked ~ .model .description
     position: absolute;
     top: 1420px;
     left: 569px;
-    width: 280px;
+    width: 281px;
 }
 
 .mask
@@ -502,11 +501,16 @@ footer
     position: absolute;
     top: 84px;
     left: 95px;
-    width: 439px;
+    width: 440px;
     text-align: left;
-    font: 15px Arial sans-serix;
+    font: 16px Arial, sans-serix;
     line-height: 1.5;
     color: #000;
+}
+
+.text-in-footer > p:first-child
+{
+    margin: 0 0 25px;
 }
 
 .logo-circle
@@ -516,14 +520,12 @@ footer
     left: 656px;
 }
 
-.logo-circle circle
+.ya-logo
 {
-    fill: #fff;
-}
-
-.logo-circle text
-{
-    font: 72px Arial, sans-serif;
+    position: absolute;
+    left: 25px;
+    top: 1px;
+    font: 80px Tahoma, sans-serif;
 }
 
 .bottom-panel
@@ -563,7 +565,7 @@ footer
     background-image: url('data:image/png;base64,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');
 }
 
-.fasebook
+.facebook
 {
     position: absolute;
     left: 100px;
@@ -617,7 +619,7 @@ footer
     height: 24px;
 }
 
-.fasebook:hover,
+.facebook:hover,
 .vk:hover,
 .twitter:hover,
 .youtube:hover,
