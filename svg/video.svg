@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-    <polygon points="59 22, 59 59, 86 40.5"
-             fill="#fff" stroke="#000" stroke-width="2px" stroke-linejoin="round"></polygon>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg"><path fill="#fff" stroke="#000" stroke-width="2" stroke-linejoin="round" d="M59 22v37l27-18.5z"/></svg>

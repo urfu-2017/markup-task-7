@@ -44,14 +44,9 @@ header
 .yandex-title
 {
     position: absolute;
-    left: 24px;
-    top: 22px;
-    font: 500 27px Helvetica, Arial, sans-serif;
-}
-
-.yandex-title::first-letter
-{
-    color: #f00;
+    width: 130px;
+    left: 5px;
+    top: -2px;
 }
 
 .clouds
@@ -203,33 +198,25 @@ main img
 
 .for-border-1
 {
-    position: absolute;
     left: 39px;
     top: 39px;
-    height: 138px;
-    width: 138px;
-    padding: 6px;
-    border: 3px solid transparent;
-    border-radius: 100px;
 }
 
 .for-border-2
 {
-    position: absolute;
     left: 273px;
     top: 39px;
-    height: 138px;
-    width: 138px;
-    padding: 6px;
-    border: 3px solid transparent;
-    border-radius: 100px;
 }
 
 .for-border-3
 {
-    position: absolute;
     left: 507px;
     top: 39px;
+}
+
+.for-border-style
+{
+    position: absolute;
     height: 138px;
     width: 138px;
     padding: 6px;
@@ -254,11 +241,6 @@ input[id='maxim']:checked ~ .model
     background: #ff8384;
 }
 
-input[id='maxim']:checked ~ .model .logo-circle > .ya-logo
-{
-    color: #ff8384;
-}
-
 input[id='maxim']:checked ~ .model .description
 {
     left: -20px;
@@ -269,11 +251,6 @@ input[id='alex']:checked ~ .model
     background: #ffe15c;
 }
 
-input[id='alex']:checked ~ .model .logo-circle > .ya-logo
-{
-    color: #ffe15c;
-}
-
 input[id='alex']:checked ~ .model .description
 {
     left: 213px;
@@ -282,11 +259,6 @@ input[id='alex']:checked ~ .model .description
 input[id='georgia']:checked ~ .model
 {
     background: #72c5f6;
-}
-
-input[id='georgia']:checked ~ .model .logo-circle > .ya-logo
-{
-    color: #72c5f6;
 }
 
 input[id='georgia']:checked ~ .model .description
@@ -518,14 +490,6 @@ footer
     position: absolute;
     top: 84px;
     left: 656px;
-}
-
-.ya-logo
-{
-    position: absolute;
-    left: 25px;
-    top: 1px;
-    font: 80px Tahoma, sans-serif;
 }
 
 .bottom-panel
