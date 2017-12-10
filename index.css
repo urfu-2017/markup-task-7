@@ -1,1 +1,594 @@
+@font-face
+{
+    font-family: TextbookNew;
+    src: url('font/textbook-cyrillic_[allfont.ru].ttf');
+}
 
+@font-face
+{
+    font-family: arial-mt;
+    src: url('font/arial-mt.ttf');
+}
+
+body
+{
+    min-width: 1200px;
+}
+
+.model
+{
+    width: 954px;
+    height: 4596px;
+    margin: 67px auto;
+    border: 2px solid #000;
+}
+
+.block
+{
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+header
+{
+    height: 551px;
+}
+
+.logo-pentagon
+{
+    position: absolute;
+    left: 408px;
+}
+
+.yandex-title
+{
+    position: absolute;
+    width: 130px;
+    left: 5px;
+    top: -2px;
+}
+
+.clouds
+{
+    position: absolute;
+    top: 75px;
+    left: -435px;
+}
+
+.message-under-clouds
+{
+    position: absolute;
+    top: 377px;
+    left: 110px;
+    width: 750px;
+    height: 86px;
+    font: 44px Arial;
+    line-height: 1.09;
+    text-align: center;
+}
+
+.dash
+{
+    width: 43px;
+    height: 5px;
+    font: 48px TextbookNew sans-serif;
+    line-height: 1;
+}
+
+.article-internet
+{
+    height: 392px;
+}
+
+.internet-text
+{
+    position: absolute;
+    left: 93px;
+    top: 63px;
+    width: 450px;
+    font: 16px arial-mt, sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.internet-text > p:first-child
+{
+    margin-bottom: 30px;
+}
+
+.video
+{
+    position: absolute;
+    top: 80px;
+    left: 640px;
+}
+
+.rect-video
+{
+    position: absolute;
+    top: 80px;
+    left: 640px;
+    width: 138px;
+    height: 80px;
+    border-radius: 4px;
+    border: solid 2px #000;
+}
+
+.text-under-video
+{
+    position: absolute;
+    top: 176px;
+    left: 640px;
+    font: 16px Arial;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+main
+{
+    height: 3208px;
+}
+
+main img
+{
+    object-fit: contain;
+}
+
+.characters-buttons
+{
+    position: absolute;
+    top: 32px;
+    left: 123px;
+    width: 702px;
+    height: 235px;
+}
+
+.characters-above-footer
+{
+    position: absolute;
+    left: 125px;
+    top: 2917px;
+    width: 702px;
+    height: 235px;
+}
+
+.name-style
+{
+    font: 16px Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: center;
+    color: #000;
+}
+
+.maxim
+{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+}
+
+.alex
+{
+    position: absolute;
+    left: 290px;
+    top: 200px;
+}
+
+.georgia
+{
+    position: absolute;
+    left: 520px;
+    top: 200px;
+}
+
+.description
+{
+    position: absolute;
+    top: 243px;
+    width: 285px;
+    font: 16px Arial, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.for-border-1
+{
+    left: 39px;
+    top: 39px;
+}
+
+.for-border-2
+{
+    left: 273px;
+    top: 39px;
+}
+
+.for-border-3
+{
+    left: 507px;
+    top: 39px;
+}
+
+.for-border-style
+{
+    position: absolute;
+    height: 138px;
+    width: 138px;
+    padding: 6px;
+    border: 3px solid transparent;
+    border-radius: 100px;
+}
+
+.for-border-1:hover,
+.for-border-2:hover,
+.for-border-3:hover
+{
+    border-color: #fff;
+}
+
+input
+{
+    display: none;
+}
+
+input[id='maxim']:checked ~ .model
+{
+    background: #ff8384;
+}
+
+input[id='maxim']:checked ~ .model .description
+{
+    left: -20px;
+}
+
+input[id='alex']:checked ~ .model
+{
+    background: #ffe15c;
+}
+
+input[id='alex']:checked ~ .model .description
+{
+    left: 213px;
+}
+
+input[id='georgia']:checked ~ .model
+{
+    background: #72c5f6;
+}
+
+input[id='georgia']:checked ~ .model .description
+{
+    left: 450px;
+}
+
+.curved-line
+{
+    position: absolute;
+    top: 432px;
+    left: 96px;
+    width: 757px;
+    height: 2453px;
+}
+
+.paragraph-style
+{
+    font: 16px Arial, sans-serix;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.text1-under-rope
+{
+    position: absolute;
+    top: 518px;
+    left: 96px;
+    width: 281px;
+}
+
+.text2-under-rope
+{
+    position: absolute;
+    top: 618px;
+    left: 92px;
+    width: 281px;
+}
+
+.phone
+{
+    position: absolute;
+    top: 761px;
+    left: -20px;
+    width: 294px;
+    height: 360px;
+}
+
+.pen
+{
+    position: absolute;
+    top: 761px;
+    left: 328px;
+    width: 42px;
+    height: 227px;
+}
+
+.notebook
+{
+    position: absolute;
+    top: 509px;
+    left: 484px;
+    width: 294px;
+    height: 422px;
+    z-index: 10;
+}
+
+.ticket
+{
+    position: absolute;
+    top: 867px;
+    left: 406px;
+    width: 450px;
+    height: 175px;
+}
+
+.watch
+{
+    position: absolute;
+    top: 1026px;
+    left: 484px;
+    width: 120px;
+    height: 236px;
+    z-index: 10;
+}
+
+.photo
+{
+    position: absolute;
+    top: 981px;
+    left: 796px;
+    width: 216px;
+    height: 281px;
+}
+
+.ipad
+{
+    position: absolute;
+    top: 1322px;
+    left: 202px;
+    width: 294px;
+    height: 442px;
+}
+
+.iphone
+{
+    position: absolute;
+    top: 1646px;
+    left: 44px;
+    width: 138px;
+    height: 268px;
+}
+
+.cup
+{
+    position: absolute;
+    top: 1691px;
+    left: 328px;
+    width: 216px;
+    height: 291px;
+    z-index: 10;
+}
+
+.text3-under-rope
+{
+    position: absolute;
+    top: 1321px;
+    left: 569px;
+    width: 281px;
+}
+
+.text4-under-rope
+{
+    position: absolute;
+    top: 1420px;
+    left: 569px;
+    width: 281px;
+}
+
+.mask
+{
+    position: absolute;
+    top: 1559px;
+    left: 562px;
+    width: 372px;
+    height: 205px;
+}
+
+.palka
+{
+    position: absolute;
+    top: 1322px;
+    left: 718px;
+    width: 216px;
+    height: 610px;
+    z-index: 10;
+}
+
+.text5-under-rope
+{
+    position: absolute;
+    top: 2117px;
+    left: 80px;
+    width: 292px;
+}
+
+.text6-under-rope
+{
+    position: absolute;
+    top: 2216px;
+    left: 82px;
+    width: 287px;
+}
+
+.bag
+{
+    position: absolute;
+    top: 2048px;
+    left: 440px;
+    width: 450px;
+    height: 384px;
+}
+
+.newspaper
+{
+    position: absolute;
+    top: 2383px;
+    left: 91px;
+    width: 294px;
+    height: 396px;
+}
+
+.magazine
+{
+    position: absolute;
+    top: 2494px;
+    left: 679px;
+    width: 294px;
+    height: 399px;
+}
+
+footer
+{
+    border-bottom: none;
+    height: 439px;
+}
+
+.text-in-footer
+{
+    position: absolute;
+    top: 84px;
+    left: 95px;
+    width: 440px;
+    text-align: left;
+    font: 16px Arial, sans-serix;
+    line-height: 1.5;
+    color: #000;
+}
+
+.text-in-footer > p:first-child
+{
+    margin: 0 0 25px;
+}
+
+.logo-circle
+{
+    position: absolute;
+    top: 84px;
+    left: 656px;
+}
+
+.bottom-panel
+{
+    position: absolute;
+    left: 96px;
+    top: 388px;
+    font: 16px Arial, sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+.cursor
+{
+    cursor: pointer;
+}
+
+.copyrighted
+{
+    position: absolute;
+    left: 372px;
+    top: 388px;
+    font: 16px Arial, sans-serif;
+    line-height: 1.5;
+    text-align: right;
+    color: #000;
+}
+
+.social-network
+{
+    position: absolute;
+    left: 96px;
+    top: 272px;
+    width: 192px;
+    height: 32px;
+    background-image: url('data:image/png;base64,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');
+}
+
+.facebook
+{
+    position: absolute;
+    left: 100px;
+    top: 276px;
+    width: 24px;
+    height: 24px;
+}
+
+.vk
+{
+    position: absolute;
+    left: 132px;
+    top: 276px;
+    width: 24px;
+    height: 24px;
+}
+
+.twitter
+{
+    position: absolute;
+    left: 164px;
+    top: 276px;
+    width: 24px;
+    height: 24px;
+}
+
+.youtube
+{
+    position: absolute;
+    left: 196px;
+    top: 276px;
+    width: 24px;
+    height: 24px;
+}
+
+.habrahabr
+{
+    position: absolute;
+    left: 228px;
+    top: 276px;
+    width: 24px;
+    height: 24px;
+}
+
+.instagram
+{
+    position: absolute;
+    left: 260px;
+    top: 276px;
+    width: 24px;
+    height: 24px;
+}
+
+.facebook:hover,
+.vk:hover,
+.twitter:hover,
+.youtube:hover,
+.habrahabr:hover,
+.instagram:hover
+{
+    cursor: pointer;
+}
