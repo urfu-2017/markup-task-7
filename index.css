@@ -82,7 +82,6 @@ p + p
 .intro__text,
 .intro__video
 {
-    vertical-align: top;
     z-index: 0;
 }
 
@@ -130,14 +129,13 @@ p + p
     cursor: pointer;
 }
 
-.person__photo_border
+.person__photo-border
 {
     width: 156px;
     height: 156px;
     border: 3px solid rgba(0, 0, 0, 0);
     border-radius: 50%;
     margin: auto;
-    cursor: pointer;
     transition: border .1s ease-out;
 }
 
@@ -157,7 +155,7 @@ p + p
     font-size: 16px;
 }
 
-.person__photo_border:hover
+.person__photo-border:hover
 {
     border: 3px solid #fff;
 }
@@ -177,9 +175,9 @@ input[id='Georgy']:checked ~ article
     background-color: #ffe15d;
 }
 
-input[id='Alex']:checked ~ article .Alex .person__photo_border,
-input[id='Max']:checked ~ article .Max .person__photo_border,
-input[id='Georgy']:checked ~ article .Georgy .person__photo_border
+input[id='Alex']:checked ~ article .Alex .person__photo-border,
+input[id='Max']:checked ~ article .Max .person__photo-border,
+input[id='Georgy']:checked ~ article .Georgy .person__photo-border
 {
     border: 3px solid #fff;
 }
@@ -329,11 +327,14 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     height: 300px;
     position: relative;
     padding: 60px 0 0 95px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.summary__block
+.summary:after
 {
-    display: flex;
+    content: '';
+    width: 100%;
 }
 
 .summary__text
@@ -354,6 +355,7 @@ input[id='Georgy']:checked ~ article .Georgy .person__description
     display: flex;
     width: 184px;
     justify-content: space-between;
+    order: 1;
 }
 
 .social__icon

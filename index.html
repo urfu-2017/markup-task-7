@@ -10,7 +10,7 @@
 <input type="radio" name="selector" id="Alex">
 <input type="radio" name="selector" id="Georgy">
 <article>
-    <header>
+    <header class="header">
         <img src="img/ya-logo.svg" alt="yandex logo" class="header__logo">
         <img src="img/bg.png" srcset="img/bg@2x.png 2x,img/bg@3x.png 3x" class="header__bg" alt="background">
         <h1 class="header__text">А что если интернет подстроится под меня?</h1>
@@ -48,7 +48,7 @@
     <section class="path">
         <div class="persons">
             <figure class="person Max">
-                <div class="person__photo_border">
+                <div class="person__photo-border">
                     <label for="Max" class="person__photo Max__photo"></label>
                 </div>
                 <h2>Максим</h2>
@@ -60,7 +60,7 @@
                 </figcaption>
             </figure>
             <figure class="person Alex">
-                <div class="person__photo_border">
+                <div class="person__photo-border">
                     <label for="Alex" class="person__photo Alex__photo"></label>
                 </div>
                 <h2>Алексей Быков</h2>
@@ -72,7 +72,7 @@
                 </figcaption>
             </figure>
             <figure class="person Georgy">
-                <div class="person__photo_border">
+                <div class="person__photo-border">
                     <label for="Georgy" class="person__photo Georgy__photo"></label>
                 </div>
                 <h2>Георгий И. Дауге</h2>
@@ -156,7 +156,7 @@
         <div class="path__elem_at_6">
             <img src="img/mask.png" alt="mask" srcset="img/mask@2x.png 2x, img/mask@3x.png 3x"
                  class="mask path__image">
-            <img src="img/palka.png" alt="snorkel" srcset="img/palka@2x.png 2x, img/palka@3x.png 3x"
+            <img src="img/snorkel.png" alt="snorkel" srcset="img/snorkel@2x.png 2x, img/snorkel@3x.png 3x"
                  class="snorkel path__image">
         </div>
         <div class="path__elem_at_8">
@@ -171,19 +171,19 @@
         </div>
         <div class="persons">
             <div class="person Max">
-                <div class="person__photo_border">
+                <div class="person__photo-border">
                     <label for="Max" class="person__photo Max__photo"></label>
                 </div>
                 <h2>Максим</h2>
             </div>
             <div class="person Alex">
-                <div class="person__photo_border">
+                <div class="person__photo-border">
                     <label for="Alex" class="person__photo Alex__photo"></label>
                 </div>
                 <h2>Алексей Быков</h2>
             </div>
             <div class="person Georgy">
-                <div class="person__photo_border">
+                <div class="person__photo-border">
                     <label for="Georgy" class="person__photo Georgy__photo"></label>
                 </div>
                 <h2>Георгий И. Дауге</h2>
@@ -191,26 +191,24 @@
         </div>
     </section>
     <section class="summary">
-        <div class="summary__block">
-            <div class="summary__text">
-                <p>Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко
-                    ин&shy;фор&shy;ма&shy;ция и тех&shy;но&shy;ло&shy;гии, это
-                    лю&shy;ди: их же&shy;ла&shy;ния, пред&shy;по&shy;чте&shy;ния,
-                    за&shy;да&shy;чи. Лю&shy;ди — вот ато&shy;мы, из ко&shy;то&shy;рых
-                    на са&shy;мом де&shy;ле со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия;
-                    и эти лю&shy;ди очень, очень раз&shy;ные.
-                </p>
-                <p>
-                    Те&shy;перь по&shy;смот&shy;ри&shy;те,как пла&shy;ни&shy;ро&shy;ва&shy;ли
-                    пу&shy;те&shy;ше&shy;ствие в Та&shy;и&shy;ланд Алек&shy;сей Бы&shy;ков и
-                    Ге&shy;ор&shy;гий И. Да&shy;у&shy;ге.
-                </p>
-            </div>
-            <div class="summary__logo">
-                <img src="img/logo-atom.png" alt="logo yandex atom"
-                     srcset="img/logo-atom@2x.png 2x, img/logo-atom@3x.png 3x"
-                     class="summary__logo-image">
-            </div>
+        <div class="summary__text">
+            <p>Ин&shy;тер&shy;нет се&shy;го&shy;дня — это не толь&shy;ко
+                ин&shy;фор&shy;ма&shy;ция и тех&shy;но&shy;ло&shy;гии, это
+                лю&shy;ди: их же&shy;ла&shy;ния, пред&shy;по&shy;чте&shy;ния,
+                за&shy;да&shy;чи. Лю&shy;ди — вот ато&shy;мы, из ко&shy;то&shy;рых
+                на са&shy;мом де&shy;ле со&shy;сто&shy;ит циф&shy;ро&shy;вая ма&shy;те&shy;рия;
+                и эти лю&shy;ди очень, очень раз&shy;ные.
+            </p>
+            <p>
+                Те&shy;перь по&shy;смот&shy;ри&shy;те,как пла&shy;ни&shy;ро&shy;ва&shy;ли
+                пу&shy;те&shy;ше&shy;ствие в Та&shy;и&shy;ланд Алек&shy;сей Бы&shy;ков и
+                Ге&shy;ор&shy;гий И. Да&shy;у&shy;ге.
+            </p>
+        </div>
+        <div class="summary__logo">
+            <img src="img/logo-atom.png" alt="logo yandex atom"
+                 srcset="img/logo-atom@2x.png 2x, img/logo-atom@3x.png 3x"
+                 class="summary__logo-image">
         </div>
         <div class="summary__social">
             <div class="social__icon social__icon_type_facebook"></div>
