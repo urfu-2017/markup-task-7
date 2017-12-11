@@ -1,1 +1,421 @@
+input
+{
+    display: none;
+}
+
+body
+{
+    width: 993px;
+    margin: auto;
+}
+
+article
+{
+    margin: 18px;
+    border: 2px solid #000;
+    font-family: Arial, sans-serif;
+    transition: background-color 1s ease-out;
+}
+
+header
+{
+    position: relative;
+    text-align: center;
+    height: 551px;
+    border-bottom: 2px solid #000;
+}
+
+.header__bg
+{
+    position: absolute;
+    width: 1416px;
+    height: 788px;
+    top: 72px;
+    left: -436px;
+}
+
+.header__logo
+{
+    position: relative;
+    top: -2px;
+}
+
+.header__text
+{
+    position: absolute;
+    top: 377px;
+    left: 102px;
+    width: 740px;
+    margin: auto;
+    font-size: 44px;
+    text-align: center;
+    line-height: 48px;
+    font-weight: 400;
+
+}
+
+.header__text:before
+{
+    content: '\2014';
+    margin-right: 13px;
+}
+
+p
+{
+    margin: 0;
+}
+
+p + p
+{
+    margin-top: 16px;
+}
+
+.intro
+{
+    padding: 96px 86px 64px 93px;
+    display: flex;
+    height: 392px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000;
+}
+
+.intro__text,
+.intro__video
+{
+    z-index: 0;
+}
+
+.intro__text
+{
+    width: 450px;
+    margin-right: 97px;
+}
+
+.path
+{
+    height: 3208px;
+    position: relative;
+    border-bottom: 2px solid #000;
+}
+
+.persons
+{
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.persons:last-of-type
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.person
+{
+    width: 33%;
+    text-align: center;
+}
+
+.person__photo
+{
+    display: block;
+    width: 138px;
+    height: 138px;
+    background: url('img/people_sprites.png') -326px -10px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.person__photo-border
+{
+    width: 156px;
+    height: 156px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin: auto;
+    transition: border .1s ease-out;
+}
+
+.Georgy__photo
+{
+    background: url('img/people_sprites.png') -10px -10px;
+}
+
+.Alex__photo
+{
+    background: url('img/people_sprites.png') -168px -10px;
+}
+
+.person__description
+{
+    text-align: center;
+    font-size: 16px;
+}
+
+.person__photo-border:hover
+{
+    border: 3px solid #fff;
+}
+
+input[id='Max']:checked ~ article
+{
+    background-color: #73c5f6;
+}
+
+input[id='Alex']:checked ~ article
+{
+    background-color: #ff8384;
+}
+
+input[id='Georgy']:checked ~ article
+{
+    background-color: #ffe15d;
+}
+
+input[id='Alex']:checked ~ article .Alex .person__photo-border,
+input[id='Max']:checked ~ article .Max .person__photo-border,
+input[id='Georgy']:checked ~ article .Georgy .person__photo-border
+{
+    border: 3px solid #fff;
+}
+
+input[id='Alex']:not(:checked) ~ article .Alex .person__description,
+input[id='Max']:not(:checked) ~ article .Max .person__description,
+input[id='Georgy']:not(:checked) ~ article .Georgy .person__description
+{
+    display: none;
+}
+
+input[id='Alex']:checked ~ article .Alex .person__description,
+input[id='Max']:checked ~ article .Max .person__description,
+input[id='Georgy']:checked ~ article .Georgy .person__description
+{
+    display: block;
+}
+
+.path__bg
+{
+    position: absolute;
+    left: 94px;
+    top: 432px;
+}
+
+.path__text
+{
+    position: absolute;
+    width: 280px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.path__text.path__elem_at_1
+{
+    left: 92px;
+    top: 494px;
+}
+
+.path__text.path__elem_at_4
+{
+    left: 569px;
+    top: 1323px;
+}
+
+.path__text.path__elem_at_7
+{
+    left: 93px;
+    top: 2093px;
+}
+
+.path__image
+{
+    position: absolute;
+}
+
+.path__elem_at_2
+{
+    position: absolute;
+    left: -20px;
+    top: 761px;
+}
+
+.pen
+{
+    left: 348px;
+}
+
+.path__elem_at_3
+{
+    position: absolute;
+    left: 406px;
+    top: 867px;
+}
+
+.notebook
+{
+    left: 78px;
+    top: -358px;
+}
+
+.watch
+{
+    left: 78px;
+    top: 159px;
+}
+
+.photo
+{
+    left: 390px;
+    top: 114px;
+}
+
+.path__elem_at_5
+{
+    position: absolute;
+    left: 202px;
+    top: 1322px;
+}
+
+.iphone
+{
+    left: -158px;
+    top: 324px;
+}
+
+.cup
+{
+    left: 126px;
+    top: 369px;
+}
+
+.path__elem_at_6
+{
+    position: absolute;
+    left: 562px;
+    top: 1559px;
+}
+
+.snorkel
+{
+    left: 156px;
+    top: -237px;
+}
+
+.path__elem_at_8
+{
+    position: absolute;
+    left: 440px;
+    top: 2048px;
+}
+
+.newspaper
+{
+    left: -349px;
+    top: 335px;
+}
+
+.magazine
+{
+    left: 239px;
+    top: 446px;
+}
+
+.summary
+{
+    height: 300px;
+    position: relative;
+    padding: 60px 0 0 95px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.summary:after
+{
+    content: '';
+    width: 100%;
+}
+
+.summary__text
+{
+    font-size: 16px;
+    line-height: 24px;
+    width: 439px;
+}
+
+.summary__logo
+{
+    margin-top: 24px;
+    margin-left: 122px;
+}
+
+.summary__social
+{
+    display: flex;
+    width: 184px;
+    justify-content: space-between;
+    order: 1;
+}
+
+.social__icon
+{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+}
+
+.social__icon_type_facebook
+{
+    background: url('img/css_sprites.png') -10px -10px;
+}
+
+.social__icon_type_vk
+{
+    background: url('img/css_sprites.png') -54px -10px;
+}
+
+.social__icon_type_twitter
+{
+    background: url('img/css_sprites.png') -10px -54px;
+}
+
+.social__icon_type_youtube
+{
+    background: url('img/css_sprites.png') -54px -54px;
+}
+
+.social__icon_type_habr
+{
+    background: url('img/css_sprites.png') -98px -10px;
+}
+
+.social__icon_type_instagram
+{
+    background: url('img/css_sprites.png') -98px -54px;
+}
+
+footer
+{
+    text-align: center;
+    position: relative;
+}
+
+.ya-links
+{
+    position: absolute;
+    left: 95px;
+}
+
+.ya-links a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.feedback
+{
+    margin-left: 20px;
+}
 
